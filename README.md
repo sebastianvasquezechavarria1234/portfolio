@@ -1,16 +1,38 @@
-# React + Vite
+# Portafolio Profesional - Sebas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es mi portafolio personal, migrado y optimizado desde una arquitectura estática a una solución moderna basada en **React 19** y **Vite**. El proyecto se enfoca en una estética editorial de alta gama, con tipografías premium y efectos visuales avanzados.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías Principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+*   **Core**: [React 19](https://react.dev/) + [Vite](https://vitejs.dev/)
+*   **Estilos**: [Tailwind CSS](https://tailwindcss.com/)
+*   **Scroll**: [Lenis Smooth Scroll](https://github.com/darkroomengineering/lenis) para una navegación fluida y premium.
+*   **Animaciones**: Framer Motion y transiciones CSS personalizadas.
+*   **Tipografía**: 
+    *   `Bricolage Grotesque` (Títulos de alto impacto)
+    *   `Google Sans Flex` (Cuerpo de texto elegante y legible)
 
-## React Compiler
+## ✨ Características Destacadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*   **Gradual Blur Header**: Un efecto de desenfoque progresivo en la cabecera inspirado en diseños de Apple.
+*   **Editorial UX**: Enfoque en espacios en blanco y jerarquía tipográfica (Extra Bold en títulos, Light en párrafos).
+*   **Responsive & Performance**: Totalmente adaptado a dispositivos móviles y optimizado para tiempos de carga rápidos.
+*   **Bento Grid Layout**: Secciones de servicios y laboratorio utilizando cuadrículas modernas e interactivas.
 
-## Expanding the ESLint configuration
+## 🛠️ Instalación y Desarrollo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project. 
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/sebastianvasquezechavarria1234/portfolio.git
+   ```
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+3. Inicia el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+
+---
+Desarrollado con ❤️ por Sebas.
