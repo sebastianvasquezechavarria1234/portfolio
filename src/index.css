@@ -1,8 +1,8 @@
-﻿@import "tailwindcss";
+@import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,600;12..96,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,600;12..96,800&family=Google+Sans+Flex:opsz,wght@8..144,100..1000&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Quicksand:wght@400;600;700&display=swap');
+
 
 
 *{
@@ -12,7 +12,8 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Google Sans Flex', sans-serif;
+    font-optical-sizing: auto;
 }
 
 :root{
