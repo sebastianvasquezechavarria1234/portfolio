@@ -34,13 +34,13 @@ const Header = () => {
         <GradualBlur
           target="parent"
           position="top"
-          height="100%"
-          strength={3}
+          height="12rem"
+          strength={5}
           divCount={10}
-          curve="ease-out"
+          curve="bezier"
           opacity={isScrolled ? 1 : 0}
           zIndex={-1}
-          style={{ transition: 'opacity 0.3s' }}
+          style={{ transition: 'opacity 0.5s' }}
         />
         <nav>
           <ul>
