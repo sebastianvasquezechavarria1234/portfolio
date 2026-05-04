@@ -1,6 +1,6 @@
 //   header active
   
-  var headerBtnRigth = document.querySelector("#header__btn__rigth");
+  var headerBtnRight = document.querySelector("#header__btn__right");
   var header__blur = document.querySelector(".header__blur");
   var btnTop = document.querySelector("#btnTop");
 
@@ -9,11 +9,11 @@
     let scroll = document.documentElement.scrollTop;
 
     if(scroll > 10){
-        headerBtnRigth.classList.add("headerBtnRigthActive");
+        headerBtnRight.classList.add("headerBtnRightActive");
         header__blur.classList.add("headerActive");
     }
     else if(scroll < 10){
-        headerBtnRigth.classList.remove("headerBtnRigthActive");
+        headerBtnRight.classList.remove("headerBtnRightActive");
         header__blur.classList.remove("headerActive");
     }
 
@@ -45,24 +45,24 @@ iconMn.addEventListener("click", () => {
 
 var controls1 = document.querySelector("#controls1");
 var controls2 = document.querySelector("#controls2");
-var sliderProyec = document.querySelector("#sliderProyet");
-var sliderProyetLi1 = document.querySelector("#sliderProyetLi1");
-var sliderProyetLi2 = document.querySelector("#sliderProyetLi2");
+var sliderProyect = document.querySelector("#sliderProyect");
+var sliderProyectLi1 = document.querySelector("#sliderProyectLi1");
+var sliderProyectLi2 = document.querySelector("#sliderProyectLi2");
 
 
 
 controls2.addEventListener("click", (e) => {
-    sliderProyec.classList.add("sliderProyecActive");
-    sliderProyetLi2.classList.add("opacity1");
-    sliderProyetLi1.classList.add("opacity0");
+    sliderProyect.classList.add("sliderProyectActive");
+    sliderProyectLi2.classList.add("opacity1");
+    sliderProyectLi1.classList.add("opacity0");
     controls2.classList.add("controlActive");
     controls1.classList.add("controlDesactive");
 })
 
 controls1.addEventListener("click", (e) => {
-    sliderProyec.classList.remove("sliderProyecActive");
-    sliderProyetLi2.classList.remove("opacity1");
-    sliderProyetLi1.classList.remove("opacity0");
+    sliderProyect.classList.remove("sliderProyectActive");
+    sliderProyectLi2.classList.remove("opacity1");
+    sliderProyectLi1.classList.remove("opacity0");
     controls2.classList.remove("controlActive");
     controls1.classList.remove("controlDesactive");
 })
