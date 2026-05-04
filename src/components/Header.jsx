@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { WavySvg, DropdownSvg, SocialLinks } from './Icons'
+import GradualBlur from './GradualBlur'
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -30,7 +31,17 @@ const Header = () => {
       </div>
 
       <header>
-        <div className={`header__blur${isScrolled ? ' headerActive' : ''}`}></div>
+        <GradualBlur
+          target="parent"
+          position="top"
+          height="100%"
+          strength={3}
+          divCount={10}
+          curve="ease-out"
+          opacity={isScrolled ? 1 : 0}
+          zIndex={-1}
+          style={{ transition: 'opacity 0.3s' }}
+        />
         <nav>
           <ul>
             <li>
