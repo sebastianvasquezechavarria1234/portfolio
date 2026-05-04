@@ -1,38 +1,38 @@
-# Portafolio Profesional - Sebas
+# Professional Portfolio - Sebas
 
-Este es mi portafolio personal, migrado y optimizado desde una arquitectura estática a una solución moderna basada en **React 19** y **Vite**. El proyecto se enfoca en una estética editorial de alta gama, con tipografías premium y efectos visuales avanzados.
+This is my personal portfolio, migrated and optimized from a static architecture to a modern solution based on **React 19** and **Vite**. The project focuses on a high-end editorial aesthetic, featuring premium typography and advanced visual effects.
 
-## 🚀 Tecnologías Principales
+## 🚀 Core Tech Stack
 
 *   **Core**: [React 19](https://react.dev/) + [Vite](https://vitejs.dev/)
-*   **Estilos**: [Tailwind CSS](https://tailwindcss.com/)
-*   **Scroll**: [Lenis Smooth Scroll](https://github.com/darkroomengineering/lenis) para una navegación fluida y premium.
-*   **Animaciones**: Framer Motion y transiciones CSS personalizadas.
-*   **Tipografía**: 
-    *   `Bricolage Grotesque` (Títulos de alto impacto)
-    *   `Google Sans Flex` (Cuerpo de texto elegante y legible)
+*   **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+*   **Scrolling**: [Lenis Smooth Scroll](https://github.com/darkroomengineering/lenis) for a fluid and premium navigation experience.
+*   **Animations**: Custom CSS transitions and Framer Motion elements.
+*   **Typography**: 
+    *   `Bricolage Grotesque` (High-impact headings)
+    *   `Google Sans Flex` (Elegant and readable body text)
 
-## ✨ Características Destacadas
+## ✨ Key Features
 
-*   **Gradual Blur Header**: Un efecto de desenfoque progresivo en la cabecera inspirado en diseños de Apple.
-*   **Editorial UX**: Enfoque en espacios en blanco y jerarquía tipográfica (Extra Bold en títulos, Light en párrafos).
-*   **Responsive & Performance**: Totalmente adaptado a dispositivos móviles y optimizado para tiempos de carga rápidos.
-*   **Bento Grid Layout**: Secciones de servicios y laboratorio utilizando cuadrículas modernas e interactivas.
+*   **Gradual Blur Header**: A progressive blur effect in the header inspired by Apple's high-end designs.
+*   **Editorial UX**: Focused on whitespace and typographic hierarchy (Extra Bold headings, Light body text).
+*   **Responsive & Performance**: Fully adapted for mobile devices and optimized for fast loading times.
+*   **Bento Grid Layout**: Services and Lab sections utilizing modern, interactive grid layouts.
 
-## 🛠️ Instalación y Desarrollo
+## 🛠️ Installation & Development
 
-1. Clona el repositorio:
+1. Clone the repository:
    ```bash
    git clone https://github.com/sebastianvasquezechavarria1234/portfolio.git
    ```
-2. Instala las dependencias:
+2. Install dependencies:
    ```bash
    npm install
    ```
-3. Inicia el servidor de desarrollo:
+3. Start the development server:
    ```bash
    npm run dev
    ```
 
 ---
-Desarrollado con ❤️ por Sebas.
+Built with ❤️ by Sebas.
