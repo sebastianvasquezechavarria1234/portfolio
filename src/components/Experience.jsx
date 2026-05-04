@@ -51,9 +51,9 @@ const Experience = () => (
           <p>Enero 2023 - Noviembre 2023</p>
           <p>Diseñador web &amp; analista de datos</p>
         </h4>
-        <p>I was responsible for the complete front-end development of the application, including UI creation, responsive design implementation, and general platform functionality. Developed using HTML, CSS, JavaScript, and modern front-end libraries to ensure a smooth, adaptable user experience across all devices. For visual planning, I utilized Figma and Photoshop to structure and prototype views before implementation.</p>
-        <p>The project featured an innovative interactive section allowing users to visually customize doors on a blank canvas—modifying colors, adding images, and adjusting styles for an intuitive, personalized experience.</p>
-        <p>Additionally, I implemented API integrations for data management and dynamic system features, ensuring seamless communication between the interface and the application's core data. This project strengthened my expertise in front-end development, UI design, and user experience integration.</p>
+        <p>Fui responsable del desarrollo front-end completo de la aplicación, incluyendo la creación de la interfaz de usuario, la implementación de diseño responsivo y la funcionalidad general de la plataforma. Desarrollado utilizando HTML, CSS, JavaScript y librerías modernas de front-end para asegurar una experiencia de usuario fluida y adaptable en todos los dispositivos. Para la planificación visual, utilicé Figma y Photoshop para estructurar y prototipar las vistas antes de la implementación.</p>
+        <p>El proyecto contó con una sección interactiva innovadora que permitía a los usuarios personalizar visualmente puertas en un lienzo en blanco, modificando colores, añadiendo imágenes y ajustando estilos para una experiencia intuitiva y personalizada.</p>
+        <p>Además, implementé integraciones de API para la gestión de datos y funciones dinámicas del sistema, asegurando una comunicación fluida entre la interfaz y los datos centrales de la aplicación. Este proyecto fortaleció mi experiencia en desarrollo front-end, diseño de UI e integración de experiencia de usuario.</p>
       </div>
     </div>
 
@@ -70,9 +70,9 @@ const Experience = () => (
           <p>Noviembre 2023</p>
           <p>Participante &amp; Desarrollador</p>
         </h4>
-        <p>Participated in the 7th INGENIATEC exhibition due to the impact of my "Futuro Puertas" project, which stood out for its functional complexity and the practical application of my technical training.</p>
-        <p>I presented and explained the project's architecture, the technologies used, and its core functionality to instructors and attendees, demonstrating the skills acquired during my development process.</p>
-        <p>This experience allowed me to share my knowledge, receive professional feedback, and showcase my work within an institutional and academic environment.</p>
+        <p>Participé en la 7ª muestra de INGENIATEC debido al impacto de mi proyecto "Futuro Puertas", el cual destacó por su complejidad funcional y la aplicación práctica de mi formación técnica.</p>
+        <p>Presenté y expliqué la arquitectura del proyecto, las tecnologías utilizadas y su funcionalidad principal a instructores y asistentes, demostrando las habilidades adquiridas durante mi proceso de desarrollo.</p>
+        <p>Esta experiencia me permitió compartir mis conocimientos, recibir retroalimentación profesional y mostrar mi trabajo dentro de un entorno institucional y académico.</p>
       </div>
     </div>
 
@@ -89,9 +89,9 @@ const Experience = () => (
           <p>Octubre 2022</p>
           <p>Participante</p>
         </h4>
-        <p>Participated in a massive programming session in Medellín that achieved a Guinness World Record for the largest software class in the world. This initiative brought together thousands of participants to promote technology education and software development interest.</p>
-        <p>During the event, I gained my first formal insights into programming, including basic logic concepts, software structure, and the significance of technology in the modern world. This initial spark motivated me to pursue self-taught learning and specialize in web development.</p>
-        <p>Beyond the technical learning, participating in such a large-scale event allowed me to understand the impact of tech education and fueled my motivation to apply these skills in personal and academic projects.</p>
+        <p>Participé en una sesión masiva de programación en Medellín que logró un Récord Guinness por la clase de software más grande del mundo. Esta iniciativa reunió a miles de participantes para promover la educación tecnológica y el interés por el desarrollo de software.</p>
+        <p>Durante el evento, obtuve mis primeros conocimientos formales sobre programación, incluyendo conceptos de lógica básica, estructura de software y la importancia de la tecnología en el mundo moderno. Esta chispa inicial me motivó a seguir un aprendizaje autodidacta y a especializarme en el desarrollo web.</p>
+        <p>Más allá del aprendizaje técnico, participar en un evento de tal magnitud me permitió comprender el impacto de la educación tecnológica e impulsó mi motivación para aplicar estas habilidades en proyectos personales y académicos.</p>
       </div>
     </div>
   </section>
