@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,600;12..96,800&family=Google+Sans+Flex:opsz,wght@8..144,100..1000&display=swap');
 
 html.lenis,
 html.lenis body {
@@ -21,8 +22,6 @@ html.lenis body {
   pointer-events: none;
 }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,600;12..96,800&family=Google+Sans+Flex:opsz,wght@8..144,100..1000&display=swap');
 
 
 
@@ -69,6 +68,7 @@ body h3,
 body h4,
 body h5{
     font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800;
 }
 
 body h1{
@@ -329,6 +329,7 @@ body::-webkit-scrollbar-thumb:hover,
     content: "100";
     font-size: 8rem;
     font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800;
     animation: bf__anm 2.5s;
 }
 
