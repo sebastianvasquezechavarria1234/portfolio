@@ -1727,7 +1727,8 @@ header nav ul:nth-child(2) li a:hover {
 
 #underline {
     display: inline-flex;
-    font-weight: 600;
+    font-weight: 400;
+    font-style: italic;
     color: var(--blue);
     background-image: url(../img/tt-blue.svg);
     background-repeat: no-repeat;

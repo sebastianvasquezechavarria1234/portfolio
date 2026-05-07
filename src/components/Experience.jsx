@@ -34,8 +34,8 @@ const Experience = () => (
   <section id="experiencia" className="sec__experience">
     <div className="sec__experience__tt">
       <p id="underline">Experiencia Laboral</p>
-      <h2>Mi experiencia de +2 años como diseñador web</h2>
-      <p>Desarrollo servicios web personalizados, enfocados en la eficiencia y usabilidad, utilizando diseños web y soluciones innovadoras.</p>
+      <h2>Mi experiencia de +4 años como diseñador web</h2>
+      <p>Desarrollo servicios web personalizados enfocados en la eficiencia y la usabilidad, integrando diseños vanguardistas y soluciones innovadoras para crear experiencias digitales de alto impacto.</p>
     </div>
 
     {/* Card 1 - Futuro Puertas */}

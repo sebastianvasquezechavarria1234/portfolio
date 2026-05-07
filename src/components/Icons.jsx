@@ -90,18 +90,19 @@ export const QuoteSvg = () => (
 export const SocialLinks = ({ btnClass = 'btnClick' }) => (
   <>
     <li>
-      <a className={`social__btn ${btnClass}`} target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234?tab=repositories">
+      <a className={btnClass} target="_blank" rel="noopener noreferrer" id="hero__flex__btn" href="https://github.com/sebastianvasquezechavarria1234?tab=repositories">
         <GithubSvg />
       </a>
     </li>
     <li>
-      <a className={`social__btn ${btnClass}`} target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sebastian-vasquez-echavarria-839923302/">
+      <a className={btnClass} target="_blank" rel="noopener noreferrer" id="hero__flex__btn" href="https://www.linkedin.com/in/sebastian-vasquez-echavarria-839923302/">
         <LinkedinSvg />
       </a>
     </li>
     <li>
       <a
-        className={`social__btn ${btnClass}`}
+        className={btnClass}
+        id="hero__flex__btn"
         href="https://mail.google.com/mail/?view=cm&fs=1&to=sebasvasquez1314@gmail.com&su=Contacto%20desde%20la%20web&body=Hola%20Sebasti%C3%A1n%2C%0A%0A"
         target="_blank"
         rel="noopener noreferrer"
@@ -111,7 +112,7 @@ export const SocialLinks = ({ btnClass = 'btnClick' }) => (
       </a>
     </li>
     <li>
-      <a className={`social__btn ${btnClass}`} target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/sebastianechavarria1314/">
+      <a className={btnClass} target="_blank" rel="noopener noreferrer" id="hero__flex__btn" href="https://www.instagram.com/sebastianechavarria1314/">
         <InstagramSvg />
       </a>
     </li>
