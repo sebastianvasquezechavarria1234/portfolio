@@ -23,7 +23,7 @@ const Hero = () => (
     <section className="sec__max__width">
       <div className="sec__hero__tt">
         <h1>Hola, soy Sebas. Tu diseñador web.</h1>
-        <p>Me apasiona conceptualizar y diseñar experiencias digitales que no solo cautiven por su estética, sino que también sean plenamente accesibles y estén meticulosamente centradas en las necesidades del usuario.</p>
+        <p>Me apasiona diseñar experiencias digitales atractivas y accesibles que priorizan siempre las necesidades del usuario.</p>
 
         <a href="#proyectos">
           Ver proyectos
