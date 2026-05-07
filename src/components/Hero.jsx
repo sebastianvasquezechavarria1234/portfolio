@@ -30,7 +30,7 @@ const Hero = () => (
           <AwardSvg />
         </a>
 
-        <a download href="/img/Sebastián-CV.pdf">
+        <a download href="/img/Sebastian-Vasquez-CV.pdf">
           Ver CV
           <DownloadSvg />
         </a>

@@ -1,11 +1,11 @@
 import { ArrowSvg } from './Icons'
 
 const services = [
-  { icon: '/img/sec-2-icon-1.webp', title: 'Diseño web profesional', id: 'sec__2__card__1', wrapClass: 'cardDarkGrid sec__2__card', flex: false },
-  { icon: '/img/sec-2-icon-2.webp', title: 'Responsive Web Design', wrapClass: 'cardDarkGrid sec__2__card', flex: false },
-  { icon: '/img/sec-2-icon-3.webp', title: 'Subir sitios web a Internet', wrapClass: 'cardDarkGrid sec__2__card', flex: false },
-  { icon: '/img/sec-2-icon-4.webp', title: 'Animación web interactiva con SVG', wrapClass: 'cardDarkGrid sec__2__card', flex: false },
-  { icon: '/img/sec-2-icon-5.webp', title: 'Optimización de imágenes y videos', wrapClass: 'cardDarkGrid sec__2__card', flex: false },
+  { icon: '/img/icono-diseno-web.webp', title: 'Diseño web profesional', id: 'sec__2__card__1', wrapClass: 'cardDarkGrid sec__2__card', flex: false },
+  { icon: '/img/icono-responsive.webp', title: 'Responsive Web Design', wrapClass: 'cardDarkGrid sec__2__card', flex: false },
+  { icon: '/img/icono-despliegue.webp', title: 'Subir sitios web a Internet', wrapClass: 'cardDarkGrid sec__2__card', flex: false },
+  { icon: '/img/icono-animacion.webp', title: 'Animación web interactiva con SVG', wrapClass: 'cardDarkGrid sec__2__card', flex: false },
+  { icon: '/img/icono-optimizacion.webp', title: 'Optimización de imágenes y videos', wrapClass: 'cardDarkGrid sec__2__card', flex: false },
 ]
 
 const ServiceCard = ({ icon, title }) => (
@@ -32,7 +32,7 @@ const Services = () => (
     <div id="sec__2__card__1" className="cardDarkGrid sec__2__card">
       <div className="sec__2__card__ctn__img__tt">
         <div className="sec__2__card__flex">
-          <img src="/img/sec-2-icon-1.webp" alt="iconos" />
+          <img src="/img/icono-diseno-web.webp" alt="iconos" />
           <h3>Diseño web profesional</h3>
         </div>
         <a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234?tab=repositories">
@@ -47,7 +47,7 @@ const Services = () => (
       {/* Card 2 - left column */}
       <div className="cardDarkGrid sec__2__card">
         <div className="sec__2__card__ctn__img__tt">
-          <img src="/img/sec-2-icon-2.webp" alt="iconos" />
+          <img src="/img/icono-responsive.webp" alt="iconos" />
           <h3>Responsive Web Design</h3>
           <a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234">
             Ir a Github
@@ -62,7 +62,7 @@ const Services = () => (
         <div className="cardDarkGrid sec__2__card">
           <div className="sec__2__card__ctn__img__tt">
             <div className="sec__2__card__flex">
-              <img src="/img/sec-2-icon-3.webp" alt="iconos" />
+              <img src="/img/icono-despliegue.webp" alt="iconos" />
               <h3>Subir sitios web a Internet</h3>
             </div>
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234">
@@ -75,7 +75,7 @@ const Services = () => (
 
         <div className="cardDarkGrid sec__2__card">
           <div className="sec__2__card__ctn__img__tt">
-            <img src="/img/sec-2-icon-4.webp" alt="iconos" />
+            <img src="/img/icono-animacion.webp" alt="iconos" />
             <h3>Animación web interactiva con SVG</h3>
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234">
               Ir a Github
@@ -87,7 +87,7 @@ const Services = () => (
 
         <div className="cardDarkGrid sec__2__card">
           <div className="sec__2__card__ctn__img__tt">
-            <img src="/img/sec-2-icon-5.webp" alt="iconos" />
+            <img src="/img/icono-optimizacion.webp" alt="iconos" />
             <h3>Optimización de imágenes y videos</h3>
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234">
               Ir a Github
