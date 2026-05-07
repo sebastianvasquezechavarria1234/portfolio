@@ -1761,7 +1761,6 @@ header nav ul:nth-child(2) li a:hover {
     margin-bottom: 10px;
     padding-bottom: 10px;
     background-position-y: 100%;
-    font-style: italic;
 }
 
 #underline.underlayActive {
@@ -2036,7 +2035,7 @@ header nav ul:nth-child(2) li a:hover {
 .sec__3__controls {
     position: sticky;
     top: 80px;
-    max-width: 280px;
+    max-width: 400px;
     text-align: center;
     margin: 0 auto;
     display: flex;
