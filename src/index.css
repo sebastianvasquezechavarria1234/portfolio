@@ -93,6 +93,27 @@ body h4 {
     font-size: 1.5rem;
 }
 
+header nav ul:nth-child(2) li a.social__btn {
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    width: auto;
+    height: auto;
+    backdrop-filter: none;
+}
+
+header nav ul:nth-child(2) li a.social__btn svg {
+    width: 25px !important;
+    height: 25px !important;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+header nav ul:nth-child(2) li a.social__btn:hover svg {
+    opacity: 1;
+}
+
 body p,
 body a {
     font-size: 17px;
@@ -1339,7 +1360,7 @@ header nav ul:nth-child(2) li a:hover {
     gap: 10px;
 }
 
-#hero__flex__btn {
+.social__btn {
     width: 50px;
     height: 50px;
     border-radius: 10px;
