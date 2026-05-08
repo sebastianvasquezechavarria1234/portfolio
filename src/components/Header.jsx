@@ -20,11 +20,15 @@ const Header = () => {
   const closeMobile = () => setMobileOpen(false)
 
   const scrollToTop = (e) => {
-    e.preventDefault()
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    })
+    if (e) e.preventDefault()
+    if (window.lenis) {
+      window.lenis.scrollTo(0)
+    } else {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
+    }
   }
 
   return (
@@ -32,8 +36,8 @@ const Header = () => {
       {/* Fixed back-to-top button */}
       <div className="fixed__button">
         <ul>
-          <li id="btnTop" style={{ transform: isScrolled ? 'scale(1)' : 'scale(0)' }}>
-            <a href="#" onClick={scrollToTop}>
+          <li id="btnTop" onClick={scrollToTop} style={{ transform: isScrolled ? 'scale(1)' : 'scale(0)', cursor: 'pointer' }}>
+            <a href="#" onClick={(e) => e.preventDefault()}>
               <ScrollTopSvg />
             </a>
           </li>
