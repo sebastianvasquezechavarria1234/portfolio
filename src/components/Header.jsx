@@ -4,12 +4,14 @@ import GradualBlur from './GradualBlur'
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
+  const [showScrollBtn, setShowScrollBtn] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
       const scroll = document.documentElement.scrollTop
-      setIsScrolled(scroll > 200)
+      setIsScrolled(scroll > 10)
+      setShowScrollBtn(scroll > 200)
     }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
@@ -36,7 +38,7 @@ const Header = () => {
       {/* Fixed back-to-top button */}
       <div className="fixed__button">
         <ul>
-          <li id="btnTop" onClick={scrollToTop} style={{ transform: isScrolled ? 'scale(1)' : 'scale(0)', cursor: 'pointer' }}>
+          <li id="btnTop" onClick={scrollToTop} style={{ transform: showScrollBtn ? 'scale(1)' : 'scale(0)', cursor: 'pointer' }}>
             <a href="#" onClick={(e) => e.preventDefault()}>
               <ScrollTopSvg />
             </a>
