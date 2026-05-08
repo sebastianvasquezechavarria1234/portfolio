@@ -9,7 +9,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scroll = document.documentElement.scrollTop
-      setIsScrolled(scroll > 10)
+      setIsScrolled(scroll > 200)
     }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
