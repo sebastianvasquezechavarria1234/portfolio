@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { WavySvg, DropdownSvg, SocialLinks } from './Icons'
+import { WavySvg, DropdownSvg, SocialLinks, ScrollTopSvg } from './Icons'
 import GradualBlur from './GradualBlur'
 
 const Header = () => {
@@ -19,13 +19,23 @@ const Header = () => {
 
   const closeMobile = () => setMobileOpen(false)
 
+  const scrollToTop = (e) => {
+    e.preventDefault()
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
+
   return (
     <>
       {/* Fixed back-to-top button */}
       <div className="fixed__button">
         <ul>
           <li id="btnTop" style={{ transform: isScrolled ? 'scale(1)' : 'scale(0)' }}>
-            <a href="#"></a>
+            <a href="#" onClick={scrollToTop}>
+              <ScrollTopSvg />
+            </a>
           </li>
         </ul>
       </div>
