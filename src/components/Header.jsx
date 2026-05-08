@@ -11,7 +11,7 @@ const Header = () => {
     const handleScroll = () => {
       const scroll = document.documentElement.scrollTop
       setIsScrolled(scroll > 10)
-      setShowScrollBtn(scroll > 200)
+      setShowScrollBtn(scroll > 400)
     }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
