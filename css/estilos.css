@@ -181,15 +181,7 @@ body::-webkit-scrollbar-thumb:hover,
     transform: scale(0);
 }
 
-.fixed__button ul a:nth-child(1)::before {
-    opacity: .6;
-    position: absolute;
-    content: "";
-    height: 20px;
-    width: 1px;
-    background-color: currentColor;
-    animation: fixed__btn .7s infinite;
-}
+
 
 
 .fixed__button ul li a {
@@ -203,17 +195,7 @@ body::-webkit-scrollbar-thumb:hover,
 
 
 
-@keyframes fixed__btn {
 
-    0%,
-    100% {
-        transform: translateY(-3px);
-    }
-
-    50% {
-        transform: translateY(6px);
-    }
-}
 
 @media screen and (max-width: 1380px) {
     .fixed__button {
