@@ -342,7 +342,7 @@ body::-webkit-scrollbar-thumb:hover,
     content: "100";
     font-size: 8rem;
     font-family: 'Bricolage Grotesque', sans-serif;
-    font-weight: 800;
+    font-weight: 300;
     animation: bf__anm 2.5s;
 }
 
@@ -930,16 +930,38 @@ header nav ul:nth-child(2) li a {
     background: var(--gray-dark);
     box-shadow: var(--box-shadow-card);
     border-radius: 7px;
-    border: var(--border-card);
+    border: none;
     transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
 }
 
-header nav ul:nth-child(2) li a:hover {
-    box-shadow: 4px 4px 20px rgba(0, 187, 255, 0.179);
-}
-
-#header__btn__rigth.headerBtnRigthActive {
+header nav ul:nth-child(2) li a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: var(--linear-gradient-green-blue-purple);
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+    z-index: -1;
+}
+
+#header__btn__right.headerBtnRightActive::before {
+    opacity: 1;
+}
+
+#header__btn__right:hover {
+    box-shadow: 4px 4px 20px rgba(0, 187, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+#header__btn__right.headerBtnRightActive {
+    box-shadow: 4px 5px 20px #0a66c24d;
+    border: none;
 }
 
 .header__li {
