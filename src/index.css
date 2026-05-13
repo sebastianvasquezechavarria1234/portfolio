@@ -2124,7 +2124,7 @@ header nav ul:nth-child(2) li a::before {
     width: 200%;
     display: flex;
     gap: 20px;
-    transition: all 550ms ease-in-out;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sliderProyectActive {
@@ -2138,7 +2138,7 @@ header nav ul:nth-child(2) li a::before {
 
 #sliderProyectLi1,
 #sliderProyectLi2 {
-    transition: all 550ms ease-in-out;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
