@@ -2061,7 +2061,7 @@ header nav ul:nth-child(2) li a::before {
     border-radius: 5px;
     box-shadow: 8px 8px 24px 0 rgba(9, 13, 20, .4), -4px -4px 8px 0 rgba(224, 224, 255, .04), 0 1px 1px 0 rgba(9, 13, 20, .4);
     background-image: linear-gradient(180deg, rgba(245, 247, 250, .24), rgba(245, 247, 250, .12) 52%, rgba(245, 247, 250, 0));
-    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 0;
 }
 
@@ -2075,7 +2075,8 @@ header nav ul:nth-child(2) li a::before {
 
     border-radius: 5px;
     text-align: center;
-    transition: all .3s;
+    transition: color 0.2s, opacity 0.2s;
+    z-index: 1;
 }
 
 .sec__3__controls p:hover {
