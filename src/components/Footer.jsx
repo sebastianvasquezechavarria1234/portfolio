@@ -22,7 +22,7 @@ const Footer = () => (
     <Gallery />
 
     <footer id="contacto">
-      <p>© 2024 Diseñado por Sebastián Vásquez Echavarría. Casi todos los derechos reservados.</p>
+      <p>© 2023 - 2026 Desarrollado por Sebastián Vásquez Echavarría. Casi todos los derechos reservados.</p>
 
       <div className="sec__hero__tt__bottom">
         <ul>
