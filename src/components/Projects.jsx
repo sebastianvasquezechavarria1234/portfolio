@@ -1,7 +1,8 @@
 import { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import { ArrowSvg, HoverLinePath } from './Icons'
 
-const projects = [
+const myProjects = [
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/matter',
     img: '/img/matter.webp',
@@ -32,25 +33,100 @@ const projects = [
   },
 ]
 
-const ProjectCard = ({ href, img, num, title, desc }) => (
-  <a target="_blank" rel="noopener noreferrer" href={href} className="cardDarkProyect sec__3__card">
-    <div className="sec__3__card__img">
+const clonedProjects = [
+  {
+    href: '#',
+    img: '/img/mustang.webp',
+    num: '#005',
+    title: 'Tesla Clone',
+    desc: 'Réplica de la interfaz de Tesla...',
+  },
+  {
+    href: '#',
+    img: '/img/matter.webp',
+    num: '#006',
+    title: 'Apple Music Clone',
+    desc: 'Experiencia musical inmersiva...',
+  },
+  {
+    href: '#',
+    img: '/img/ginebra.webp',
+    num: '#007',
+    title: 'Airbnb Clone',
+    desc: 'Sistema de reservas dinámico...',
+  },
+  {
+    href: '#',
+    img: '/img/breef.webp',
+    num: '#008',
+    title: 'GitHub UI',
+    desc: 'Rediseño de la interfaz de Git...',
+  },
+]
+
+const cardVariants = {
+  hidden: { 
+    opacity: 0, 
+    filter: 'blur(20px)',
+  },
+  visible: (i) => ({
+    opacity: 1,
+    filter: 'blur(0px)',
+    transition: {
+      delay: i * 0.05,
+      duration: 0.6,
+      ease: "easeOut",
+    }
+  }),
+  exit: {
+    opacity: 0,
+    filter: 'blur(15px)',
+    transition: { 
+      duration: 0.3,
+      ease: "easeIn"
+    }
+  }
+}
+
+const ProjectCard = ({ href, img, num, title, desc, index }) => (
+  <motion.a
+    target="_blank"
+    rel="noopener noreferrer"
+    href={href}
+    className="cardDarkProyect sec__3__card"
+    variants={cardVariants}
+    initial="hidden"
+    animate="visible"
+    exit="exit"
+    custom={index}
+  >
+    <motion.div 
+      className="sec__3__card__img"
+      initial={{ filter: 'blur(10px)', opacity: 0 }}
+      animate={{ filter: 'blur(0px)', opacity: 1 }}
+      transition={{ duration: 0.5, delay: index * 0.05 }}
+    >
       <img src={img} alt={`Captura del proyecto ${title}`} />
       <HoverLinePath />
-    </div>
+    </motion.div>
     <div className="sec__3__card__flex">
       <div className="sec__3__card__flex___number">
         <h5>{num}</h5>
       </div>
-      <div className="sec__3__card__tt">
+      <motion.div 
+        className="sec__3__card__tt"
+        initial={{ opacity: 0, filter: 'blur(5px)' }}
+        animate={{ opacity: 1, filter: 'blur(0px)' }}
+        transition={{ delay: index * 0.05 + 0.1 }}
+      >
         <h4>{title}</h4>
         <p>{desc}</p>
-      </div>
+      </motion.div>
       <span>
         <ArrowSvg />
       </span>
     </div>
-  </a>
+  </motion.a>
 )
 
 const Projects = () => {
@@ -86,26 +162,21 @@ const Projects = () => {
         </p>
       </div>
 
-      <div className="sec__3__slider">
-        <ul id="sliderProyect" className={activeSlide ? 'sliderProyectActive' : ''}>
-          {/* Slide 1 - placeholders (commented in original) */}
-          <li id="sliderProyectLi1" className={activeSlide ? 'opacity0' : ''}>
-            <div className="sec__3__flexbox">
-              {projects.map((p) => (
-                <ProjectCard key={p.num} {...p} />
-              ))}
-            </div>
-          </li>
-
-          {/* Slide 2 - my projects */}
-          <li id="sliderProyectLi2" className={activeSlide ? 'opacity1' : ''}>
-            <div className="sec__3__flexbox">
-              {projects.map((p) => (
-                <ProjectCard key={p.num + '-2'} {...p} />
-              ))}
-            </div>
-          </li>
-        </ul>
+      <div className="sec__3__slider" style={{ overflow: 'hidden', padding: '20px 0' }}>
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeSlide ? 'cloned' : 'mine'}
+            className="sec__3__flexbox"
+          >
+            {(activeSlide ? clonedProjects : myProjects).map((p, i) => (
+              <ProjectCard 
+                key={p.num} 
+                {...p} 
+                index={i} 
+              />
+            ))}
+          </motion.div>
+        </AnimatePresence>
       </div>
     </section>
   )
