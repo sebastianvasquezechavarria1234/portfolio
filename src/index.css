@@ -2948,3 +2948,37 @@ footer .sec__hero__tt__bottom {
         align-items: start;
     }
 }
+/* Custom Cursor */
+.custom-cursor {
+    width: 8px;
+    height: 8px;
+    background-color: var(--white);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: difference;
+}
+
+.custom-cursor-follower {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9998;
+    mix-blend-mode: difference;
+}
+
+
+
+@media (hover: none) and (pointer: coarse) {
+    .custom-cursor, .custom-cursor-follower {
+        display: none;
+    }
+}
