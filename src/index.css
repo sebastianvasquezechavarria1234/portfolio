@@ -2052,7 +2052,21 @@ header nav ul:nth-child(2) li a::before {
     z-index: 99;
 }
 
+.control__active__bg {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: calc(50% - 4.5px);
+    height: calc(100% - 6px);
+    border-radius: 5px;
+    box-shadow: 8px 8px 24px 0 rgba(9, 13, 20, .4), -4px -4px 8px 0 rgba(224, 224, 255, .04), 0 1px 1px 0 rgba(9, 13, 20, .4);
+    background-image: linear-gradient(180deg, rgba(245, 247, 250, .24), rgba(245, 247, 250, .12) 52%, rgba(245, 247, 250, 0));
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 0;
+}
+
 .sec__3__controls p {
+    position: relative;
     cursor: pointer;
     width: 100%;
     margin-bottom: 0px;
@@ -2068,17 +2082,32 @@ header nav ul:nth-child(2) li a::before {
     opacity: 1;
 }
 
-#controls1 {
+.sec__3__controls p.controlActive {
+    color: #fff;
+    opacity: 1;
+}
+
+.sec__3__controls p.controlDesactive {
+    color: rgba(255, 255, 255, 0.5);
+    opacity: 0.6;
+}
+
+.sec__3__controls p:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+.hidden_old_styles {
     box-shadow: 8px 8px 24px 0 rgba(9, 13, 20, .4), -4px -4px 8px 0 rgba(224, 224, 255, .04), 0 1px 1px 0 rgba(9, 13, 20, .4);
     background-image: linear-gradient(180deg, rgba(245, 247, 250, .24), rgba(245, 247, 250, .12) 52%, rgba(245, 247, 250, 0));
 }
 
-#controls2.controlActive {
+.old_styles_2 {
     box-shadow: 8px 8px 24px 0 rgba(9, 13, 20, .4), -4px -4px 8px 0 rgba(224, 224, 255, .04), 0 1px 1px 0 rgba(9, 13, 20, .4);
     background-image: linear-gradient(180deg, rgba(245, 247, 250, .24), rgba(245, 247, 250, .12) 52%, rgba(245, 247, 250, 0));
 }
 
-#controls1.controlDesactive {
+.old_styles_3 {
     box-shadow: 8px 8px 24px 0 rgba(9, 13, 20, 0), -4px -4px 8px 0 rgba(224, 224, 255, .04), 0 1px 1px 0 rgba(9, 13, 20, 0);
     background-image: linear-gradient(180deg, rgba(245, 247, 250, 0), rgba(245, 247, 250, 0) 52%, rgba(245, 247, 250, 0));
 

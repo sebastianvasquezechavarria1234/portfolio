@@ -64,16 +64,22 @@ const Projects = () => {
       </div>
 
       <div className="sec__3__controls">
+        <div 
+          className="control__active__bg" 
+          style={{ 
+            transform: activeSlide ? 'translateX(calc(100% + 3px))' : 'translateX(0)' 
+          }}
+        ></div>
         <p
           id="controls1"
-          className={!activeSlide ? '' : 'controlDesactive'}
+          className={!activeSlide ? 'controlActive' : 'controlDesactive'}
           onClick={() => setActiveSlide(false)}
         >
           Mis Proyectos
         </p>
         <p
           id="controls2"
-          className={activeSlide ? 'controlActive' : ''}
+          className={activeSlide ? 'controlActive' : 'controlDesactive'}
           onClick={() => setActiveSlide(true)}
         >
           Proyectos Clonados
