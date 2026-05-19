@@ -1901,6 +1901,10 @@ header nav ul:nth-child(2) li a::before {
     margin-left: -20px;
 }
 
+.despliegues-card p {
+    white-space: nowrap;
+}
+
 .sec__2 .sec__2__flex .sec__2__card:nth-child(1)::after {
     width: 600px;
     height: 600px;
