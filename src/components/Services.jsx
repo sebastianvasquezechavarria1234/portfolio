@@ -1,7 +1,7 @@
 import { ArrowSvg } from './Icons'
 
 const services = [
-  { icon: '/img/66937aa4ded16a33900a120093a9875b-removebg-preview.webp', title: 'Arquitectura de App UI', id: 'sec__2__card__1', wrapClass: 'cardDarkGrid sec__2__card', flex: false },
+  { icon: '/img/66937aa4ded16a33900a120093a9875b-removebg-preview.webp', title: 'Arquitectura de Sistemas Web Escalables', id: 'sec__2__card__1', wrapClass: 'cardDarkGrid sec__2__card', flex: false },
   { icon: '/img/0a2228676ecc6efc845e105bb8f317e1-removebg-preview.webp', title: 'Despliegues Cloud de Escala', wrapClass: 'cardDarkGrid sec__2__card', flex: false },
   { icon: '/img/5ac702ae36c9fd20f45061a194e2b006-removebg-preview.webp', title: 'Diseño UI/UX de Élite', wrapClass: 'cardDarkGrid sec__2__card', flex: false },
   { icon: '/img/3f939c3223b1945290bbfd78ac10b303-removebg-preview.webp', title: 'Arquitectura de Sistemas de Datos', wrapClass: 'cardDarkGrid sec__2__card', flex: false },
@@ -33,7 +33,7 @@ const Services = () => (
       <div className="sec__2__card__ctn__img__tt">
         <div className="sec__2__card__flex">
           <img src="/img/66937aa4ded16a33900a120093a9875b-removebg-preview.webp" alt="iconos" />
-          <h3>Arquitectura de App UI</h3>
+          <h3>Arquitectura de Sistemas Web Escalables</h3>
         </div>
         <a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234?tab=repositories">
           Ir a Github
