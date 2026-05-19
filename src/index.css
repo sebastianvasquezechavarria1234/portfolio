@@ -1885,6 +1885,19 @@ header nav ul:nth-child(2) li a::before {
     width: 30%;
 }
 
+.despliegues-flex {
+    gap: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -80px;
+}
+
+.despliegues-img {
+    width: 120px !important;
+    height: 120px;
+    margin-left: -20px;
+}
+
 .sec__2 .sec__2__flex .sec__2__card:nth-child(1)::after {
     width: 600px;
     height: 600px;
@@ -1959,6 +1972,10 @@ header nav ul:nth-child(2) li a::before {
     .sec__2__flex__flexbox .sec__2__card:nth-child(2),
     .sec__2__flex__flexbox .sec__2__card:nth-child(3) {
         flex-direction: column;
+    }
+
+    .despliegues-flex {
+        margin-top: 0;
     }
 
 }

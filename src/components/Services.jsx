@@ -45,10 +45,10 @@ const Services = () => (
 
     <div className="sec__2__flex">
       {/* Card 2 - left column */}
-      <div className="cardDarkGrid sec__2__card">
+      <div className="cardDarkGrid sec__2__card despliegues-card">
         <div className="sec__2__card__ctn__img__tt">
-          <div className="sec__2__card__flex" style={{ gap: '5px', flexDirection: 'column', alignItems: 'flex-start', marginTop: '-80px' }}>
-            <img src="/img/161ffac7279465cda56f45b52584be63-removebg-preview.webp" alt="iconos" style={{ width: '120px', height: '120px', marginLeft: '-20px' }} />
+          <div className="sec__2__card__flex despliegues-flex">
+            <img src="/img/161ffac7279465cda56f45b52584be63-removebg-preview.webp" alt="iconos" className="despliegues-img" />
             <h3>Despliegues Cloud de Escala</h3>
           </div>
           <a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234">
