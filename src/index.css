@@ -1803,6 +1803,10 @@ header nav ul:nth-child(2) li a::before {
     max-width: 600px;
 }
 
+#sec__2__card__1 .sec__2__card__flex img {
+    margin-left: -6px;
+}
+
 .sec__2__card::before {
     position: absolute;
     content: "";
@@ -1976,6 +1980,10 @@ header nav ul:nth-child(2) li a::before {
 
     .despliegues-flex {
         margin-top: 0;
+    }
+
+    #sec__2__card__1 .sec__2__card__flex img {
+        margin-left: 0;
     }
 
 }

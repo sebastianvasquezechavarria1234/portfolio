@@ -40,7 +40,7 @@ const Services = () => (
           <ArrowSvg />
         </a>
       </div>
-      <p>2024</p>
+      <p>ARQUITECTURA</p>
     </div>
 
     <div className="sec__2__flex">
@@ -56,7 +56,7 @@ const Services = () => (
             <ArrowSvg />
           </a>
         </div>
-        <p>2024</p>
+        <p>CLOUD & DEVOPS</p>
       </div>
 
       {/* Cards 3, 4, 5 - right flexbox */}
@@ -72,7 +72,7 @@ const Services = () => (
               <ArrowSvg />
             </a>
           </div>
-          <p>2024</p>
+          <p>PIXEL PERFECT</p>
         </div>
 
         <div className="cardDarkGrid sec__2__card">
@@ -84,7 +84,7 @@ const Services = () => (
               <ArrowSvg />
             </a>
           </div>
-          <p>2024</p>
+          <p>INFRAESTRUCTURA</p>
         </div>
 
         <div className="cardDarkGrid sec__2__card">
@@ -96,7 +96,7 @@ const Services = () => (
               <ArrowSvg />
             </a>
           </div>
-          <p>2024</p>
+          <p>INTELIGENCIA ARTIFICIAL</p>
         </div>
       </div>
     </div>
