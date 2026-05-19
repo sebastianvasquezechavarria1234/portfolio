@@ -2029,6 +2029,14 @@ header nav ul:nth-child(2) li a:hover {
         margin-bottom: 10px;
     }
 
+    .sec__2 .sec__2__flex .sec__2__card:nth-child(1) {
+        margin-bottom: 10px;
+    }
+
+    .sec__2 .sec__2__flex__flexbox .sec__2__card:nth-child(2) {
+        margin-bottom: 10px;
+    }
+
     .sec__2__card__ctn__img__tt h3,
     .sec__2__card__flex h3 {
         margin-bottom: 0;

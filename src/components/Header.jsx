@@ -6,6 +6,7 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [showScrollBtn, setShowScrollBtn] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,6 +16,13 @@ const Header = () => {
     }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth <= 768)
+    const handleResize = () => setIsMobile(window.innerWidth <= 768)
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
   }, [])
 
   const handleMobileToggle = () => setMobileOpen(prev => !prev)
@@ -52,7 +60,7 @@ const Header = () => {
           position="top"
           height="100%"
           strength={3}
-          divCount={10}
+          divCount={isMobile ? 2 : 10}
           curve="ease-out"
           opacity={isScrolled ? 1 : 0}
           zIndex={-1}
