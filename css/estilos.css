@@ -1852,6 +1852,10 @@ header nav ul:nth-child(2) li a:hover {
     flex-basis: 100%;
 }
 
+.sec__2__flex__flexbox .sec__2__card:nth-child(1) h3 {
+    max-width: 230px;
+}
+
 .sec__2__flex__flexbox .sec__2__card:nth-child(1)::before {
     background: linear-gradient(to top right, rgb(87, 81, 248) 40%, rgb(255, 57, 31));
     left: 35%;
