@@ -1799,6 +1799,10 @@ header nav ul:nth-child(2) li a::before {
     margin-bottom: 20px;
 }
 
+#sec__2__card__1 .sec__2__card__ctn__img__tt {
+    max-width: 600px;
+}
+
 .sec__2__card::before {
     position: absolute;
     content: "";
@@ -1836,7 +1840,7 @@ header nav ul:nth-child(2) li a::before {
 .sec__2__card__flex {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 20px;
 
 }
 
