@@ -2076,6 +2076,40 @@ header nav ul:nth-child(2) li a::before {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .sec__2__flex,
+    .sec__2__flex__flexbox {
+        gap: 10px;
+    }
+
+    .sec__2__card {
+        padding: 20px;
+    }
+
+    .sec__2__card__ctn__img__tt h3,
+    .sec__2__card__flex h3 {
+        margin-bottom: 0;
+    }
+
+    .sec__2__card__ctn__img__tt img {
+        width: 60px;
+    }
+
+    .despliegues-img {
+        width: 80px !important;
+        height: 80px;
+        margin-left: -15px;
+    }
+
+    .sec__2__card__ctn__img__tt > a {
+        margin-top: 10px;
+    }
+
+    .despliegues-card .sec__2__card__ctn__img__tt > a {
+        margin-top: 10px;
+    }
+}
+
 
 /* sec 3 */
 
