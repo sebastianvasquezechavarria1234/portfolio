@@ -1875,7 +1875,6 @@ header nav ul:nth-child(2) li a::before {
 
 
 .sec__2__card p {
-    text-transform: uppercase;
     font-size: 0.75rem;
     text-align: right;
 }
