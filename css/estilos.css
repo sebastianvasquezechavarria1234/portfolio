@@ -2020,13 +2020,13 @@ header nav ul:nth-child(2) li a:hover {
 }
 
 @media screen and (max-width: 600px) {
-    .sec__2__flex,
-    .sec__2__flex__flexbox {
-        gap: 10px;
-    }
-
     .sec__2__card {
         padding: 20px;
+        margin-bottom: 10px;
+    }
+
+    #sec__2__card__1 {
+        margin-bottom: 10px;
     }
 
     .sec__2__card__ctn__img__tt h3,
