@@ -2,7 +2,7 @@ import { ArrowSvg } from './Icons'
 
 const services = [
   { icon: '/img/66937aa4ded16a33900a120093a9875b-removebg-preview.webp', title: 'Arquitectura de Sistemas Web Escalables', id: 'sec__2__card__1', wrapClass: 'cardDarkGrid sec__2__card', flex: false },
-  { icon: '/img/5ac702ae36c9fd20f45061a194e2b006-removebg-preview.webp', title: 'Despliegues Cloud de Escala', wrapClass: 'cardDarkGrid sec__2__card', flex: false },
+  { icon: '/img/161ffac7279465cda56f45b52584be63-removebg-preview.webp', title: 'Despliegues Cloud de Escala', wrapClass: 'cardDarkGrid sec__2__card', flex: false },
   { icon: '/img/0a2228676ecc6efc845e105bb8f317e1-removebg-preview.webp', title: 'Diseño UI/UX de Élite', wrapClass: 'cardDarkGrid sec__2__card', flex: false },
   { icon: '/img/3f939c3223b1945290bbfd78ac10b303-removebg-preview.webp', title: 'Arquitectura de Sistemas de Datos', wrapClass: 'cardDarkGrid sec__2__card', flex: false },
   { icon: '/img/725acc2b7723d42a91605796d7afde81-removebg-preview.webp', title: 'Integración de Agentes de IA Web', wrapClass: 'cardDarkGrid sec__2__card', flex: false },
@@ -47,8 +47,10 @@ const Services = () => (
       {/* Card 2 - left column */}
       <div className="cardDarkGrid sec__2__card">
         <div className="sec__2__card__ctn__img__tt">
-          <img src="/img/5ac702ae36c9fd20f45061a194e2b006-removebg-preview.webp" alt="iconos" />
-          <h3>Despliegues Cloud de Escala</h3>
+          <div className="sec__2__card__flex" style={{ gap: '5px' }}>
+            <img src="/img/161ffac7279465cda56f45b52584be63-removebg-preview.webp" alt="iconos" />
+            <h3>Despliegues Cloud de Escala</h3>
+          </div>
           <a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234">
             Ir a Github
             <ArrowSvg />
