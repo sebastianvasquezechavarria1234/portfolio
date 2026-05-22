@@ -2400,9 +2400,7 @@ header nav ul:nth-child(2) li a::before {
 }
 
 .sec__3__card--uiux {
-    background-image: url(/img/background-components-1.jpg), var(--linear-gradient-card-blur) !important;
-    background-size: cover !important;
-    background-position: center !important;
+    background-image: var(--linear-gradient-card-blur) !important;
 }
 
 .sec__3__card--uiux .sec__3__card__flex___number {
@@ -2420,6 +2418,39 @@ header nav ul:nth-child(2) li a::before {
     padding: 16px 24px;
     margin: 0 -24px -24px;
     border-radius: 0 0 24px 24px;
+}
+
+.wave-footer {
+    position: absolute;
+    bottom: -16px;
+    left: -24px;
+    width: calc(100% + 48px);
+    height: 80px;
+    overflow: hidden;
+    border-radius: 0 0 24px 24px;
+    background: rgba(9, 13, 20, 0.95);
+    pointer-events: none;
+}
+
+.wave-footer::before {
+    content: "";
+    position: absolute;
+    width: 55%;
+    height: 109%;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 100% 50%;
+    right: -1.5%;
+    top: -30%;
+}
+
+.wave-footer::after {
+    content: "";
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    border-radius: 100% 50%;
+    left: -1.5%;
+    top: -40%;
 }
 
 @media screen and (max-width: 880px) {
