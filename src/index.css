@@ -2428,6 +2428,11 @@ header nav ul:nth-child(2) li a::before {
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
 }
 
+.sec__3__card--uiux:nth-child(2) .sec__3__card__bg-deco::before,
+.sec__3__card--uiux:nth-child(4) .sec__3__card__bg-deco::before {
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+}
+
 .sec__3__card--uiux .sec__3__card__img {
     position: relative;
     z-index: 1;
