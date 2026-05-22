@@ -2417,6 +2417,14 @@ header nav ul:nth-child(2) li a::before {
     position: relative;
 }
 
+.sec__3__card--uiux:nth-child(1) .sec__3__card__flex___number {
+    background-color: var(--green);
+}
+
+.sec__3__card--uiux:nth-child(2) .sec__3__card__flex___number {
+    background-color: var(--purple);
+}
+
 .sec__3__card--uiux .uiux-num {
     opacity: 1;
     transition: opacity 0.3s;
