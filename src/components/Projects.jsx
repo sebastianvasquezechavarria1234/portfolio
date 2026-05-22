@@ -104,7 +104,7 @@ const ProjectCard = ({ href, githubHref, liveHref, img, num, title, desc }) => {
 
   if (isUiux) {
     return (
-      <div className="cardDarkProyect sec__3__card">
+      <div className="cardDarkProyect sec__3__card sec__3__card--uiux">
         <div className="sec__3__card__img">
           <img src={img} alt={`Captura del proyecto ${title}`} />
           <HoverLinePath />

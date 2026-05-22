@@ -2399,52 +2399,16 @@ header nav ul:nth-child(2) li a::before {
     stroke: var(--yellow);
 }
 
-.sec__3__card:nth-child(5) {
-    background-image: url(/img/background-components-1.jpg), var(--linear-gradient-card-blur);
+.sec__3__card--uiux {
+    background-image: url(/img/background-components-1.jpg), var(--linear-gradient-card-blur) !important;
 }
 
-.sec__3__card:nth-child(6) {
-    background-image: url(/img/background-components-1.jpg), var(--linear-gradient-card-blur);
-}
-
-.sec__3__card:nth-child(7) {
-    background-image: url(/img/background-components-1.jpg), var(--linear-gradient-card-blur);
-}
-
-.sec__3__card:nth-child(8) {
-    background-image: url(/img/background-components-1.jpg), var(--linear-gradient-card-blur);
-}
-
-.sec__3__card:nth-child(5) .sec__3__card__flex___number {
+.sec__3__card--uiux .sec__3__card__flex___number {
     background-color: var(--orange);
 }
 
-.sec__3__card:nth-child(5) .sec__3__card__img svg path {
+.sec__3__card--uiux .sec__3__card__img svg path {
     stroke: var(--orange);
-}
-
-.sec__3__card:nth-child(6) .sec__3__card__flex___number {
-    background-color: var(--blue-dark);
-}
-
-.sec__3__card:nth-child(6) .sec__3__card__img svg path {
-    stroke: var(--blue-dark);
-}
-
-.sec__3__card:nth-child(7) .sec__3__card__flex___number {
-    background-color: var(--green);
-}
-
-.sec__3__card:nth-child(7) .sec__3__card__img svg path {
-    stroke: var(--green);
-}
-
-.sec__3__card:nth-child(8) .sec__3__card__flex___number {
-    background-color: var(--purple);
-}
-
-.sec__3__card:nth-child(8) .sec__3__card__img svg path {
-    stroke: var(--purple);
 }
 
 @media screen and (max-width: 880px) {
