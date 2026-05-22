@@ -111,7 +111,7 @@ const ProjectCard = ({ href, githubHref, liveHref, img, num, title, desc }) => {
           <HoverLinePath />
         </div>
         <div className="sec__3__card__flex">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 w-[80%]">
             <div className="sec__3__card__flex___number sec__3__card__flex___preview">
               <img src="/img/uiux-icon.png" alt={title} />
             </div>
@@ -120,13 +120,11 @@ const ProjectCard = ({ href, githubHref, liveHref, img, num, title, desc }) => {
               <p>{desc}</p>
             </div>
           </div>
-          <div className="absolute right-0 w-10 h-10 flex justify-center items-center bg-white/[0.076] shadow-[4px_4px_20px_rgba(0,0,0,0.098)] rounded-lg">
-            <a href={liveHref} target="_blank" rel="noopener noreferrer" className="w-full h-full flex justify-center items-center" title="Ver página">
+          <div className="w-[20%] flex gap-2 items-center justify-end">
+            <a href={liveHref} target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex justify-center items-center bg-white/[0.076] shadow-[4px_4px_20px_rgba(0,0,0,0.098)] rounded-lg" title="Ver página">
               <ExternalSvg className="w-5 h-5" />
             </a>
-          </div>
-          <div className="absolute right-[48px] w-10 h-10 flex justify-center items-center bg-white/[0.076] shadow-[4px_4px_20px_rgba(0,0,0,0.098)] rounded-lg">
-            <a href={githubHref} target="_blank" rel="noopener noreferrer" className="w-full h-full flex justify-center items-center" title="Ver código">
+            <a href={githubHref} target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex justify-center items-center bg-white/[0.076] shadow-[4px_4px_20px_rgba(0,0,0,0.098)] rounded-lg" title="Ver código">
               <GithubSvg className="w-5 h-5" />
             </a>
           </div>
