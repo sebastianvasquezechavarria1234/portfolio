@@ -2411,6 +2411,14 @@ header nav ul:nth-child(2) li a::before {
     stroke: var(--orange);
 }
 
+.sec__3__card--uiux .sec__3__card__flex {
+    background: rgba(9, 13, 20, 0.7);
+    backdrop-filter: blur(12px);
+    padding: 16px 24px;
+    margin: 0 -24px -24px;
+    border-radius: 0 0 24px 24px;
+}
+
 @media screen and (max-width: 880px) {
     .sec__3__card {
         width: 100%;
