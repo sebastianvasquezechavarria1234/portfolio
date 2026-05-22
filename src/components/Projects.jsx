@@ -125,8 +125,8 @@ const ProjectCard = ({ href, githubHref, liveHref, img, num, title, desc }) => {
               <GithubSvg />
             </a>
           </span>
-          <div className="wave-footer"></div>
         </div>
+        <div className="sec__3__card__wave-deco"></div>
       </div>
     )
   }
