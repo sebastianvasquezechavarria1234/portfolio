@@ -2408,13 +2408,13 @@ header nav ul:nth-child(2) li a::before {
 .sec__3__card__bg-deco {
     position: absolute;
     top: 0;
-    left: -24px;
-    width: calc(100% + 48px);
-    height: 50%;
+    left: 0;
+    width: 100%;
+    height: 60%;
     pointer-events: none;
     z-index: 0;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 0px 0px 50px 100px;
 }
 
 .sec__3__card__bg-deco::before {
