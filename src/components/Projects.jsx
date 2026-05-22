@@ -76,7 +76,8 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
     liveHref: 'https://example.com/tarjetas',
-    img: '/img/uiux-preview.webp',
+    img: '/img/uiux-preview-2.webp',
+    icon: '/img/uiux-icon-2.webp',
     num: '#010',
     title: 'Tarjetas de Producto',
     desc: 'Componentes de tarjeta con hover effects y transiciones...',
@@ -99,7 +100,7 @@ const uiuxComponents = [
   },
 ]
 
-const ProjectCard = ({ href, githubHref, liveHref, img, num, title, desc }) => {
+const ProjectCard = ({ href, githubHref, liveHref, img, num, title, desc, icon }) => {
   const isUiux = githubHref && liveHref
 
   if (isUiux) {
@@ -113,7 +114,7 @@ const ProjectCard = ({ href, githubHref, liveHref, img, num, title, desc }) => {
         <div className="sec__3__card__flex">
           <div className="flex items-center gap-3 w-[85%]">
             <div className="sec__3__card__flex___number sec__3__card__flex___preview">
-              <img src="/img/uiux-icon.png" alt={title} />
+              <img src={icon || '/img/uiux-icon.png'} alt={title} />
             </div>
             <div className="sec__3__card__tt">
               <h4>{title}</h4>
