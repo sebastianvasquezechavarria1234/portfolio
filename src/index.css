@@ -2414,6 +2414,32 @@ header nav ul:nth-child(2) li a::before {
 
 .sec__3__card--uiux .sec__3__card__flex___number {
     background-color: var(--orange);
+    position: relative;
+}
+
+.sec__3__card--uiux .uiux-num {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.sec__3__card--uiux .uiux-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.sec__3__card--uiux:hover .uiux-num {
+    opacity: 0;
+}
+
+.sec__3__card--uiux:hover .uiux-icon {
+    opacity: 1;
 }
 
 .sec__3__card--uiux .sec__3__card__img svg path {

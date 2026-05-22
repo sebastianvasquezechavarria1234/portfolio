@@ -113,8 +113,9 @@ const ProjectCard = ({ href, githubHref, liveHref, img, num, title, desc, icon }
         </div>
         <div className="sec__3__card__flex">
           <div className="flex items-center gap-3 w-[85%]">
-            <div className="sec__3__card__flex___number sec__3__card__flex___preview">
-              <img src={icon || '/img/uiux-icon.png'} alt={title} />
+            <div className="sec__3__card__flex___number">
+              <h5 className="uiux-num">{num}</h5>
+              <img className="uiux-icon" src={icon || '/img/uiux-icon.png'} alt={title} />
             </div>
             <div className="sec__3__card__tt">
               <h4>{title}</h4>
