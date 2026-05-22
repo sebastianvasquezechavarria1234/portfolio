@@ -123,6 +123,11 @@ const ProjectCard = ({ href, githubHref, liveHref, img, num, title, desc }) => {
               <ExternalSvg className="w-5 h-5" />
             </a>
           </span>
+          <span className="absolute right-[48px]">
+            <a href={githubHref} target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex justify-center items-center bg-white/[0.076] shadow-[4px_4px_20px_rgba(0,0,0,0.098)] rounded-lg" title="Ver código">
+              <GithubSvg className="w-5 h-5" />
+            </a>
+          </span>
         </div>
       </div>
     )
