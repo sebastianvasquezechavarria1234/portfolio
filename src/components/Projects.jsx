@@ -68,7 +68,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
     liveHref: 'https://example.com/botones',
-    img: '/img/preview.png',
+    img: '/img/image-components.png',
     num: '#009',
     title: 'Botones Animados',
     desc: 'Sistema de botones con micro-interacciones y estados...',
@@ -76,7 +76,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
     liveHref: 'https://example.com/tarjetas',
-    img: '/img/preview.png',
+    img: '/img/image-components.png',
     num: '#010',
     title: 'Tarjetas de Producto',
     desc: 'Componentes de tarjeta con hover effects y transiciones...',
@@ -84,7 +84,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
     liveHref: 'https://example.com/formularios',
-    img: '/img/preview.png',
+    img: '/img/image-components.png',
     num: '#011',
     title: 'Formularios UX',
     desc: 'Formularios con validación en tiempo real y feedback visual...',
@@ -92,7 +92,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
     liveHref: 'https://example.com/navegacion',
-    img: '/img/preview.png',
+    img: '/img/image-components.png',
     num: '#012',
     title: 'Navegación Responsive',
     desc: 'Menús adaptativos con animaciones fluidas y accesibilidad...',
