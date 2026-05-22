@@ -69,7 +69,7 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <a href="#"><img src="/img/favicon-s.webp" alt="logo" />Sebas</a>
+              <a href="#"><img src="/img/favicon.webp" alt="logo" />Sebas</a>
             </li>
             <li>
               <a href="#experiencia">

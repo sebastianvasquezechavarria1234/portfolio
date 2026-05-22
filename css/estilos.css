@@ -1613,7 +1613,7 @@ header nav ul:nth-child(2) li a:hover {
 .sec__experience__card__rigth h4 p:nth-child(2) {
     opacity: 1;
     padding: 15px 0 15px 0;
-    background-image: url(../img/tt-purple.svg);
+    background-image: url(../img/title-purple.svg);
     background-repeat: no-repeat;
     font-style: italic;
     background-position-y: 100%;
@@ -1712,7 +1712,7 @@ header nav ul:nth-child(2) li a:hover {
     font-weight: 400;
     font-style: italic;
     color: var(--blue);
-    background-image: url(../img/tt-blue.svg);
+    background-image: url(../img/title-blue.svg);
     background-repeat: no-repeat;
     margin-bottom: 10px;
     padding-bottom: 10px;
@@ -1721,7 +1721,7 @@ header nav ul:nth-child(2) li a:hover {
 
 #underline.underlayActive {
     color: var(--blue-dark);
-    background-image: url(../img/tt-blue-dark.svg);
+    background-image: url(../img/title-dark-blue.svg);
 
 }
 
@@ -2174,7 +2174,7 @@ header nav ul:nth-child(2) li a:hover {
     border-radius: 24px;
     box-shadow: var(--box-shadow-card);
     border: var(--border-card);
-    background-image: url(../img/bg-proyec-1.webp), var(--linear-gradient-card-blur);
+    background-image: url(../img/bg-section-1.webp), var(--linear-gradient-card-blur);
     background-position: top;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -2182,16 +2182,16 @@ header nav ul:nth-child(2) li a:hover {
 }
 
 .sec__3__card:nth-child(2) {
-    background-image: url(../img/bg-proyec-4.webp), var(--linear-gradient-card-blur);
+    background-image: url(../img/bg-section-4.webp), var(--linear-gradient-card-blur);
 }
 
 
 .sec__3__card:nth-child(3) {
-    background-image: url(../img/bg-proyec-2.webp), var(--linear-gradient-card-blur);
+    background-image: url(../img/bg-section-2.webp), var(--linear-gradient-card-blur);
 }
 
 .sec__3__card:nth-child(4) {
-    background-image: url(../img/bg-proyec-3.webp), var(--linear-gradient-card-blur);
+    background-image: url(../img/bg-section-3.webp), var(--linear-gradient-card-blur);
 }
 
 .sec__3__card__img {
@@ -2554,7 +2554,7 @@ header nav ul:nth-child(2) li a:hover {
 }
 
 .sec__circle__card p {
-    background-image: url(../img/tt-purple.svg);
+    background-image: url(../img/title-purple.svg);
     background-repeat: no-repeat;
     background-position-y: 100%;
     padding-bottom: 15px;

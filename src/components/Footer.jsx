@@ -3,13 +3,13 @@ import { SocialLinks } from './Icons'
 const Gallery = () => (
   <section className="sec__galery">
     <div className="sec__galery__card">
-      <img src="/img/glery-4.webp" alt="Colombia" />
+      <img src="/img/gallery-4.webp" alt="Colombia" />
       <div className="sec__galery__card__tt">
         <p>Medellín, Colombia</p>
       </div>
     </div>
     <div className="sec__galery__card">
-      <img src="/img/glery-2.webp" alt="Colombia" />
+      <img src="/img/gallery-2.webp" alt="Colombia" />
       <div className="sec__galery__card__tt">
         <p>Medellín, Colombia</p>
       </div>

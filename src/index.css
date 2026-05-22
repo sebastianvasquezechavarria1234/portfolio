@@ -1662,7 +1662,7 @@ header nav ul:nth-child(2) li a::before {
 .sec__experience__card__right h4 p:nth-child(2) {
     opacity: 1;
     padding: 15px 0 15px 0;
-    background-image: url(/img/tt-purple.svg);
+    background-image: url(/img/title-purple.svg);
     background-repeat: no-repeat;
     font-style: italic;
     background-position-y: 100%;
@@ -1760,7 +1760,7 @@ header nav ul:nth-child(2) li a::before {
     display: inline-flex;
     font-weight: 400;
     color: var(--blue);
-    background-image: url(/img/tt-blue.svg);
+    background-image: url(/img/title-blue.svg);
     background-repeat: no-repeat;
     margin-bottom: 10px;
     padding-bottom: 10px;
@@ -1769,7 +1769,7 @@ header nav ul:nth-child(2) li a::before {
 
 #underline.underlayActive {
     color: var(--blue-dark);
-    background-image: url(/img/tt-blue-dark.svg);
+    background-image: url(/img/title-dark-blue.svg);
 
 }
 
@@ -2219,7 +2219,7 @@ header nav ul:nth-child(2) li a::before {
     border-radius: 24px;
     box-shadow: var(--box-shadow-card);
     border: var(--border-card);
-    background-image: url(/img/fondo-proyecto-matter.webp), var(--linear-gradient-card-blur);
+    background-image: url(/img/bg-project-matter.webp), var(--linear-gradient-card-blur);
     background-position: top;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -2227,16 +2227,16 @@ header nav ul:nth-child(2) li a::before {
 }
 
 .sec__3__card:nth-child(2) {
-    background-image: url(/img/fondo-proyecto-mustang.webp), var(--linear-gradient-card-blur);
+    background-image: url(/img/bg-project-mustang.webp), var(--linear-gradient-card-blur);
 }
 
 
 .sec__3__card:nth-child(3) {
-    background-image: url(/img/fondo-proyecto-breef.webp), var(--linear-gradient-card-blur);
+    background-image: url(/img/bg-project-breef.webp), var(--linear-gradient-card-blur);
 }
 
 .sec__3__card:nth-child(4) {
-    background-image: url(/img/fondo-proyecto-ginebra.webp), var(--linear-gradient-card-blur);
+    background-image: url(/img/bg-project-ginebra.webp), var(--linear-gradient-card-blur);
 }
 
 .sec__3__card__img {
@@ -2422,7 +2422,7 @@ header nav ul:nth-child(2) li a::before {
     display: block;
     width: 100%;
     height: 100%;
-    background: url(/img/background-components-1.jpg) center / cover no-repeat;
+    background: url(/img/bg-uiux.jpg) center / cover no-repeat;
     border-radius: inherit;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
@@ -2435,7 +2435,7 @@ header nav ul:nth-child(2) li a::before {
 
 .sec__3__card--uiux:nth-child(3) .sec__3__card__bg-deco,
 .sec__3__card--uiux:nth-child(4) .sec__3__card__bg-deco {
-    border-radius: 0px 0px 50px 50px;
+    border-radius: 0px 0px 50px 50px !important;
 }
 
 .sec__3__card--uiux .sec__3__card__img {
@@ -2710,7 +2710,7 @@ header nav ul:nth-child(2) li a::before {
 }
 
 .sec__circle__card p {
-    background-image: url(/img/tt-purple.svg);
+    background-image: url(/img/title-purple.svg);
     background-repeat: no-repeat;
     background-position-y: 100%;
     padding-bottom: 15px;

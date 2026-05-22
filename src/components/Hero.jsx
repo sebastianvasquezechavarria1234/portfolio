@@ -30,7 +30,7 @@ const Hero = () => (
           <AwardSvg />
         </a>
 
-        <a download href="/img/Sebastian-Vasquez-CV.pdf">
+        <a download href="/img/sebastian-vasquez-cv.pdf">
           Ver CV
           <DownloadSvg />
         </a>
@@ -43,16 +43,16 @@ const Hero = () => (
       </div>
 
       <picture>
-        <img id="heroCircle" src="/img/hero.webp" alt="hero" />
+        <img id="heroCircle" src="/img/hero-portrait.webp" alt="hero" />
         <div className="sec__hero__picture__card">
-          <img src="/img/chino.webp" alt="text" />
-          <img src="/img/letras-chinas.svg" alt="text" />
-          <img src="/img/emogi-8.webp" alt="emoji" id="sec__hero__emogi3" />
-          <img src="/img/emogi-corazon.png" alt="emoji" id="sec__hero__emogi4" />
+          <img src="/img/chinese-text.webp" alt="text" />
+          <img src="/img/chinese-letters.svg" alt="text" />
+          <img src="/img/emoji-star.webp" alt="emoji" id="sec__hero__emogi3" />
+          <img src="/img/emoji-heart.png" alt="emoji" id="sec__hero__emogi4" />
         </div>
-        <img src="/img/emogi-6.webp" alt="emoji" id="sec__hero__emogi1" />
-        <img src="/img/emogi-5.webp" alt="emoji" id="sec__hero__emogi2" />
-        <img src="/img/emogi-4.webp" alt="emoji" id="sec__hero__emogi5" />
+        <img src="/img/emoji-spark.webp" alt="emoji" id="sec__hero__emogi1" />
+        <img src="/img/emoji-fire.webp" alt="emoji" id="sec__hero__emogi2" />
+        <img src="/img/emoji-rocket.webp" alt="emoji" id="sec__hero__emogi5" />
       </picture>
     </section>
   </section>

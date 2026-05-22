@@ -41,9 +41,9 @@ const About = () => (
       <h2>Soy desarrollador web en constante formación, con pasión por el aprendizaje autónomo y la mejora continua.</h2>
       <p>Me llamo Sebastián Vásquez Echavarría. Desde que comencé mi viaje como <span>diseñador,</span> he trabajado y colaborado en varios proyectos con personas talentosas.</p>
       <p>Siempre he buscado oportunidades y desafíos que sean significativos para mí. Como <span>diseñador web,</span> disfruto usando mi atención obsesiva al detalle y mi amor por hacer las cosas de la mejor manera para lograr los mejores resultados.</p>
-      <img src="/img/emogi-escale.webp" alt="emoji" />
-      <img src="/img/emogi-8.webp" alt="emoji" />
-      <img src="/img/emogi-corazon.png" alt="emoji" />
+      <img src="/img/emoji-scale.webp" alt="emoji" />
+      <img src="/img/emoji-star.webp" alt="emoji" />
+      <img src="/img/emoji-heart.png" alt="emoji" />
     </div>
 
     <div className="sec__sobre__ctn__refent">

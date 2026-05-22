@@ -5,28 +5,28 @@ import { ArrowSvg, HoverLinePath, GithubSvg, ExternalSvg } from './Icons'
 const myProjects = [
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/matter',
-    img: '/img/matter.webp',
+    img: '/img/project-matter.webp',
     num: '#001',
     title: 'Matter',
     desc: 'Viernes de comentario...',
   },
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/Ford-Mustang',
-    img: '/img/mustang.webp',
+    img: '/img/project-mustang.webp',
     num: '#002',
     title: 'Ford Mustang',
     desc: '¿Estás listo para tomar el...',
   },
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/breef-version1.1',
-    img: '/img/breef.webp',
+    img: '/img/project-breef.webp',
     num: '#003',
     title: 'Breef',
     desc: '¿Quieres encontrar trabajo...',
   },
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/ginebra',
-    img: '/img/ginebra.webp',
+    img: '/img/project-ginebra.webp',
     num: '#004',
     title: 'Ginebra',
     desc: 'Doce sabores diferentes...',
@@ -36,28 +36,28 @@ const myProjects = [
 const clonedProjects = [
   {
     href: '#',
-    img: '/img/mustang.webp',
+    img: '/img/project-mustang.webp',
     num: '#005',
     title: 'Tesla Clone',
     desc: 'Réplica de la interfaz de Tesla...',
   },
   {
     href: '#',
-    img: '/img/matter.webp',
+    img: '/img/project-matter.webp',
     num: '#006',
     title: 'Apple Music Clone',
     desc: 'Experiencia musical inmersiva...',
   },
   {
     href: '#',
-    img: '/img/ginebra.webp',
+    img: '/img/project-ginebra.webp',
     num: '#007',
     title: 'Airbnb Clone',
     desc: 'Sistema de reservas dinámico...',
   },
   {
     href: '#',
-    img: '/img/breef.webp',
+    img: '/img/project-breef.webp',
     num: '#008',
     title: 'GitHub UI',
     desc: 'Rediseño de la interfaz de Git...',
@@ -68,7 +68,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
     liveHref: 'https://example.com/botones',
-    img: '/img/image-components.png',
+    img: '/img/uiux-preview.png',
     num: '#009',
     title: 'Botones Animados',
     desc: 'Sistema de botones con micro-interacciones y estados...',
@@ -76,7 +76,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
     liveHref: 'https://example.com/tarjetas',
-    img: '/img/image-components.png',
+    img: '/img/uiux-preview.png',
     num: '#010',
     title: 'Tarjetas de Producto',
     desc: 'Componentes de tarjeta con hover effects y transiciones...',
@@ -84,7 +84,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
     liveHref: 'https://example.com/formularios',
-    img: '/img/image-components.png',
+    img: '/img/uiux-preview.png',
     num: '#011',
     title: 'Formularios UX',
     desc: 'Formularios con validación en tiempo real y feedback visual...',
@@ -92,7 +92,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
     liveHref: 'https://example.com/navegacion',
-    img: '/img/image-components.png',
+    img: '/img/uiux-preview.png',
     num: '#012',
     title: 'Navegación Responsive',
     desc: 'Menús adaptativos con animaciones fluidas y accesibilidad...',
@@ -112,7 +112,7 @@ const ProjectCard = ({ href, githubHref, liveHref, img, num, title, desc }) => {
         </div>
         <div className="sec__3__card__flex">
           <div className="sec__3__card__flex___number sec__3__card__flex___preview">
-            <img src="/img/icon-components.png" alt={title} />
+            <img src="/img/uiux-icon.png" alt={title} />
           </div>
           <div className="sec__3__card__tt">
             <h4>{title}</h4>

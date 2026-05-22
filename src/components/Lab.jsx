@@ -26,14 +26,14 @@ const Lab = () => (
         ))}
       </div>
 
-      <img src="/img/cicle-gradient.webp" alt="gradient" />
-      <img src="/img/circle-gradient-responsive.webp" alt="gradient" />
-      <img src="/img/emogi-1.webp" alt="emoji" id="cicle__gradient__emogi1" />
-      <img src="/img/emogi-gafas.webp" alt="emoji" id="cicle__gradient__emogi2" />
-      <img src="/img/emogi-linea-purple.webp" alt="emoji" id="cicle__gradient__emogi3" />
-      <img src="/img/emogi-estrella.webp" alt="emoji" id="cicle__gradient__emogi4" />
-      <img src="/img/emogi-circle-pink.webp" alt="emoji" id="cicle__gradient__emogi5" />
-      <img src="/img/emogi-gatas.webp" alt="emoji" id="cicle__gradient__emogi6" />
+      <img src="/img/circle-gradient-big.webp" alt="gradient" />
+      <img src="/img/circle-gradient-small.webp" alt="gradient" />
+      <img src="/img/emoji-idea.webp" alt="emoji" id="cicle__gradient__emogi1" />
+      <img src="/img/emoji-glasses.webp" alt="emoji" id="cicle__gradient__emogi2" />
+      <img src="/img/emoji-line-purple.webp" alt="emoji" id="cicle__gradient__emogi3" />
+      <img src="/img/emoji-star-outline.webp" alt="emoji" id="cicle__gradient__emogi4" />
+      <img src="/img/emoji-circle-pink.webp" alt="emoji" id="cicle__gradient__emogi5" />
+      <img src="/img/emoji-cat.webp" alt="emoji" id="cicle__gradient__emogi6" />
 
       <div className="sec__circle__right">
         {labCards.right.map((text, i) => (

@@ -12,12 +12,12 @@ const topics = [
 
 const Blog = () => (
   <section id="blog" className="sec__blog">
-    <img src="/img/emogi-7.webp" alt="emoji" />
-    <img src="/img/emogi-megafono.webp" alt="emoji" />
-    <img src="/img/emogi-corazon.png" alt="emoji" />
-    <img src="/img/emogi-linea-blue.webp" alt="emoji" />
-    <img src="/img/emogi-sonriendo.webp" alt="emoji" />
-    <img src="/img/emogi-estrella.webp" alt="emoji" />
+    <img src="/img/emoji-bulb.webp" alt="emoji" />
+    <img src="/img/emoji-megaphone.webp" alt="emoji" />
+    <img src="/img/emoji-heart.png" alt="emoji" />
+    <img src="/img/emoji-line-blue.webp" alt="emoji" />
+    <img src="/img/emoji-smile.webp" alt="emoji" />
+    <img src="/img/emoji-star-outline.webp" alt="emoji" />
 
     <div className="linear__color">
       {Array.from({ length: 10 }).map((_, i) => <span key={i}></span>)}
@@ -29,7 +29,7 @@ const Blog = () => (
     </div>
 
     <div className="cardDarkProyect sec__blog__card">
-      <img src="/img/emogi-confeti.webp" alt="emoji" />
+      <img src="/img/emoji-confetti.webp" alt="emoji" />
       {topics.map((topic) => (
         <a key={topic} target="_blank" rel="noopener noreferrer" href={BLOG_LINK}>{topic}</a>
       ))}
