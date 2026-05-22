@@ -1517,6 +1517,12 @@ header nav ul:nth-child(2) li a::before {
         transform: translate(60px, 0px);
     }
 
+    #heroPhone {
+        width: 130px;
+        margin-left: -40px;
+        margin-right: 10px;
+    }
+
     .sec__hero__picture__card {
         height: 70vw;
         width: 45vw;
@@ -1560,6 +1566,12 @@ header nav ul:nth-child(2) li a::before {
         width: 35px;
         height: 35px;
         margin-top: -10px;
+    }
+
+    #heroPhone {
+        width: 80px;
+        margin-left: -20px;
+        margin-right: 5px;
     }
 }
 
