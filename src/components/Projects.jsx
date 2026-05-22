@@ -64,6 +64,37 @@ const clonedProjects = [
   },
 ]
 
+const uiuxComponents = [
+  {
+    href: '#',
+    img: '/img/captura-diseno-ui.png',
+    num: '#009',
+    title: 'Botones Animados',
+    desc: 'Sistema de botones con micro-interacciones y estados...',
+  },
+  {
+    href: '#',
+    img: '/img/captura-diseno-ui.png',
+    num: '#010',
+    title: 'Tarjetas de Producto',
+    desc: 'Componentes de tarjeta con hover effects y transiciones...',
+  },
+  {
+    href: '#',
+    img: '/img/captura-diseno-ui.png',
+    num: '#011',
+    title: 'Formularios UX',
+    desc: 'Formularios con validación en tiempo real y feedback visual...',
+  },
+  {
+    href: '#',
+    img: '/img/captura-diseno-ui.png',
+    num: '#012',
+    title: 'Navegación Responsive',
+    desc: 'Menús adaptativos con animaciones fluidas y accesibilidad...',
+  },
+]
+
 const ProjectCard = ({ href, img, num, title, desc }) => (
   <a
     target="_blank"
@@ -91,7 +122,7 @@ const ProjectCard = ({ href, img, num, title, desc }) => (
 )
 
 const Projects = () => {
-  const [activeSlide, setActiveSlide] = useState(false)
+  const [activeOption, setActiveOption] = useState('my')
 
   return (
     <section id="proyectos" className="sec__3">
@@ -104,30 +135,41 @@ const Projects = () => {
         <div 
           className="control__active__bg" 
           style={{ 
-            transform: activeSlide ? 'translateX(calc(100% + 3px))' : 'translateX(0)' 
+            transform: activeOption === 'my'
+              ? 'translateX(0)'
+              : activeOption === 'cloned'
+              ? 'translateX(calc(100% + 3px))'
+              : 'translateX(calc(200% + 6px))'
           }}
         ></div>
         <p
           id="controls1"
-          className={!activeSlide ? 'controlActive' : 'controlDesactive'}
-          onClick={() => setActiveSlide(false)}
+          className={activeOption === 'my' ? 'controlActive' : 'controlDesactive'}
+          onClick={() => setActiveOption('my')}
         >
           Mis Proyectos
         </p>
         <p
           id="controls2"
-          className={activeSlide ? 'controlActive' : 'controlDesactive'}
-          onClick={() => setActiveSlide(true)}
+          className={activeOption === 'cloned' ? 'controlActive' : 'controlDesactive'}
+          onClick={() => setActiveOption('cloned')}
         >
           Proyectos Clonados
+        </p>
+        <p
+          id="controls3"
+          className={activeOption === 'uiux' ? 'controlActive' : 'controlDesactive'}
+          onClick={() => setActiveOption('uiux')}
+        >
+          Componentes UI-UX
         </p>
       </div>
 
       <div className="sec__3__slider" style={{ overflow: 'hidden', padding: '20px 0' }}>
         <motion.div
-          style={{ display: 'flex', width: '200%' }}
+          style={{ display: 'flex', width: '300%' }}
           animate={{
-            x: activeSlide ? '-50%' : '0%',
+            x: activeOption === 'my' ? '0%' : activeOption === 'cloned' ? '-33.333%' : '-66.666%',
           }}
           transition={{
             x: { type: 'spring', stiffness: 200, damping: 18 },
@@ -135,8 +177,8 @@ const Projects = () => {
         >
           <motion.div
             className="sec__3__flexbox"
-            style={{ width: '50%', margin: 0 }}
-            animate={{ filter: activeSlide ? 'blur(12px)' : 'blur(0px)' }}
+            style={{ width: '33.333%', margin: 0 }}
+            animate={{ filter: activeOption !== 'my' ? 'blur(12px)' : 'blur(0px)' }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
             {myProjects.map((p) => (
@@ -145,11 +187,21 @@ const Projects = () => {
           </motion.div>
           <motion.div
             className="sec__3__flexbox"
-            style={{ width: '50%', margin: 0 }}
-            animate={{ filter: activeSlide ? 'blur(0px)' : 'blur(12px)' }}
+            style={{ width: '33.333%', margin: 0 }}
+            animate={{ filter: activeOption !== 'cloned' ? 'blur(12px)' : 'blur(0px)' }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
             {clonedProjects.map((p) => (
+              <ProjectCard key={p.num} {...p} />
+            ))}
+          </motion.div>
+          <motion.div
+            className="sec__3__flexbox"
+            style={{ width: '33.333%', margin: 0 }}
+            animate={{ filter: activeOption !== 'uiux' ? 'blur(12px)' : 'blur(0px)' }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+          >
+            {uiuxComponents.map((p) => (
               <ProjectCard key={p.num} {...p} />
             ))}
           </motion.div>

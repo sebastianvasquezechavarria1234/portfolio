@@ -2130,7 +2130,7 @@ header nav ul:nth-child(2) li a::before {
 .sec__3__controls {
     position: sticky;
     top: 80px;
-    max-width: 400px;
+    max-width: 650px;
     text-align: center;
     margin: 0 auto;
     display: flex;
@@ -2147,7 +2147,7 @@ header nav ul:nth-child(2) li a::before {
     position: absolute;
     top: 3px;
     left: 3px;
-    width: calc(50% - 4.5px);
+    width: calc(33.333% - 4.5px);
     height: calc(100% - 6px);
     border-radius: 5px;
     box-shadow: 8px 8px 24px 0 rgba(9, 13, 20, .4), -4px -4px 8px 0 rgba(224, 224, 255, .04), 0 1px 1px 0 rgba(9, 13, 20, .4);
@@ -2345,6 +2345,53 @@ header nav ul:nth-child(2) li a::before {
     stroke: var(--yellow);
 }
 
+.sec__3__card:nth-child(5) {
+    background-image: url(/img/fondo-proyecto-breef.webp), var(--linear-gradient-card-blur);
+}
+
+.sec__3__card:nth-child(6) {
+    background-image: url(/img/fondo-proyecto-ginebra.webp), var(--linear-gradient-card-blur);
+}
+
+.sec__3__card:nth-child(7) {
+    background-image: url(/img/fondo-proyecto-mustang.webp), var(--linear-gradient-card-blur);
+}
+
+.sec__3__card:nth-child(8) {
+    background-image: url(/img/fondo-proyecto-matter.webp), var(--linear-gradient-card-blur);
+}
+
+.sec__3__card:nth-child(5) .sec__3__card__flex___number {
+    background-color: var(--orange);
+}
+
+.sec__3__card:nth-child(5) .sec__3__card__img svg path {
+    stroke: var(--orange);
+}
+
+.sec__3__card:nth-child(6) .sec__3__card__flex___number {
+    background-color: var(--blue-dark);
+}
+
+.sec__3__card:nth-child(6) .sec__3__card__img svg path {
+    stroke: var(--blue-dark);
+}
+
+.sec__3__card:nth-child(7) .sec__3__card__flex___number {
+    background-color: var(--green);
+}
+
+.sec__3__card:nth-child(7) .sec__3__card__img svg path {
+    stroke: var(--green);
+}
+
+.sec__3__card:nth-child(8) .sec__3__card__flex___number {
+    background-color: var(--purple);
+}
+
+.sec__3__card:nth-child(8) .sec__3__card__img svg path {
+    stroke: var(--purple);
+}
 
 @media screen and (max-width: 880px) {
     .sec__3__card {
