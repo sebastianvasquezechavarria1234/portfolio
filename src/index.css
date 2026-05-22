@@ -2412,8 +2412,9 @@ header nav ul:nth-child(2) li a::before {
 }
 
 .sec__3__card--uiux .sec__3__card__flex {
-    background: rgba(9, 13, 20, 0.7);
-    backdrop-filter: blur(12px);
+    background: linear-gradient(to bottom, rgba(9, 13, 20, 0.1) 0%, rgba(9, 13, 20, 0.9) 50%);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     padding: 16px 24px;
     margin: 0 -24px -24px;
     border-radius: 0 0 24px 24px;
