@@ -2401,6 +2401,7 @@ header nav ul:nth-child(2) li a::before {
 
 /* UI-UX card: decorative background block behind the image */
 .sec__3__card--uiux {
+    background-image: none !important;
     overflow: hidden;
 }
 
@@ -2425,6 +2426,11 @@ header nav ul:nth-child(2) li a::before {
     border-radius: inherit;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.sec__3__card--uiux .sec__3__card__img {
+    position: relative;
+    z-index: 1;
 }
 
 .sec__3__card--uiux .sec__3__card__flex___number {
