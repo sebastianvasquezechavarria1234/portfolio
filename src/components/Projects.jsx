@@ -118,6 +118,14 @@ const ProjectCard = ({ href, githubHref, liveHref, img, num, title, desc }) => {
             <h4>{title}</h4>
             <p>{desc}</p>
           </div>
+          <span className="sec__3__card__actions">
+            <a href={liveHref} target="_blank" rel="noopener noreferrer" className="sec__3__card__action-btn" title="Ver página">
+              <ExternalSvg />
+            </a>
+            <a href={githubHref} target="_blank" rel="noopener noreferrer" className="sec__3__card__action-btn" title="Ver código">
+              <GithubSvg />
+            </a>
+          </span>
         </div>
       </div>
     )
