@@ -2328,36 +2328,38 @@ header nav ul:nth-child(2) li a::before {
 .sec__3__card__actions {
     position: absolute;
     right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
-    gap: 6px;
+    gap: 8px;
 }
 
 .sec__3__card__action-btn {
-    width: 44px;
-    height: 44px;
+    width: 42px;
+    height: 42px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.098);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s;
 }
 
 .sec__3__card__action-btn:hover {
-    background-color: rgba(255, 255, 255, 0.16);
-    border-color: rgba(255, 255, 255, 0.2);
-    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.25);
+    transform: scale(1.05);
 }
 
 .sec__3__card__action-btn svg {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
 }
 
-.sec__3__card__action-btn svg path {
-    stroke-width: 2;
+.sec__3__card__action-btn svg * {
+    fill: none;
 }
 
 .sec__3__card:nth-child(2) .sec__3__card__flex___number {
