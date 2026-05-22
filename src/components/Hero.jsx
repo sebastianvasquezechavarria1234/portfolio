@@ -43,6 +43,7 @@ const Hero = () => (
       </div>
 
       <picture>
+        <img src="/img/iphone.png" alt="phone" id="heroPhone" />
         <img id="heroCircle" src="/img/hero-portrait.webp" alt="hero" />
         <div className="sec__hero__picture__card">
           <img src="/img/chinese-text.webp" alt="text" />

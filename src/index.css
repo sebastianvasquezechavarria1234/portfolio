@@ -1378,13 +1378,21 @@ header nav ul:nth-child(2) li a::before {
 
 }
 
-.sec__hero picture img:nth-child(1) {
+.sec__hero picture img:nth-child(2) {
     transform: translateY(-100px);
 }
 
 .sec__hero picture img {
     width: 100%;
 
+}
+
+#heroPhone {
+    width: 220px;
+    margin-left: -80px;
+    margin-right: 20px;
+    position: relative;
+    z-index: 5;
 }
 
 .sec__hero__picture__card {
@@ -1505,7 +1513,7 @@ header nav ul:nth-child(2) li a::before {
         transform: translate(0px, 0px);
     }
 
-    .sec__hero picture img:nth-child(1) {
+    .sec__hero picture img:nth-child(2) {
         transform: translate(60px, 0px);
     }
 
