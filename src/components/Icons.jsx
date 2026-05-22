@@ -128,6 +128,12 @@ export const HoverLinePath = () => (
     />
   </svg>
 )
+export const ExternalSvg = ({ color = '#ffffff' }) => (
+  <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7 17L17 7M17 7H8M17 7V16" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+)
+
 export const ScrollTopSvg = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 47 47" fill="none" style={{ transform: 'rotate(-90deg)' }}>
     <g clipPath="url(#clip0_323_1808)">

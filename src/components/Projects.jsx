@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { ArrowSvg, HoverLinePath } from './Icons'
+import { ArrowSvg, HoverLinePath, GithubSvg, ExternalSvg } from './Icons'
 
 const myProjects = [
   {
@@ -66,28 +66,32 @@ const clonedProjects = [
 
 const uiuxComponents = [
   {
-    href: '#',
+    githubHref: 'https://github.com/sebastianvasquezechavarria1234',
+    liveHref: 'https://example.com/botones',
     img: '/img/captura-diseno-ui.png',
     num: '#009',
     title: 'Botones Animados',
     desc: 'Sistema de botones con micro-interacciones y estados...',
   },
   {
-    href: '#',
+    githubHref: 'https://github.com/sebastianvasquezechavarria1234',
+    liveHref: 'https://example.com/tarjetas',
     img: '/img/captura-diseno-ui.png',
     num: '#010',
     title: 'Tarjetas de Producto',
     desc: 'Componentes de tarjeta con hover effects y transiciones...',
   },
   {
-    href: '#',
+    githubHref: 'https://github.com/sebastianvasquezechavarria1234',
+    liveHref: 'https://example.com/formularios',
     img: '/img/captura-diseno-ui.png',
     num: '#011',
     title: 'Formularios UX',
     desc: 'Formularios con validación en tiempo real y feedback visual...',
   },
   {
-    href: '#',
+    githubHref: 'https://github.com/sebastianvasquezechavarria1234',
+    liveHref: 'https://example.com/navegacion',
     img: '/img/captura-diseno-ui.png',
     num: '#012',
     title: 'Navegación Responsive',
@@ -95,31 +99,63 @@ const uiuxComponents = [
   },
 ]
 
-const ProjectCard = ({ href, img, num, title, desc }) => (
-  <a
-    target="_blank"
-    rel="noopener noreferrer"
-    href={href}
-    className="cardDarkProyect sec__3__card"
-  >
-    <div className="sec__3__card__img">
-      <img src={img} alt={`Captura del proyecto ${title}`} />
-      <HoverLinePath />
-    </div>
-    <div className="sec__3__card__flex">
-      <div className="sec__3__card__flex___number">
-        <h5>{num}</h5>
+const ProjectCard = ({ href, githubHref, liveHref, img, num, title, desc }) => {
+  const isUiux = githubHref && liveHref
+
+  if (isUiux) {
+    return (
+      <div className="cardDarkProyect sec__3__card">
+        <div className="sec__3__card__img">
+          <img src={img} alt={`Captura del proyecto ${title}`} />
+          <HoverLinePath />
+        </div>
+        <div className="sec__3__card__flex">
+          <div className="sec__3__card__flex___number">
+            <h5>{num}</h5>
+          </div>
+          <div className="sec__3__card__tt">
+            <h4>{title}</h4>
+            <p>{desc}</p>
+          </div>
+          <span className="sec__3__card__actions">
+            <a href={liveHref} target="_blank" rel="noopener noreferrer" className="sec__3__card__action-btn" title="Ver página">
+              <ExternalSvg />
+            </a>
+            <a href={githubHref} target="_blank" rel="noopener noreferrer" className="sec__3__card__action-btn" title="Ver código">
+              <GithubSvg />
+            </a>
+          </span>
+        </div>
       </div>
-      <div className="sec__3__card__tt">
-        <h4>{title}</h4>
-        <p>{desc}</p>
+    )
+  }
+
+  return (
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href={href}
+      className="cardDarkProyect sec__3__card"
+    >
+      <div className="sec__3__card__img">
+        <img src={img} alt={`Captura del proyecto ${title}`} />
+        <HoverLinePath />
       </div>
-      <span>
-        <ArrowSvg />
-      </span>
-    </div>
-  </a>
-)
+      <div className="sec__3__card__flex">
+        <div className="sec__3__card__flex___number">
+          <h5>{num}</h5>
+        </div>
+        <div className="sec__3__card__tt">
+          <h4>{title}</h4>
+          <p>{desc}</p>
+        </div>
+        <span>
+          <ArrowSvg />
+        </span>
+      </div>
+    </a>
+  )
+}
 
 const Projects = () => {
   const [activeOption, setActiveOption] = useState('my')

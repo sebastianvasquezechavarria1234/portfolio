@@ -2321,6 +2321,35 @@ header nav ul:nth-child(2) li a::before {
     fill: currentColor;
 }
 
+.sec__3__card__actions {
+    position: absolute;
+    right: 0px;
+    display: flex;
+    gap: 8px;
+}
+
+.sec__3__card__action-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.076);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.098);
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.sec__3__card__action-btn:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: scale(1.1);
+}
+
+.sec__3__card__action-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
 .sec__3__card:nth-child(2) .sec__3__card__flex___number {
     background-color: var(--blue);
 }
