@@ -168,14 +168,14 @@ const Projects = () => {
       </div>
 
       <div className="sec__3__controls">
-        <div 
-          className="control__active__bg" 
-          style={{ 
+        <div
+          className="control__active__bg"
+          style={{
             transform: activeOption === 'my'
               ? 'translateX(0)'
               : activeOption === 'cloned'
-              ? 'translateX(calc(100% + 3px))'
-              : 'translateX(calc(200% + 6px))'
+                ? 'translateX(calc(100% + 3px))'
+                : 'translateX(calc(200% + 6px))'
           }}
         ></div>
         <p
