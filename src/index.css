@@ -2433,6 +2433,11 @@ header nav ul:nth-child(2) li a::before {
     clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
 }
 
+.sec__3__card--uiux:nth-child(3) .sec__3__card__bg-deco,
+.sec__3__card--uiux:nth-child(4) .sec__3__card__bg-deco {
+    border-radius: 0px 0px 50px 50px;
+}
+
 .sec__3__card--uiux .sec__3__card__img {
     position: relative;
     z-index: 1;
