@@ -1329,7 +1329,7 @@ header nav ul:nth-child(2) li a:hover {
 
 }
 
-.sec__hero picture img:nth-child(2) {
+.sec__hero picture img:nth-child(1) {
     transform: translateY(-100px);
 }
 
@@ -1456,7 +1456,7 @@ header nav ul:nth-child(2) li a:hover {
         transform: translate(0px, 0px);
     }
 
-    .sec__hero picture img:nth-child(2) {
+    .sec__hero picture img:nth-child(1) {
         transform: translate(60px, 0px);
     }
 
