@@ -2417,37 +2417,16 @@ header nav ul:nth-child(2) li a::before {
     border-radius: 0 0 24px 24px;
 }
 
-.sec__3__card__wave-deco {
+.sec__3__card__bg-deco {
     position: absolute;
     top: 0;
     left: -24px;
     width: calc(100% + 48px);
-    height: 75%;
-    overflow: hidden;
+    height: 50%;
     pointer-events: none;
     z-index: 0;
-    background: linear-gradient(180deg, rgba(255,255,255,0.02) 0%, transparent 60%);
-}
-
-.sec__3__card__wave-deco::before {
-    content: "";
-    position: absolute;
-    width: 55%;
-    height: 109%;
-    background: rgba(255, 255, 255, 0.04);
-    border-radius: 100% 50%;
-    right: -1.5%;
-    bottom: 0;
-}
-
-.sec__3__card__wave-deco::after {
-    content: "";
-    position: absolute;
-    width: 55%;
-    height: 100%;
-    border-radius: 100% 50%;
-    left: -1.5%;
-    bottom: 10%;
+    background: var(--orange);
+    border-radius: 24px 24px 0 0;
 }
 
 .sec__3__card--uiux .sec__3__card__img {

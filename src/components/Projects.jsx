@@ -126,7 +126,7 @@ const ProjectCard = ({ href, githubHref, liveHref, img, num, title, desc }) => {
             </a>
           </span>
         </div>
-        <div className="sec__3__card__wave-deco"></div>
+        <div className="sec__3__card__bg-deco"></div>
       </div>
     )
   }
