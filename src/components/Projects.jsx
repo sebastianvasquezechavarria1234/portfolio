@@ -110,8 +110,8 @@ const ProjectCard = ({ href, githubHref, liveHref, img, num, title, desc }) => {
           <HoverLinePath />
         </div>
         <div className="sec__3__card__flex">
-          <div className="sec__3__card__flex___number">
-            <h5>{num}</h5>
+          <div className="sec__3__card__flex___number sec__3__card__flex___preview">
+            <img src={img} alt={title} />
           </div>
           <div className="sec__3__card__tt">
             <h4>{title}</h4>

@@ -2298,6 +2298,19 @@ header nav ul:nth-child(2) li a::before {
     align-items: center;
     border-radius: 50%;
     color: var(--gray-dark);
+    overflow: hidden;
+}
+
+.sec__3__card__flex___preview {
+    padding: 0;
+    background-color: transparent;
+}
+
+.sec__3__card__flex___preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .sec__3__card__tt {
