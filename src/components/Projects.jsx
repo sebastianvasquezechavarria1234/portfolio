@@ -109,6 +109,7 @@ const ProjectCard = ({ href, githubHref, liveHref, img, num, title, desc }) => {
           <img src={img} alt={`Captura del proyecto ${title}`} />
           <HoverLinePath />
         </div>
+        <div className="sec__3__card__wave"></div>
         <div className="sec__3__card__flex">
           <div className="sec__3__card__flex___number sec__3__card__flex___preview">
             <img src="/img/icon-components.png" alt={title} />
