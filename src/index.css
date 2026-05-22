@@ -2413,39 +2413,6 @@ header nav ul:nth-child(2) li a::before {
     stroke: var(--orange);
 }
 
-.sec__3__card__wave {
-    position: relative;
-    height: 60px;
-    margin: 0 -24px;
-    overflow: hidden;
-    pointer-events: none;
-    background: linear-gradient(to bottom, rgba(9, 13, 20, 0) 0%, rgba(9, 13, 20, 0.05) 20%, rgba(9, 13, 20, 0.5) 50%, rgba(9, 13, 20, 0.95) 100%);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-}
-
-.sec__3__card__wave::before {
-    content: "";
-    position: absolute;
-    width: 55%;
-    height: 109%;
-    background: rgba(255, 255, 255, 0.04);
-    border-radius: 100% 50%;
-    right: -1.5%;
-    top: -30%;
-}
-
-.sec__3__card__wave::after {
-    content: "";
-    position: absolute;
-    width: 55%;
-    height: 100%;
-    background: transparent;
-    border-radius: 100% 50%;
-    left: -1.5%;
-    top: -50%;
-}
-
 .sec__3__card--uiux .sec__3__card__flex {
     background: linear-gradient(to bottom, rgba(9, 13, 20, 0) 0%, rgba(9, 13, 20, 0.05) 20%, rgba(9, 13, 20, 0.5) 50%, rgba(9, 13, 20, 0.95) 100%);
     backdrop-filter: blur(16px);
