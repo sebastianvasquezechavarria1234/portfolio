@@ -118,12 +118,12 @@ const ProjectCard = ({ href, githubHref, liveHref, img, num, title, desc }) => {
             <h4>{title}</h4>
             <p>{desc}</p>
           </div>
-          <span className="sec__3__card__actions">
-            <a href={liveHref} target="_blank" rel="noopener noreferrer" className="sec__3__card__action-btn" title="Ver página">
-              <ExternalSvg />
+          <span className="absolute right-0 top-1/2 -translate-y-1/2 flex gap-2">
+            <a href={liveHref} target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex justify-center items-center bg-white/10 shadow-[4px_4px_20px_rgba(0,0,0,0.098)] rounded-lg transition-all duration-300 hover:bg-white/20" title="Ver página">
+              <ExternalSvg className="w-5 h-5" />
             </a>
-            <a href={githubHref} target="_blank" rel="noopener noreferrer" className="sec__3__card__action-btn" title="Ver código">
-              <GithubSvg />
+            <a href={githubHref} target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex justify-center items-center bg-white/10 shadow-[4px_4px_20px_rgba(0,0,0,0.098)] rounded-lg transition-all duration-300 hover:bg-white/20" title="Ver código">
+              <GithubSvg className="w-5 h-5" />
             </a>
           </span>
         </div>
