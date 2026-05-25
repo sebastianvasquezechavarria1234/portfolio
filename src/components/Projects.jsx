@@ -68,7 +68,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
     liveHref: 'https://example.com/botones',
-    img: '/img/uiux-preview.webp',
+    img: '/img/uiux-icon.png',
     num: '#009',
     title: 'Botones Animados',
     desc: 'Sistema de botones con micro-interacciones y estados...',
@@ -76,8 +76,8 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
     liveHref: 'https://example.com/tarjetas',
-    img: '/img/uiux-preview-2.webp',
-    icon: '/img/uiux-icon-2.webp',
+    img: '/img/paso.png',
+    icon: '/img/bg-uiux-2.webp',
     num: '#010',
     title: 'Tarjetas de Producto',
     desc: 'Componentes de tarjeta con hover effects y transiciones...',
@@ -85,7 +85,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
     liveHref: 'https://example.com/formularios',
-    img: '/img/uiux-preview.webp',
+    img: '/img/preview-3.png',
     num: '#011',
     title: 'Formularios UX',
     desc: 'Formularios con validación en tiempo real y feedback visual...',
@@ -106,7 +106,6 @@ const ProjectCard = ({ href, githubHref, liveHref, img, num, title, desc, icon }
   if (isUiux) {
     return (
       <div className="cardDarkProyect sec__3__card sec__3__card--uiux">
-        <div className="sec__3__card__bg-deco"></div>
         <div className="sec__3__card__img">
           <img src={img} alt={`Captura del proyecto ${title}`} />
           <HoverLinePath />
@@ -115,7 +114,7 @@ const ProjectCard = ({ href, githubHref, liveHref, img, num, title, desc, icon }
           <div className="flex items-center gap-3 w-[85%]">
             <div className="sec__3__card__flex___number">
               <h5 className="uiux-num">{num}</h5>
-              <img className="uiux-icon" src={icon || '/img/uiux-icon.png'} alt={title} />
+              <img className="uiux-icon" src={icon || '/img/bg-uiux.webp'} alt={title} />
             </div>
             <div className="sec__3__card__tt">
               <h4>{title}</h4>
