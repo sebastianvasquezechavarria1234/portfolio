@@ -2440,49 +2440,6 @@ header nav ul:nth-child(2) li a::before {
     }
 }
 
-/* Floating emojis for project cards */
-.emojis-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 50;
-    opacity: 0;
-    filter: blur(10px);
-    transform: scale(0.3) translateY(30px);
-    transition: opacity 0.4s ease, filter 0.4s ease, transform 0.4s ease;
-}
-
-.emojis-container.emojis-active {
-    opacity: 1;
-    filter: blur(0px);
-    transform: scale(1) translateY(0px);
-}
-
-.project-emoji {
-    position: absolute;
-}
-
-@keyframes emojiFloat1 {
-    0%, 100% {
-        transform: translateY(-8px) rotate(-5deg);
-    }
-    50% {
-        transform: translateY(12px) rotate(5deg);
-    }
-}
-
-@keyframes emojiFloat2 {
-    0%, 100% {
-        transform: translateY(10px) rotate(5deg);
-    }
-    50% {
-        transform: translateY(-15px) rotate(-5deg);
-    }
-}
-
 /* sec blog */
 
 .sec__blog {

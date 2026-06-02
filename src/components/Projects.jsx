@@ -2,40 +2,6 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { ArrowSvg, HoverLinePath, GithubSvg, ExternalSvg } from './Icons'
 
-const emojisData = [
-  { src: '/img/emoji-megaphone.webp', alt: 'megaphone', width: '100px', top: '-25px', left: '-20px', anim: 'emojiFloat1 4s ease-in-out infinite' },
-  { src: '/img/emoji-star.webp', alt: 'star', width: '100px', top: '-30px', right: '15px', anim: 'emojiFloat2 5s ease-in-out infinite' },
-  { src: '/img/emoji-confetti.webp', alt: 'confetti', width: '100px', bottom: '-25px', left: '5%', anim: 'emojiFloat1 6s ease-in-out infinite' },
-  { src: '/img/emoji-circle-blue.png', alt: 'circle blue', width: '50px', top: '40%', left: '-25px', anim: 'emojiFloat2 4.5s ease-in-out infinite' },
-  { src: '/img/emoji-circle-pink.webp', alt: 'circle pink', width: '45px', top: '30%', right: '-20px', anim: 'emojiFloat1 5.5s ease-in-out infinite' },
-  { src: '/img/emoji-rocket.webp', alt: 'rocket', width: '40px', bottom: '20%', right: '-15px', anim: 'emojiFloat2 5s ease-in-out infinite' },
-  { src: '/img/emoji-fire.webp', alt: 'fire', width: '35px', top: '10%', left: '50%', anim: 'emojiFloat1 6s ease-in-out infinite' },
-  { src: '/img/emoji-bulb.webp', alt: 'bulb', width: '45px', bottom: '-20px', right: '40%', anim: 'emojiFloat2 4s ease-in-out infinite' },
-]
-
-const FloatingEmojis = ({ isHovered }) => {
-  return (
-    <div className={`emojis-container ${isHovered ? 'emojis-active' : ''}`}>
-      {emojisData.map((emoji, index) => (
-        <img
-          key={index}
-          src={emoji.src}
-          alt={emoji.alt}
-          className="project-emoji"
-          style={{
-            width: emoji.width,
-            top: emoji.top,
-            left: emoji.left,
-            right: emoji.right,
-            bottom: emoji.bottom,
-            animation: emoji.anim,
-          }}
-        />
-      ))}
-    </div>
-  )
-}
-
 const myProjects = [
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/matter',
@@ -166,17 +132,11 @@ const threeDProjects = [
 ]
 
 const ProjectCard = ({ href, githubHref, liveHref, img, num, title, desc, icon }) => {
-  const [isHovered, setIsHovered] = useState(false)
   const isUiux = githubHref && liveHref
 
   if (isUiux) {
     return (
-      <div
-        className="cardDarkProyect sec__3__card sec__3__card--uiux"
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-      >
-        <FloatingEmojis isHovered={isHovered} />
+      <div className="cardDarkProyect sec__3__card sec__3__card--uiux">
         <div className="sec__3__card__img">
           <img src={img} alt={`Captura del proyecto ${title}`} />
           <HoverLinePath />
@@ -211,10 +171,7 @@ const ProjectCard = ({ href, githubHref, liveHref, img, num, title, desc, icon }
       rel="noopener noreferrer"
       href={href}
       className="cardDarkProyect sec__3__card"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
     >
-      <FloatingEmojis isHovered={isHovered} />
       <div className="sec__3__card__img">
         <img src={img} alt={`Captura del proyecto ${title}`} />
         <HoverLinePath />
