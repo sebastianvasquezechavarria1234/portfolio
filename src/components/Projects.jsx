@@ -3,14 +3,14 @@ import { motion } from 'framer-motion'
 import { ArrowSvg, HoverLinePath, GithubSvg, ExternalSvg } from './Icons'
 
 const emojisData = [
-  { src: '/img/emoji-megaphone.webp', alt: 'megaphone', width: '50px', top: '-20px', left: '-15px', anim: 'emojiFloat1 4s ease-in-out infinite' },
-  { src: '/img/emoji-star.webp', alt: 'star', width: '45px', top: '-25px', right: '20px', anim: 'emojiFloat2 5s ease-in-out infinite' },
-  { src: '/img/emoji-confetti.webp', alt: 'confetti', width: '55px', bottom: '-20px', left: '30%', anim: 'emojiFloat1 6s ease-in-out infinite' },
-  { src: '/img/emoji-circle-blue.png', alt: 'circle blue', width: '35px', top: '40%', left: '-20px', anim: 'emojiFloat2 4.5s ease-in-out infinite' },
-  { src: '/img/emoji-circle-pink.webp', alt: 'circle pink', width: '40px', top: '30%', right: '-15px', anim: 'emojiFloat1 5.5s ease-in-out infinite' },
-  { src: '/img/emoji-rocket.webp', alt: 'rocket', width: '30px', bottom: '20%', right: '-10px', anim: 'emojiFloat2 5s ease-in-out infinite' },
-  { src: '/img/emoji-fire.webp', alt: 'fire', width: '25px', top: '10%', left: '50%', anim: 'emojiFloat1 6s ease-in-out infinite' },
-  { src: '/img/emoji-bulb.webp', alt: 'bulb', width: '35px', bottom: '-15px', right: '40%', anim: 'emojiFloat2 4s ease-in-out infinite' },
+  { src: '/img/emoji-megaphone.webp', alt: 'megaphone', width: '120px', top: '-25px', left: '-20px', anim: 'emojiFloat1 4s ease-in-out infinite' },
+  { src: '/img/emoji-star.webp', alt: 'star', width: '100px', top: '-30px', right: '15px', anim: 'emojiFloat2 5s ease-in-out infinite' },
+  { src: '/img/emoji-confetti.webp', alt: 'confetti', width: '110px', bottom: '-25px', left: '5%', anim: 'emojiFloat1 6s ease-in-out infinite' },
+  { src: '/img/emoji-circle-blue.png', alt: 'circle blue', width: '50px', top: '40%', left: '-25px', anim: 'emojiFloat2 4.5s ease-in-out infinite' },
+  { src: '/img/emoji-circle-pink.webp', alt: 'circle pink', width: '45px', top: '30%', right: '-20px', anim: 'emojiFloat1 5.5s ease-in-out infinite' },
+  { src: '/img/emoji-rocket.webp', alt: 'rocket', width: '40px', bottom: '20%', right: '-15px', anim: 'emojiFloat2 5s ease-in-out infinite' },
+  { src: '/img/emoji-fire.webp', alt: 'fire', width: '35px', top: '10%', left: '50%', anim: 'emojiFloat1 6s ease-in-out infinite' },
+  { src: '/img/emoji-bulb.webp', alt: 'bulb', width: '45px', bottom: '-20px', right: '40%', anim: 'emojiFloat2 4s ease-in-out infinite' },
 ]
 
 const FloatingEmojis = ({ isHovered }) => {
