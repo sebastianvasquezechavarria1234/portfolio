@@ -1,6 +1,48 @@
 import { useState } from 'react'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { ArrowSvg, HoverLinePath, GithubSvg, ExternalSvg } from './Icons'
+
+const emojis = ['🚀', '⚡', '✨', '🎯', '🔥', '💻', '🎨', '🌟', '🛠️', '🎉', '📊', '🌐']
+
+const FloatingEmojis = ({ isHovered }) => {
+  return (
+    <AnimatePresence>
+      {isHovered && (
+        <div className="emojis-container">
+          {emojis.map((emoji, index) => (
+            <motion.span
+              key={index}
+              className="floating-emoji"
+              initial={{ opacity: 0, scale: 0, y: 20 }}
+              animate={{
+                opacity: [0, 1, 1, 0],
+                scale: [0, 1.2, 1, 0.8],
+                y: [20, -30 - Math.random() * 40, -60 - Math.random() * 30, -100 - Math.random() * 50],
+                x: (Math.random() - 0.5) * 200,
+              }}
+              exit={{ opacity: 0, scale: 0 }}
+              transition={{
+                duration: 2 + Math.random(),
+                delay: index * 0.08,
+                ease: "easeOut"
+              }}
+              style={{
+                position: 'absolute',
+                left: `${10 + Math.random() * 80}%`,
+                top: `${Math.random() * 100}%`,
+                fontSize: `${1.2 + Math.random() * 1.5}rem`,
+                pointerEvents: 'none',
+                zIndex: 50,
+              }}
+            >
+              {emoji}
+            </motion.span>
+          ))}
+        </div>
+      )}
+    </AnimatePresence>
+  )
+}
 
 const myProjects = [
   {
@@ -68,7 +110,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
     liveHref: 'https://example.com/botones',
-    img: '/img/uiux-icon.png',
+    img: './public/img/myke.png',
     num: '#009',
     title: 'Botones Animados',
     desc: 'Sistema de botones con micro-interacciones y estados...',
@@ -76,7 +118,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
     liveHref: 'https://example.com/tarjetas',
-    img: '/img/paso.png',
+    img: './public/img/myke-2.png',
     icon: '/img/bg-uiux-2.webp',
     num: '#010',
     title: 'Tarjetas de Producto',
@@ -97,6 +139,37 @@ const uiuxComponents = [
     num: '#012',
     title: 'Navegación Responsive',
     desc: 'Menús adaptativos con animaciones fluidas y accesibilidad...',
+  },
+]
+
+const threeDProjects = [
+  {
+    href: 'https://github.com/sebastianvasquezechavarria1234/cosmic-explorer',
+    img: '/img/project-matter.webp',
+    num: '#013',
+    title: 'Sinfonía Cósmica',
+    desc: 'Planetario inmersivo y explorador cósmico en 3D...',
+  },
+  {
+    href: 'https://github.com/sebastianvasquezechavarria1234/museo-del-cosmos',
+    img: '/img/project-mustang.webp',
+    num: '#014',
+    title: 'Museo del Cosmos',
+    desc: 'Portafolio y biografía artística en un entorno 3D...',
+  },
+  {
+    href: 'https://github.com/sebastianvasquezechavarria1234/three.js-tsl-sandbox',
+    img: '/img/project-breef.webp',
+    num: '#015',
+    title: 'Three.js Sandbox',
+    desc: 'Laboratorio de pruebas y shaders con Three.js TSL...',
+  },
+  {
+    href: 'https://github.com/sebastianvasquezechavarria1234/matter',
+    img: '/img/project-ginebra.webp',
+    num: '#016',
+    title: 'Experiencia Interactiva',
+    desc: 'Renderizado en tiempo real de escenas en WebGL...',
   },
 ]
 
@@ -179,7 +252,9 @@ const Projects = () => {
               ? 'translateX(0)'
               : activeOption === 'cloned'
                 ? 'translateX(calc(100% + 3px))'
-                : 'translateX(calc(200% + 6px))'
+                : activeOption === 'uiux'
+                  ? 'translateX(calc(200% + 6px))'
+                  : 'translateX(calc(300% + 9px))'
           }}
         ></div>
         <p
@@ -187,29 +262,36 @@ const Projects = () => {
           className={activeOption === 'my' ? 'controlActive' : 'controlDesactive'}
           onClick={() => setActiveOption('my')}
         >
-          Mis Proyectos
+          Propios
         </p>
         <p
           id="controls2"
           className={activeOption === 'cloned' ? 'controlActive' : 'controlDesactive'}
           onClick={() => setActiveOption('cloned')}
         >
-          Proyectos Clonados
+          Clones
         </p>
         <p
           id="controls3"
           className={activeOption === 'uiux' ? 'controlActive' : 'controlDesactive'}
           onClick={() => setActiveOption('uiux')}
         >
-          Componentes UI-UX
+          UI / UX
+        </p>
+        <p
+          id="controls4"
+          className={activeOption === 'threed' ? 'controlActive' : 'controlDesactive'}
+          onClick={() => setActiveOption('threed')}
+        >
+          Web 3D
         </p>
       </div>
 
       <div className="sec__3__slider" style={{ overflow: 'hidden', padding: '20px 0' }}>
         <motion.div
-          style={{ display: 'flex', width: '300%' }}
+          style={{ display: 'flex', width: '400%' }}
           animate={{
-            x: activeOption === 'my' ? '0%' : activeOption === 'cloned' ? '-33.333%' : '-66.666%',
+            x: activeOption === 'my' ? '0%' : activeOption === 'cloned' ? '-25%' : activeOption === 'uiux' ? '-50%' : '-75%',
           }}
           transition={{
             x: { type: 'spring', stiffness: 200, damping: 18 },
@@ -217,7 +299,7 @@ const Projects = () => {
         >
           <motion.div
             className="sec__3__flexbox"
-            style={{ width: '33.333%', margin: 0 }}
+            style={{ width: '25%', margin: 0 }}
             animate={{ filter: activeOption !== 'my' ? 'blur(12px)' : 'blur(0px)' }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
@@ -227,7 +309,7 @@ const Projects = () => {
           </motion.div>
           <motion.div
             className="sec__3__flexbox"
-            style={{ width: '33.333%', margin: 0 }}
+            style={{ width: '25%', margin: 0 }}
             animate={{ filter: activeOption !== 'cloned' ? 'blur(12px)' : 'blur(0px)' }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
@@ -237,11 +319,21 @@ const Projects = () => {
           </motion.div>
           <motion.div
             className="sec__3__flexbox"
-            style={{ width: '33.333%', margin: 0 }}
+            style={{ width: '25%', margin: 0 }}
             animate={{ filter: activeOption !== 'uiux' ? 'blur(12px)' : 'blur(0px)' }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
             {uiuxComponents.map((p) => (
+              <ProjectCard key={p.num} {...p} />
+            ))}
+          </motion.div>
+          <motion.div
+            className="sec__3__flexbox"
+            style={{ width: '25%', margin: 0 }}
+            animate={{ filter: activeOption !== 'threed' ? 'blur(12px)' : 'blur(0px)' }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+          >
+            {threeDProjects.map((p) => (
               <ProjectCard key={p.num} {...p} />
             ))}
           </motion.div>
