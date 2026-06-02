@@ -3,9 +3,9 @@ import { motion } from 'framer-motion'
 import { ArrowSvg, HoverLinePath, GithubSvg, ExternalSvg } from './Icons'
 
 const emojisData = [
-  { src: '/img/emoji-megaphone.webp', alt: 'megaphone', width: '120px', top: '-25px', left: '-20px', anim: 'emojiFloat1 4s ease-in-out infinite' },
+  { src: '/img/emoji-megaphone.webp', alt: 'megaphone', width: '100px', top: '-25px', left: '-20px', anim: 'emojiFloat1 4s ease-in-out infinite' },
   { src: '/img/emoji-star.webp', alt: 'star', width: '100px', top: '-30px', right: '15px', anim: 'emojiFloat2 5s ease-in-out infinite' },
-  { src: '/img/emoji-confetti.webp', alt: 'confetti', width: '110px', bottom: '-25px', left: '5%', anim: 'emojiFloat1 6s ease-in-out infinite' },
+  { src: '/img/emoji-confetti.webp', alt: 'confetti', width: '100px', bottom: '-25px', left: '5%', anim: 'emojiFloat1 6s ease-in-out infinite' },
   { src: '/img/emoji-circle-blue.png', alt: 'circle blue', width: '50px', top: '40%', left: '-25px', anim: 'emojiFloat2 4.5s ease-in-out infinite' },
   { src: '/img/emoji-circle-pink.webp', alt: 'circle pink', width: '45px', top: '30%', right: '-20px', anim: 'emojiFloat1 5.5s ease-in-out infinite' },
   { src: '/img/emoji-rocket.webp', alt: 'rocket', width: '40px', bottom: '20%', right: '-15px', anim: 'emojiFloat2 5s ease-in-out infinite' },
@@ -14,10 +14,8 @@ const emojisData = [
 ]
 
 const FloatingEmojis = ({ isHovered }) => {
-  if (!isHovered) return null
-
   return (
-    <div className="emojis-container">
+    <div className={`emojis-container ${isHovered ? 'emojis-active' : ''}`}>
       {emojisData.map((emoji, index) => (
         <img
           key={index}

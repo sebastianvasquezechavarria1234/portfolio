@@ -2455,7 +2455,7 @@ header nav ul:nth-child(2) li a::before {
     transition: opacity 0.4s ease, filter 0.4s ease, transform 0.4s ease;
 }
 
-.sec__3__card:hover .emojis-container {
+.emojis-container.emojis-active {
     opacity: 1;
     filter: blur(0px);
     transform: scale(1) translateY(0px);
