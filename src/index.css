@@ -2131,7 +2131,7 @@ header nav ul:nth-child(2) li a::before {
 .sec__3__controls {
     position: sticky;
     top: 80px;
-    max-width: 650px;
+    max-width: 550px;
     text-align: center;
     margin: 0 auto;
     display: flex;
@@ -2437,6 +2437,101 @@ header nav ul:nth-child(2) li a::before {
         position: absolute;
         left: 50%;
         transform: translateX(-50%) translateY(-50px);
+    }
+}
+
+/* Floating emojis for project cards */
+.emojis-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 50;
+}
+
+.project-emoji {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sec__3__card:hover .project-emoji {
+    opacity: 1;
+}
+
+.project-emoji-1 {
+    width: 50px;
+    top: -20px;
+    left: -15px;
+    animation: emojiFloat1 4s infinite;
+}
+
+.project-emoji-2 {
+    width: 45px;
+    top: -25px;
+    right: 20px;
+    animation: emojiFloat2 5s infinite;
+}
+
+.project-emoji-3 {
+    width: 55px;
+    bottom: -20px;
+    left: 30%;
+    animation: emojiFloat1 6s infinite;
+}
+
+.project-emoji-4 {
+    width: 35px;
+    top: 40%;
+    left: -20px;
+    animation: emojiFloat2 4.5s infinite;
+}
+
+.project-emoji-5 {
+    width: 40px;
+    top: 30%;
+    right: -15px;
+    animation: emojiFloat1 5.5s infinite;
+}
+
+.project-emoji-6 {
+    width: 30px;
+    bottom: 20%;
+    right: -10px;
+    animation: emojiFloat2 5s infinite;
+}
+
+.project-emoji-7 {
+    width: 25px;
+    top: 10%;
+    left: 50%;
+    animation: emojiFloat1 6s infinite;
+}
+
+.project-emoji-8 {
+    width: 35px;
+    bottom: -15px;
+    right: 40%;
+    animation: emojiFloat2 4s infinite;
+}
+
+@keyframes emojiFloat1 {
+    0%, 100% {
+        transform: translateY(-8px) rotate(-5deg);
+    }
+    50% {
+        transform: translateY(12px) rotate(5deg);
+    }
+}
+
+@keyframes emojiFloat2 {
+    0%, 100% {
+        transform: translateY(10px) rotate(5deg);
+    }
+    50% {
+        transform: translateY(-15px) rotate(-5deg);
     }
 }
 

@@ -1,46 +1,32 @@
 import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { ArrowSvg, HoverLinePath, GithubSvg, ExternalSvg } from './Icons'
 
-const emojis = ['🚀', '⚡', '✨', '🎯', '🔥', '💻', '🎨', '🌟', '🛠️', '🎉', '📊', '🌐']
+const emojisData = [
+  { src: '/img/emoji-megaphone.webp', alt: 'megaphone' },
+  { src: '/img/emoji-star.webp', alt: 'star' },
+  { src: '/img/emoji-confetti.webp', alt: 'confetti' },
+  { src: '/img/emoji-circle-blue.png', alt: 'circle blue' },
+  { src: '/img/emoji-circle-pink.webp', alt: 'circle pink' },
+  { src: '/img/emoji-rocket.webp', alt: 'rocket' },
+  { src: '/img/emoji-fire.webp', alt: 'fire' },
+  { src: '/img/emoji-bulb.webp', alt: 'bulb' },
+]
 
 const FloatingEmojis = ({ isHovered }) => {
+  if (!isHovered) return null
+
   return (
-    <AnimatePresence>
-      {isHovered && (
-        <div className="emojis-container">
-          {emojis.map((emoji, index) => (
-            <motion.span
-              key={index}
-              className="floating-emoji"
-              initial={{ opacity: 0, scale: 0, y: 20 }}
-              animate={{
-                opacity: [0, 1, 1, 0],
-                scale: [0, 1.2, 1, 0.8],
-                y: [20, -30 - Math.random() * 40, -60 - Math.random() * 30, -100 - Math.random() * 50],
-                x: (Math.random() - 0.5) * 200,
-              }}
-              exit={{ opacity: 0, scale: 0 }}
-              transition={{
-                duration: 2 + Math.random(),
-                delay: index * 0.08,
-                ease: "easeOut"
-              }}
-              style={{
-                position: 'absolute',
-                left: `${10 + Math.random() * 80}%`,
-                top: `${Math.random() * 100}%`,
-                fontSize: `${1.2 + Math.random() * 1.5}rem`,
-                pointerEvents: 'none',
-                zIndex: 50,
-              }}
-            >
-              {emoji}
-            </motion.span>
-          ))}
-        </div>
-      )}
-    </AnimatePresence>
+    <div className="emojis-container">
+      {emojisData.map((emoji, index) => (
+        <img
+          key={index}
+          src={emoji.src}
+          alt={emoji.alt}
+          className={`project-emoji project-emoji-${index + 1}`}
+        />
+      ))}
+    </div>
   )
 }
 
@@ -174,11 +160,17 @@ const threeDProjects = [
 ]
 
 const ProjectCard = ({ href, githubHref, liveHref, img, num, title, desc, icon }) => {
+  const [isHovered, setIsHovered] = useState(false)
   const isUiux = githubHref && liveHref
 
   if (isUiux) {
     return (
-      <div className="cardDarkProyect sec__3__card sec__3__card--uiux">
+      <div
+        className="cardDarkProyect sec__3__card sec__3__card--uiux"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        <FloatingEmojis isHovered={isHovered} />
         <div className="sec__3__card__img">
           <img src={img} alt={`Captura del proyecto ${title}`} />
           <HoverLinePath />
@@ -213,7 +205,10 @@ const ProjectCard = ({ href, githubHref, liveHref, img, num, title, desc, icon }
       rel="noopener noreferrer"
       href={href}
       className="cardDarkProyect sec__3__card"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
+      <FloatingEmojis isHovered={isHovered} />
       <div className="sec__3__card__img">
         <img src={img} alt={`Captura del proyecto ${title}`} />
         <HoverLinePath />
