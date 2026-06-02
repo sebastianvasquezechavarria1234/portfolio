@@ -2454,11 +2454,34 @@ header nav ul:nth-child(2) li a::before {
 .project-emoji {
     position: absolute;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    filter: blur(10px);
+    transform: scale(0.3) translateY(30px);
 }
 
 .sec__3__card:hover .project-emoji {
-    opacity: 1;
+    animation: emojiEntry 0.5s ease forwards, emojiFloat1 4s ease-in-out infinite;
+}
+
+.sec__3__card:hover .project-emoji-1 { animation-delay: 0s, 0.5s; }
+.sec__3__card:hover .project-emoji-2 { animation-delay: 0.05s, 0.55s; }
+.sec__3__card:hover .project-emoji-3 { animation-delay: 0.1s, 0.6s; }
+.sec__3__card:hover .project-emoji-4 { animation-delay: 0.15s, 0.65s; }
+.sec__3__card:hover .project-emoji-5 { animation-delay: 0.2s, 0.7s; }
+.sec__3__card:hover .project-emoji-6 { animation-delay: 0.25s, 0.75s; }
+.sec__3__card:hover .project-emoji-7 { animation-delay: 0.3s, 0.8s; }
+.sec__3__card:hover .project-emoji-8 { animation-delay: 0.35s, 0.85s; }
+
+@keyframes emojiEntry {
+    0% {
+        opacity: 0;
+        filter: blur(10px);
+        transform: scale(0.3) translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+        transform: scale(1) translateY(0px);
+    }
 }
 
 .project-emoji-1 {
