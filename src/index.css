@@ -2163,12 +2163,25 @@ header nav ul:nth-child(2) li a::before {
     width: 100%;
     margin-bottom: 0px;
     padding: 10px;
-    border-radius: 7px;
-
     border-radius: 5px;
     text-align: center;
     transition: color 0.2s, opacity 0.2s;
     z-index: 1;
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.sec__3__controls p:last-child {
+    border-right: none;
+}
+
+.controls-my #controls1,
+.controls-cloned #controls1,
+.controls-cloned #controls2,
+.controls-uiux #controls2,
+.controls-uiux #controls3,
+.controls-threed #controls3,
+.controls-threed #controls4 {
+    border-right: none;
 }
 
 .sec__3__controls p:hover {

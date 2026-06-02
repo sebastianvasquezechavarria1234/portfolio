@@ -202,7 +202,7 @@ const Projects = () => {
         <h2>Mis Proyectos más destacados</h2>
       </div>
 
-      <div className="sec__3__controls">
+      <div className={`sec__3__controls controls-${activeOption}`}>
         <div
           className="control__active__bg"
           style={{
