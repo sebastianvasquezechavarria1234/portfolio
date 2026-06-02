@@ -3,14 +3,14 @@ import { motion } from 'framer-motion'
 import { ArrowSvg, HoverLinePath, GithubSvg, ExternalSvg } from './Icons'
 
 const emojisData = [
-  { src: '/img/emoji-megaphone.webp', alt: 'megaphone' },
-  { src: '/img/emoji-star.webp', alt: 'star' },
-  { src: '/img/emoji-confetti.webp', alt: 'confetti' },
-  { src: '/img/emoji-circle-blue.png', alt: 'circle blue' },
-  { src: '/img/emoji-circle-pink.webp', alt: 'circle pink' },
-  { src: '/img/emoji-rocket.webp', alt: 'rocket' },
-  { src: '/img/emoji-fire.webp', alt: 'fire' },
-  { src: '/img/emoji-bulb.webp', alt: 'bulb' },
+  { src: '/img/emoji-megaphone.webp', alt: 'megaphone', width: '50px', top: '-20px', left: '-15px', anim: 'emojiFloat1 4s ease-in-out infinite' },
+  { src: '/img/emoji-star.webp', alt: 'star', width: '45px', top: '-25px', right: '20px', anim: 'emojiFloat2 5s ease-in-out infinite' },
+  { src: '/img/emoji-confetti.webp', alt: 'confetti', width: '55px', bottom: '-20px', left: '30%', anim: 'emojiFloat1 6s ease-in-out infinite' },
+  { src: '/img/emoji-circle-blue.png', alt: 'circle blue', width: '35px', top: '40%', left: '-20px', anim: 'emojiFloat2 4.5s ease-in-out infinite' },
+  { src: '/img/emoji-circle-pink.webp', alt: 'circle pink', width: '40px', top: '30%', right: '-15px', anim: 'emojiFloat1 5.5s ease-in-out infinite' },
+  { src: '/img/emoji-rocket.webp', alt: 'rocket', width: '30px', bottom: '20%', right: '-10px', anim: 'emojiFloat2 5s ease-in-out infinite' },
+  { src: '/img/emoji-fire.webp', alt: 'fire', width: '25px', top: '10%', left: '50%', anim: 'emojiFloat1 6s ease-in-out infinite' },
+  { src: '/img/emoji-bulb.webp', alt: 'bulb', width: '35px', bottom: '-15px', right: '40%', anim: 'emojiFloat2 4s ease-in-out infinite' },
 ]
 
 const FloatingEmojis = ({ isHovered }) => {
@@ -23,7 +23,15 @@ const FloatingEmojis = ({ isHovered }) => {
           key={index}
           src={emoji.src}
           alt={emoji.alt}
-          className={`project-emoji project-emoji-${index + 1}`}
+          className="project-emoji"
+          style={{
+            width: emoji.width,
+            top: emoji.top,
+            left: emoji.left,
+            right: emoji.right,
+            bottom: emoji.bottom,
+            animation: emoji.anim,
+          }}
         />
       ))}
     </div>

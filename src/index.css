@@ -2449,77 +2449,29 @@ header nav ul:nth-child(2) li a::before {
     height: 100%;
     pointer-events: none;
     z-index: 50;
-    opacity: 0;
-    filter: blur(10px);
-    transform: scale(0.3) translateY(30px);
-    transition: opacity 0.4s ease, filter 0.4s ease, transform 0.4s ease;
+    visibility: hidden;
 }
 
 .sec__3__card:hover .emojis-container {
-    opacity: 1;
-    filter: blur(0px);
-    transform: scale(1) translateY(0px);
+    visibility: visible;
+    animation: containerEntry 0.5s ease forwards;
+}
+
+@keyframes containerEntry {
+    0% {
+        opacity: 0;
+        filter: blur(10px);
+        transform: scale(0.3) translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+        transform: scale(1) translateY(0px);
+    }
 }
 
 .project-emoji {
     position: absolute;
-    animation: emojiFloat1 4s ease-in-out infinite;
-}
-
-.project-emoji-1 {
-    width: 50px;
-    top: -20px;
-    left: -15px;
-    animation: emojiFloat1 4s ease-in-out infinite;
-}
-
-.project-emoji-2 {
-    width: 45px;
-    top: -25px;
-    right: 20px;
-    animation: emojiFloat2 5s ease-in-out infinite;
-}
-
-.project-emoji-3 {
-    width: 55px;
-    bottom: -20px;
-    left: 30%;
-    animation: emojiFloat1 6s ease-in-out infinite;
-}
-
-.project-emoji-4 {
-    width: 35px;
-    top: 40%;
-    left: -20px;
-    animation: emojiFloat2 4.5s ease-in-out infinite;
-}
-
-.project-emoji-5 {
-    width: 40px;
-    top: 30%;
-    right: -15px;
-    animation: emojiFloat1 5.5s ease-in-out infinite;
-}
-
-.project-emoji-6 {
-    width: 30px;
-    bottom: 20%;
-    right: -10px;
-    animation: emojiFloat2 5s ease-in-out infinite;
-}
-
-.project-emoji-7 {
-    width: 25px;
-    top: 10%;
-    left: 50%;
-    animation: emojiFloat1 6s ease-in-out infinite;
-}
-
-.project-emoji-8 {
-    width: 35px;
-    bottom: -15px;
-    right: 40%;
-    animation: emojiFloat2 4s ease-in-out infinite;
 }
 
 @keyframes emojiFloat1 {
