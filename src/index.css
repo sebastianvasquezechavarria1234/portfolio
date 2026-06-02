@@ -2176,7 +2176,7 @@ header nav ul:nth-child(2) li a::before {
     top: 25%;
     height: 50%;
     width: 1px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .sec__3__controls p:last-child::after {

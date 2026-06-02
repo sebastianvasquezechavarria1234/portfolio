@@ -25,7 +25,7 @@ const Blog = () => (
 
     <div className="sec__blog__tt">
       <p id="underline">Recursos de aprendizaje</p>
-      <h3>Blogs y guías que me ayudaron a mejorar mis habilidades en front-end.</h3>
+      <h3>Aprende keyframes desde lo basico hasta animacion avanzada.</h3>
     </div>
 
     <div className="cardDarkProyect sec__blog__card">
