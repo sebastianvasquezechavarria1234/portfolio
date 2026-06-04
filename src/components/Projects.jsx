@@ -36,31 +36,35 @@ const myProjects = [
 const clonedProjects = [
   {
     href: '#',
-    img: './public/img/clone-1.png',
+    img: '/img/clone-1.png',
     num: '#005',
     title: 'Tesla Clone',
     desc: 'Réplica de la interfaz de Tesla...',
+    icon: '/img/service-design.webp',
   },
   {
     href: '#',
-    img: './public/img/clone-4.png',
+    img: '/img/clone-4.png',
     num: '#006',
     title: 'Apple Music Clone',
     desc: 'Experiencia musical inmersiva...',
+    icon: '/img/service-code.webp',
   },
   {
     href: '#',
-    img: './public/img/clone-3.png',
+    img: '/img/clone-3.png',
     num: '#007',
     title: 'Airbnb Clone',
     desc: 'Sistema de reservas dinámico...',
+    icon: '/img/service-responsive.webp',
   },
   {
     href: '#',
-    img: './public/img/clone-2.png',
+    img: '/img/clone-2.png',
     num: '#008',
     title: 'GitHub UI',
     desc: 'Rediseño de la interfaz de Git...',
+    icon: '/img/service-support.webp',
   },
 ]
 
@@ -68,7 +72,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
     liveHref: 'https://example.com/botones',
-    img: './public/img/myke.png',
+    img: '/img/myke.png',
     num: '#009',
     title: 'Botones Animados',
     desc: 'Sistema de botones con micro-interacciones y estados...',
@@ -76,7 +80,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
     liveHref: 'https://example.com/tarjetas',
-    img: './public/img/myke-2.png',
+    img: '/img/myke-2.png',
     icon: '/img/bg-uiux-2.webp',
     num: '#010',
     title: 'Tarjetas de Producto',
@@ -85,7 +89,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
     liveHref: 'https://example.com/formularios',
-    img: './public/img/myke-3.jpg',
+    img: '/img/myke-3.jpg',
     num: '#011',
     title: 'Formularios UX',
     desc: 'Formularios con validación en tiempo real y feedback visual...',
@@ -93,7 +97,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
     liveHref: 'https://example.com/navegacion',
-    img: './public/img/myke-4.png',
+    img: '/img/myke-4.png',
     num: '#012',
     title: 'Navegación Responsive',
     desc: 'Menús adaptativos con animaciones fluidas y accesibilidad...',
@@ -103,28 +107,28 @@ const uiuxComponents = [
 const threeDProjects = [
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/cosmic-explorer',
-    img: './public/img/like-1.png',
+    img: '/img/like-1.png',
     num: '#013',
     title: 'Sinfonía Cósmica',
     desc: 'Planetario inmersivo y explorador cósmico en 3D...',
   },
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/museo-del-cosmos',
-    img: './public/img/like-2.png',
+    img: '/img/like-2.png',
     num: '#014',
     title: 'Museo del Cosmos',
     desc: 'Portafolio y biografía artística en un entorno 3D...',
   },
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/three.js-tsl-sandbox',
-    img: './public/img/like-3.png',
+    img: '/img/like-3.png',
     num: '#015',
     title: 'Three.js Sandbox',
     desc: 'Laboratorio de pruebas y shaders con Three.js TSL...',
   },
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/matter',
-    img: './public/img/like-4.png',
+    img: '/img/like-4.png',
     num: '#016',
     title: 'Experiencia Interactiva',
     desc: 'Renderizado en tiempo real de escenas en WebGL...',
@@ -179,6 +183,7 @@ const ProjectCard = ({ href, githubHref, liveHref, img, num, title, desc, icon }
       <div className="project-card-body">
         <div className="project-card-number">
           <h5>{num}</h5>
+          {icon && <img className="uiux-icon-img" src={icon} alt={title} />}
         </div>
         <div className="project-card-info">
           <h4>{title}</h4>

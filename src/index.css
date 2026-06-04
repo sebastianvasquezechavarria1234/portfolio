@@ -2331,6 +2331,7 @@ header nav ul:nth-child(2) li a::before {
     border-radius: 50%;
     color: var(--gray-dark);
     overflow: hidden;
+    position: relative;
 }
 
 .project-card-preview {
@@ -2433,6 +2434,22 @@ header nav ul:nth-child(2) li a::before {
     border-radius: 50%;
     opacity: 0;
     transition: opacity 0.3s;
+}
+
+.project-card:not(.project-card--uiux) .uiux-icon-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.project-card:not(.project-card--uiux) .project-card-number h5 {
+    opacity: 0;
 }
 
 .project-card--uiux:hover .uiux-number {
