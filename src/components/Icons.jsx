@@ -80,6 +80,14 @@ export const InstagramSvg = ({ color = '#ffffff' }) => (
   </svg>
 )
 
+export const WhatsappSvg = ({ color = '#ffffff' }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke={color} fill="none" strokeLinecap="round" strokeLinejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+    <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+  </svg>
+)
+
 export const QuoteSvg = () => (
   <svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="0 0 975.036 975.036" width="100%">
     <path fill="var(--color-lilac)" d="m925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50z" />
@@ -114,6 +122,11 @@ export const SocialLinks = ({ btnClass = 'btnClick' }) => (
     <li>
       <a className={btnClass} target="_blank" rel="noopener noreferrer" id="hero__flex__btn" href="https://www.instagram.com/sebastianechavarria1314/">
         <InstagramSvg />
+      </a>
+    </li>
+    <li>
+      <a className={btnClass} target="_blank" rel="noopener noreferrer" id="hero__flex__btn" href="https://wa.me/573015857417">
+        <WhatsappSvg />
       </a>
     </li>
   </>

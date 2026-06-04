@@ -1,5 +1,13 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,600;12..96,800&family=Google+Sans+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+@font-face {
+  font-family: 'Acorn';
+  src: url('/fonts/acorn.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 html.lenis,
 html.lenis body {
@@ -67,8 +75,9 @@ body h2,
 body h3,
 body h4,
 body h5 {
-    font-family: 'Bricolage Grotesque', sans-serif;
-    font-weight: 800;
+    font-family: 'Acorn', sans-serif;
+    font-weight: 900;
+   
 }
 
 body h1 {
@@ -323,7 +332,7 @@ body::-webkit-scrollbar-thumb:hover,
     position: absolute;
     content: "100";
     font-size: 8rem;
-    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Acorn', sans-serif;
     font-weight: 300;
     animation: bf__anm 2.5s;
 }
@@ -834,7 +843,7 @@ header nav ul:nth-child(1) li:nth-child(1) a {
     font-weight: bold;
     padding: 20px 20px 20px 0px;
     font-size: 26px;
-    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Acorn', sans-serif;
 }
 
 header nav ul:nth-child(1) li:nth-child(1) a img {
@@ -1281,7 +1290,7 @@ header nav ul:nth-child(2) li a::before {
 
 .sec__hero__tt {
     position: relative;
-    width: 50%;
+    width: 52%;
     z-index: 10;
 }
 
@@ -1631,7 +1640,7 @@ header nav ul:nth-child(2) li a::before {
 }
 
 .sec__experience__card__left h4 span:nth-child(2) {
-    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Acorn', sans-serif;
     width: 70%;
 }
 
@@ -2176,7 +2185,7 @@ header nav ul:nth-child(2) li a::before {
     top: 25%;
     height: 50%;
     width: 1px;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.28);
 }
 
 .sec__3__controls p:last-child::after {

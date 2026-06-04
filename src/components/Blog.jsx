@@ -1,12 +1,12 @@
 const BLOG_LINK = 'https://platzi.com/blog/10-trucos-de-css-que-te-van-a-sorprender/#:~:text=10%20trucos%20de%20CSS%20que%20te%20van%20a,Dibujar%20con%20%3Abefore%20y%20%3Aafter%20...%20M%C3%A1s%20elementos'
 
 const topics = [
-  'Filtro CSS',
-  'Transformaciones CSS',
-  '@keyframes CSS',
-  '@media screen CSS',
-  'SVG CSS',
-  'SVG Path CSS',
+  'Introduccion a keyframes',
+  'Animar  cambio de color en un div',
+  'Animacion con multiples pasos',
+  'Secuencias y temporizacion avanzada',
+  'Ssion de cargas de pantalla(Loaders)',
+  'Efectos y transiciones avanzadas',
   'SVG Path CSS GSAP',
 ]
 

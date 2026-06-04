@@ -1,6 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,600;12..96,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Quicksand:wght@400;600;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Quicksand:wght@400;600;700&display=swap');
+@font-face {
+  font-family: 'Acorn';
+  src: url('/fonts/acorn.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 
 * {
@@ -43,7 +49,7 @@ body h2,
 body h3,
 body h4,
 body h5 {
-    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Acorn', sans-serif;
 }
 
 body h1 {
@@ -297,7 +303,7 @@ body::-webkit-scrollbar-thumb:hover,
     position: absolute;
     content: "100";
     font-size: 8rem;
-    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Acorn', sans-serif;
     animation: bf__anm 2.5s;
 }
 
@@ -807,7 +813,7 @@ header nav ul:nth-child(1) li:nth-child(1) a {
     font-weight: bold;
     padding: 20px 20px 20px 0px;
     font-size: 26px;
-    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Acorn', sans-serif;
 }
 
 header nav ul:nth-child(1) li:nth-child(1) a img {
@@ -1581,7 +1587,7 @@ header nav ul:nth-child(2) li a:hover {
 }
 
 .sec__experience__card__left h4 span:nth-child(2) {
-    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Acorn', sans-serif;
     width: 70%;
 }
 

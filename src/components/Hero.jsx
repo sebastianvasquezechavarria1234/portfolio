@@ -22,7 +22,7 @@ const Hero = () => (
   <section id="hero" className="sec__hero">
     <section className="sec__max__width">
       <div className="sec__hero__tt">
-        <h1>Hola, soy Sebas. Tu diseñador web.</h1>
+        <h1>Hola, soy Sebas. Tu desarrollador web.</h1>
         <p>Me apasiona diseñar experiencias digitales atractivas y accesibles que priorizan siempre las necesidades del usuario.</p>
 
         <a href="#proyectos">

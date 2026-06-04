@@ -85,7 +85,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
     liveHref: 'https://example.com/formularios',
-    img: '/img/preview-3.png',
+    img: './public/img/myke-3.jpg',
     num: '#011',
     title: 'Formularios UX',
     desc: 'Formularios con validación en tiempo real y feedback visual...',
@@ -93,7 +93,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
     liveHref: 'https://example.com/navegacion',
-    img: '/img/uiux-preview.webp',
+    img: './public/img/myke-4.png',
     num: '#012',
     title: 'Navegación Responsive',
     desc: 'Menús adaptativos con animaciones fluidas y accesibilidad...',
