@@ -2187,19 +2187,6 @@ header nav ul:nth-child(2) li a:hover {
     backdrop-filter: var(--blur-card);
 }
 
-.project-card:nth-child(2) {
-    background-image: url(../img/bg-section-4.webp), var(--linear-gradient-card-blur);
-}
-
-
-.project-card:nth-child(3) {
-    background-image: url(../img/bg-section-2.webp), var(--linear-gradient-card-blur);
-}
-
-.project-card:nth-child(4) {
-    background-image: url(../img/bg-section-3.webp), var(--linear-gradient-card-blur);
-}
-
 .project-card-image {
     position: relative;
     width: 100%;
