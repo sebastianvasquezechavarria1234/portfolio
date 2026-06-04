@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { ArrowSvg, HoverLinePath, GithubSvg, ExternalSvg } from './Icons'
 
@@ -36,28 +36,28 @@ const myProjects = [
 const clonedProjects = [
   {
     href: '#',
-    img: '/img/project-mustang.webp',
+    img: './public/img/clone-1.png',
     num: '#005',
     title: 'Tesla Clone',
     desc: 'Réplica de la interfaz de Tesla...',
   },
   {
     href: '#',
-    img: '/img/project-matter.webp',
+    img: './public/img/clone-4.png',
     num: '#006',
     title: 'Apple Music Clone',
     desc: 'Experiencia musical inmersiva...',
   },
   {
     href: '#',
-    img: '/img/project-ginebra.webp',
+    img: './public/img/clone-3.png',
     num: '#007',
     title: 'Airbnb Clone',
     desc: 'Sistema de reservas dinámico...',
   },
   {
     href: '#',
-    img: '/img/project-breef.webp',
+    img: './public/img/clone-2.png',
     num: '#008',
     title: 'GitHub UI',
     desc: 'Rediseño de la interfaz de Git...',
@@ -103,28 +103,28 @@ const uiuxComponents = [
 const threeDProjects = [
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/cosmic-explorer',
-    img: '/img/project-matter.webp',
+    img: './public/img/like-1.png',
     num: '#013',
     title: 'Sinfonía Cósmica',
     desc: 'Planetario inmersivo y explorador cósmico en 3D...',
   },
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/museo-del-cosmos',
-    img: '/img/project-mustang.webp',
+    img: './public/img/like-2.png',
     num: '#014',
     title: 'Museo del Cosmos',
     desc: 'Portafolio y biografía artística en un entorno 3D...',
   },
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/three.js-tsl-sandbox',
-    img: '/img/project-breef.webp',
+    img: './public/img/like-3.png',
     num: '#015',
     title: 'Three.js Sandbox',
     desc: 'Laboratorio de pruebas y shaders con Three.js TSL...',
   },
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/matter',
-    img: '/img/project-ginebra.webp',
+    img: './public/img/like-4.png',
     num: '#016',
     title: 'Experiencia Interactiva',
     desc: 'Renderizado en tiempo real de escenas en WebGL...',
@@ -136,18 +136,18 @@ const ProjectCard = ({ href, githubHref, liveHref, img, num, title, desc, icon }
 
   if (isUiux) {
     return (
-      <div className="cardDarkProyect sec__3__card sec__3__card--uiux">
-        <div className="sec__3__card__img">
+      <div className="card-dark project-card project-card--uiux">
+        <div className="project-card-image">
           <img src={img} alt={`Captura del proyecto ${title}`} />
           <HoverLinePath />
         </div>
-        <div className="sec__3__card__flex">
+        <div className="project-card-body">
           <div className="flex items-center gap-3 w-[85%]">
-            <div className="sec__3__card__flex___number">
-              <h5 className="uiux-num">{num}</h5>
-              <img className="uiux-icon" src={icon || '/img/bg-uiux.webp'} alt={title} />
+            <div className="project-card-number">
+              <h5 className="uiux-number">{num}</h5>
+              <img className="uiux-icon-img" src={icon || '/img/bg-uiux.webp'} alt={title} />
             </div>
-            <div className="sec__3__card__tt">
+            <div className="project-card-info">
               <h4>{title}</h4>
               <p>{desc}</p>
             </div>
@@ -170,17 +170,17 @@ const ProjectCard = ({ href, githubHref, liveHref, img, num, title, desc, icon }
       target="_blank"
       rel="noopener noreferrer"
       href={href}
-      className="cardDarkProyect sec__3__card"
+      className="card-dark project-card"
     >
-      <div className="sec__3__card__img">
+      <div className="project-card-image">
         <img src={img} alt={`Captura del proyecto ${title}`} />
         <HoverLinePath />
       </div>
-      <div className="sec__3__card__flex">
-        <div className="sec__3__card__flex___number">
+      <div className="project-card-body">
+        <div className="project-card-number">
           <h5>{num}</h5>
         </div>
-        <div className="sec__3__card__tt">
+        <div className="project-card-info">
           <h4>{title}</h4>
           <p>{desc}</p>
         </div>
@@ -196,15 +196,15 @@ const Projects = () => {
   const [activeOption, setActiveOption] = useState('my')
 
   return (
-    <section id="proyectos" className="sec__3">
-      <div className="sec__3__tt">
+    <section id="proyectos" className="projects">
+      <div className="projects-header">
         <p id="underline">Proyectos</p>
         <h2>Mis Proyectos más destacados</h2>
       </div>
 
-      <div className={`sec__3__controls controls-${activeOption}`}>
+      <div className={`projects-controls controls-${activeOption}`}>
         <div
-          className="control__active__bg"
+          className="controls-active-bg"
           style={{
             transform: activeOption === 'my'
               ? 'translateX(0)'
@@ -217,35 +217,35 @@ const Projects = () => {
         ></div>
         <p
           id="controls1"
-          className={activeOption === 'my' ? 'controlActive' : 'controlDesactive'}
+          className={activeOption === 'my' ? 'tab-active' : 'tab-inactive'}
           onClick={() => setActiveOption('my')}
         >
           Propios
         </p>
         <p
           id="controls2"
-          className={activeOption === 'cloned' ? 'controlActive' : 'controlDesactive'}
+          className={activeOption === 'cloned' ? 'tab-active' : 'tab-inactive'}
           onClick={() => setActiveOption('cloned')}
         >
           Clones
         </p>
         <p
           id="controls3"
-          className={activeOption === 'uiux' ? 'controlActive' : 'controlDesactive'}
+          className={activeOption === 'uiux' ? 'tab-active' : 'tab-inactive'}
           onClick={() => setActiveOption('uiux')}
         >
           UI / UX
         </p>
         <p
           id="controls4"
-          className={activeOption === 'threed' ? 'controlActive' : 'controlDesactive'}
+          className={activeOption === 'threed' ? 'tab-active' : 'tab-inactive'}
           onClick={() => setActiveOption('threed')}
         >
           Web 3D
         </p>
       </div>
 
-      <div className="sec__3__slider" style={{ overflow: 'hidden', padding: '20px 0' }}>
+      <div className="projects-slider" style={{ overflow: 'hidden', padding: '20px 0' }}>
         <motion.div
           style={{ display: 'flex', width: '400%' }}
           animate={{
@@ -256,7 +256,7 @@ const Projects = () => {
           }}
         >
           <motion.div
-            className="sec__3__flexbox"
+            className="projects-grid"
             style={{ width: '25%', margin: 0 }}
             animate={{ filter: activeOption !== 'my' ? 'blur(12px)' : 'blur(0px)' }}
             transition={{ duration: 0.5, ease: "easeOut" }}
@@ -266,7 +266,7 @@ const Projects = () => {
             ))}
           </motion.div>
           <motion.div
-            className="sec__3__flexbox"
+            className="projects-grid"
             style={{ width: '25%', margin: 0 }}
             animate={{ filter: activeOption !== 'cloned' ? 'blur(12px)' : 'blur(0px)' }}
             transition={{ duration: 0.5, ease: "easeOut" }}
@@ -276,7 +276,7 @@ const Projects = () => {
             ))}
           </motion.div>
           <motion.div
-            className="sec__3__flexbox"
+            className="projects-grid"
             style={{ width: '25%', margin: 0 }}
             animate={{ filter: activeOption !== 'uiux' ? 'blur(12px)' : 'blur(0px)' }}
             transition={{ duration: 0.5, ease: "easeOut" }}
@@ -286,7 +286,7 @@ const Projects = () => {
             ))}
           </motion.div>
           <motion.div
-            className="sec__3__flexbox"
+            className="projects-grid"
             style={{ width: '25%', margin: 0 }}
             animate={{ filter: activeOption !== 'threed' ? 'blur(12px)' : 'blur(0px)' }}
             transition={{ duration: 0.5, ease: "easeOut" }}

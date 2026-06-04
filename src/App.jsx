@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+﻿import { useEffect } from 'react'
 import Lenis from 'lenis'
 import LoadingScreen from './components/LoadingScreen'
 import Header from './components/Header'
@@ -51,15 +51,15 @@ function App() {
       <Header />
 
       {/* Background gradient */}
-      <section className="sec_gradient">
-        <div className="sec__gradient__box"></div>
+      <section className="gradient-bg">
+        <div className="gradient-overlay"></div>
       </section>
 
       {/* Hero */}
       <Hero />
 
       {/* Main content wrapper */}
-      <section className="sec__max__width sec__max__width2">
+      <section className="container container2">
 
         <Experience />
 
@@ -72,7 +72,7 @@ function App() {
         <Lab />
 
         {/* Linear color separator */}
-        <div className="linear__color">
+        <div className="linear-color">
           {Array.from({ length: 10 }).map((_, i) => <span key={i}></span>)}
         </div>
 

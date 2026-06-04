@@ -1,4 +1,4 @@
-const NetworkSvg = () => (
+﻿const NetworkSvg = () => (
   <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-topology-star-3" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
     <path d="M10 19a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />
@@ -31,22 +31,22 @@ const SparklesSvg = () => (
 )
 
 const Experience = () => (
-  <section id="experiencia" className="sec__experience">
-    <div className="sec__experience__tt">
+  <section id="experiencia" className="experience">
+    <div className="experience-header">
       <p id="underline">Experiencia Laboral</p>
       <h2>Mi experiencia de +4 años como diseñador web</h2>
       <p>Desarrollo servicios web personalizados enfocados en la eficiencia y la usabilidad, integrando diseños vanguardistas y soluciones innovadoras para crear experiencias digitales de alto impacto.</p>
     </div>
 
     {/* Card 1 - Futuro Puertas */}
-    <div className="sec__experience__card">
-      <div className="sec__experience__card__left">
-        <h4 id="experienceBg">
+    <div className="experience-item">
+      <div className="experience-item-left">
+        <h4 id="experience-bg">
           <span><NetworkSvg /></span>
           <span>Futuro puertas</span>
         </h4>
       </div>
-      <div className="sec__experience__card__right">
+      <div className="experience-item-right">
         <h4>
           <p>Enero 2023 - Noviembre 2023</p>
           <p>Diseñador web &amp; analista de datos</p>
@@ -58,14 +58,14 @@ const Experience = () => (
     </div>
 
     {/* Card 2 - INGENIATEC */}
-    <div className="sec__experience__card">
-      <div className="sec__experience__card__left">
-        <h4 id="experienceBg">
+    <div className="experience-item">
+      <div className="experience-item-left">
+        <h4 id="experience-bg">
           <span><BrushSvg /></span>
           <span>INGENIATEC - Séptima muestra</span>
         </h4>
       </div>
-      <div className="sec__experience__card__right">
+      <div className="experience-item-right">
         <h4>
           <p>Noviembre 2023</p>
           <p>Participante &amp; Desarrollador</p>
@@ -77,14 +77,14 @@ const Experience = () => (
     </div>
 
     {/* Card 3 - Guinness */}
-    <div className="sec__experience__card">
-      <div className="sec__experience__card__left">
-        <h4 id="experienceBg">
+    <div className="experience-item">
+      <div className="experience-item-left">
+        <h4 id="experience-bg">
           <span><SparklesSvg /></span>
           <span>Guinness World Record</span>
         </h4>
       </div>
-      <div className="sec__experience__card__right">
+      <div className="experience-item-right">
         <h4>
           <p>Octubre 2022</p>
           <p>Participante</p>

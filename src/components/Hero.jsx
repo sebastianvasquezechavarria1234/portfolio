@@ -1,4 +1,4 @@
-import { SocialLinks } from './Icons'
+﻿import { SocialLinks } from './Icons'
 
 const AwardSvg = () => (
   <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-award-filled" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -19,9 +19,9 @@ const DownloadSvg = () => (
 )
 
 const Hero = () => (
-  <section id="hero" className="sec__hero">
-    <section className="sec__max__width">
-      <div className="sec__hero__tt">
+  <section id="hero" className="hero">
+    <section className="container">
+      <div className="hero-content">
         <h1>Hola, soy Sebas. Tu desarrollador web.</h1>
         <p>Me apasiona diseñar experiencias digitales atractivas y accesibles que priorizan siempre las necesidades del usuario.</p>
 
@@ -35,7 +35,7 @@ const Hero = () => (
           <DownloadSvg />
         </a>
 
-        <div className="sec__hero__tt__bottom">
+        <div className="hero-social">
           <ul>
             <SocialLinks />
           </ul>
@@ -43,16 +43,16 @@ const Hero = () => (
       </div>
 
       <picture>
-        <img id="heroCircle" src="/img/hero-portrait.webp" alt="hero" />
-        <div className="sec__hero__picture__card">
+        <img id="hero-circle" src="/img/hero-portrait.webp" alt="hero" />
+        <div className="hero-card">
           <img src="/img/chinese-text.webp" alt="text" />
           <img src="/img/chinese-letters.svg" alt="text" />
-          <img src="/img/emoji-star.webp" alt="emoji" id="sec__hero__emogi3" />
-          <img src="/img/emoji-heart.png" alt="emoji" id="sec__hero__emogi4" />
+          <img src="/img/emoji-star.webp" alt="emoji" id="hero-emoji-3" />
+          <img src="/img/emoji-heart.png" alt="emoji" id="hero-emoji-4" />
         </div>
-        <img src="/img/emoji-spark.webp" alt="emoji" id="sec__hero__emogi1" />
-        <img src="/img/emoji-fire.webp" alt="emoji" id="sec__hero__emogi2" />
-        <img src="/img/emoji-rocket.webp" alt="emoji" id="sec__hero__emogi5" />
+        <img src="/img/emoji-spark.webp" alt="emoji" id="hero-emoji-1" />
+        <img src="/img/emoji-fire.webp" alt="emoji" id="hero-emoji-2" />
+        <img src="/img/emoji-rocket.webp" alt="emoji" id="hero-emoji-5" />
       </picture>
     </section>
   </section>

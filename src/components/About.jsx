@@ -1,4 +1,4 @@
-import { QuoteSvg } from './Icons'
+﻿import { QuoteSvg } from './Icons'
 
 const references = [
   {
@@ -23,10 +23,10 @@ const references = [
 ]
 
 const RefCard = ({ text, texts, author }) => (
-  <div className="sec__sobre__card">
-    <div className="sec__sobre__card__bg"></div>
+  <div className="about-card">
+    <div className="about-card-bg"></div>
     <QuoteSvg />
-    <div className="sec__sobre__card__tt">
+    <div className="about-card-content">
       {text && <p>{text}</p>}
       {texts && texts.map((t, i) => <p key={i}>{t}</p>)}
       <p><span></span>{author}</p>
@@ -35,8 +35,8 @@ const RefCard = ({ text, texts, author }) => (
 )
 
 const About = () => (
-  <section id="sobre-mí" className="sec__sobre">
-    <div className="sec__sobre__tt">
+  <section id="sobre-mí" className="about">
+    <div className="about-header">
       <p id="underline">Sobre mí</p>
       <h2>Soy desarrollador web en constante formación, con pasión por el aprendizaje autónomo y la mejora continua.</h2>
       <p>Me llamo Sebastián Vásquez Echavarría. Desde que comencé mi viaje como <span>diseñador,</span> he trabajado y colaborado en varios proyectos con personas talentosas.</p>
@@ -46,10 +46,10 @@ const About = () => (
       <img src="/img/emoji-heart.png" alt="emoji" />
     </div>
 
-    <div className="sec__sobre__ctn__refent">
+    <div className="about-references">
       {/* Column 1 with heading */}
-      <div className="sec__sobre__refent">
-        <div className="sec__sobre__refent__tt">
+      <div className="about-reference-item">
+        <div className="about-reference-header">
           <h4>Referencias personales</h4>
         </div>
         <RefCard {...references[0]} />
@@ -57,7 +57,7 @@ const About = () => (
 
       {/* Columns 2, 3, 4 */}
       {references.slice(1).map((ref, i) => (
-        <div key={i} className="sec__sobre__refent">
+        <div key={i} className="about-reference-item">
           <RefCard {...ref} />
         </div>
       ))}
