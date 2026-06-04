@@ -40,7 +40,7 @@ const clonedProjects = [
     num: '#005',
     title: 'Tesla Clone',
     desc: 'Réplica de la interfaz de Tesla...',
-    icon: '/img/service-design.webp',
+    icon: '/img/icono-animacion.webp',
   },
   {
     href: '#',
@@ -48,7 +48,7 @@ const clonedProjects = [
     num: '#006',
     title: 'Apple Music Clone',
     desc: 'Experiencia musical inmersiva...',
-    icon: '/img/service-code.webp',
+    icon: '/img/icono-despliegue.webp',
   },
   {
     href: '#',
@@ -56,7 +56,7 @@ const clonedProjects = [
     num: '#007',
     title: 'Airbnb Clone',
     desc: 'Sistema de reservas dinámico...',
-    icon: '/img/service-responsive.webp',
+    icon: '/img/icono-diseno-web.webp',
   },
   {
     href: '#',
@@ -64,7 +64,7 @@ const clonedProjects = [
     num: '#008',
     title: 'GitHub UI',
     desc: 'Rediseño de la interfaz de Git...',
-    icon: '/img/service-support.webp',
+    icon: '/img/icono-optimizacion.webp',
   },
 ]
 
