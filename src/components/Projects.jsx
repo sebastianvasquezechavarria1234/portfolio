@@ -6,7 +6,7 @@ const myProjects = [
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/matter',
     img: '/img/project-matter.webp',
-    bg: '/img/bg-project-matter.webp',
+    bg: '/img/projects/bg-project-matter.webp',
     num: '#001',
     title: 'Matter',
     desc: 'Viernes de comentario...',
@@ -14,7 +14,7 @@ const myProjects = [
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/Ford-Mustang',
     img: '/img/project-mustang.webp',
-    bg: '/img/bg-project-mustang.webp',
+    bg: '/img/projects/bg-project-breef.webp',
     num: '#002',
     title: 'Ford Mustang',
     desc: '¿Estás listo para tomar el...',
@@ -22,7 +22,7 @@ const myProjects = [
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/breef-version1.1',
     img: '/img/project-breef.webp',
-    bg: '/img/bg-project-breef.webp',
+    bg: '/img/projects/bg-project-mustang.webp',
     num: '#003',
     title: 'Breef',
     desc: '¿Quieres encontrar trabajo...',
@@ -30,7 +30,7 @@ const myProjects = [
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/ginebra',
     img: '/img/project-ginebra.webp',
-    bg: '/img/bg-project-ginebra.webp',
+    bg: '/img/projects/bg-project-ginebra.webp',
     num: '#004',
     title: 'Ginebra',
     desc: 'Doce sabores diferentes...',
@@ -41,7 +41,7 @@ const clonedProjects = [
   {
     href: '#',
     img: '/img/projects/clone/bicicleta.jpg',
-    bg: '/img/bg-project-matter.webp',
+    bg: '/img/projects/bg-project-matter.webp',
     num: '#005',
     title: 'Bicicleta Clone',
     desc: 'Réplica de interfaz de bicicleta...',
@@ -49,7 +49,7 @@ const clonedProjects = [
   {
     href: '#',
     img: '/img/projects/clone/breef.jpg',
-    bg: '/img/bg-project-breef.webp',
+    bg: '/img/projects/bg-project-ginebra.webp',
     num: '#006',
     title: 'Breef Clone',
     desc: 'Experiencia musical inmersiva...',
@@ -57,7 +57,7 @@ const clonedProjects = [
   {
     href: '#',
     img: '/img/projects/clone/galletas.jpg',
-    bg: '/img/bg-project-ginebra.webp',
+    bg: '/img/projects/bg-project-breef.webp',
     num: '#007',
     title: 'Galletas Clone',
     desc: 'Sistema de reservas dinámico...',
@@ -65,7 +65,7 @@ const clonedProjects = [
   {
     href: '#',
     img: '/img/projects/clone/ginebra.jpg',
-    bg: '/img/bg-project-mustang.webp',
+    bg: '/img/projects/bg-project-mustang.webp',
     num: '#008',
     title: 'Ginebra Clone',
     desc: 'Rediseño de la interfaz de Git...',
@@ -75,39 +75,39 @@ const clonedProjects = [
 const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
-    liveHref: 'https://example.com/botones',
+    liveHref: 'https://example.com/gallery',
     img: '/img/projects/ui-ux/gallery-slider.jpg',
-    bg: '/img/bg-project-matter.webp',
+    bg: '/img/projects/bg-project-matter.webp',
     num: '#009',
     title: 'Gallery Slider',
     desc: 'Slider de galería con micro-interacciones y estados...',
   },
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
-    liveHref: 'https://example.com/tarjetas',
+    liveHref: 'https://example.com/menu',
     img: '/img/projects/ui-ux/infinite-menu.jpg',
-    bg: '/img/bg-project-breef.webp',
+    bg: '/img/projects/bg-project-ginebra.webp',
     num: '#010',
     title: 'Infinite Menu',
     desc: 'Menú infinito con hover effects y transiciones...',
   },
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
-    liveHref: 'https://example.com/formularios',
-    img: '/img/ui-3.png',
-    bg: '/img/bg-project-ginebra.webp',
+    liveHref: 'https://example.com/evil-eye',
+    img: '/img/projects/ui-ux/evil-eye.jpg',
+    bg: '/img/projects/bg-project-breef.webp',
     num: '#011',
-    title: 'Formularios UX',
-    desc: 'Formularios con validación en tiempo real y feedback visual...',
+    title: 'Evil Eye',
+    desc: 'Componente de ojo maligno con animaciones...',
   },
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
-    liveHref: 'https://example.com/navegacion',
-    img: '/img/ui-4.png',
-    bg: '/img/bg-project-mustang.webp',
+    liveHref: 'https://example.com/circular',
+    img: '/img/projects/ui-ux/circular-gallery.jpg',
+    bg: '/img/projects/bg-project-mustang.webp',
     num: '#012',
-    title: 'Navegación Responsive',
-    desc: 'Menús adaptativos con animaciones fluidas y accesibilidad...',
+    title: 'Circular Gallery',
+    desc: 'Galería circular con efectos 3D y transiciones...',
   },
 ]
 
@@ -115,7 +115,7 @@ const threeDProjects = [
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/cosmic-explorer',
     img: '/img/like-1.png',
-    bg: '/img/bg-project-matter.webp',
+    bg: '/img/projects/bg-project-matter.webp',
     num: '#013',
     title: 'Sinfonía Cósmica',
     desc: 'Planetario inmersivo y explorador cósmico en 3D...',
@@ -123,7 +123,7 @@ const threeDProjects = [
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/museo-del-cosmos',
     img: '/img/like-2.png',
-    bg: '/img/bg-project-mustang.webp',
+    bg: '/img/projects/bg-project-breef.webp',
     num: '#014',
     title: 'Museo del Cosmos',
     desc: 'Portafolio y biografía artística en un entorno 3D...',
@@ -131,7 +131,7 @@ const threeDProjects = [
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/three.js-tsl-sandbox',
     img: '/img/like-3.png',
-    bg: '/img/bg-project-breef.webp',
+    bg: '/img/projects/bg-project-mustang.webp',
     num: '#015',
     title: 'Three.js Sandbox',
     desc: 'Laboratorio de pruebas y shaders con Three.js TSL...',
@@ -139,7 +139,7 @@ const threeDProjects = [
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/matter',
     img: '/img/like-4.png',
-    bg: '/img/bg-project-ginebra.webp',
+    bg: '/img/projects/bg-project-ginebra.webp',
     num: '#016',
     title: 'Experiencia Interactiva',
     desc: 'Renderizado en tiempo real de escenas en WebGL...',
