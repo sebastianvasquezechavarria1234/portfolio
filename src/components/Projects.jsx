@@ -68,7 +68,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
     liveHref: 'https://example.com/botones',
-    img: '/img/myke.png',
+    img: '/img/ui-ux-1.png',
     num: '#009',
     title: 'Botones Animados',
     desc: 'Sistema de botones con micro-interacciones y estados...',
@@ -76,7 +76,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
     liveHref: 'https://example.com/tarjetas',
-    img: '/img/myke-2.png',
+    img: '/img/ui-ux-2.png',
     icon: '/img/bg-uiux-2.webp',
     num: '#010',
     title: 'Tarjetas de Producto',
@@ -85,7 +85,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
     liveHref: 'https://example.com/formularios',
-    img: '/img/myke-3.jpg',
+    img: '/img/ui-3.png',
     num: '#011',
     title: 'Formularios UX',
     desc: 'Formularios con validación en tiempo real y feedback visual...',
@@ -93,7 +93,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234',
     liveHref: 'https://example.com/navegacion',
-    img: '/img/myke-4.png',
+    img: '/img/ui-4.png',
     num: '#012',
     title: 'Navegación Responsive',
     desc: 'Menús adaptativos con animaciones fluidas y accesibilidad...',
