@@ -48,27 +48,27 @@ const clonedProjects = [
   },
   {
     href: '#',
-    img: '/img/projects/clone/breef.jpg',
+    img: '/img/projects/clone/ginebra.jpg',
     bg: '/img/projects/bg-project-mustang.webp',
     num: '#006',
+    title: 'Ginebra Clone',
+    desc: 'Rediseño de la interfaz de Git...',
+  },
+  {
+    href: '#',
+    img: '/img/projects/clone/breef.jpg',
+    bg: '/img/projects/bg-project-breef.webp',
+    num: '#007',
     title: 'Breef Clone',
     desc: 'Experiencia musical inmersiva...',
   },
   {
     href: '#',
     img: '/img/projects/clone/galletas.jpg',
-    bg: '/img/projects/bg-project-breef.webp',
-    num: '#007',
-    title: 'Galletas Clone',
-    desc: 'Sistema de reservas dinámico...',
-  },
-  {
-    href: '#',
-    img: '/img/projects/clone/ginebra.jpg',
     bg: '/img/projects/bg-project-ginebra.webp',
     num: '#008',
-    title: 'Ginebra Clone',
-    desc: 'Rediseño de la interfaz de Git...',
+    title: 'Galletas Clone',
+    desc: 'Sistema de reservas dinámico...',
   },
 ]
 
