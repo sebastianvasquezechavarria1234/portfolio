@@ -49,7 +49,7 @@ const Services = () => (
         <div className="service-card-content">
           <div className="service-card-row despliegues-flex">
             <img src="/img/sec-2-icon-2.webp" alt="iconos" className="despliegues-img" />
-            <h3>Experiencias Web en 3D</h3>
+            <h3>Diseño y Desarrollo 3D Interactivo</h3>
           </div>
           <a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234">
             Ir a Github
