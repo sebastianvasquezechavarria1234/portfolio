@@ -2501,6 +2501,24 @@ header nav ul:nth-child(2) li a::before {
 }
 
 @media screen and (max-width: 600px) {
+    .projects-grid {
+        gap: 10px;
+    }
+
+    .projects-controls {
+        max-width: 100%;
+        position: sticky;
+        top: 0;
+        border-radius: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .projects-controls p {
+        padding: 6px;
+        font-size: 11px;
+    }
+
     .project-card {
         padding: 23px;
     }
