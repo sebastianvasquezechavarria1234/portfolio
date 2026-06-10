@@ -1942,6 +1942,10 @@ header nav ul:nth-child(2) li a::before {
     margin-top: 50px;
 }
 
+.despliegues-flex h3 {
+    margin-top: 15px;
+}
+
 .services .services-layout .service-card:nth-child(1)::after {
     width: 600px;
     height: 600px;
@@ -2125,7 +2129,6 @@ header nav ul:nth-child(2) li a::before {
 
     .despliegues-img {
         width: 80px;
-        height: 80px;
     }
 
     .service-card-content>a {
