@@ -2507,7 +2507,7 @@ header nav ul:nth-child(2) li a::before {
     }
 
     .projects-controls {
-        max-width: 73%;
+        max-width: 80%;
         position: sticky;
         top: 0;
         border-radius: 10px;
@@ -2517,8 +2517,8 @@ header nav ul:nth-child(2) li a::before {
     }
 
     .projects-controls p {
-        padding: 6px;
-        font-size: 11px;
+        padding: 10px;
+        font-size: 13px;
     }
 
     .project-card {
