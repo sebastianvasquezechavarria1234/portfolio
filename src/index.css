@@ -1269,6 +1269,7 @@ header nav ul:nth-child(2) li a::before {
     }
 }
 
+
 @media screen and (max-width: 1280px) {
     .container2 {
         overflow: hidden;
