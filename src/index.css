@@ -2154,6 +2154,7 @@ header nav ul:nth-child(2) li a::before {
     }
 
     .despliegues-flex {
+        width: 100%;
         margin-top: 0;
     }
 
@@ -2462,15 +2463,6 @@ header nav ul:nth-child(2) li a::before {
     object-fit: cover;
     border-radius: 50%;
     opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.project-card--uiux:hover .uiux-number {
-    opacity: 0;
-}
-
-.project-card--uiux:hover .uiux-icon-img {
-    opacity: 1;
 }
 
 .project-card--uiux .project-card-image svg path {
