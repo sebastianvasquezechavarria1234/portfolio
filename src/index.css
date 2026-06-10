@@ -2509,7 +2509,7 @@ header nav ul:nth-child(2) li a::before {
     .projects-controls {
         max-width: 80%;
         position: sticky;
-        top: 0;
+        top: 100px;
         border-radius: 10px;
         margin: 0 auto;
         background: #212429;
