@@ -1,4 +1,4 @@
-﻿import { GithubSvg } from './Icons'
+﻿import { ArrowSvg } from './Icons'
 
 const services = [
   { icon: '/img/service-design.webp', title: 'Arquitectura de Sistemas Web Escalables', id: 'service-card-featured', wrapClass: 'card-dark-grid service-card', flex: false },
@@ -16,7 +16,7 @@ const ServiceCard = ({ icon, title }) => (
     </div>
     <a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234?tab=repositories">
       Ir a Github
-      <ExternalSvg />
+      <ArrowSvg />
     </a>
   </div>
 )
@@ -37,7 +37,7 @@ const Services = () => (
         </div>
         <a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234?tab=repositories">
           Ir a Github
-          <ExternalSvg />
+          <ArrowSvg />
         </a>
       </div>
       <p>Arquitectura</p>
@@ -53,7 +53,7 @@ const Services = () => (
           </div>
           <a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234">
             Ir a Github
-            <ExternalSvg />
+            <ArrowSvg />
           </a>
         </div>
         <p>Experiencias Tridimensionales</p>
@@ -69,7 +69,7 @@ const Services = () => (
             </div>
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234">
               Ir a Github
-              <ExternalSvg />
+              <ArrowSvg />
             </a>
           </div>
           <p>Pixel perfect</p>
@@ -81,7 +81,7 @@ const Services = () => (
             <h3>Arquitectura de Sistemas de Datos</h3>
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234">
               Ir a Github
-              <ExternalSvg />
+              <ArrowSvg />
             </a>
           </div>
           <p>Infraestructura</p>
@@ -93,7 +93,7 @@ const Services = () => (
             <h3>Integración de Agentes de IA Web</h3>
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234">
               Ir a Github
-              <ExternalSvg />
+              <ArrowSvg />
             </a>
           </div>
           <p>Inteligencia artificial</p>
