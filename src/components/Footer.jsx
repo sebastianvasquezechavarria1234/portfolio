@@ -9,7 +9,7 @@ const Gallery = () => (
       </div>
     </div>
     <div className="gallery-card">
-      <img src="/img/gallery-2.webp" alt="Colombia" />
+      <img src="/img/berrio.jpg" alt="Colombia" />
       <div className="gallery-card-info">
         <p>Medellín, Colombia</p>
       </div>

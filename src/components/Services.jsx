@@ -32,7 +32,7 @@ const Services = () => (
     <div id="service-card-featured" className="card-dark-grid service-card">
       <div className="service-card-content">
         <div className="service-card-row">
-          <img src="/img/service-design.webp" alt="iconos" />
+          <img src="/img/sec-2-icon-1.webp" alt="iconos" />
           <h3>Arquitectura de Sistemas Web Escalables</h3>
         </div>
         <a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234?tab=repositories">
@@ -48,7 +48,7 @@ const Services = () => (
       <div className="card-dark-grid service-card despliegues-card">
         <div className="service-card-content">
           <div className="service-card-row despliegues-flex">
-            <img src="/img/service-code.webp" alt="iconos" className="despliegues-img" />
+            <img src="/img/sec-2-icon-2.webp" alt="iconos" className="despliegues-img" />
             <h3>Despliegues Cloud de Escala</h3>
           </div>
           <a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234">
@@ -64,7 +64,7 @@ const Services = () => (
         <div className="card-dark-grid service-card">
           <div className="service-card-content">
             <div className="service-card-row">
-              <img src="/img/service-seo.webp" alt="iconos" />
+              <img src="/img/sec-2-icon-3.webp" alt="iconos" />
               <h3>Diseño UI/UX de Élite</h3>
             </div>
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234">
@@ -77,7 +77,7 @@ const Services = () => (
 
         <div className="card-dark-grid service-card">
           <div className="service-card-content">
-            <img src="/img/service-responsive.webp" alt="iconos" />
+            <img src="/img/sec-2-icon-4.webp" alt="iconos" />
             <h3>Arquitectura de Sistemas de Datos</h3>
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234">
               Ir a Github
@@ -89,7 +89,7 @@ const Services = () => (
 
         <div className="card-dark-grid service-card">
           <div className="service-card-content">
-            <img src="/img/service-support.webp" alt="iconos" />
+            <img src="/img/sec-2-icon-5.webp" alt="iconos" />
             <h3>Integración de Agentes de IA Web</h3>
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234">
               Ir a Github
