@@ -1868,7 +1868,7 @@ header nav ul:nth-child(2) li a::before {
 
 
 .service-card-content img {
-    width: 100px;
+    width: 80px;
 }
 
 
@@ -1923,9 +1923,9 @@ header nav ul:nth-child(2) li a::before {
 }
 
 .despliegues-img {
-    width: 120px !important;
-    height: 120px;
-    margin-left: -20px;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
 }
 
 .despliegues-card p {
@@ -2112,13 +2112,12 @@ header nav ul:nth-child(2) li a::before {
     }
 
     .service-card-content img {
-        width: 60px;
+        width: 80px;
     }
 
     .despliegues-img {
-        width: 80px !important;
+        width: 80px;
         height: 80px;
-        margin-left: -15px;
     }
 
     .service-card-content>a {

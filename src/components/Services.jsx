@@ -49,14 +49,14 @@ const Services = () => (
         <div className="service-card-content">
           <div className="service-card-row despliegues-flex">
             <img src="/img/sec-2-icon-2.webp" alt="iconos" className="despliegues-img" />
-            <h3>Despliegues Cloud de Escala</h3>
+            <h3>Experiencias Web en 3D</h3>
           </div>
           <a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234">
             Ir a Github
             <ArrowSvg />
           </a>
         </div>
-        <p>Cloud & devops</p>
+        <p>Experiencias Tridimensionales</p>
       </div>
 
       {/* Cards 3, 4, 5 - right flexbox */}
