@@ -24,17 +24,16 @@ const useH2Animation = () => {
         })
 
         gsap.set(chars, {
-          scaleY: 1.8,
           opacity: 0,
-          transformOrigin: 'center bottom'
+          y: 25,
         })
 
         gsap.to(chars, {
-          scaleY: 1,
           opacity: 1,
-          duration: 0.6,
-          ease: 'power3.out',
-          stagger: 0.01,
+          y: 0,
+          duration: 1,
+          ease: 'power2.out',
+          stagger: 0.025,
           scrollTrigger: {
             trigger: h2,
             start: 'top 85%',
