@@ -1095,7 +1095,7 @@ header nav ul:nth-child(2) li a::before {
 @media screen and (max-width: 1065px) {
     header {
         height: 79px;
-        border-bottom: 1px solid rgb(152, 152, 152);
+        border-bottom: none;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -2509,7 +2509,7 @@ header nav ul:nth-child(2) li a::before {
     .projects-controls {
         max-width: 80%;
         position: sticky;
-        top: 100px;
+        top: 80px;
         border-radius: 10px;
         margin: 0 auto;
         background: #212429;
