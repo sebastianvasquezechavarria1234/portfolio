@@ -1278,7 +1278,7 @@ header nav ul:nth-child(2) li a::before {
 
 @media screen and (max-width: 1280px) {
     .container2 {
-        overflow: hidden;
+        overflow: visible;
         padding: 0px 10px;
     }
 }
@@ -2550,9 +2550,8 @@ header nav ul:nth-child(2) li a::before {
         max-width: none;
     }
 
-    .project-card .w-10.h-10 {
-        width: 32px;
-        height: 32px;
+    .project-card-image svg {
+        width: 100%;
     }
 }
 
