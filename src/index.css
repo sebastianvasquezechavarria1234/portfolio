@@ -2520,8 +2520,14 @@ header nav ul:nth-child(2) li a::before {
         margin: 0;
     }
 
+    .project-card .project-card-body > div:first-child {
+        width: 100%;
+    }
+
     .project-card .project-card-info {
         text-align: left;
+        width: 70%;
+        max-width: none;
     }
 }
 
