@@ -2146,11 +2146,11 @@ header nav ul:nth-child(2) li a::before {
     }
 
     .service-card-content img {
-        width: 80px;
+        width: 40px;
     }
 
     .despliegues-img {
-        width: 80px;
+        width: 40px;
     }
 
     .despliegues-flex {
