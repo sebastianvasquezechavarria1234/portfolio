@@ -1936,14 +1936,10 @@ header nav ul:nth-child(2) li a::before {
 }
 
 .despliegues-flex {
-    gap: 5px;
+    gap: 20px;
     flex-direction: column;
     align-items: flex-start;
     margin-top: 50px;
-}
-
-.despliegues-flex h3 {
-    margin-top: 15px;
 }
 
 .services .services-layout .service-card:nth-child(1)::after {
@@ -2129,6 +2125,14 @@ header nav ul:nth-child(2) li a::before {
 
     .despliegues-img {
         width: 80px;
+    }
+
+    .despliegues-flex {
+        margin-top: 0;
+    }
+
+    .despliegues-card p {
+        left: 0;
     }
 
     .service-card-content>a {
