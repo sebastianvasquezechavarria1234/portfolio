@@ -151,7 +151,13 @@ const ProjectCard = ({ href, githubHref, liveHref, img, bg, num, title, desc, ic
 
   if (isUiux) {
     return (
-      <div className="card-dark project-card project-card--uiux" style={{ backgroundImage: `url(${bg}), var(--linear-gradient-card-blur)` }}>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href={liveHref}
+        className="card-dark project-card project-card--uiux"
+        style={{ backgroundImage: `url(${bg}), var(--linear-gradient-card-blur)` }}
+      >
         <div className="project-card-image">
           <img src={img} alt={`Captura del proyecto ${title}`} />
           <HoverLinePath />
@@ -168,15 +174,15 @@ const ProjectCard = ({ href, githubHref, liveHref, img, bg, num, title, desc, ic
             </div>
           </div>
           <div className="w-[15%] flex gap-2 items-center justify-end">
-            <a href={liveHref} target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex justify-center items-center bg-white/[0.076] shadow-[4px_4px_20px_rgba(0,0,0,0.098)] rounded-lg" title="Ver página">
+            <a href={liveHref} target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex justify-center items-center bg-white/[0.076] shadow-[4px_4px_20px_rgba(0,0,0,0.098)] rounded-lg" title="Ver página" onClick={(e) => e.stopPropagation()}>
               <ExternalSvg className="w-5 h-5" />
             </a>
-            <a href={githubHref} target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex justify-center items-center bg-white/[0.076] shadow-[4px_4px_20px_rgba(0,0,0,0.098)] rounded-lg" title="Ver código">
+            <a href={githubHref} target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex justify-center items-center bg-white/[0.076] shadow-[4px_4px_20px_rgba(0,0,0,0.098)] rounded-lg" title="Ver código" onClick={(e) => e.stopPropagation()}>
               <GithubSvg className="w-5 h-5" />
             </a>
           </div>
         </div>
-      </div>
+      </a>
     )
   }
 
