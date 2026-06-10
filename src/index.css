@@ -1916,22 +1916,30 @@ header nav ul:nth-child(2) li a::before {
     margin-top: auto;
 }
 
-.despliegues-flex {
-    gap: 5px;
-    flex-direction: column;
-    align-items: flex-start;
+#service-card-featured .service-card-row {
+    align-items: center;
+}
+
+.services-grid > .card-dark-grid:first-child .service-card-row {
+    align-items: center;
 }
 
 .despliegues-img {
     width: 80px;
-    height: 80px;
     margin-bottom: 10px;
 }
 
 .despliegues-card p {
     white-space: nowrap;
     position: relative;
-    left: -20px;
+    left: -70px;
+}
+
+.despliegues-flex {
+    gap: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
 }
 
 .services .services-layout .service-card:nth-child(1)::after {
