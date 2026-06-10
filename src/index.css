@@ -2506,12 +2506,13 @@ header nav ul:nth-child(2) li a::before {
     }
 
     .projects-controls {
-        max-width: 100%;
+        max-width: 73%;
         position: sticky;
         top: 0;
-        border-radius: 0;
-        margin: 0;
-        width: 100%;
+        border-radius: 10px;
+        margin: 0 auto;
+        background: #212429;
+        z-index: 100;
     }
 
     .projects-controls p {
