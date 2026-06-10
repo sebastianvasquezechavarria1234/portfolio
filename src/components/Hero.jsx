@@ -23,7 +23,7 @@ const Hero = () => (
     <section className="container">
       <div className="hero-content">
         <h1>Hola, soy Sebas. Tu desarrollador web.</h1>
-        <p>Me apasiona diseñar experiencias digitales atractivas y accesibles que priorizan siempre las necesidades del usuario.</p>
+        <p>Donde otros ven tecnología, yo veo posibilidades infinitas. Combino diseño, código, inteligencia artificial y experiencias 3D para transformar ideas en universos digitales que cobran vida.</p>
 
         <a href="#proyectos">
           Ver proyectos
