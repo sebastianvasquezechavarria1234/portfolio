@@ -1951,6 +1951,7 @@ header nav ul:nth-child(2) li a::before {
 }
 
 .despliegues-flex {
+    width: 200px;
     gap: 20px;
     flex-direction: column;
     align-items: flex-start;
