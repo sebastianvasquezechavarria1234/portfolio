@@ -2476,7 +2476,8 @@ header nav ul:nth-child(2) li a::before {
 
 }
 
-.project-card--uiux .project-card-info p {
+.project-card--uiux .project-card-info p,
+.project-card .project-card-info p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -2500,26 +2501,26 @@ header nav ul:nth-child(2) li a::before {
 }
 
 @media screen and (max-width: 600px) {
-    .project-card--uiux {
-        padding: 10px;
+    .project-card {
+        padding: 23px;
     }
 
-    .project-card--uiux .project-card-number {
+    .project-card .project-card-number {
         position: absolute;
-        top: 50%;
+        top: calc(50% - 90px);
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translateX(-50%);
         z-index: 3;
     }
 
-    .project-card--uiux .project-card-body {
+    .project-card .project-card-body {
         position: relative;
         z-index: 2;
         padding: 10px;
         margin: 0;
     }
 
-    .project-card--uiux .project-card-info {
+    .project-card .project-card-info {
         text-align: left;
     }
 }

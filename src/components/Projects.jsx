@@ -199,16 +199,23 @@ const ProjectCard = ({ href, githubHref, liveHref, img, bg, num, title, desc, ic
         <HoverLinePath />
       </div>
       <div className="project-card-body">
-        <div className="project-card-number">
-          <h5>{num}</h5>
+        <div className="flex items-center gap-3 w-[85%]">
+          <div className="project-card-number">
+            <h5>{num}</h5>
+          </div>
+          <div className="project-card-info">
+            <h4>{title}</h4>
+            <p>{desc}</p>
+          </div>
         </div>
-        <div className="project-card-info">
-          <h4>{title}</h4>
-          <p>{desc}</p>
+        <div className="w-[15%] flex gap-2 items-center justify-end">
+          <span className="w-10 h-10 flex justify-center items-center bg-white/[0.076] shadow-[4px_4px_20px_rgba(0,0,0,0.098)] rounded-lg" title="Ver proyecto">
+            <ExternalSvg className="w-5 h-5" />
+          </span>
+          <a href={href} target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex justify-center items-center bg-white/[0.076] shadow-[4px_4px_20px_rgba(0,0,0,0.098)] rounded-lg" title="Ver código" onClick={(e) => e.stopPropagation()}>
+            <GithubSvg className="w-5 h-5" />
+          </a>
         </div>
-        <span>
-          <ArrowSvg />
-        </span>
       </div>
     </a>
   )
