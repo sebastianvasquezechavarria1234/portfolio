@@ -2177,6 +2177,7 @@ header nav ul:nth-child(2) li a::before {
 .projects {
     position: relative;
     margin-top: 120px;
+    display: block;
 }
 
 
@@ -2547,6 +2548,11 @@ header nav ul:nth-child(2) li a::before {
         text-align: left;
         width: 70%;
         max-width: none;
+    }
+
+    .project-card .w-10.h-10 {
+        width: 32px;
+        height: 32px;
     }
 }
 
