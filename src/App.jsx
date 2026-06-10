@@ -1,5 +1,6 @@
 ﻿import { useEffect } from 'react'
 import Lenis from 'lenis'
+import useH2Animation from './hooks/useH2Animation'
 import LoadingScreen from './components/LoadingScreen'
 import Header from './components/Header'
 import Hero from './components/Hero'
@@ -12,6 +13,8 @@ import About from './components/About'
 import Footer from './components/Footer'
 
 function App() {
+  useH2Animation()
+
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
