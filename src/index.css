@@ -2518,7 +2518,7 @@ header nav ul:nth-child(2) li a::before {
 
     .projects-controls p {
         padding: 10px;
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .project-card {
@@ -2548,6 +2548,16 @@ header nav ul:nth-child(2) li a::before {
         text-align: left;
         width: 70%;
         max-width: none;
+    }
+
+    .project-card .w-10.h-10 {
+        width: 34px !important;
+        height: 34px !important;
+    }
+
+    .project-card .w-\[15px\].h-\[15px\] {
+        width: 12px !important;
+        height: 12px !important;
     }
 
     .project-card-image svg {
