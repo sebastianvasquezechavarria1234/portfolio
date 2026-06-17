@@ -40,7 +40,7 @@ const myProjects = [
 const clonedProjects = [
   {
     href: '#',
-    img: '/img/projects/clone/bicicleta.jpg',
+    img: '/img/projects/clone/me.png',
     bg: '/img/projects/bg-project-matter.webp',
     num: '#001',
     title: 'Bicicleta Clone',
@@ -76,7 +76,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234/circular-gallery',
     liveHref: 'https://circular-gallery-beta.vercel.app/',
-    img: '/img/projects/ui-ux/circular-gallery.jpg',
+    img: '/img/projects/ui-ux/mee.png',
     bg: '/img/projects/bg-project-matter.webp',
     num: '#001',
     title: 'Circular Gallery',
@@ -85,7 +85,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234/infinite-menu',
     liveHref: 'https://sebas-infinite-menu.vercel.app/',
-    img: '/img/projects/ui-ux/infinite-menu.jpg',
+    img: '/img/projects/ui-ux/meee.png',
     bg: '/img/projects/bg-project-mustang.webp',
     num: '#002',
     title: 'Infinite Menu',
@@ -94,7 +94,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234/evil-aye',
     liveHref: 'https://evil-aye-eov5.vercel.app/',
-    img: '/img/projects/ui-ux/evil-eye.jpg',
+    img: '/img/projects/ui-ux/a.png',
     bg: '/img/projects/bg-project-breef.webp',
     num: '#003',
     title: 'Evil Eye',
@@ -103,7 +103,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234/gallery-slider',
     liveHref: 'https://gallery-slider-one.vercel.app/',
-    img: '/img/projects/ui-ux/gallery-slider.jpg',
+    img: '/img/projects/ui-ux/parallax-depth.jpg',
     bg: '/img/projects/bg-project-ginebra.webp',
     num: '#004',
     title: 'Gallery Slider',
