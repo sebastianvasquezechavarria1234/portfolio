@@ -1,4 +1,4 @@
-# ✦ Sebastián Vásquez — Portfolio 2026
+# Sebastián Vásquez — Portfolio 2026
 
 <div align="center">
   <p align="center">
@@ -11,13 +11,13 @@
 
 ---
 
-### 🖋️ Editorial Excellence in Digital Form
+### Editorial Excellence in Digital Form
 
 This is a premium, editorial-inspired digital portfolio. Migrated from static code to a high-performance architecture using **React 19** and **Vite**, it focuses on advanced visual storytelling and an uncompromising user experience.
 
 ---
 
-## ✨ Design Philosophy
+## Design Philosophy
 
 The project follows a **high-end editorial aesthetic**, characterized by:
 - **Bold Typography**: High-impact headings using `Bricolage Grotesque`.
@@ -26,7 +26,7 @@ The project follows a **high-end editorial aesthetic**, characterized by:
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 - **Fluid Navigation**: Powered by [Lenis Smooth Scroll](https://github.com/darkroomengineering/lenis) for a premium browsing feel.
 - **Gradual Blur Header**: An Apple-inspired progressive blur effect that adds depth and elegance.
@@ -36,7 +36,7 @@ The project follows a **high-end editorial aesthetic**, characterized by:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend Core
 - **React 19**: Leveraging the latest features for modern web development.
@@ -50,7 +50,7 @@ The project follows a **high-end editorial aesthetic**, characterized by:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```bash
 src/
@@ -63,7 +63,7 @@ src/
 
 ---
 
-## 🏗️ Getting Started
+## Getting Started
 
 1. **Clone the repository**
    ```bash
@@ -83,7 +83,7 @@ src/
 
 ---
 
-## 🤝 Connect with me
+## Connect with me
 
 <div align="center">
   <a href="https://github.com/sebastianvasquezechavarria1234" target="_blank">
