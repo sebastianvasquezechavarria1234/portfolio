@@ -5,7 +5,7 @@ import { ArrowSvg, HoverLinePath, GithubSvg, ExternalSvg } from './Icons'
 const myProjects = [
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/matter',
-    img: '/img/project-matter.webp',
+    img: '/img/projects/me/gene.png',
     bg: '/img/projects/bg-project-matter.webp',
     num: '#001',
     title: 'Matter',
@@ -13,7 +13,7 @@ const myProjects = [
   },
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/Ford-Mustang',
-    img: '/img/project-mustang.webp',
+    img: '/img/projects/me/genee.png',
     bg: '/img/projects/bg-project-mustang.webp',
     num: '#002',
     title: 'Ford Mustang',
@@ -21,7 +21,7 @@ const myProjects = [
   },
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/breef-version1.1',
-    img: '/img/project-breef.webp',
+    img: '/img/projects/me/gen.png',
     bg: '/img/projects/bg-project-breef.webp',
     num: '#003',
     title: 'Breef',
@@ -48,7 +48,7 @@ const clonedProjects = [
   },
   {
     href: '#',
-    img: '/img/projects/clone/galletas.jpg',
+    img: '/img/projects/clone/lete.png',
     bg: '/img/projects/bg-project-mustang.webp',
     num: '#002',
     title: 'Galletas Clone',
@@ -64,7 +64,7 @@ const clonedProjects = [
   },
   {
     href: '#',
-    img: '/img/projects/clone/breef.jpg',
+    img: '/img/projects/clone/galletas.jpg',
     bg: '/img/projects/bg-project-ginebra.webp',
     num: '#004',
     title: 'Breef Clone',
@@ -114,7 +114,7 @@ const uiuxComponents = [
 const threeDProjects = [
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/cosmic-explorer',
-    img: '/img/like-1.png',
+    img: '/img/projects/3d/clone.jpg',
     bg: '/img/projects/bg-project-matter.webp',
     num: '#001',
     title: 'Sinfonía Cósmica',
