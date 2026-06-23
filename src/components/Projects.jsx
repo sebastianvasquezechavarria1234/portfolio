@@ -76,7 +76,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234/circular-gallery',
     liveHref: 'https://circular-gallery-beta.vercel.app/',
-    img: '/img/projects/ui-ux/mee.png',
+    img: '/img/projects/ui-ux/image-tiles-menu.jpg',
     bg: '/img/projects/bg-project-matter.webp',
     num: '#001',
     title: 'Circular Gallery',
@@ -85,7 +85,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234/infinite-menu',
     liveHref: 'https://sebas-infinite-menu.vercel.app/',
-    img: '/img/projects/ui-ux/meee.png',
+    img: '/img/projects/ui-ux/full-screen-clip-effect.jpg',
     bg: '/img/projects/bg-project-mustang.webp',
     num: '#002',
     title: 'Infinite Menu',
@@ -94,7 +94,7 @@ const uiuxComponents = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234/evil-aye',
     liveHref: 'https://evil-aye-eov5.vercel.app/',
-    img: '/img/projects/ui-ux/a.png',
+    img: '/img/projects/ui-ux/webgl-slider-effects.jpg',
     bg: '/img/projects/bg-project-breef.webp',
     num: '#003',
     title: 'Evil Eye',
