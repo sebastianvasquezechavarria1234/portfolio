@@ -40,7 +40,7 @@ const myProjects = [
 const clonedProjects = [
   {
     href: '#',
-    img: '/img/projects/clone/me.png',
+    img: '/img/projects/clone/1.png',
     bg: '/img/projects/bg-project-matter.webp',
     num: '#001',
     title: 'Bicicleta Clone',
@@ -48,7 +48,7 @@ const clonedProjects = [
   },
   {
     href: '#',
-    img: '/img/projects/clone/lete.png',
+    img: '/img/projects/clone/2.png',
     bg: '/img/projects/bg-project-mustang.webp',
     num: '#002',
     title: 'Galletas Clone',
