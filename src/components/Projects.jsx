@@ -40,7 +40,7 @@ const myProjects = [
 const clonedProjects = [
   {
     href: '#',
-    img: '/img/projects/clone/1.png',
+    img: '/img/projects/clone/2.png',
     bg: '/img/projects/bg-project-matter.webp',
     num: '#001',
     title: 'Bicicleta Clone',
@@ -48,7 +48,7 @@ const clonedProjects = [
   },
   {
     href: '#',
-    img: '/img/projects/clone/2.png',
+    img: '/img/projects/clone/ginebra.jpg',
     bg: '/img/projects/bg-project-mustang.webp',
     num: '#002',
     title: 'Galletas Clone',
@@ -56,7 +56,7 @@ const clonedProjects = [
   },
   {
     href: '#',
-    img: '/img/projects/clone/ginebra.jpg',
+    img: '/img/projects/clone/galletas.jpg',
     bg: '/img/projects/bg-project-breef.webp',
     num: '#003',
     title: 'Ginebra Clone',
@@ -64,7 +64,7 @@ const clonedProjects = [
   },
   {
     href: '#',
-    img: '/img/projects/clone/galletas.jpg',
+    img: '/img/projects/clone/e-2.png',
     bg: '/img/projects/bg-project-ginebra.webp',
     num: '#004',
     title: 'Breef Clone',
