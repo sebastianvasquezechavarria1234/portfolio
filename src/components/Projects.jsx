@@ -5,7 +5,7 @@ import { ArrowSvg, HoverLinePath, GithubSvg, ExternalSvg } from './Icons'
 const myProjects = [
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/matter',
-    img: '/img/projects/me/gene.png',
+    img: '/img/projects/me/genesis.png',
     bg: '/img/projects/bg-project-matter.webp',
     num: '#001',
     title: 'Matter',
@@ -40,7 +40,7 @@ const myProjects = [
 const clonedProjects = [
   {
     href: '#',
-    img: '/img/projects/clone/2.png',
+    img: '/img/projects/clone/alfoart-clone.jpg',
     bg: '/img/projects/bg-project-matter.webp',
     num: '#001',
     title: 'Bicicleta Clone',
@@ -114,7 +114,7 @@ const uiuxComponents = [
 const threeDProjects = [
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/cosmic-explorer',
-    img: '/img/projects/3d/clone.jpg',
+    img: '/img/projects/3d/cl.png',
     bg: '/img/projects/bg-project-matter.webp',
     num: '#001',
     title: 'Sinfonía Cósmica',
@@ -122,7 +122,8 @@ const threeDProjects = [
   },
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/museo-del-cosmos',
-    img: '/img/projects/3d/pe.png',
+    img: '/img/projects/3d/drive-simulation-3d
+    .png',
     bg: '/img/projects/bg-project-mustang.webp',
     num: '#002',
     title: 'Museo del Cosmos',
@@ -138,7 +139,7 @@ const threeDProjects = [
   },
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/matter',
-    img: '/img/like-4.png',
+    img: '/img/projects/3d/clo.png',
     bg: '/img/projects/bg-project-ginebra.webp',
     num: '#004',
     title: 'Experiencia Interactiva',
