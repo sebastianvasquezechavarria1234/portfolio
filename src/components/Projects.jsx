@@ -13,7 +13,7 @@ const myProjects = [
   },
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/Ford-Mustang',
-    img: '/img/projects/me/genee.png',
+    img: '/img/projects/me/m.png',
     bg: '/img/projects/bg-project-mustang.webp',
     num: '#002',
     title: 'Ford Mustang',
@@ -21,7 +21,7 @@ const myProjects = [
   },
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/breef-version1.1',
-    img: '/img/projects/me/gen.png',
+    img: '/img/projects/me/s.png',
     bg: '/img/projects/bg-project-breef.webp',
     num: '#003',
     title: 'Breef',
@@ -29,7 +29,7 @@ const myProjects = [
   },
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/ginebra',
-    img: '/img/project-ginebra.webp',
+    img: '/img/projects/me/e.png',
     bg: '/img/projects/bg-project-ginebra.webp',
     num: '#004',
     title: 'Ginebra',
@@ -122,8 +122,7 @@ const threeDProjects = [
   },
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/museo-del-cosmos',
-    img: '/img/projects/3d/drive-simulation-3d
-    .png',
+    img: '/img/projects/3d/drive-simulation-3d.jpg',
     bg: '/img/projects/bg-project-mustang.webp',
     num: '#002',
     title: 'Museo del Cosmos',
