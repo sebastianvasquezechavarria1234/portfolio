@@ -5,7 +5,7 @@ import { ArrowSvg, HoverLinePath, GithubSvg, ExternalSvg } from './Icons'
 const myProjects = [
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/matter',
-    img: '/img/projects/me/genesis.png',
+    img: '/img/projects/me/w.png',
     bg: '/img/projects/bg-project-matter.webp',
     num: '#001',
     title: 'Matter',
@@ -13,7 +13,7 @@ const myProjects = [
   },
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/Ford-Mustang',
-    img: '/img/projects/me/m.png',
+    img: '/img/projects/me/i.png',
     bg: '/img/projects/bg-project-mustang.webp',
     num: '#002',
     title: 'Ford Mustang',
@@ -21,7 +21,7 @@ const myProjects = [
   },
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/breef-version1.1',
-    img: '/img/projects/me/s.png',
+    img: '/img/projects/me/r.jpg',
     bg: '/img/projects/bg-project-breef.webp',
     num: '#003',
     title: 'Breef',
@@ -29,7 +29,7 @@ const myProjects = [
   },
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/ginebra',
-    img: '/img/projects/me/e.png',
+    img: '/img/projects/me/myke-towers.jpg',
     bg: '/img/projects/bg-project-ginebra.webp',
     num: '#004',
     title: 'Ginebra',
