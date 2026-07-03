@@ -903,11 +903,11 @@ header nav ul:nth-child(1) li a svg .wavy-path {
 }
 
 .wavy-draw .wavy-path {
-    animation: wavyDraw .8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    animation: wavyDraw .8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 .wavy-undraw .wavy-path {
-    animation: wavyUndraw .8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    animation: wavyUndraw .8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 @keyframes wavyDraw {

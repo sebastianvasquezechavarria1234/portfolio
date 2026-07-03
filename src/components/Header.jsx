@@ -1,14 +1,47 @@
-﻿import { useState, useEffect } from 'react'
+﻿import { useState, useEffect, useRef } from 'react'
 import { WavySvg, DropdownSvg, SocialLinks, ScrollTopSvg } from './Icons'
 import GradualBlur from './GradualBlur'
+
+const navItems = [
+  { id: 'exp', href: '#experiencia', label: 'Experiencia' },
+  { id: 'blog', href: '#blog', label: 'Recursos de aprendizaje' },
+  { id: 'taller', href: '#taller', label: 'Laboratorio de estudio' },
+  { id: 'sobre', href: '#sobre-mí', label: 'Sobre mí' },
+]
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [showScrollBtn, setShowScrollBtn] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
-  const [wavyHover, setWavyHover] = useState(null)
-  const [wavyKey, setWavyKey] = useState(0)
+  const [wavyStates, setWavyStates] = useState(() =>
+    Object.fromEntries(navItems.map(item => [item.id, { key: 0, anim: '' }]))
+  )
+  const prevHovered = useRef(null)
+
+  const handleWavyEnter = (id) => {
+    const prevId = prevHovered.current
+    prevHovered.current = id
+    setWavyStates(prev => {
+      const next = { ...prev }
+      next[id] = { key: (prev[id]?.key || 0) + 1, anim: 'wavy-draw' }
+      if (prevId && prevId !== id) {
+        next[prevId] = { key: (prev[prevId]?.key || 0) + 1, anim: 'wavy-undraw' }
+      }
+      return next
+    })
+  }
+
+  const handleWavyLeave = () => {
+    const prevId = prevHovered.current
+    if (prevId) {
+      setWavyStates(prev => ({
+        ...prev,
+        [prevId]: { key: (prev[prevId]?.key || 0) + 1, anim: 'wavy-undraw' }
+      }))
+    }
+    prevHovered.current = null
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -73,15 +106,17 @@ const Header = () => {
             <li>
               <a href="#"><img src="/img/favicon.webp" alt="logo" />Sebas</a>
             </li>
-            <li>
-              <a href="#experiencia"
-                onMouseEnter={() => { setWavyHover('exp'); setWavyKey(k => k + 1) }}
-                onMouseLeave={() => { setWavyHover(null); setWavyKey(k => k + 1) }}
-              >
-                Experiencia
-                <WavySvg key={`exp-${wavyKey}`} animClass={wavyHover === 'exp' ? 'wavy-draw' : 'wavy-undraw'} />
-              </a>
-            </li>
+            {navItems.map(item => (
+              <li key={item.id}>
+                <a href={item.href}
+                  onMouseEnter={() => handleWavyEnter(item.id)}
+                  onMouseLeave={handleWavyLeave}
+                >
+                  {item.label}
+                  <WavySvg key={`${item.id}-${wavyStates[item.id]?.key || 0}`} animClass={wavyStates[item.id]?.anim || ''} />
+                </a>
+              </li>
+            ))}
             <li className="header-nav-item">
               <a href="#proyectos">
                 Proyectos
@@ -93,33 +128,6 @@ const Header = () => {
                 <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234/breef-version1.1">Breef</a></li>
                 <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234/ginebra">Ginebra</a></li>
               </ul>
-            </li>
-            <li>
-              <a href="#blog"
-                onMouseEnter={() => { setWavyHover('blog'); setWavyKey(k => k + 1) }}
-                onMouseLeave={() => { setWavyHover(null); setWavyKey(k => k + 1) }}
-              >
-                Recursos de aprendizaje
-                <WavySvg key={`blog-${wavyKey}`} animClass={wavyHover === 'blog' ? 'wavy-draw' : 'wavy-undraw'} />
-              </a>
-            </li>
-            <li>
-              <a href="#taller"
-                onMouseEnter={() => { setWavyHover('taller'); setWavyKey(k => k + 1) }}
-                onMouseLeave={() => { setWavyHover(null); setWavyKey(k => k + 1) }}
-              >
-                Laboratorio de estudio
-                <WavySvg key={`taller-${wavyKey}`} animClass={wavyHover === 'taller' ? 'wavy-draw' : 'wavy-undraw'} />
-              </a>
-            </li>
-            <li>
-              <a href="#sobre-mí"
-                onMouseEnter={() => { setWavyHover('sobre'); setWavyKey(k => k + 1) }}
-                onMouseLeave={() => { setWavyHover(null); setWavyKey(k => k + 1) }}
-              >
-                Sobre mí
-                <WavySvg key={`sobre-${wavyKey}`} animClass={wavyHover === 'sobre' ? 'wavy-draw' : 'wavy-undraw'} />
-              </a>
             </li>
             <li></li>
           </ul>
