@@ -7,6 +7,8 @@ const Header = () => {
   const [showScrollBtn, setShowScrollBtn] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
+  const [wavyHover, setWavyHover] = useState(null)
+  const [wavyKey, setWavyKey] = useState(0)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -72,9 +74,12 @@ const Header = () => {
               <a href="#"><img src="/img/favicon.webp" alt="logo" />Sebas</a>
             </li>
             <li>
-              <a href="#experiencia">
+              <a href="#experiencia"
+                onMouseEnter={() => { setWavyHover('exp'); setWavyKey(k => k + 1) }}
+                onMouseLeave={() => { setWavyHover(null); setWavyKey(k => k + 1) }}
+              >
                 Experiencia
-                <WavySvg />
+                <WavySvg key={`exp-${wavyKey}`} animClass={wavyHover === 'exp' ? 'wavy-draw' : 'wavy-undraw'} />
               </a>
             </li>
             <li className="header-nav-item">
@@ -90,21 +95,30 @@ const Header = () => {
               </ul>
             </li>
             <li>
-              <a href="#blog">
+              <a href="#blog"
+                onMouseEnter={() => { setWavyHover('blog'); setWavyKey(k => k + 1) }}
+                onMouseLeave={() => { setWavyHover(null); setWavyKey(k => k + 1) }}
+              >
                 Recursos de aprendizaje
-                <WavySvg />
+                <WavySvg key={`blog-${wavyKey}`} animClass={wavyHover === 'blog' ? 'wavy-draw' : 'wavy-undraw'} />
               </a>
             </li>
             <li>
-              <a href="#taller">
+              <a href="#taller"
+                onMouseEnter={() => { setWavyHover('taller'); setWavyKey(k => k + 1) }}
+                onMouseLeave={() => { setWavyHover(null); setWavyKey(k => k + 1) }}
+              >
                 Laboratorio de estudio
-                <WavySvg />
+                <WavySvg key={`taller-${wavyKey}`} animClass={wavyHover === 'taller' ? 'wavy-draw' : 'wavy-undraw'} />
               </a>
             </li>
             <li>
-              <a href="#sobre-mí">
+              <a href="#sobre-mí"
+                onMouseEnter={() => { setWavyHover('sobre'); setWavyKey(k => k + 1) }}
+                onMouseLeave={() => { setWavyHover(null); setWavyKey(k => k + 1) }}
+              >
                 Sobre mí
-                <WavySvg />
+                <WavySvg key={`sobre-${wavyKey}`} animClass={wavyHover === 'sobre' ? 'wavy-draw' : 'wavy-undraw'} />
               </a>
             </li>
             <li></li>

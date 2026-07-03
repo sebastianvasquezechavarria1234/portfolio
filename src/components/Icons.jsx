@@ -1,6 +1,6 @@
 ﻿// Wavy underline SVG used in nav links
-export const WavySvg = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="53" height="4" viewBox="0 0 53 4" fill="none" className="wavy-svg">
+export const WavySvg = ({ animClass = '' }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="53" height="4" viewBox="0 0 53 4" fill="none" className={`wavy-svg ${animClass}`}>
     <g clipPath="url(#clip0)">
       <path
         className="wavy-path"

@@ -890,21 +890,34 @@ header nav ul:nth-child(1) li a svg {
     height: 5px;
     bottom: 10%;
     left: 0%;
-    transition: opacity .3s;
 }
 
-header nav ul:nth-child(1) li a:hover svg {
-    opacity: 1;
+header nav ul:nth-child(1) li a svg.wavy-draw,
+header nav ul:nth-child(1) li a svg.wavy-undraw {
+    opacity: 1 !important;
 }
 
 header nav ul:nth-child(1) li a svg .wavy-path {
     stroke-dasharray: 160;
-    stroke-dashoffset: 160;
-    transition: stroke-dashoffset .5s ease;
+    stroke-dashoffset: -160;
 }
 
-header nav ul:nth-child(1) li a:hover svg .wavy-path {
-    stroke-dashoffset: 0;
+.wavy-draw .wavy-path {
+    animation: wavyDraw .8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.wavy-undraw .wavy-path {
+    animation: wavyUndraw .8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes wavyDraw {
+    from { stroke-dashoffset: -160; }
+    to { stroke-dashoffset: 0; }
+}
+
+@keyframes wavyUndraw {
+    from { stroke-dashoffset: 0; }
+    to { stroke-dashoffset: 160; }
 }
 
 header nav ul:nth-child(1) li a::before {
