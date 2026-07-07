@@ -4,7 +4,8 @@ import { ArrowSvg, HoverLinePath, GithubSvg, ExternalSvg } from './Icons'
 
 const myProjects = [
   {
-    href: 'https://github.com/sebastianvasquezechavarria1234/cosmos-museum',
+    githubHref: 'https://github.com/sebastianvasquezechavarria1234/cosmos-museum',
+    liveHref: 'https://cosmos-museum.vercel.app/',
     img: '/img/projects/me/s.png',
     bg: '/img/projects/bg-project-matter.webp',
     num: '#001',
@@ -12,7 +13,8 @@ const myProjects = [
     desc: 'Museo cósmico inmersivo con...',
   },
   {
-    href: 'https://github.com/GenesisPixel/genesis-pixel-website',
+    githubHref: 'https://github.com/GenesisPixel/genesis-pixel-website',
+    liveHref: 'https://genesis-pixel.vercel.app/',
     img: '/img/projects/me/w.png',
     bg: '/img/projects/bg-project-mustang.webp',
     num: '#002',
@@ -20,7 +22,8 @@ const myProjects = [
     desc: 'Sitio web de agencia creativa...',
   },
   {
-    href: 'https://github.com/sebastianvasquezechavarria1234/myke-towers',
+    githubHref: 'https://github.com/sebastianvasquezechavarria1234/myke-towers',
+    liveHref: 'https://myke-towers.vercel.app/',
     img: '/img/projects/me/myke-towers.jpg',
     bg: '/img/projects/bg-project-ginebra.webp',
     num: '#003',
@@ -28,7 +31,8 @@ const myProjects = [
     desc: 'Página web dedicada al artista...',
   },
   {
-    href: 'https://github.com/sebastianvasquezechavarria1234/zenith-gpt',
+    githubHref: 'https://github.com/sebastianvasquezechavarria1234/zenith-gpt',
+    liveHref: 'https://zenith-gpt.vercel.app/',
     img: '/img/projects/me/r.jpg',
     bg: '/img/projects/bg-project-breef.webp',
     num: '#004',
@@ -39,7 +43,8 @@ const myProjects = [
 
 const clonedProjects = [
   {
-    href: 'https://alfoart-clone.vercel.app/',
+    githubHref: 'https://github.com/sebastianvasquezechavarria1234/alfoart-clone',
+    liveHref: 'https://alfoart-clone.vercel.app/',
     img: '/img/projects/clone/alfoart-clone.jpg',
     bg: '/img/projects/bg-project-matter.webp',
     num: '#001',
@@ -47,15 +52,17 @@ const clonedProjects = [
     desc: 'Réplica de interfaz de...',
   },
   {
-    href: '#',
+    githubHref: 'https://github.com/sebastianvasquezechavarria1234/ginebra',
+    liveHref: 'https://ginebra.vercel.app/',
     img: '/img/projects/clone/ginebra.jpg',
     bg: '/img/projects/bg-project-mustang.webp',
     num: '#002',
-    title: 'Galletas Clone',
-    desc: 'Sistema de reservas dinámico...',
+    title: 'Ginebra Clone',
+    desc: 'Réplica de interfaz de...',
   },
   {
-    href: '#',
+    githubHref: '#',
+    liveHref: '#',
     img: '/img/projects/clone/galletas.jpg',
     bg: '/img/projects/bg-project-breef.webp',
     num: '#003',
@@ -63,7 +70,8 @@ const clonedProjects = [
     desc: 'Rediseño de la interfaz de Git...',
   },
   {
-    href: '#',
+    githubHref: '#',
+    liveHref: '#',
     img: '/img/projects/clone/e-2.png',
     bg: '/img/projects/bg-project-ginebra.webp',
     num: '#004',
@@ -148,49 +156,14 @@ const threeDProjects = [
 
 const ProjectCard = ({ href, githubHref, liveHref, img, bg, num, title, desc, icon }) => {
   const isUiux = githubHref && liveHref
-
-  if (isUiux) {
-    return (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href={liveHref}
-        className="card-dark project-card project-card--uiux"
-        style={{ backgroundImage: `url(${bg}), var(--linear-gradient-card-blur)` }}
-      >
-        <div className="project-card-image">
-          <img src={img} alt={`Captura del proyecto ${title}`} />
-          <HoverLinePath />
-        </div>
-        <div className="project-card-body">
-          <div className="flex items-center gap-3 w-[85%]">
-            <div className="project-card-number">
-              <h5 className="uiux-number">{num}</h5>
-              <img className="uiux-icon-img" src={icon || '/img/bg-uiux.webp'} alt={title} />
-            </div>
-            <div className="project-card-info">
-              <h4>{title}</h4>
-              <p>{desc}</p>
-            </div>
-          </div>
-          <div className="w-[15%] flex gap-2 items-center justify-end">
-            <a href={liveHref} target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex justify-center items-center bg-white/[0.076] shadow-[4px_4px_20px_rgba(0,0,0,0.098)] rounded-lg" title="Ver página" onClick={(e) => e.stopPropagation()}>
-              <ExternalSvg className="w-[15px] h-[15px]" />
-            </a>
-            <a href={githubHref} target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex justify-center items-center bg-white/[0.076] shadow-[4px_4px_20px_rgba(0,0,0,0.098)] rounded-lg" title="Ver código" onClick={(e) => e.stopPropagation()}>
-              <GithubSvg className="w-[15px] h-[15px]" />
-            </a>
-          </div>
-        </div>
-      </a>
-    )
-  }
+  const liveUrl = liveHref || href
+  const githubUrl = githubHref || href
 
   return (
     <a
       target="_blank"
       rel="noopener noreferrer"
-      href={href}
+      href={liveUrl}
       className="card-dark project-card project-card--uiux"
       style={{ backgroundImage: `url(${bg}), var(--linear-gradient-card-blur)` }}
     >
@@ -210,10 +183,10 @@ const ProjectCard = ({ href, githubHref, liveHref, img, bg, num, title, desc, ic
           </div>
         </div>
         <div className="w-[15%] flex gap-2 items-center justify-end">
-          <a href={href} target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex justify-center items-center bg-white/[0.076] shadow-[4px_4px_20px_rgba(0,0,0,0.098)] rounded-lg" title="Ver proyecto" onClick={(e) => e.stopPropagation()}>
+          <a href={liveUrl} target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex justify-center items-center bg-white/[0.076] shadow-[4px_4px_20px_rgba(0,0,0,0.098)] rounded-lg" title="Ver página" onClick={(e) => e.stopPropagation()}>
             <ExternalSvg className="w-[15px] h-[15px]" />
           </a>
-          <a href={href} target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex justify-center items-center bg-white/[0.076] shadow-[4px_4px_20px_rgba(0,0,0,0.098)] rounded-lg" title="Ver código" onClick={(e) => e.stopPropagation()}>
+          <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex justify-center items-center bg-white/[0.076] shadow-[4px_4px_20px_rgba(0,0,0,0.098)] rounded-lg" title="Ver código" onClick={(e) => e.stopPropagation()}>
             <GithubSvg className="w-[15px] h-[15px]" />
           </a>
         </div>

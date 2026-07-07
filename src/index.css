@@ -2494,7 +2494,7 @@ header nav ul:nth-child(2) li a::before {
 }
 
 .project-card--uiux:nth-child(2) .project-card-number {
-    background-color: var(--purple);
+    background-color: var(--blue);
 }
 
 .project-card--uiux .uiux-number {
