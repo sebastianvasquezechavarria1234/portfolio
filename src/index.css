@@ -2517,6 +2517,14 @@ header nav ul:nth-child(2) li a::before {
     stroke: var(--orange);
 }
 
+.project-card--uiux:nth-child(1) .project-card-image svg path {
+    stroke: var(--green);
+}
+
+.project-card--uiux:nth-child(2) .project-card-image svg path {
+    stroke: var(--blue);
+}
+
 .project-card--uiux .project-card-body {
     padding: 16px 24px;
     margin: 0 -24px -24px;
