@@ -5,7 +5,7 @@ import { ArrowSvg, HoverLinePath, GithubSvg, ExternalSvg } from './Icons'
 const myProjects = [
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/matter',
-    img: '/img/projects/me/w.png',
+    img: '/img/projects/me/s.png',
     bg: '/img/projects/bg-project-matter.webp',
     num: '#001',
     title: 'Matter',
@@ -13,19 +13,11 @@ const myProjects = [
   },
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/Ford-Mustang',
-    img: '/img/projects/me/i.png',
+    img: '/img/projects/me/w.png',
     bg: '/img/projects/bg-project-mustang.webp',
     num: '#002',
     title: 'Ford Mustang',
     desc: '¿Estás listo para tomar el...',
-  },
-  {
-    href: 'https://github.com/sebastianvasquezechavarria1234/breef-version1.1',
-    img: '/img/projects/me/r.jpg',
-    bg: '/img/projects/bg-project-breef.webp',
-    num: '#003',
-    title: 'Breef',
-    desc: '¿Quieres encontrar trabajo...',
   },
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/ginebra',
@@ -34,6 +26,14 @@ const myProjects = [
     num: '#004',
     title: 'Ginebra',
     desc: 'Doce sabores diferentes...',
+  },
+  {
+    href: 'https://github.com/sebastianvasquezechavarria1234/breef-version1.1',
+    img: '/img/projects/me/r.jpg',
+    bg: '/img/projects/bg-project-breef.webp',
+    num: '#003',
+    title: 'Breef',
+    desc: '¿Quieres encontrar trabajo...',
   },
 ]
 
@@ -92,29 +92,29 @@ const uiuxComponents = [
     desc: 'Menú infinito con hover effects y transiciones...',
   },
   {
-    githubHref: 'https://github.com/sebastianvasquezechavarria1234/evil-aye',
-    liveHref: 'https://evil-aye-eov5.vercel.app/',
+    githubHref: 'https://github.com/sebastianvasquezechavarria1234/webgl-slider-effects',
+    liveHref: 'https://webgl-slider-effects.vercel.app/',
     img: '/img/projects/ui-ux/webgl-slider-effects.jpg',
     bg: '/img/projects/bg-project-breef.webp',
     num: '#003',
-    title: 'Evil Eye',
-    desc: 'Componente de ojo maligno con animaciones...',
+    title: 'WebGL Slider Effects',
+    desc: 'Slider de galería con efectos WebGL y transiciones...',
   },
   {
-    githubHref: 'https://github.com/sebastianvasquezechavarria1234/gallery-slider',
-    liveHref: 'https://gallery-slider-one.vercel.app/',
+    githubHref: 'https://github.com/sebastianvasquezechavarria1234/parallax-depth',
+    liveHref: 'https://parallax-depth-sigma.vercel.app/',
     img: '/img/projects/ui-ux/parallax-depth.jpg',
     bg: '/img/projects/bg-project-ginebra.webp',
     num: '#004',
-    title: 'Gallery Slider',
-    desc: 'Slider de galería con micro-interacciones y estados...',
+    title: 'Parallax Depth',
+    desc: 'Efecto de profundidad parallax con animaciones fluidas...',
   },
 ]
 
 const threeDProjects = [
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/cosmic-explorer',
-    img: '/img/projects/3d/cl.png',
+    img: '/img/projects/3d/bunny-flight.jpg',
     bg: '/img/projects/bg-project-matter.webp',
     num: '#001',
     title: 'Sinfonía Cósmica',
@@ -122,7 +122,7 @@ const threeDProjects = [
   },
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/museo-del-cosmos',
-    img: '/img/projects/3d/drive-simulation-3d.jpg',
+    img: '/img/projects/3d/m-2.jpg',
     bg: '/img/projects/bg-project-mustang.webp',
     num: '#002',
     title: 'Museo del Cosmos',
@@ -130,7 +130,7 @@ const threeDProjects = [
   },
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/three.js-tsl-sandbox',
-    img: '/img/projects/3d/pi.png',
+    img: '/img/projects/3d/a-1.png',
     bg: '/img/projects/bg-project-breef.webp',
     num: '#003',
     title: 'Three.js Sandbox',
@@ -138,7 +138,7 @@ const threeDProjects = [
   },
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/matter',
-    img: '/img/projects/3d/clo.png',
+    img: '/img/projects/3d/drive-simulation-3d.jpg',
     bg: '/img/projects/bg-project-ginebra.webp',
     num: '#004',
     title: 'Experiencia Interactiva',
