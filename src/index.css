@@ -1740,17 +1740,22 @@ header nav ul:nth-child(2) li a::before {
     overflow: hidden;
     display: block;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.genesis-pixel-img:hover {
+    transform: translateY(-5px);
 }
 
 .genesis-pixel-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    transition: filter 0.3s ease;
 }
 
 .genesis-pixel-img:hover img {
-    transform: scale(1.1);
+    filter: brightness(0.7);
 }
 
 .genesis-pixel-tooltip {
@@ -1780,7 +1785,7 @@ header nav ul:nth-child(2) li a::before {
     0% {
         opacity: 0;
         filter: blur(4px);
-        transform: scale(0.7);
+        transform: scale(0.9);
     }
     100% {
         opacity: 1;
@@ -1798,7 +1803,7 @@ header nav ul:nth-child(2) li a::before {
     100% {
         opacity: 0;
         filter: blur(4px);
-        transform: scale(0.7);
+        transform: scale(0.9);
     }
 }
 

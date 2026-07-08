@@ -86,10 +86,11 @@ const Experience = () => {
     <div className="experience-item">
       <div className="experience-item-left">
         <h4 id="experience-bg">
-          <span><BrushSvg /></span>
+          <span><SparklesSvg /></span>
           <span>Genesis Pixel</span>
         </h4>
       </div>
+      
       <div className="experience-item-right">
         <h4>
           <p>Agosto del 2023 - actualidad</p>
@@ -137,21 +138,43 @@ const Experience = () => {
     <div className="experience-item">
       <div className="experience-item-left">
         <h4 id="experience-bg">
-          <span><SparklesSvg /></span>
-          <span>Guinness World Record</span>
+          <span><BrushSvg /></span>
+          <span>Kaoticode</span>
         </h4>
       </div>
       <div className="experience-item-right">
         <h4>
-          <p>Octubre 2022</p>
-          <p>Participante</p>
+          <p>Enero del 2023 - julio 2023</p>
+          <p>Desarrollador Frontend UI-UX</p>
         </h4>
-        <p>Participé en una sesión masiva de programación en Medellín que logró un Récord Guinness por la clase de software más grande del mundo. Esta iniciativa reunió a miles de participantes para promover la educación tecnológica y el interés por el desarrollo de software.</p>
-        <p>Durante el evento, obtuve mis primeros conocimientos formales sobre programación, incluyendo conceptos de lógica básica, estructura de software y la importancia de la tecnología en el mundo moderno. Esta chispa inicial me motivó a seguir un aprendizaje autodidacta y a especializarme en el desarrollo web.</p>
-        <p>Más allá del aprendizaje técnico, participar en un evento de tal magnitud me permitió comprender el impacto de la educación tecnológica e impulsó mi motivación para aplicar estas habilidades en proyectos personales y académicos.</p>
-        <div style={{ width: '100px', height: '55px', borderRadius: '5px', background: 'rgba(255, 255, 255, 0.1)', cursor: 'pointer', overflow: 'hidden' }}>
-          <img src="/img/experience/genesis-pixel/hero.jpg" alt="Genesis Pixel" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        <p>Participé como Desarrollador Frontend Freelance en el rediseño completo de la interfaz web de Kaoticode, enfocándome en mejorar la experiencia de usuario, la apariencia visual y la adaptabilidad en diferentes dispositivos.</p>
+        <p style={{ marginTop: '10px', fontSize: '14px', lineHeight: '1.7' }}>Rediseñé la interfaz principal de la plataforma para lograr una experiencia más moderna e intuitiva, implementé mejoras en la navegación y la organización visual del contenido, optimicé el diseño responsive para dispositivos móviles, tabletas y computadoras, colaboré en la mejora de la experiencia de usuario (UX) y la interfaz de usuario (UI), apliqué buenas prácticas de desarrollo frontend para mejorar la usabilidad y el rendimiento del sitio web.</p>
+       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '15px' }} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <a href="https://kaoticode.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img">
+            <img src="/img/experience/kaoticode/hero.jpg" alt="Hero" />
+          </a>
+          <a href="https://kaoticode.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img">
+            <img src="/img/experience/kaoticode/info.jpg" alt="Info" />
+          </a>
+          <a href="https://kaoticode.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img">
+            <img src="/img/experience/kaoticode/grid.jpg" alt="Grid" />
+          </a>
+          <a href="https://kaoticode.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img">
+            <img src="/img/experience/kaoticode/proyects.jpg" alt="Projects" />
+          </a>
+          <a href="https://kaoticode.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img">
+            <img src="/img/experience/kaoticode/services.jpg" alt="Services" />
+          </a>
         </div>
+        {isTooltipVisible && (
+          <div className={`genesis-pixel-tooltip ${showTooltip ? 'tooltip-show' : 'tooltip-hide'}`} style={{
+            position: 'fixed',
+            left: mousePos.x + 15,
+            top: mousePos.y + 15,
+          }}>
+            Redireccionar a Kaoticode
+          </div>
+        )}
       </div>
     </div>
   </section>
