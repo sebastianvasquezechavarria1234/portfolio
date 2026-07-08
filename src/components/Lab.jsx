@@ -1,12 +1,12 @@
 const labCards = {
   left: [
-    'Capítulo 1: Transitions — De la brusquedad a la fluidez en un solo paso de código.',
-    'Capítulo 2: Keyframes — Crea coreografías y dale verdadera vida a tus elementos.',
-    'Capítulo 3: Interacciones — Detalles y micro-animaciones que enamoran al usuario.',
+    'Capítulo 2: Transitions — De la brusquedad a la fluidez en un solo paso de código.',
+    'Capítulo 3: Keyframes — Crea coreografías y dale verdadera vida a tus elementos.',
+    'Capítulo 4: Interacciones — Detalles y micro-animaciones que enamoran al usuario.',
   ],
   right: [
-    'Capítulo 4: Three.js — Tu primera puerta de entrada hacia mundos interactivos en 3D.',
-    'Capítulo 5: Shaders — Matemáticas puras convertidas en efectos visuales increíbles.',
+    'Capítulo 5: Three.js — Tu primera puerta de entrada hacia mundos interactivos en 3D.',
+    'Capítulo 6: Shaders — Matemáticas puras convertidas en efectos visuales increíbles.',
   ],
 }
 

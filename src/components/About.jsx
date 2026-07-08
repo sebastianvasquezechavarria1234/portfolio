@@ -1,4 +1,4 @@
-﻿import { QuoteSvg } from './Icons'
+import { QuoteSvg } from './Icons'
 
 const references = [
   {
@@ -37,10 +37,10 @@ const RefCard = ({ text, texts, author }) => (
 const About = () => (
   <section id="sobre-mí" className="about">
     <div className="about-header">
-      <p id="underline">Sobre mí</p>
-      <h2>Soy desarrollador web en constante formación, con pasión por el aprendizaje autónomo y la mejora continua.</h2>
-      <p>Me llamo Sebastián Vásquez Echavarría. Desde que comencé mi viaje como <span>diseñador,</span> he trabajado y colaborado en varios proyectos con personas talentosas.</p>
-      <p>Siempre he buscado oportunidades y desafíos que sean significativos para mí. Como <span>diseñador web,</span> disfruto usando mi atención obsesiva al detalle y mi amor por hacer las cosas de la mejor manera para lograr los mejores resultados.</p>
+      <p id="underline">Conóceme un poco más</p>
+      <h2>Soy un desarrollador obsesionado con crear experiencias web que la gente realmente disfrute usar.</h2>
+      <p>Hola, soy Sebastián. Desde que escribí mi primera línea de código, supe que quería dedicarme a construir cosas increíbles en internet. A lo largo del tiempo, he tenido la suerte de colaborar con equipos llenos de talento y darle vida a proyectos muy especiales.</p>
+      <p>Más allá de programar, me considero un creador todoterreno. Disfruto diseñando interfaces web visualmente espectaculares y creando experiencias en 3D, pero también me apasiona la arquitectura profunda: construir el backend, gestionar bases de datos e integrar potentes agentes de Inteligencia Artificial con OpenAI y Groq. Me encanta dominar todo el proceso para que cada proyecto no solo se vea increíble, sino que sea inteligente y robusto "bajo el capó".</p>
       <img src="/img/emoji-scale.webp" alt="emoji" />
       <img src="/img/emoji-star.webp" alt="emoji" />
       <img src="/img/emoji-heart.png" alt="emoji" />
@@ -50,7 +50,7 @@ const About = () => (
       {/* Column 1 with heading */}
       <div className="about-reference-item">
         <div className="about-reference-header">
-          <h4>Referencias personales</h4>
+          <h4>Lo que dicen de mí</h4>
         </div>
         <RefCard {...references[0]} />
       </div>
