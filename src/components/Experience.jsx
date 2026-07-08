@@ -78,9 +78,9 @@ const Experience = () => {
             <span><NetworkSvg /></span>
             <span>
               AlmavivA Experience
-              <p ></p>
-              <p>Medellin, Antioquia</p>
-              <p>Presencial</p>
+              <p className=' h-[20px] w-[20px]'></p>
+              <p className='italic'>Medellin, Antioquia</p>
+              <p className='italic'>Presencial</p>
             </span>
           </h4>
         </div>
@@ -100,7 +100,11 @@ const Experience = () => {
         <div className="experience-item-left">
           <h4 id="experience-bg">
             <span><SparklesSvg /></span>
-            <span>Genesis Pixel</span>
+            <span>
+              Genesis Pixel
+              <p className=' h-[20px] w-[20px]'></p>
+              <p className='italic'>Medellin, Antioquia</p>
+              <p className='italic'>Autonomo</p></span>
           </h4>
         </div>
 
@@ -152,7 +156,11 @@ const Experience = () => {
         <div className="experience-item-left">
           <h4 id="experience-bg">
             <span><BrushSvg /></span>
-            <span>Kaoticode</span>
+            <span>
+              Kaoticode
+              <p className=' h-[20px] w-[20px]'></p>
+              <p className='italic'>Medellin, Antioquia</p>
+              <p className='italic'>Remoto</p></span>
           </h4>
         </div>
         <div className="experience-item-right">
