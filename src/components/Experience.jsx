@@ -1,4 +1,6 @@
-﻿const NetworkSvg = () => (
+﻿import { useState } from 'react'
+
+const NetworkSvg = () => (
   <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-topology-star-3" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
     <path d="M10 19a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z" />
@@ -30,8 +32,16 @@ const SparklesSvg = () => (
   </svg>
 )
 
-const Experience = () => (
-  <section id="experiencia" className="experience">
+const Experience = () => {
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
+  const [showTooltip, setShowTooltip] = useState(false)
+
+  const handleMouseMove = (e) => {
+    setMousePos({ x: e.clientX, y: e.clientY })
+  }
+
+  return (
+    <section id="experiencia" className="experience" onMouseMove={handleMouseMove}>
     <div className="experience-header">
       <p id="underline">Experiencia Laboral</p>
       <h2>Mi experiencia de +4 años como diseñador web</h2>
@@ -76,43 +86,53 @@ const Experience = () => (
         </h4>
         <p>GenesisPixel es una plataforma en desarrollo enfocada en la enseñanza y exploración de tecnologías modernas para la creación de experiencias web interactivas.</p>
         <p>Actualmente trabajo en la planificación, diseño y desarrollo de contenido educativo, ejemplos prácticos y demostraciones visuales para ayudar a desarrolladores a aprender tecnologías utilizadas en la web moderna. Entre los objetivos de la plataforma se encuentran:</p>
-        <ul style={{ marginTop: '10px', paddingLeft: '20px', fontSize: '14px', lineHeight: '1.7' }}>
-          <li>Crear rutas de aprendizaje completas sobre CSS Animations, GSAP, Three.js, WebGL y desarrollo frontend moderno.</li>
-          <li>Desarrollar ejemplos interactivos y proyectos prácticos para facilitar el aprendizaje.</li>
-          <li>Publicar documentación clara y estructurada para cada tecnología.</li>
-          <li>Construir experiencias visuales enfocadas en animaciones, gráficos 3D e interfaces modernas.</li>
-          <li>Investigar y compartir buenas prácticas de desarrollo web, rendimiento y experiencia de usuario.</li>
-          <li>Desarrollar una biblioteca de recursos y demostraciones para la comunidad de desarrolladores.</li>
-        </ul>
+        <p style={{ marginTop: '10px', fontSize: '14px', lineHeight: '1.7' }}>Crear rutas de aprendizaje completas sobre CSS Animations, GSAP, Three.js, WebGL y desarrollo frontend moderno, desarrollar ejemplos interactivos y proyectos prácticos para facilitar el aprendizaje, publicar documentación clara y estructurada para cada tecnología, construir experiencias visuales enfocadas en animaciones, gráficos 3D e interfaces modernas, investigar y compartir buenas prácticas de desarrollo web, rendimiento y experiencia de usuario, desarrollar una biblioteca de recursos y demostraciones para la comunidad de desarrolladores.</p>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '15px' }}>
-          <div style={{ width: '100px', height: '55px', borderRadius: '5px', background: 'rgba(255, 255, 255, 0.1)', cursor: 'pointer', overflow: 'hidden' }}>
-            <img src="/img/experience/genesis-pixel/hero.jpg" alt="Hero" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-          </div>
-          <div style={{ width: '100px', height: '55px', borderRadius: '5px', background: 'rgba(255, 255, 255, 0.1)', cursor: 'pointer', overflow: 'hidden' }}>
-            <img src="/img/experience/genesis-pixel/grid-1.jpg" alt="Grid 1" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-          </div>
-          <div style={{ width: '100px', height: '55px', borderRadius: '5px', background: 'rgba(255, 255, 255, 0.1)', cursor: 'pointer', overflow: 'hidden' }}>
-            <img src="/img/experience/genesis-pixel/grid-2.jpg" alt="Grid 2" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-          </div>
-          <div style={{ width: '100px', height: '55px', borderRadius: '5px', background: 'rgba(255, 255, 255, 0.1)', cursor: 'pointer', overflow: 'hidden' }}>
-            <img src="/img/experience/genesis-pixel/transitions.jpg" alt="Transitions" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-          </div>
-          <div style={{ width: '100px', height: '55px', borderRadius: '5px', background: 'rgba(255, 255, 255, 0.1)', cursor: 'pointer', overflow: 'hidden' }}>
-            <img src="/img/experience/genesis-pixel/transform.jpg" alt="Transform" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-          </div>
-          <div style={{ width: '100px', height: '55px', borderRadius: '5px', background: 'rgba(255, 255, 255, 0.1)', cursor: 'pointer', overflow: 'hidden' }}>
-            <img src="/img/experience/genesis-pixel/keyframes.jpg" alt="Keyframes" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-          </div>
-          <div style={{ width: '100px', height: '55px', borderRadius: '5px', background: 'rgba(255, 255, 255, 0.1)', cursor: 'pointer', overflow: 'hidden' }}>
-            <img src="/img/experience/genesis-pixel/interacitions.jpg" alt="Interactions" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-          </div>
-          <div style={{ width: '100px', height: '55px', borderRadius: '5px', background: 'rgba(255, 255, 255, 0.1)', cursor: 'pointer', overflow: 'hidden' }}>
-            <img src="/img/experience/genesis-pixel/three-js.jpg" alt="Three.js" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-          </div>
-          <div style={{ width: '100px', height: '55px', borderRadius: '5px', background: 'rgba(255, 255, 255, 0.1)', cursor: 'pointer', overflow: 'hidden' }}>
-            <img src="/img/experience/genesis-pixel/shaders.jpg" alt="Shaders" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-          </div>
+          <a href="https://genesis-pixel.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img" onMouseEnter={() => setShowTooltip(true)} onMouseLeave={() => setShowTooltip(false)}>
+            <img src="/img/experience/genesis-pixel/hero.jpg" alt="Hero" />
+          </a>
+          <a href="https://genesis-pixel.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img" onMouseEnter={() => setShowTooltip(true)} onMouseLeave={() => setShowTooltip(false)}>
+            <img src="/img/experience/genesis-pixel/grid-1.jpg" alt="Grid 1" />
+          </a>
+          <a href="https://genesis-pixel.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img" onMouseEnter={() => setShowTooltip(true)} onMouseLeave={() => setShowTooltip(false)}>
+            <img src="/img/experience/genesis-pixel/grid-2.jpg" alt="Grid 2" />
+          </a>
+          <a href="https://genesis-pixel.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img" onMouseEnter={() => setShowTooltip(true)} onMouseLeave={() => setShowTooltip(false)}>
+            <img src="/img/experience/genesis-pixel/transitions.jpg" alt="Transitions" />
+          </a>
+          <a href="https://genesis-pixel.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img" onMouseEnter={() => setShowTooltip(true)} onMouseLeave={() => setShowTooltip(false)}>
+            <img src="/img/experience/genesis-pixel/transform.jpg" alt="Transform" />
+          </a>
+          <a href="https://genesis-pixel.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img" onMouseEnter={() => setShowTooltip(true)} onMouseLeave={() => setShowTooltip(false)}>
+            <img src="/img/experience/genesis-pixel/keyframes.jpg" alt="Keyframes" />
+          </a>
+          <a href="https://genesis-pixel.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img" onMouseEnter={() => setShowTooltip(true)} onMouseLeave={() => setShowTooltip(false)}>
+            <img src="/img/experience/genesis-pixel/interacitions.jpg" alt="Interactions" />
+          </a>
+          <a href="https://genesis-pixel.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img" onMouseEnter={() => setShowTooltip(true)} onMouseLeave={() => setShowTooltip(false)}>
+            <img src="/img/experience/genesis-pixel/three-js.jpg" alt="Three.js" />
+          </a>
+          <a href="https://genesis-pixel.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img" onMouseEnter={() => setShowTooltip(true)} onMouseLeave={() => setShowTooltip(false)}>
+            <img src="/img/experience/genesis-pixel/shaders.jpg" alt="Shaders" />
+          </a>
         </div>
+        {showTooltip && (
+          <div style={{
+            position: 'fixed',
+            left: mousePos.x + 15,
+            top: mousePos.y + 15,
+            background: 'rgba(0, 0, 0, 0.8)',
+            color: '#fff',
+            padding: '6px 12px',
+            borderRadius: '5px',
+            fontSize: '12px',
+            pointerEvents: 'none',
+            zIndex: 9999,
+            whiteSpace: 'nowrap'
+          }}>
+            Redireccionar a Genesis Pixel
+          </div>
+        )}
       </div>
     </div>
 

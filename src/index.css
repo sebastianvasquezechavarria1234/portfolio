@@ -1732,6 +1732,46 @@ header nav ul:nth-child(2) li a::before {
     background-position-y: 100%;
 }
 
+.genesis-pixel-img {
+    position: relative;
+    width: 100px;
+    height: 55px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: block;
+    cursor: pointer;
+}
+
+.genesis-pixel-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.genesis-pixel-img span {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.genesis-pixel-img:hover span {
+    opacity: 1;
+}
+
+.genesis-pixel-img:hover img {
+    transform: scale(1.1);
+}
+
 .experience-item:nth-child(3) .experience-item-left h4 span:nth-child(1) {
     background-image: linear-gradient(135deg, #6f0 0, #16b862 51.88%, #00858f 100%);
 }
