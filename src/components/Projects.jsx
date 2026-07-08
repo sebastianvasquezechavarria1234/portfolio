@@ -63,7 +63,7 @@ const clonedProjects = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234/artisan-crumb',
     liveHref: 'https://galletas-artesanales.vercel.app/',
-    img: '/img/projects/clone/galletas.jpg',
+    img: '/img/projects/clone/artisan-crumb.jpg',
     bg: '/img/projects/bg-project-breef.webp',
     num: '#003',
     title: 'Artisan Crumb Clone',
@@ -72,7 +72,7 @@ const clonedProjects = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234/ford-mustang',
     liveHref: 'https://ford-mustang-blond.vercel.app/',
-    img: '/img/projects/clone/artisan-crumb.jpg',
+    img: '/img/projects/clone/ford-mustang.jpg',
     bg: '/img/projects/bg-project-ginebra.webp',
     num: '#004',
     title: 'Ford Mustang Clone',
@@ -242,6 +242,7 @@ const Projects = () => {
           onClick={() => setActiveOption('uiux')}
         >
           UI / UX
+          <span className="tab-badge">Reciente</span>
         </p>
         <p
           id="controls4"
