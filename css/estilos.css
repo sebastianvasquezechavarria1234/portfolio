@@ -1664,7 +1664,6 @@ header nav ul:nth-child(2) li a:hover {
         text-wrap: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
-
     }
 
     .experience-item-left::before {
@@ -1678,6 +1677,7 @@ header nav ul:nth-child(2) li a:hover {
     .experience-item__rigth h4 {
         flex-direction: column;
         align-items: start;
+        margin-top: 25px;
     }
 
     .experience-item__rigth h4 p:nth-child(2) {

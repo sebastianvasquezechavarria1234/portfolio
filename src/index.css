@@ -1861,10 +1861,11 @@ header nav ul:nth-child(2) li a::before {
         text-wrap: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-        gap: 5px;
+        margin-left: -5px;
+    }
+
+    .experience-item-left h4 span:nth-child(2) p.italic {
+        text-decoration: underline;
     }
 
     .experience-item-left::before {
@@ -1878,6 +1879,7 @@ header nav ul:nth-child(2) li a::before {
     .experience-item-right h4 {
         flex-direction: column;
         align-items: start;
+        margin-top: 25px;
     }
 
     .experience-item-right h4 p:nth-child(2) {
@@ -1892,6 +1894,21 @@ header nav ul:nth-child(2) li a::before {
     #experience-bg span:nth-child(1) {
         width: 35px;
         height: 35px;
+    }
+
+    .genesis-pixel-img {
+        width: 60px;
+        height: 31px;
+    }
+
+    .genesis-pixel-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .experience-images {
+        padding-left: 50px;
     }
 }
 
