@@ -66,8 +66,8 @@ const Experience = () => {
   return (
     <section id="experiencia" className="experience" onMouseMove={handleMouseMove}>
       <div className="experience-header">
-        <p id="underline">Experiencia Laboral</p>
-        <h2>Mi experiencia de +4 años como diseñador web</h2>
+        <p id="underline">Lo que he vivido</p>
+        <h2>4 años construyendo cosas que me enorgullecen — y contando</h2>
         <p>Cada proyecto que tomo es una oportunidad de hacer algo que realmente se sienta diferente — funcional, bonito y pensado para las personas que lo van a usar.</p>
       </div>
 

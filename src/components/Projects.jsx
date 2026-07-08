@@ -1,4 +1,4 @@
-﻿import { useState } from 'react'
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { ArrowSvg, HoverLinePath, GithubSvg, ExternalSvg } from './Icons'
 
@@ -10,7 +10,7 @@ const myProjects = [
     bg: '/img/projects/bg-project-matter.webp',
     num: '#001',
     title: 'Cosmos Museum',
-    desc: 'Museo cósmico inmersivo con...',
+    desc: 'Un museo digital para explorar el cosmos desde tu pantalla.',
   },
   {
     githubHref: 'https://github.com/GenesisPixel/genesis-pixel-website',
@@ -19,7 +19,7 @@ const myProjects = [
     bg: '/img/projects/bg-project-mustang.webp',
     num: '#002',
     title: 'Genesis Pixel',
-    desc: 'Sitio web de agencia creativa...',
+    desc: 'Mi propia plataforma educativa de desarrollo web.',
   },
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234/myke-towers',
@@ -28,7 +28,7 @@ const myProjects = [
     bg: '/img/projects/bg-project-ginebra.webp',
     num: '#003',
     title: 'Myke Towers',
-    desc: 'Página web dedicada al artista...',
+    desc: 'El sitio oficial diseñado para capturar la vibra del artista.',
   },
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234/zenith-gpt',
@@ -37,7 +37,7 @@ const myProjects = [
     bg: '/img/projects/bg-project-breef.webp',
     num: '#004',
     title: 'Zenith GPT',
-    desc: 'Aplicación de inteligencia artificial...',
+    desc: 'Una interfaz de IA con la que puedes hablar de forma natural.',
   },
 ]
 
@@ -49,7 +49,7 @@ const clonedProjects = [
     bg: '/img/projects/bg-project-matter.webp',
     num: '#001',
     title: 'Alfoart Clone',
-    desc: 'Réplica de interfaz de...',
+    desc: 'Un reto de código: recreando la magia visual de la original.',
   },
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234/ginebra',
@@ -58,7 +58,7 @@ const clonedProjects = [
     bg: '/img/projects/bg-project-mustang.webp',
     num: '#002',
     title: 'Ginebra Clone',
-    desc: 'Réplica de interfaz de...',
+    desc: 'Clonando píxel a píxel para entender cómo está hecha.',
   },
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234/artisan-crumb',
@@ -67,7 +67,7 @@ const clonedProjects = [
     bg: '/img/projects/bg-project-breef.webp',
     num: '#003',
     title: 'Artisan Crumb Clone',
-    desc: 'Réplica de interfaz de panadería artesanal...',
+    desc: 'El diseño de esta panadería merecía ser programado a mano.',
   },
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234/ford-mustang',
@@ -76,7 +76,7 @@ const clonedProjects = [
     bg: '/img/projects/bg-project-ginebra.webp',
     num: '#004',
     title: 'Ford Mustang Clone',
-    desc: 'Réplica de interfaz interactiva del Ford Mustang...',
+    desc: 'Llevando la adrenalina del Mustang al código puro.',
   },
 ]
 
@@ -88,7 +88,7 @@ const uiuxComponents = [
     bg: '/img/projects/bg-project-matter.webp',
     num: '#001',
     title: 'Image Tiles Menu',
-    desc: 'Menú de mosaicos de imágenes con hover effects...',
+    desc: 'Un menú interactivo que responde al movimiento del cursor.',
   },
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234/full-screen-clip-effect',
@@ -97,7 +97,7 @@ const uiuxComponents = [
     bg: '/img/projects/bg-project-mustang.webp',
     num: '#002',
     title: 'Full Screen Clip Effect',
-    desc: 'Efecto de clip a pantalla completa con transiciones...',
+    desc: 'Transiciones a pantalla completa tan suaves que atrapan.',
   },
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234/webgl-slider-effects',
@@ -106,7 +106,7 @@ const uiuxComponents = [
     bg: '/img/projects/bg-project-breef.webp',
     num: '#003',
     title: 'WebGL Slider Effects',
-    desc: 'Slider de galería con efectos WebGL y transiciones...',
+    desc: 'Dándole vida a galerías de imágenes con efectos WebGL.',
   },
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234/parallax-depth',
@@ -115,7 +115,7 @@ const uiuxComponents = [
     bg: '/img/projects/bg-project-ginebra.webp',
     num: '#004',
     title: 'Parallax Depth',
-    desc: 'Efecto de profundidad parallax con animaciones fluidas...',
+    desc: 'El efecto parallax llevado al siguiente nivel de profundidad.',
   },
 ]
 
@@ -127,7 +127,7 @@ const threeDProjects = [
     bg: '/img/projects/bg-project-matter.webp',
     num: '#001',
     title: 'Bunny Flight',
-    desc: 'Experiencia de vuelo 3D interactiva con Three.js...',
+    desc: 'Toma el control y vuela libremente por este mundo 3D.',
   },
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234/jellyfish-three.js',
@@ -136,7 +136,7 @@ const threeDProjects = [
     bg: '/img/projects/bg-project-mustang.webp',
     num: '#002',
     title: 'Jellyfish',
-    desc: 'Medusas interactivas en 3D con Three.js...',
+    desc: 'Medusas flotando en tu navegador, casi como si estuvieran vivas.',
   },
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234/space-balloon-three.js',
@@ -145,7 +145,7 @@ const threeDProjects = [
     bg: '/img/projects/bg-project-breef.webp',
     num: '#003',
     title: 'Space Balloon',
-    desc: 'Experiencia 3D interactiva de un globo espacial con Three.js...',
+    desc: 'Un pequeño globo explorando el espacio estrellado.',
   },
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234/drive-simulator-3d-thre.js',
@@ -154,7 +154,7 @@ const threeDProjects = [
     bg: '/img/projects/bg-project-ginebra.webp',
     num: '#004',
     title: 'Drive Simulator 3D',
-    desc: 'Simulador de manejo 3D interactivo con Three.js...',
+    desc: 'Enciende motores y maneja directamente en la web.',
   },
 ]
 
@@ -205,8 +205,8 @@ const Projects = () => {
   return (
     <section id="proyectos" className="projects">
       <div className="projects-header">
-        <p id="underline">Proyectos</p>
-        <h2>Mis Proyectos más destacados</h2>
+        <p id="underline">Lo que he construido</p>
+        <h2>Proyectos de los que me siento orgulloso</h2>
       </div>
 
       <div className={`projects-controls controls-${activeOption}`}>

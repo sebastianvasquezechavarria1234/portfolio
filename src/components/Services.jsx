@@ -1,4 +1,4 @@
-﻿import { ArrowSvg } from './Icons'
+import { ArrowSvg } from './Icons'
 
 const services = [
   { icon: '/img/service-design.webp', title: 'Arquitectura de Sistemas Web Escalables', id: 'service-card-featured', wrapClass: 'card-dark-grid service-card', flex: false },
@@ -15,7 +15,7 @@ const ServiceCard = ({ icon, title }) => (
       <h3>{title}</h3>
     </div>
     <a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234?tab=repositories">
-      Ir a Github
+      Mira el código
       <ArrowSvg />
     </a>
   </div>
@@ -24,8 +24,8 @@ const ServiceCard = ({ icon, title }) => (
 const Services = () => (
   <section className="services">
     <div className="services-header">
-      <p id="underline">Servicios</p>
-      <h2>Transformemos tu empresa con mis soluciones de software</h2>
+      <p id="underline">Lo que puedo hacer por ti</p>
+      <h2>Transformemos tus ideas en soluciones que realmente destaquen</h2>
     </div>
 
     {/* Card 1 - full width */}
@@ -33,14 +33,14 @@ const Services = () => (
       <div className="service-card-content">
         <div className="service-card-row">
           <img src="/img/sec-2-icon-1.webp" alt="iconos" />
-          <h3>Arquitectura de Sistemas Web Escalables</h3>
+          <h3>Sistemas Web que Crecen Contigo</h3>
         </div>
         <a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234?tab=repositories">
-          Ir a Github
+          Mira el código
           <ArrowSvg />
         </a>
       </div>
-      <p>Arquitectura</p>
+      <p>Arquitectura sólida y escalable</p>
     </div>
 
     <div className="services-layout">
@@ -49,14 +49,14 @@ const Services = () => (
         <div className="service-card-content">
           <div className="service-card-row despliegues-flex">
             <img src="/img/sec-2-icon-2.webp" alt="iconos" className="despliegues-img" />
-            <h3>Diseño y Desarrollo 3D Interactivo</h3>
+            <h3>Experiencias 3D que Atrapan</h3>
           </div>
           <a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234">
-            Ir a Github
+            Mira el código
             <ArrowSvg />
           </a>
         </div>
-        <p>Experiencias Tridimensionales</p>
+        <p>Magia en el navegador</p>
       </div>
 
       {/* Cards 3, 4, 5 - right flexbox */}
@@ -65,38 +65,38 @@ const Services = () => (
           <div className="service-card-content">
             <div className="service-card-row">
               <img src="/img/sec-2-icon-3.webp" alt="iconos" />
-              <h3>Diseño UI/UX de Élite</h3>
+              <h3>Diseño UI/UX que Enamora</h3>
             </div>
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234">
-              Ir a Github
+              Mira el código
               <ArrowSvg />
             </a>
           </div>
-          <p>Pixel perfect</p>
+          <p>Cada pixel cuenta</p>
         </div>
 
         <div className="card-dark-grid service-card">
           <div className="service-card-content">
             <img src="/img/sec-2-icon-4.webp" alt="iconos" />
-            <h3>Arquitectura de Sistemas de Datos</h3>
+            <h3>Datos Organizados y Seguros</h3>
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234">
-              Ir a Github
+              Mira el código
               <ArrowSvg />
             </a>
           </div>
-          <p>Infraestructura</p>
+          <p>Infraestructura a prueba de todo</p>
         </div>
 
         <div className="card-dark-grid service-card">
           <div className="service-card-content">
             <img src="/img/sec-2-icon-5.webp" alt="iconos" />
-            <h3>Integración de Agentes de IA Web</h3>
+            <h3>IA Integrada en tu Web</h3>
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234">
-              Ir a Github
+              Mira el código
               <ArrowSvg />
             </a>
           </div>
-          <p>Inteligencia artificial</p>
+          <p>El futuro, hoy</p>
         </div>
       </div>
     </div>
