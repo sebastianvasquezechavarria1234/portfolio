@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
-import { WavySvg, DropdownSvg, SocialLinks, ScrollTopSvg } from './Icons'
+import { WavySvg, DropdownSvg, SocialLinks } from './Icons'
 import GradualBlur from './GradualBlur'
+import FloatingButtons from './FloatingButtons'
 
 const navItems = [
   { id: 'exp', href: '#experiencia', label: 'Experiencia' },
@@ -11,7 +12,6 @@ const navItems = [
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
-  const [showScrollBtn, setShowScrollBtn] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
   const [wavyStates, setWavyStates] = useState(() =>
@@ -46,9 +46,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scroll = document.documentElement.scrollTop
-      setIsScrolled(scroll > 10)
-      setShowScrollBtn(scroll > 400)
+      setIsScrolled(document.documentElement.scrollTop > 10)
     }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
@@ -65,30 +63,9 @@ const Header = () => {
 
   const closeMobile = () => setMobileOpen(false)
 
-  const scrollToTop = (e) => {
-    if (e) e.preventDefault()
-    if (window.lenis) {
-      window.lenis.scrollTo(0)
-    } else {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      })
-    }
-  }
-
   return (
     <>
-      {/* Fixed back-to-top button */}
-      <div className="fixed-button">
-        <ul>
-          <li id="btnTop" onClick={scrollToTop} style={{ transform: showScrollBtn ? 'scale(1)' : 'scale(0)', cursor: 'pointer' }}>
-            <a href="#" onClick={(e) => e.preventDefault()}>
-              <ScrollTopSvg />
-            </a>
-          </li>
-        </ul>
-      </div>
+      <FloatingButtons />
 
       <header>
         <GradualBlur
@@ -116,81 +93,75 @@ const Header = () => {
                 <WavySvg key={`${navItems[0].id}-${wavyStates[navItems[0].id]?.key || 0}`} animClass={wavyStates[navItems[0].id]?.anim || ''} />
               </a>
             </li>
-            <li className="header-nav-item">
+            <li className="header-nav-item" onMouseLeave={() => setActiveCategory(null)}>
               <a href="#proyectos">
                 Mi trabajo
                 <DropdownSvg />
               </a>
               <ul className="header-dropdown">
-                <li 
-                  onMouseEnter={() => setActiveCategory('propios')}
-                  onMouseLeave={() => setActiveCategory(null)}
-                >
+                <li onMouseEnter={() => setActiveCategory('propios')}>
                   <a href="#proyectos" className="flex justify-between items-center w-full hover:bg-white/5 px-2 py-1 rounded">
                     <span>Propios</span>
                     <span className="transform -rotate-90 scale-75 opacity-70"><DropdownSvg /></span>
                   </a>
-                  {activeCategory === 'propios' && (
-                    <ul className="absolute left-[100%] top-0 flex flex-col bg-[#1a1a1a] rounded-xl p-2 min-w-[200px] shadow-2xl border border-white/10 ml-1 z-50">
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://cosmos-museum.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Cosmos Museum</a></li>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://genesis-pixel.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Genesis Pixel</a></li>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://myke-towers.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Myke Towers</a></li>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://zenith-gpt.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Zenith GPT</a></li>
-                    </ul>
-                  )}
                 </li>
-                <li 
-                  onMouseEnter={() => setActiveCategory('clones')}
-                  onMouseLeave={() => setActiveCategory(null)}
-                >
+                <li onMouseEnter={() => setActiveCategory('clones')}>
                   <a href="#proyectos" className="flex justify-between items-center w-full hover:bg-white/5 px-2 py-1 rounded">
                     <span>Clones</span>
                     <span className="transform -rotate-90 scale-75 opacity-70"><DropdownSvg /></span>
                   </a>
-                  {activeCategory === 'clones' && (
-                    <ul className="absolute left-[100%] top-0 flex flex-col bg-[#1a1a1a] rounded-xl p-2 min-w-[200px] shadow-2xl border border-white/10 ml-1 z-50">
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://alfoart-clone.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Alfoart Clone</a></li>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://ginebra.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Ginebra Clone</a></li>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://galletas-artesanales.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Artisan Crumb Clone</a></li>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://ford-mustang-blond.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Ford Mustang Clone</a></li>
-                    </ul>
-                  )}
                 </li>
-                <li 
-                  onMouseEnter={() => setActiveCategory('uiux')}
-                  onMouseLeave={() => setActiveCategory(null)}
-                >
+                <li onMouseEnter={() => setActiveCategory('uiux')}>
                   <a href="#proyectos" className="flex justify-between items-center w-full hover:bg-white/5 px-2 py-1 rounded">
                     <span>UI / UX</span>
                     <span className="transform -rotate-90 scale-75 opacity-70"><DropdownSvg /></span>
                   </a>
-                  {activeCategory === 'uiux' && (
-                    <ul className="absolute left-[100%] top-0 flex flex-col bg-[#1a1a1a] rounded-xl p-2 min-w-[200px] shadow-2xl border border-white/10 ml-1 z-50">
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://image-tiles-menu.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Image Tiles Menu</a></li>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://full-screen-clip-effect.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Full Screen Clip Effect</a></li>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://webgl-slider-effects.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>WebGL Slider Effects</a></li>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://parallax-depth-sigma.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Parallax Depth</a></li>
-                    </ul>
-                  )}
                 </li>
-                <li 
-                  onMouseEnter={() => setActiveCategory('web3d')}
-                  onMouseLeave={() => setActiveCategory(null)}
-                >
+                <li onMouseEnter={() => setActiveCategory('web3d')}>
                   <a href="#proyectos" className="flex justify-between items-center w-full hover:bg-white/5 px-2 py-1 rounded">
                     <span>Web 3D</span>
                     <span className="transform -rotate-90 scale-75 opacity-70"><DropdownSvg /></span>
                   </a>
-                  {activeCategory === 'web3d' && (
-                    <ul className="absolute left-[100%] top-0 flex flex-col bg-[#1a1a1a] rounded-xl p-2 min-w-[200px] shadow-2xl border border-white/10 ml-1 z-50">
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://bunny-flight-three-js.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Bunny Flight</a></li>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://jellyfish-sage.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Jellyfish</a></li>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://space-balloon-three-js.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Space Balloon</a></li>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://drive-simulator-3d-thre-js.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Drive Simulator 3D</a></li>
-                    </ul>
-                  )}
                 </li>
               </ul>
+
+              {/* Side modal rendered as a sibling to prevent nested transform backdrop-filter bugs */}
+              {activeCategory && (
+                <ul className="header-dropdown" style={{ left: '212px' }}>
+                  {activeCategory === 'propios' && (
+                    <>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://cosmos-museum.vercel.app/">Cosmos Museum</a></li>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://genesis-pixel.vercel.app/">Genesis Pixel</a></li>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://myke-towers.vercel.app/">Myke Towers</a></li>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://zenith-gpt.vercel.app/">Zenith GPT</a></li>
+                    </>
+                  )}
+                  {activeCategory === 'clones' && (
+                    <>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://alfoart-clone.vercel.app/">Alfoart Clone</a></li>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://ginebra.vercel.app/">Ginebra Clone</a></li>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://galletas-artesanales.vercel.app/">Artisan Crumb Clone</a></li>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://ford-mustang-blond.vercel.app/">Ford Mustang Clone</a></li>
+                    </>
+                  )}
+                  {activeCategory === 'uiux' && (
+                    <>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://image-tiles-menu.vercel.app/">Image Tiles Menu</a></li>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://full-screen-clip-effect.vercel.app/">Full Screen Clip Effect</a></li>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://webgl-slider-effects.vercel.app/">WebGL Slider Effects</a></li>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://parallax-depth-sigma.vercel.app/">Parallax Depth</a></li>
+                    </>
+                  )}
+                  {activeCategory === 'web3d' && (
+                    <>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://bunny-flight-three-js.vercel.app/">Bunny Flight</a></li>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://jellyfish-sage.vercel.app/">Jellyfish</a></li>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://space-balloon-three-js.vercel.app/">Space Balloon</a></li>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://drive-simulator-3d-thre-js.vercel.app/">Drive Simulator 3D</a></li>
+                    </>
+                  )}
+                </ul>
+              )}
             </li>
             {navItems.slice(1).map(item => (
               <li key={item.id}>
