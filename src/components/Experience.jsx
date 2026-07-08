@@ -68,7 +68,7 @@ const Experience = () => {
       <div className="experience-header">
         <p id="underline">Experiencia Laboral</p>
         <h2>Mi experiencia de +4 años como diseñador web</h2>
-        <p>Desarrollo servicios web personalizados enfocados en la eficiencia y la usabilidad, integrando diseños vanguardistas y soluciones innovadoras para crear experiencias digitales de alto impacto.</p>
+        <p>Cada proyecto que tomo es una oportunidad de hacer algo que realmente se sienta diferente — funcional, bonito y pensado para las personas que lo van a usar.</p>
       </div>
 
       {/* Card 1 - Futuro Puertas */}
@@ -87,7 +87,7 @@ const Experience = () => {
         <div className="experience-item-right">
           <h4>
             <p>Abril 2026 - Octubre 2026</p>
-            <p>Desarrollador Backend especializado en Python e Inteligencia Artificial</p>
+            <p>Dándole inteligencia al backend — Python & IA</p>
           </h4>
           <p style={{ marginBottom: 0 }}>Trabajo como desarrollador Backend especializado en Python e IA, construyendo una plataforma donde la inteligencia artificial cobra vida. El sistema cuenta con dos módulos clave: uno para gestionar agentes inteligentes — donde puedes adjuntar archivos y conectar APIs para darles contexto — y otro para conversar directamente con ellos y obtener respuestas basadas en esa información.</p>
           <p style={{ marginBottom: 0 }}>También colaboro en la integración con el frontend, asegurando que todo fluya de forma coherente entre los servicios y la experiencia del usuario. Me apasiona construir sistemas que sean inteligentes, escalables y, sobre todo, que realmente funcionen bien.</p>
@@ -111,7 +111,7 @@ const Experience = () => {
         <div className="experience-item-right">
           <h4>
             <p>Agosto del 2023 - actualidad</p>
-            <p>Fundador y desarrollador web creativo</p>
+            <p>El que tuvo la idea, la construyó y sigue haciéndola crecer</p>
           </h4>
           <p>GenesisPixel es mi proyecto propio: una plataforma educativa que nació de las ganas de enseñar y compartir todo lo que he aprendido sobre el desarrollo web moderno. Aquí, la teoría se convierte en práctica con ejemplos visuales, animaciones reales y proyectos que puedes tocar y experimentar.</p>
           <p>Estoy construyendo rutas de aprendizaje completas sobre tecnologías como CSS Animations, GSAP, Three.js y WebGL — las herramientas que hacen que la web se vea y se sienta increíble. Todo acompañado de documentación clara, demos interactivas y buenas prácticas pensadas para que cualquier desarrollador pueda crecer al ritmo que quiera.</p>
@@ -166,7 +166,7 @@ const Experience = () => {
         <div className="experience-item-right">
           <h4>
             <p>Enero del 2023 - julio 2023</p>
-            <p>Desarrollador Frontend UI-UX</p>
+            <p>Le di una nueva cara a Kaoticode — Frontend & UI/UX</p>
           </h4>
           <p>En Kaoticode tuve la oportunidad de llevar un rediseño completo de su plataforma web, transformando una interfaz existente en algo más moderno, limpio y fácil de usar. Un proyecto donde cada decisión de diseño tenía un propósito claro: mejorar la experiencia de quien navega.</p>
           <p style={{ marginTop: '10px', fontSize: '14px', lineHeight: '1.7' }}>Rediseñé la interfaz principal dándole una identidad visual más fresca e intuitiva, reorganicé la navegación y el contenido para que todo fuera más fácil de encontrar, y optimicé el diseño para que se viera impecable en cualquier dispositivo — desde el móvil hasta el escritorio. Siempre con foco en la usabilidad, el rendimiento y esas buenas prácticas que hacen la diferencia en el resultado final.</p>

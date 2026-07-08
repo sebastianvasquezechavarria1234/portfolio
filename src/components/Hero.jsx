@@ -1,4 +1,4 @@
-﻿import { SocialLinks } from './Icons'
+import { SocialLinks } from './Icons'
 
 const AwardSvg = () => (
   <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-award-filled" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -26,12 +26,12 @@ const Hero = () => (
         <p>Donde otros ven tecnología, yo veo posibilidades infinitas. Combino diseño, código, inteligencia artificial y experiencias 3D para transformar ideas en universos digitales que cobran vida.</p>
 
         <a href="#proyectos">
-          Ver proyectos
+          Mira lo que he hecho
           <AwardSvg />
         </a>
 
         <a download href="/img/sebastian-vasquez-cv.pdf">
-          Ver CV
+          Descarga mi CV
           <DownloadSvg />
         </a>
 
