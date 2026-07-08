@@ -35,9 +35,20 @@ const SparklesSvg = () => (
 const Experience = () => {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
   const [showTooltip, setShowTooltip] = useState(false)
+  const [isTooltipVisible, setIsTooltipVisible] = useState(false)
 
   const handleMouseMove = (e) => {
     setMousePos({ x: e.clientX, y: e.clientY })
+  }
+
+  const handleMouseEnter = () => {
+    setIsTooltipVisible(true)
+    setShowTooltip(true)
+  }
+
+  const handleMouseLeave = () => {
+    setShowTooltip(false)
+    setTimeout(() => setIsTooltipVisible(false), 300)
   }
 
   return (
@@ -87,7 +98,7 @@ const Experience = () => {
         <p>GenesisPixel es una plataforma en desarrollo enfocada en la enseñanza y exploración de tecnologías modernas para la creación de experiencias web interactivas.</p>
         <p>Actualmente trabajo en la planificación, diseño y desarrollo de contenido educativo, ejemplos prácticos y demostraciones visuales para ayudar a desarrolladores a aprender tecnologías utilizadas en la web moderna. Entre los objetivos de la plataforma se encuentran:</p>
         <p style={{ marginTop: '10px', fontSize: '14px', lineHeight: '1.7' }}>Crear rutas de aprendizaje completas sobre CSS Animations, GSAP, Three.js, WebGL y desarrollo frontend moderno, desarrollar ejemplos interactivos y proyectos prácticos para facilitar el aprendizaje, publicar documentación clara y estructurada para cada tecnología, construir experiencias visuales enfocadas en animaciones, gráficos 3D e interfaces modernas, investigar y compartir buenas prácticas de desarrollo web, rendimiento y experiencia de usuario, desarrollar una biblioteca de recursos y demostraciones para la comunidad de desarrolladores.</p>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '15px' }} onMouseEnter={() => setShowTooltip(true)} onMouseLeave={() => setShowTooltip(false)}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '15px' }} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           <a href="https://genesis-pixel.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img">
             <img src="/img/experience/genesis-pixel/hero.jpg" alt="Hero" />
           </a>
@@ -110,8 +121,8 @@ const Experience = () => {
             <img src="/img/experience/genesis-pixel/interacitions.jpg" alt="Interactions" />
           </a>
         </div>
-        {showTooltip && (
-          <div className="genesis-pixel-tooltip" style={{
+        {isTooltipVisible && (
+          <div className={`genesis-pixel-tooltip ${showTooltip ? 'tooltip-show' : 'tooltip-hide'}`} style={{
             position: 'fixed',
             left: mousePos.x + 15,
             top: mousePos.y + 15,

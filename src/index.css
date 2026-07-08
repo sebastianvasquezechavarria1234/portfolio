@@ -1760,12 +1760,20 @@ header nav ul:nth-child(2) li a::before {
     font-family: 'Acorn', sans-serif;
     font-size: 12px;
     padding: 8px 16px;
-    border-radius: 5px;
-    background: linear-gradient(180deg, rgba(245, 247, 250, .24), rgba(245, 247, 250, .12) 52%, rgba(245, 247, 250, 0));
-    box-shadow: 8px 8px 24px 0 rgba(9, 13, 20, .4), -4px -4px 8px 0 rgba(224, 224, 255, .04), 0 1px 1px 0 rgba(9, 13, 20, .4);
+    border-radius: 8px;
+    background: var(--linear-gradient-card-blur);
     border: var(--border-card);
+    box-shadow: var(--box-shadow-card);
+    backdrop-filter: blur(40px);
     color: #fff;
+}
+
+.tooltip-show {
     animation: tooltipFadeIn 0.3s ease forwards;
+}
+
+.tooltip-hide {
+    animation: tooltipFadeOut 0.3s ease forwards;
 }
 
 @keyframes tooltipFadeIn {
@@ -1778,6 +1786,19 @@ header nav ul:nth-child(2) li a::before {
         opacity: 1;
         filter: blur(0);
         transform: scale(1);
+    }
+}
+
+@keyframes tooltipFadeOut {
+    0% {
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        filter: blur(4px);
+        transform: scale(0.7);
     }
 }
 
