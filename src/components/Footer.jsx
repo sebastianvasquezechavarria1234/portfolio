@@ -1,4 +1,4 @@
-﻿import { SocialLinks } from './Icons'
+import { SocialLinks } from './Icons'
 
 const Gallery = () => (
   <section className="gallery">
@@ -22,7 +22,7 @@ const Footer = () => (
     <Gallery />
 
     <footer id="contacto">
-      <p>© 2023 - 2026 Desarrollado por Sebastián Vásquez Echavarría. Casi todos los copyright reservados.</p>
+      <p>Diseñado y escrito en código por Sebastián Vásquez Echavarría © 2023 - 2026.</p>
 
       <div className="hero-social">
         <ul>

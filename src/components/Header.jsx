@@ -1,12 +1,12 @@
-﻿import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { WavySvg, DropdownSvg, SocialLinks, ScrollTopSvg } from './Icons'
 import GradualBlur from './GradualBlur'
 
 const navItems = [
   { id: 'exp', href: '#experiencia', label: 'Experiencia' },
-  { id: 'blog', href: '#blog', label: 'Recursos de aprendizaje' },
-  { id: 'taller', href: '#taller', label: 'Laboratorio de estudio' },
-  { id: 'sobre', href: '#sobre-mí', label: 'Sobre mí' },
+  { id: 'blog', href: '#blog', label: 'Aprende conmigo' },
+  { id: 'taller', href: '#taller', label: 'Guías' },
+  { id: 'sobre', href: '#sobre-mí', label: 'Conóceme' },
 ]
 
 const Header = () => {
@@ -17,6 +17,7 @@ const Header = () => {
   const [wavyStates, setWavyStates] = useState(() =>
     Object.fromEntries(navItems.map(item => [item.id, { key: 0, anim: '' }]))
   )
+  const [activeCategory, setActiveCategory] = useState(null)
   const prevHovered = useRef(null)
 
   const handleWavyEnter = (id) => {
@@ -106,7 +107,92 @@ const Header = () => {
             <li>
               <a href="#"><img src="/img/favicon.webp" alt="logo" />Sebas</a>
             </li>
-            {navItems.map(item => (
+            <li key={navItems[0].id}>
+              <a href={navItems[0].href}
+                onMouseEnter={() => handleWavyEnter(navItems[0].id)}
+                onMouseLeave={handleWavyLeave}
+              >
+                {navItems[0].label}
+                <WavySvg key={`${navItems[0].id}-${wavyStates[navItems[0].id]?.key || 0}`} animClass={wavyStates[navItems[0].id]?.anim || ''} />
+              </a>
+            </li>
+            <li className="header-nav-item">
+              <a href="#proyectos">
+                Mi trabajo
+                <DropdownSvg />
+              </a>
+              <ul className="header-dropdown">
+                <li 
+                  onMouseEnter={() => setActiveCategory('propios')}
+                  onMouseLeave={() => setActiveCategory(null)}
+                >
+                  <a href="#proyectos" className="flex justify-between items-center w-full hover:bg-white/5 px-2 py-1 rounded">
+                    <span>Propios</span>
+                    <span className="transform -rotate-90 scale-75 opacity-70"><DropdownSvg /></span>
+                  </a>
+                  {activeCategory === 'propios' && (
+                    <ul className="absolute left-[100%] top-0 flex flex-col bg-[#1a1a1a] rounded-xl p-2 min-w-[200px] shadow-2xl border border-white/10 ml-1 z-50">
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://cosmos-museum.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Cosmos Museum</a></li>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://genesis-pixel.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Genesis Pixel</a></li>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://myke-towers.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Myke Towers</a></li>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://zenith-gpt.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Zenith GPT</a></li>
+                    </ul>
+                  )}
+                </li>
+                <li 
+                  onMouseEnter={() => setActiveCategory('clones')}
+                  onMouseLeave={() => setActiveCategory(null)}
+                >
+                  <a href="#proyectos" className="flex justify-between items-center w-full hover:bg-white/5 px-2 py-1 rounded">
+                    <span>Clones</span>
+                    <span className="transform -rotate-90 scale-75 opacity-70"><DropdownSvg /></span>
+                  </a>
+                  {activeCategory === 'clones' && (
+                    <ul className="absolute left-[100%] top-0 flex flex-col bg-[#1a1a1a] rounded-xl p-2 min-w-[200px] shadow-2xl border border-white/10 ml-1 z-50">
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://alfoart-clone.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Alfoart Clone</a></li>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://ginebra.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Ginebra Clone</a></li>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://galletas-artesanales.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Artisan Crumb Clone</a></li>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://ford-mustang-blond.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Ford Mustang Clone</a></li>
+                    </ul>
+                  )}
+                </li>
+                <li 
+                  onMouseEnter={() => setActiveCategory('uiux')}
+                  onMouseLeave={() => setActiveCategory(null)}
+                >
+                  <a href="#proyectos" className="flex justify-between items-center w-full hover:bg-white/5 px-2 py-1 rounded">
+                    <span>UI / UX</span>
+                    <span className="transform -rotate-90 scale-75 opacity-70"><DropdownSvg /></span>
+                  </a>
+                  {activeCategory === 'uiux' && (
+                    <ul className="absolute left-[100%] top-0 flex flex-col bg-[#1a1a1a] rounded-xl p-2 min-w-[200px] shadow-2xl border border-white/10 ml-1 z-50">
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://image-tiles-menu.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Image Tiles Menu</a></li>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://full-screen-clip-effect.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Full Screen Clip Effect</a></li>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://webgl-slider-effects.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>WebGL Slider Effects</a></li>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://parallax-depth-sigma.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Parallax Depth</a></li>
+                    </ul>
+                  )}
+                </li>
+                <li 
+                  onMouseEnter={() => setActiveCategory('web3d')}
+                  onMouseLeave={() => setActiveCategory(null)}
+                >
+                  <a href="#proyectos" className="flex justify-between items-center w-full hover:bg-white/5 px-2 py-1 rounded">
+                    <span>Web 3D</span>
+                    <span className="transform -rotate-90 scale-75 opacity-70"><DropdownSvg /></span>
+                  </a>
+                  {activeCategory === 'web3d' && (
+                    <ul className="absolute left-[100%] top-0 flex flex-col bg-[#1a1a1a] rounded-xl p-2 min-w-[200px] shadow-2xl border border-white/10 ml-1 z-50">
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://bunny-flight-three-js.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Bunny Flight</a></li>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://jellyfish-sage.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Jellyfish</a></li>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://space-balloon-three-js.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Space Balloon</a></li>
+                      <li><a target="_blank" rel="noopener noreferrer" href="https://drive-simulator-3d-thre-js.vercel.app/" className="block px-4 py-2 hover:bg-white/10 rounded" style={{ opacity: 1, transform: 'none' }}>Drive Simulator 3D</a></li>
+                    </ul>
+                  )}
+                </li>
+              </ul>
+            </li>
+            {navItems.slice(1).map(item => (
               <li key={item.id}>
                 <a href={item.href}
                   onMouseEnter={() => handleWavyEnter(item.id)}
@@ -117,25 +203,13 @@ const Header = () => {
                 </a>
               </li>
             ))}
-            <li className="header-nav-item">
-              <a href="#proyectos">
-                Proyectos
-                <DropdownSvg />
-              </a>
-              <ul className="header-dropdown">
-                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234/matter">Matter</a></li>
-                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234/Ford-Mustang">Ford Mustang</a></li>
-                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234/breef-version1.1">Breef</a></li>
-                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234/ginebra">Ginebra</a></li>
-              </ul>
-            </li>
             <li></li>
           </ul>
 
           <ul>
             <li>
               <a id="header-btn-right" className={isScrolled ? 'header-btn-active' : ''} href="#contacto">
-                Contacto
+                Hablemos
               </a>
             </li>
             <li></li>
@@ -161,7 +235,7 @@ const Header = () => {
         <ul className={`mobile-menu-list${mobileOpen ? ' mobile-menu-list-active' : ''}`}>
           <li><a href="#experiencia" onClick={closeMobile}>Experiencia</a></li>
           <li>
-            <a href="#proyectos" onClick={closeMobile}>Proyectos</a>
+            <a href="#proyectos" onClick={closeMobile}>Mi trabajo</a>
             <ul className="mobile-menu-info">
               <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234/matter">Matter</a></li>
               <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234/Ford-Mustang">Ford Mustang</a></li>
@@ -169,10 +243,10 @@ const Header = () => {
               <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234/ginebra">Ginebra</a></li>
             </ul>
           </li>
-          <li><a href="#blog" onClick={closeMobile}>Recursos de aprendizaje</a></li>
-          <li><a href="#taller" onClick={closeMobile}>Laboratorio de estudio</a></li>
-          <li><a href="#sobre-mí" onClick={closeMobile}>Sobre mí</a></li>
-          <li><a id="mobile-menu-cta" href="#contacto" onClick={closeMobile}>Contacto</a></li>
+          <li><a href="#blog" onClick={closeMobile}>Aprende conmigo</a></li>
+          <li><a href="#taller" onClick={closeMobile}>Guías</a></li>
+          <li><a href="#sobre-mí" onClick={closeMobile}>Conóceme</a></li>
+          <li><a id="mobile-menu-cta" href="#contacto" onClick={closeMobile}>Hablemos</a></li>
 
           <div className="hero-social">
             <ul>
@@ -180,7 +254,7 @@ const Header = () => {
             </ul>
           </div>
           <div className="copyright">
-            <p>© 2024 Diseñado por Sebastián Vásquez Echavarría. Todos los copyright reservados.</p>
+            <p>Diseñado y escrito en código por Sebastián Vásquez Echavarría © 2023 - 2026.</p>
           </div>
         </ul>
       </section>

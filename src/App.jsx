@@ -61,11 +61,11 @@ function App() {
       {/* Main content wrapper */}
       <section className="container container2">
 
+
         <Experience />
-
         <Services />
-
         <Projects />
+
 
         <Blog />
 
