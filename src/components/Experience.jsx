@@ -65,130 +65,123 @@ const Experience = () => {
 
   return (
     <section id="experiencia" className="experience" onMouseMove={handleMouseMove}>
-    <div className="experience-header">
-      <p id="underline">Experiencia Laboral</p>
-      <h2>Mi experiencia de +4 años como diseñador web</h2>
-      <p>Desarrollo servicios web personalizados enfocados en la eficiencia y la usabilidad, integrando diseños vanguardistas y soluciones innovadoras para crear experiencias digitales de alto impacto.</p>
-    </div>
+      <div className="experience-header">
+        <p id="underline">Experiencia Laboral</p>
+        <h2>Mi experiencia de +4 años como diseñador web</h2>
+        <p>Desarrollo servicios web personalizados enfocados en la eficiencia y la usabilidad, integrando diseños vanguardistas y soluciones innovadoras para crear experiencias digitales de alto impacto.</p>
+      </div>
 
-    {/* Card 1 - Futuro Puertas */}
-    <div className="experience-item">
-      <div className="experience-item-left">
-        <h4 id="experience-bg" style={{ marginBottom: '20px' }}>
-          <span><NetworkSvg /></span>
-          <span>
-            AlmavivA Experience
-            <p style={{ fontStyle: 'italic', marginBottom: 0 }}>Medellin, Antioquia</p>
-            <p style={{ fontStyle: 'italic', marginBottom: 0 }}>Presencial</p>
-          </span>
-        </h4>
-      </div>
-      <div className="experience-item-right">
-        <h4>
-          <p>Abril 2026 - Octubre 2026</p>
-          <p>Desarrollador Backend especializado en Python e Inteligencia Artificial</p>
-        </h4>
-       <p>Especializado en Python, enfocado en el diseño e implementación de sistemas basados en inteligencia artificial. Participo en el desarrollo de una plataforma que integra dos módulos principales tipo CRUD: uno orientado a la gestión de agentes inteligentes, donde es posible adjuntar archivos y conectar APIs para enriquecer su contexto, y otro enfocado en conversaciones, que permite interactuar con estos agentes para obtener respuestas basadas en la información previamente cargada.</p>
-        <p>Además, colaboro en la integración con el frontend, asegurando la comunicación eficiente entre los servicios y la experiencia del usuario. Mi enfoque está en construir sistemas escalables, inteligentes y funcionales que permitan la interacción fluida entre datos, APIs y modelos de IA.</p>
-      </div>
-    </div>    
-
-    
-    {/* Card 2 - INGENIATEC */}
-    <div className="experience-item">
-      <div className="experience-item-left">
-        <h4 id="experience-bg" style={{ marginBottom: '20px' }}>
-          <span><SparklesSvg /></span>
-          <span>
-            Genesis Pixel
-            <p style={{ fontStyle: 'italic', marginBottom: 0 }}>Medellin, Antioquia</p>
-            <p style={{ fontStyle: 'italic', marginBottom: 0 }}>Remoto</p>
-          </span>
-        </h4>
-      </div>
-      
-      <div className="experience-item-right">
-        <h4>
-          <p>Agosto del 2023 - actualidad</p>
-          <p>Fundador y desarrollador web creativo</p>
-        </h4>
-        <p>GenesisPixel es una plataforma en desarrollo enfocada en la enseñanza y exploración de tecnologías modernas para la creación de experiencias web interactivas.</p>
-        <p>Actualmente trabajo en la planificación, diseño y desarrollo de contenido educativo, ejemplos prácticos y demostraciones visuales para ayudar a desarrolladores a aprender tecnologías utilizadas en la web moderna. Entre los objetivos de la plataforma se encuentran:</p>
-        <p style={{ marginTop: '10px', fontSize: '14px', lineHeight: '1.7' }}>Crear rutas de aprendizaje completas sobre CSS Animations, GSAP, Three.js, WebGL y desarrollo frontend moderno, desarrollar ejemplos interactivos y proyectos prácticos para facilitar el aprendizaje, publicar documentación clara y estructurada para cada tecnología, construir experiencias visuales enfocadas en animaciones, gráficos 3D e interfaces modernas, investigar y compartir buenas prácticas de desarrollo web, rendimiento y experiencia de usuario, desarrollar una biblioteca de recursos y demostraciones para la comunidad de desarrolladores.</p>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '15px' }} onMouseEnter={handleMouseEnterGP} onMouseLeave={handleMouseLeaveGP}>
-          <a href="https://genesis-pixel.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img">
-            <img src="/img/experience/genesis-pixel/hero.jpg" alt="Hero" />
-          </a>
-          <a href="https://genesis-pixel.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img">
-            <img src="/img/experience/genesis-pixel/grid-1.jpg" alt="Grid 1" />
-          </a>
-          <a href="https://genesis-pixel.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img">
-            <img src="/img/experience/genesis-pixel/grid-2.jpg" alt="Grid 2" />
-          </a>
-          <a href="https://genesis-pixel.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img">
-            <img src="/img/experience/genesis-pixel/transitions.jpg" alt="Transitions" />
-          </a>
-          <a href="https://genesis-pixel.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img">
-            <img src="/img/experience/genesis-pixel/transform.jpg" alt="Transform" />
-          </a>
-          <a href="https://genesis-pixel.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img">
-            <img src="/img/experience/genesis-pixel/keyframes.jpg" alt="Keyframes" />
-          </a>
-          <a href="https://genesis-pixel.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img">
-            <img src="/img/experience/genesis-pixel/interacitions.jpg" alt="Interactions" />
-          </a>
+      {/* Card 1 - Futuro Puertas */}
+      <div className="experience-item">
+        <div className="experience-item-left">
+          <h4 id="experience-bg">
+            <span><NetworkSvg /></span>
+            <span>
+              AlmavivA Experience
+              <p ></p>
+              <p>Medellin, Antioquia</p>
+              <p>Presencial</p>
+            </span>
+          </h4>
         </div>
-        {isTooltipVisibleGP && (
-          <div className={`genesis-pixel-tooltip ${showTooltipGP ? 'tooltip-show' : 'tooltip-hide'}`} style={{
-            position: 'fixed',
-            left: mousePos.x + 15,
-            top: mousePos.y + 15,
-          }}>
-            Redireccionar a Genesis Pixel
-          </div>
-        )}
+        <div className="experience-item-right">
+          <h4>
+            <p>Abril 2026 - Octubre 2026</p>
+            <p>Desarrollador Backend especializado en Python e Inteligencia Artificial</p>
+          </h4>
+          <p style={{ marginBottom: 0 }}>Especializado en Python, enfocado en el diseño e implementación de sistemas basados en inteligencia artificial. Participo en el desarrollo de una plataforma que integra dos módulos principales tipo CRUD: uno orientado a la gestión de agentes inteligentes, donde es posible adjuntar archivos y conectar APIs para enriquecer su contexto, y otro enfocado en conversaciones, que permite interactuar con estos agentes para obtener respuestas basadas en la información previamente cargada.</p>
+          <p style={{ marginBottom: 0 }}>Además, colaboro en la integración con el frontend, asegurando la comunicación eficiente entre los servicios y la experiencia del usuario. Mi enfoque está en construir sistemas escalables, inteligentes y funcionales que permitan la interacción fluida entre datos, APIs y modelos de IA.</p>
+        </div>
       </div>
-    </div>
 
-    {/* Card 3 - Guinness */}
-    <div className="experience-item">
-      <div className="experience-item-left">
-        <h4 id="experience-bg" style={{ marginBottom: '20px' }}>
-          <span><BrushSvg /></span>
-          <span>
-            Kaoticode
-            <p style={{ fontStyle: 'italic', marginBottom: 0 }}>Medellin, Antioquia</p>
-            <p style={{ fontStyle: 'italic', marginBottom: 0 }}>Presencial</p>
-          </span>
-        </h4>
+
+      {/* Card 2 - INGENIATEC */}
+      <div className="experience-item">
+        <div className="experience-item-left">
+          <h4 id="experience-bg">
+            <span><SparklesSvg /></span>
+            <span>Genesis Pixel</span>
+          </h4>
+        </div>
+
+        <div className="experience-item-right">
+          <h4>
+            <p>Agosto del 2023 - actualidad</p>
+            <p>Fundador y desarrollador web creativo</p>
+          </h4>
+          <p>GenesisPixel es una plataforma en desarrollo enfocada en la enseñanza y exploración de tecnologías modernas para la creación de experiencias web interactivas.</p>
+          <p>Actualmente trabajo en la planificación, diseño y desarrollo de contenido educativo, ejemplos prácticos y demostraciones visuales para ayudar a desarrolladores a aprender tecnologías utilizadas en la web moderna. Entre los objetivos de la plataforma se encuentran:</p>
+          <p style={{ marginTop: '10px', fontSize: '14px', lineHeight: '1.7' }}>Crear rutas de aprendizaje completas sobre CSS Animations, GSAP, Three.js, WebGL y desarrollo frontend moderno, desarrollar ejemplos interactivos y proyectos prácticos para facilitar el aprendizaje, publicar documentación clara y estructurada para cada tecnología, construir experiencias visuales enfocadas en animaciones, gráficos 3D e interfaces modernas, investigar y compartir buenas prácticas de desarrollo web, rendimiento y experiencia de usuario, desarrollar una biblioteca de recursos y demostraciones para la comunidad de desarrolladores.</p>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '15px' }} onMouseEnter={handleMouseEnterGP} onMouseLeave={handleMouseLeaveGP}>
+            <a href="https://genesis-pixel.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img">
+              <img src="/img/experience/genesis-pixel/hero.jpg" alt="Hero" />
+            </a>
+            <a href="https://genesis-pixel.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img">
+              <img src="/img/experience/genesis-pixel/grid-1.jpg" alt="Grid 1" />
+            </a>
+            <a href="https://genesis-pixel.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img">
+              <img src="/img/experience/genesis-pixel/grid-2.jpg" alt="Grid 2" />
+            </a>
+            <a href="https://genesis-pixel.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img">
+              <img src="/img/experience/genesis-pixel/transitions.jpg" alt="Transitions" />
+            </a>
+            <a href="https://genesis-pixel.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img">
+              <img src="/img/experience/genesis-pixel/transform.jpg" alt="Transform" />
+            </a>
+            <a href="https://genesis-pixel.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img">
+              <img src="/img/experience/genesis-pixel/keyframes.jpg" alt="Keyframes" />
+            </a>
+            <a href="https://genesis-pixel.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img">
+              <img src="/img/experience/genesis-pixel/interacitions.jpg" alt="Interactions" />
+            </a>
+          </div>
+          {isTooltipVisibleGP && (
+            <div className={`genesis-pixel-tooltip ${showTooltipGP ? 'tooltip-show' : 'tooltip-hide'}`} style={{
+              position: 'fixed',
+              left: mousePos.x + 15,
+              top: mousePos.y + 15,
+            }}>
+              Redireccionar a Genesis Pixel
+            </div>
+          )}
+        </div>
       </div>
-      <div className="experience-item-right">
-        <h4>
-          <p>Enero del 2023 - julio 2023</p>
-          <p>Desarrollador Frontend UI-UX</p>
-        </h4>
-        <p>Participé como Desarrollador Frontend Freelance en el rediseño completo de la interfaz web de Kaoticode, enfocándome en mejorar la experiencia de usuario, la apariencia visual y la adaptabilidad en diferentes dispositivos.</p>
-        <p style={{ marginTop: '10px', fontSize: '14px', lineHeight: '1.7' }}>Rediseñé la interfaz principal de la plataforma para lograr una experiencia más moderna e intuitiva, implementé mejoras en la navegación y la organización visual del contenido, optimicé el diseño responsive para dispositivos móviles, tabletas y computadoras, colaboré en la mejora de la experiencia de usuario (UX) y la interfaz de usuario (UI), apliqué buenas prácticas de desarrollo frontend para mejorar la usabilidad y el rendimiento del sitio web.</p>
-       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '15px' }}>
-          <div className="genesis-pixel-img" style={{ opacity: 0.5 }}>
-            <img src="/img/experience/kaoticode/hero.jpg" alt="Hero" />
-          </div>
-          <div className="genesis-pixel-img" style={{ opacity: 0.5 }}>
-            <img src="/img/experience/kaoticode/info.jpg" alt="Info" />
-          </div>
-          <div className="genesis-pixel-img" style={{ opacity: 0.5 }}>
-            <img src="/img/experience/kaoticode/grid.jpg" alt="Grid" />
-          </div>
-          <div className="genesis-pixel-img" style={{ opacity: 0.5 }}>
-            <img src="/img/experience/kaoticode/proyects.jpg" alt="Projects" />
-          </div>
-          <div className="genesis-pixel-img" style={{ opacity: 0.5 }}>
-            <img src="/img/experience/kaoticode/services.jpg" alt="Services" />
+
+      {/* Card 3 - Guinness */}
+      <div className="experience-item">
+        <div className="experience-item-left">
+          <h4 id="experience-bg">
+            <span><BrushSvg /></span>
+            <span>Kaoticode</span>
+          </h4>
+        </div>
+        <div className="experience-item-right">
+          <h4>
+            <p>Enero del 2023 - julio 2023</p>
+            <p>Desarrollador Frontend UI-UX</p>
+          </h4>
+          <p>Participé como Desarrollador Frontend Freelance en el rediseño completo de la interfaz web de Kaoticode, enfocándome en mejorar la experiencia de usuario, la apariencia visual y la adaptabilidad en diferentes dispositivos.</p>
+          <p style={{ marginTop: '10px', fontSize: '14px', lineHeight: '1.7' }}>Rediseñé la interfaz principal de la plataforma para lograr una experiencia más moderna e intuitiva, implementé mejoras en la navegación y la organización visual del contenido, optimicé el diseño responsive para dispositivos móviles, tabletas y computadoras, colaboré en la mejora de la experiencia de usuario (UX) y la interfaz de usuario (UI), apliqué buenas prácticas de desarrollo frontend para mejorar la usabilidad y el rendimiento del sitio web.</p>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '15px' }}>
+            <div className="genesis-pixel-img" style={{ opacity: 0.5 }}>
+              <img src="/img/experience/kaoticode/hero.jpg" alt="Hero" />
+            </div>
+            <div className="genesis-pixel-img" style={{ opacity: 0.5 }}>
+              <img src="/img/experience/kaoticode/info.jpg" alt="Info" />
+            </div>
+            <div className="genesis-pixel-img" style={{ opacity: 0.5 }}>
+              <img src="/img/experience/kaoticode/grid.jpg" alt="Grid" />
+            </div>
+            <div className="genesis-pixel-img" style={{ opacity: 0.5 }}>
+              <img src="/img/experience/kaoticode/proyects.jpg" alt="Projects" />
+            </div>
+            <div className="genesis-pixel-img" style={{ opacity: 0.5 }}>
+              <img src="/img/experience/kaoticode/services.jpg" alt="Services" />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
   )
 }
 
