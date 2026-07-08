@@ -1749,27 +1749,36 @@ header nav ul:nth-child(2) li a::before {
     transition: transform 0.3s ease;
 }
 
-.genesis-pixel-img span {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    font-size: 9px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 4px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.genesis-pixel-img:hover span {
-    opacity: 1;
-}
-
 .genesis-pixel-img:hover img {
     transform: scale(1.1);
+}
+
+.genesis-pixel-tooltip {
+    pointer-events: none;
+    z-index: 9999;
+    white-space: nowrap;
+    font-family: 'Acorn', sans-serif;
+    font-size: 12px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background: linear-gradient(180deg, rgba(245, 247, 250, .24), rgba(245, 247, 250, .12) 52%, rgba(245, 247, 250, 0));
+    box-shadow: 8px 8px 24px 0 rgba(9, 13, 20, .4), -4px -4px 8px 0 rgba(224, 224, 255, .04), 0 1px 1px 0 rgba(9, 13, 20, .4);
+    border: var(--border-card);
+    color: #fff;
+    animation: tooltipFadeIn 0.3s ease forwards;
+}
+
+@keyframes tooltipFadeIn {
+    0% {
+        opacity: 0;
+        filter: blur(4px);
+        transform: scale(0.7);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1);
+    }
 }
 
 .experience-item:nth-child(3) .experience-item-left h4 span:nth-child(1) {
