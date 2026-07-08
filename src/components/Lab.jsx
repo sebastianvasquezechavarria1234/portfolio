@@ -1,20 +1,20 @@
 const labCards = {
   left: [
-    'La mejor manera de estructurar y optimizar su SVG para el rendimiento y la accesibilidad.',
-    'Cómo utilizar los principios del diseño de movimiento para mejorar tus animaciones.',
-    'Crear animaciones con personalidad: elegir la facilidad y el momento adecuados.',
+    'Capítulo 1: Transitions — De la brusquedad a la fluidez en un solo paso de código.',
+    'Capítulo 2: Keyframes — Crea coreografías y dale verdadera vida a tus elementos.',
+    'Capítulo 3: Interacciones — Detalles y micro-animaciones que enamoran al usuario.',
   ],
   right: [
-    'Utilizar una biblioteca de animaciones de JavaScript para animaciones más complejas: GSAP.',
-    'Logrando efectos como animación de trazos y morphing con los plugins de GreenSock',
+    'Capítulo 4: Three.js — Tu primera puerta de entrada hacia mundos interactivos en 3D.',
+    'Capítulo 5: Shaders — Matemáticas puras convertidas en efectos visuales increíbles.',
   ],
 }
 
 const Lab = () => (
   <section id="taller" className="sec__circle">
     <div className="sec__circle__tt">
-      <p id="underline">Laboratorio de estudio</p>
-      <h3>Espacio de práctica y experimentación durante mi proceso de aprendizaje.</h3>
+      <p id="underline">Guías de Genesis Pixel</p>
+      <h3>5 Capítulos diseñados para llevar tu nivel de desarrollo frontend al extremo.</h3>
     </div>
 
     <div className="sec__circle__flex">
@@ -45,8 +45,8 @@ const Lab = () => (
     </div>
 
     <div className="sec__circle__btn">
-      <a target="_blank" rel="noopener noreferrer" className="tallerBtn" href="https://www.educaedu-colombia.com/cursos/diseno-web/medellin">
-        Visitar Laboratorio de estudio
+      <a target="_blank" rel="noopener noreferrer" className="tallerBtn" href="https://genesis-pixel.vercel.app/">
+        Explorar todos los capítulos
       </a>
     </div>
   </section>
