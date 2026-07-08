@@ -15,7 +15,7 @@ const myProjects = [
   {
     githubHref: 'https://github.com/GenesisPixel/genesis-pixel-website',
     liveHref: 'https://genesis-pixel.vercel.app/',
-    img: '/img/projects/me/w.png',
+    img: '/img/projects/me/genesis-pixel.jpg',
     bg: '/img/projects/bg-project-mustang.webp',
     num: '#002',
     title: 'Genesis Pixel',
@@ -33,7 +33,7 @@ const myProjects = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234/zenith-gpt',
     liveHref: 'https://zenith-gpt.vercel.app/',
-    img: '/img/projects/me/r.jpg',
+    img: '/img/projects/me/zenith-gpt.jpg',
     bg: '/img/projects/bg-project-breef.webp',
     num: '#004',
     title: 'Zenith GPT',
@@ -45,7 +45,7 @@ const clonedProjects = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234/alfoart-clone',
     liveHref: 'https://alfoart-clone.vercel.app/',
-    img: '/img/projects/clone/alfoart-clone.jpg',
+    img: '/img/projects/clone/alfoart.jpg',
     bg: '/img/projects/bg-project-matter.webp',
     num: '#001',
     title: 'Alfoart Clone',
@@ -72,7 +72,7 @@ const clonedProjects = [
   {
     githubHref: '#',
     liveHref: '#',
-    img: '/img/projects/clone/e-2.png',
+    img: '/img/projects/clone/breef.jpg',
     bg: '/img/projects/bg-project-ginebra.webp',
     num: '#004',
     title: 'Breef Clone',
