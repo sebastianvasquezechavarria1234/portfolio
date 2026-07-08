@@ -94,6 +94,8 @@ const Experience = () => (
         <p>Más allá del aprendizaje técnico, participar en un evento de tal magnitud me permitió comprender el impacto de la educación tecnológica e impulsó mi motivación para aplicar estas habilidades en proyectos personales y académicos.</p>
       </div>
     </div>
+
+    <div style={{ width: '200px', height: '100px', borderRadius: '7px' }}></div>
   </section>
 )
 

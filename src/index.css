@@ -2314,27 +2314,32 @@ header nav ul:nth-child(2) li a::before {
 
 .tab-badge {
     position: absolute;
-    top: -8px;
-    right: -8px;
+    top: -10px;
+    right: -10px;
     background: var(--linear-gradient-green-blue-purple);
     color: #fff;
-    font-size: 9px;
-    font-weight: 600;
-    padding: 2px 6px;
-    border-radius: 2px;
+    font-size: 11px;
+    font-weight: 200;
+    padding: 3px 8px;
+    border-radius: 0;
     letter-spacing: -1px;
     box-shadow: 0 2px 8px rgba(0, 187, 255, 0.4);
-    animation: badgePulse 2s ease-in-out infinite;
+    transform: rotate(12deg);
+    animation: badgeShake 0.8s ease-in-out infinite;
 }
 
-@keyframes badgePulse {
+@keyframes badgeShake {
     0%, 100% {
-        transform: scale(1);
-        box-shadow: 0 2px 8px rgba(0, 187, 255, 0.4);
+        transform: rotate(12deg) translateX(0);
+    }
+    25% {
+        transform: rotate(18deg) translateX(-4px) translateY(-2px);
     }
     50% {
-        transform: scale(1.1);
-        box-shadow: 0 4px 12px rgba(0, 187, 255, 0.6);
+        transform: rotate(6deg) translateX(4px) translateY(2px);
+    }
+    75% {
+        transform: rotate(15deg) translateX(-2px) translateY(-1px);
     }
 }
 
