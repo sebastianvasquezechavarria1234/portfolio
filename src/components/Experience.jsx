@@ -1,4 +1,4 @@
-﻿import { useState } from 'react'
+import { useState } from 'react'
 
 const NetworkSvg = () => (
   <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-topology-star-3" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -89,8 +89,8 @@ const Experience = () => {
             <p>Abril 2026 - Octubre 2026</p>
             <p>Desarrollador Backend especializado en Python e Inteligencia Artificial</p>
           </h4>
-          <p style={{ marginBottom: 0 }}>Especializado en Python, enfocado en el diseño e implementación de sistemas basados en inteligencia artificial. Participo en el desarrollo de una plataforma que integra dos módulos principales tipo CRUD: uno orientado a la gestión de agentes inteligentes, donde es posible adjuntar archivos y conectar APIs para enriquecer su contexto, y otro enfocado en conversaciones, que permite interactuar con estos agentes para obtener respuestas basadas en la información previamente cargada.</p>
-          <p style={{ marginBottom: 0 }}>Además, colaboro en la integración con el frontend, asegurando la comunicación eficiente entre los servicios y la experiencia del usuario. Mi enfoque está en construir sistemas escalables, inteligentes y funcionales que permitan la interacción fluida entre datos, APIs y modelos de IA.</p>
+          <p style={{ marginBottom: 0 }}>Trabajo como desarrollador Backend especializado en Python e IA, construyendo una plataforma donde la inteligencia artificial cobra vida. El sistema cuenta con dos módulos clave: uno para gestionar agentes inteligentes — donde puedes adjuntar archivos y conectar APIs para darles contexto — y otro para conversar directamente con ellos y obtener respuestas basadas en esa información.</p>
+          <p style={{ marginBottom: 0 }}>También colaboro en la integración con el frontend, asegurando que todo fluya de forma coherente entre los servicios y la experiencia del usuario. Me apasiona construir sistemas que sean inteligentes, escalables y, sobre todo, que realmente funcionen bien.</p>
         </div>
       </div>
 
@@ -113,9 +113,9 @@ const Experience = () => {
             <p>Agosto del 2023 - actualidad</p>
             <p>Fundador y desarrollador web creativo</p>
           </h4>
-          <p>GenesisPixel es una plataforma en desarrollo enfocada en la enseñanza y exploración de tecnologías modernas para la creación de experiencias web interactivas.</p>
-          <p>Actualmente trabajo en la planificación, diseño y desarrollo de contenido educativo, ejemplos prácticos y demostraciones visuales para ayudar a desarrolladores a aprender tecnologías utilizadas en la web moderna. Entre los objetivos de la plataforma se encuentran:</p>
-          <p style={{ marginTop: '10px', fontSize: '14px', lineHeight: '1.7' }}>Crear rutas de aprendizaje completas sobre CSS Animations, GSAP, Three.js, WebGL y desarrollo frontend moderno, desarrollar ejemplos interactivos y proyectos prácticos para facilitar el aprendizaje, publicar documentación clara y estructurada para cada tecnología, construir experiencias visuales enfocadas en animaciones, gráficos 3D e interfaces modernas, investigar y compartir buenas prácticas de desarrollo web, rendimiento y experiencia de usuario, desarrollar una biblioteca de recursos y demostraciones para la comunidad de desarrolladores.</p>
+          <p>GenesisPixel es mi proyecto propio: una plataforma educativa que nació de las ganas de enseñar y compartir todo lo que he aprendido sobre el desarrollo web moderno. Aquí, la teoría se convierte en práctica con ejemplos visuales, animaciones reales y proyectos que puedes tocar y experimentar.</p>
+          <p>Estoy construyendo rutas de aprendizaje completas sobre tecnologías como CSS Animations, GSAP, Three.js y WebGL — las herramientas que hacen que la web se vea y se sienta increíble. Todo acompañado de documentación clara, demos interactivas y buenas prácticas pensadas para que cualquier desarrollador pueda crecer al ritmo que quiera.</p>
+          <p style={{ marginTop: '10px', fontSize: '14px', lineHeight: '1.7' }}>El objetivo es simple: que aprender a crear experiencias web visualmente poderosas sea accesible, divertido y, sobre todo, inspirador. GenesisPixel es la comunidad que me hubiera encantado tener cuando empecé.</p>
           <div className="experience-images" style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '15px' }} onMouseEnter={handleMouseEnterGP} onMouseLeave={handleMouseLeaveGP}>
             <a href="https://genesis-pixel.vercel.app/" target="_blank" rel="noopener noreferrer" className="genesis-pixel-img">
               <img src="/img/experience/genesis-pixel/hero.jpg" alt="Hero" />
@@ -168,22 +168,22 @@ const Experience = () => {
             <p>Enero del 2023 - julio 2023</p>
             <p>Desarrollador Frontend UI-UX</p>
           </h4>
-          <p>Participé como Desarrollador Frontend Freelance en el rediseño completo de la interfaz web de Kaoticode, enfocándome en mejorar la experiencia de usuario, la apariencia visual y la adaptabilidad en diferentes dispositivos.</p>
-          <p style={{ marginTop: '10px', fontSize: '14px', lineHeight: '1.7' }}>Rediseñé la interfaz principal de la plataforma para lograr una experiencia más moderna e intuitiva, implementé mejoras en la navegación y la organización visual del contenido, optimicé el diseño responsive para dispositivos móviles, tabletas y computadoras, colaboré en la mejora de la experiencia de usuario (UX) y la interfaz de usuario (UI), apliqué buenas prácticas de desarrollo frontend para mejorar la usabilidad y el rendimiento del sitio web.</p>
+          <p>En Kaoticode tuve la oportunidad de llevar un rediseño completo de su plataforma web, transformando una interfaz existente en algo más moderno, limpio y fácil de usar. Un proyecto donde cada decisión de diseño tenía un propósito claro: mejorar la experiencia de quien navega.</p>
+          <p style={{ marginTop: '10px', fontSize: '14px', lineHeight: '1.7' }}>Rediseñé la interfaz principal dándole una identidad visual más fresca e intuitiva, reorganicé la navegación y el contenido para que todo fuera más fácil de encontrar, y optimicé el diseño para que se viera impecable en cualquier dispositivo — desde el móvil hasta el escritorio. Siempre con foco en la usabilidad, el rendimiento y esas buenas prácticas que hacen la diferencia en el resultado final.</p>
           <div className="experience-images" style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '15px' }}>
-            <div className="genesis-pixel-img" style={{ opacity: 0.5 }}>
+            <div className="genesis-pixel-img" style={{ opacity: 0.5, cursor: 'default' }}>
               <img src="/img/experience/kaoticode/hero.jpg" alt="Hero" />
             </div>
-            <div className="genesis-pixel-img" style={{ opacity: 0.5 }}>
+            <div className="genesis-pixel-img" style={{ opacity: 0.5, cursor: 'default' }}>
               <img src="/img/experience/kaoticode/info.jpg" alt="Info" />
             </div>
-            <div className="genesis-pixel-img" style={{ opacity: 0.5 }}>
+            <div className="genesis-pixel-img" style={{ opacity: 0.5, cursor: 'default' }}>
               <img src="/img/experience/kaoticode/grid.jpg" alt="Grid" />
             </div>
-            <div className="genesis-pixel-img" style={{ opacity: 0.5 }}>
+            <div className="genesis-pixel-img" style={{ opacity: 0.5, cursor: 'default' }}>
               <img src="/img/experience/kaoticode/proyects.jpg" alt="Projects" />
             </div>
-            <div className="genesis-pixel-img" style={{ opacity: 0.5 }}>
+            <div className="genesis-pixel-img" style={{ opacity: 0.5, cursor: 'default' }}>
               <img src="/img/experience/kaoticode/services.jpg" alt="Services" />
             </div>
           </div>
