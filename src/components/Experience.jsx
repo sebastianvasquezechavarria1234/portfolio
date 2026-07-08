@@ -54,6 +54,7 @@ const Experience = () => (
         <p>Fui responsable del desarrollo front-end completo de la aplicación, incluyendo la creación de la interfaz de usuario, la implementación de diseño responsivo y la funcionalidad general de la plataforma. Desarrollado utilizando HTML, CSS, JavaScript y librerías modernas de front-end para asegurar una experiencia de usuario fluida y adaptable en todos los dispositivos. Para la planificación visual, utilicé Figma y Photoshop para estructurar y prototipar las vistas antes de la implementación.</p>
         <p>El proyecto contó con una sección interactiva innovadora que permitía a los usuarios personalizar visualmente puertas en un lienzo en blanco, modificando colores, añadiendo imágenes y ajustando estilos para una experiencia intuitiva y personalizada.</p>
         <p>Además, implementé integraciones de API para la gestión de datos y funciones dinámicas del sistema, asegurando una comunicación fluida entre la interfaz y los datos centrales de la aplicación. Este proyecto fortaleció mi experiencia en desarrollo front-end, diseño de UI e integración de experiencia de usuario.</p>
+        <div style={{ width: '130px', height: '50px', borderRadius: '7px', background: 'rgba(255, 255, 255, 0.1)' }}></div>
       </div>
     </div>
 
@@ -73,6 +74,7 @@ const Experience = () => (
         <p>Participé en la 7ª muestra de INGENIATEC debido al impacto de mi proyecto "Futuro Puertas", el cual destacó por su complejidad funcional y la aplicación práctica de mi formación técnica.</p>
         <p>Presenté y expliqué la arquitectura del proyecto, las tecnologías utilizadas y su funcionalidad principal a instructores y asistentes, demostrando las habilidades adquiridas durante mi proceso de desarrollo.</p>
         <p>Esta experiencia me permitió compartir mis conocimientos, recibir retroalimentación profesional y mostrar mi trabajo dentro de un entorno institucional y académico.</p>
+        <div style={{ width: '130px', height: '50px', borderRadius: '7px', background: 'rgba(255, 255, 255, 0.1)' }}></div>
       </div>
     </div>
 
@@ -92,10 +94,9 @@ const Experience = () => (
         <p>Participé en una sesión masiva de programación en Medellín que logró un Récord Guinness por la clase de software más grande del mundo. Esta iniciativa reunió a miles de participantes para promover la educación tecnológica y el interés por el desarrollo de software.</p>
         <p>Durante el evento, obtuve mis primeros conocimientos formales sobre programación, incluyendo conceptos de lógica básica, estructura de software y la importancia de la tecnología en el mundo moderno. Esta chispa inicial me motivó a seguir un aprendizaje autodidacta y a especializarme en el desarrollo web.</p>
         <p>Más allá del aprendizaje técnico, participar en un evento de tal magnitud me permitió comprender el impacto de la educación tecnológica e impulsó mi motivación para aplicar estas habilidades en proyectos personales y académicos.</p>
+        <div style={{ width: '130px', height: '50px', borderRadius: '7px', background: 'rgba(255, 255, 255, 0.1)' }}></div>
       </div>
     </div>
-
-    <div style={{ width: '200px', height: '100px', borderRadius: '7px' }}></div>
   </section>
 )
 
