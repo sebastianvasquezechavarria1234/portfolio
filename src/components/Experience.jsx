@@ -74,9 +74,13 @@ const Experience = () => {
     {/* Card 1 - Futuro Puertas */}
     <div className="experience-item">
       <div className="experience-item-left">
-        <h4 id="experience-bg">
+        <h4 id="experience-bg" style={{ marginBottom: '20px' }}>
           <span><NetworkSvg /></span>
-          <span>AlmavivA Experience</span>
+          <span>
+            AlmavivA Experience
+            <p style={{ fontStyle: 'italic', marginBottom: 0 }}>Medellin, Antioquia</p>
+            <p style={{ fontStyle: 'italic', marginBottom: 0 }}>Presencial</p>
+          </span>
         </h4>
       </div>
       <div className="experience-item-right">
@@ -93,9 +97,13 @@ const Experience = () => {
     {/* Card 2 - INGENIATEC */}
     <div className="experience-item">
       <div className="experience-item-left">
-        <h4 id="experience-bg">
+        <h4 id="experience-bg" style={{ marginBottom: '20px' }}>
           <span><SparklesSvg /></span>
-          <span>Genesis Pixel</span>
+          <span>
+            Genesis Pixel
+            <p style={{ fontStyle: 'italic', marginBottom: 0 }}>Medellin, Antioquia</p>
+            <p style={{ fontStyle: 'italic', marginBottom: 0 }}>Remoto</p>
+          </span>
         </h4>
       </div>
       
@@ -145,9 +153,13 @@ const Experience = () => {
     {/* Card 3 - Guinness */}
     <div className="experience-item">
       <div className="experience-item-left">
-        <h4 id="experience-bg">
+        <h4 id="experience-bg" style={{ marginBottom: '20px' }}>
           <span><BrushSvg /></span>
-          <span>Kaoticode</span>
+          <span>
+            Kaoticode
+            <p style={{ fontStyle: 'italic', marginBottom: 0 }}>Medellin, Antioquia</p>
+            <p style={{ fontStyle: 'italic', marginBottom: 0 }}>Presencial</p>
+          </span>
         </h4>
       </div>
       <div className="experience-item-right">

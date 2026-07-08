@@ -1662,7 +1662,9 @@ header nav ul:nth-child(2) li a::before {
 .experience-item-left {
     position: relative;
     display: flex;
+  
     width: 35%;
+   
 }
 
 .experience-item-left h4 {
@@ -1670,7 +1672,7 @@ header nav ul:nth-child(2) li a::before {
     padding-right: 20px;
     display: flex;
     width: 80%;
-    align-items: center;
+    align-items: start;
     background-color: var(--gray-dark);
     height: 40px;
     gap: 20px;
