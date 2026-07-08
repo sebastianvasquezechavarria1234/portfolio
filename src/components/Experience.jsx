@@ -76,20 +76,16 @@ const Experience = () => {
       <div className="experience-item-left">
         <h4 id="experience-bg">
           <span><NetworkSvg /></span>
-          <span>Futuro puertas</span>
+          <span>AlmavivA Experience</span>
         </h4>
       </div>
       <div className="experience-item-right">
         <h4>
-          <p>Enero 2023 - Noviembre 2023</p>
-          <p>Diseñador web &amp; analista de datos</p>
+          <p>Abril 2026 - Octubre 2026</p>
+          <p>Desarrollador Backend especializado en Python e Inteligencia Artificial</p>
         </h4>
-        <p>Fui responsable del desarrollo front-end completo de la aplicación, incluyendo la creación de la interfaz de usuario, la implementación de diseño responsivo y la funcionalidad general de la plataforma. Desarrollado utilizando HTML, CSS, JavaScript y librerías modernas de front-end para asegurar una experiencia de usuario fluida y adaptable en todos los dispositivos. Para la planificación visual, utilicé Figma y Photoshop para estructurar y prototipar las vistas antes de la implementación.</p>
-        <p>El proyecto contó con una sección interactiva innovadora que permitía a los usuarios personalizar visualmente puertas en un lienzo en blanco, modificando colores, añadiendo imágenes y ajustando estilos para una experiencia intuitiva y personalizada.</p>
-        <p>Además, implementé integraciones de API para la gestión de datos y funciones dinámicas del sistema, asegurando una comunicación fluida entre la interfaz y los datos centrales de la aplicación. Este proyecto fortaleció mi experiencia en desarrollo front-end, diseño de UI e integración de experiencia de usuario.</p>
-        <div style={{ width: '100px', height: '55px', borderRadius: '5px', background: 'rgba(255, 255, 255, 0.1)', cursor: 'pointer', overflow: 'hidden' }}>
-          <img src="/img/experience/genesis-pixel/hero.jpg" alt="Genesis Pixel" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-        </div>
+       <p>Especializado en Python, enfocado en el diseño e implementación de sistemas basados en inteligencia artificial. Participo en el desarrollo de una plataforma que integra dos módulos principales tipo CRUD: uno orientado a la gestión de agentes inteligentes, donde es posible adjuntar archivos y conectar APIs para enriquecer su contexto, y otro enfocado en conversaciones, que permite interactuar con estos agentes para obtener respuestas basadas en la información previamente cargada.</p>
+        <p>Además, colaboro en la integración con el frontend, asegurando la comunicación eficiente entre los servicios y la experiencia del usuario. Mi enfoque está en construir sistemas escalables, inteligentes y funcionales que permitan la interacción fluida entre datos, APIs y modelos de IA.</p>
       </div>
     </div>    
 
@@ -162,19 +158,19 @@ const Experience = () => {
         <p>Participé como Desarrollador Frontend Freelance en el rediseño completo de la interfaz web de Kaoticode, enfocándome en mejorar la experiencia de usuario, la apariencia visual y la adaptabilidad en diferentes dispositivos.</p>
         <p style={{ marginTop: '10px', fontSize: '14px', lineHeight: '1.7' }}>Rediseñé la interfaz principal de la plataforma para lograr una experiencia más moderna e intuitiva, implementé mejoras en la navegación y la organización visual del contenido, optimicé el diseño responsive para dispositivos móviles, tabletas y computadoras, colaboré en la mejora de la experiencia de usuario (UX) y la interfaz de usuario (UI), apliqué buenas prácticas de desarrollo frontend para mejorar la usabilidad y el rendimiento del sitio web.</p>
        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '15px' }}>
-          <div className="genesis-pixel-img">
+          <div className="genesis-pixel-img" style={{ opacity: 0.5 }}>
             <img src="/img/experience/kaoticode/hero.jpg" alt="Hero" />
           </div>
-          <div className="genesis-pixel-img">
+          <div className="genesis-pixel-img" style={{ opacity: 0.5 }}>
             <img src="/img/experience/kaoticode/info.jpg" alt="Info" />
           </div>
-          <div className="genesis-pixel-img">
+          <div className="genesis-pixel-img" style={{ opacity: 0.5 }}>
             <img src="/img/experience/kaoticode/grid.jpg" alt="Grid" />
           </div>
-          <div className="genesis-pixel-img">
+          <div className="genesis-pixel-img" style={{ opacity: 0.5 }}>
             <img src="/img/experience/kaoticode/proyects.jpg" alt="Projects" />
           </div>
-          <div className="genesis-pixel-img">
+          <div className="genesis-pixel-img" style={{ opacity: 0.5 }}>
             <img src="/img/experience/kaoticode/services.jpg" alt="Services" />
           </div>
         </div>
