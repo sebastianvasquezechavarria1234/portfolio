@@ -11,6 +11,7 @@ const navItems = [
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
+  const [showScrollBtn, setShowScrollBtn] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
   const [wavyStates, setWavyStates] = useState(() =>
@@ -45,7 +46,9 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(document.documentElement.scrollTop > 10)
+      const scroll = document.documentElement.scrollTop
+      setIsScrolled(scroll > 10)
+      setShowScrollBtn(scroll > 400)
     }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
@@ -62,9 +65,30 @@ const Header = () => {
 
   const closeMobile = () => setMobileOpen(false)
 
+  const scrollToTop = (e) => {
+    if (e) e.preventDefault()
+    if (window.lenis) {
+      window.lenis.scrollTo(0)
+    } else {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
+    }
+  }
+
   return (
     <>
-      <FloatingButtons />
+      {/* Fixed back-to-top button */}
+      <div className="fixed-button">
+        <ul>
+          <li id="btnTop" onClick={scrollToTop} style={{ transform: showScrollBtn ? 'scale(1)' : 'scale(0)', cursor: 'pointer' }}>
+            <a href="#" onClick={(e) => e.preventDefault()}>
+              <ScrollTopSvg />
+            </a>
+          </li>
+        </ul>
+      </div>
 
       <header>
         <GradualBlur

@@ -48,8 +48,8 @@ const Blog = () => (
         <a key={topic} target="_blank" rel="noopener noreferrer" href={BLOG_LINK}>{topic}</a>
       ))}
       <div className="blog-card-actions">
-        <a className="blogBtn1" target="_blank" rel="noopener noreferrer" href={BLOG_LINK}>Ir a la plataforma <ScrollTopIcon /></a>
-        <a className="blogBtn2" target="_blank" rel="noopener noreferrer" href={BLOG_LINK}>Empieza a aprender <ScrollTopIcon /></a>
+        <a className="blogBtn1" target="_blank" rel="noopener noreferrer" href="https://genesis-pixel.vercel.app/">Ir a la plataforma</a>
+        <a className="blogBtn2" target="_blank" rel="noopener noreferrer" href="https://genesis-pixel.vercel.app/transitions/que-son">Empieza a aprender <span><ScrollTopIcon /></span></a>
       </div>
     </div>
 
