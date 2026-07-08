@@ -130,7 +130,7 @@ const threeDProjects = [
   },
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/museo-del-cosmos',
-    img: '/img/projects/3d/m-2.jpg',
+    img: '/img/projects/3d/jellyfish.jpg',
     bg: '/img/projects/bg-project-mustang.webp',
     num: '#002',
     title: 'Museo del Cosmos',
@@ -138,7 +138,7 @@ const threeDProjects = [
   },
   {
     href: 'https://github.com/sebastianvasquezechavarria1234/three.js-tsl-sandbox',
-    img: '/img/projects/3d/a-1.png',
+    img: '/img/projects/3d/space-balloon.jpg',
     bg: '/img/projects/bg-project-breef.webp',
     num: '#003',
     title: 'Three.js Sandbox',
