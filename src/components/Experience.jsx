@@ -54,27 +54,65 @@ const Experience = () => (
         <p>Fui responsable del desarrollo front-end completo de la aplicación, incluyendo la creación de la interfaz de usuario, la implementación de diseño responsivo y la funcionalidad general de la plataforma. Desarrollado utilizando HTML, CSS, JavaScript y librerías modernas de front-end para asegurar una experiencia de usuario fluida y adaptable en todos los dispositivos. Para la planificación visual, utilicé Figma y Photoshop para estructurar y prototipar las vistas antes de la implementación.</p>
         <p>El proyecto contó con una sección interactiva innovadora que permitía a los usuarios personalizar visualmente puertas en un lienzo en blanco, modificando colores, añadiendo imágenes y ajustando estilos para una experiencia intuitiva y personalizada.</p>
         <p>Además, implementé integraciones de API para la gestión de datos y funciones dinámicas del sistema, asegurando una comunicación fluida entre la interfaz y los datos centrales de la aplicación. Este proyecto fortaleció mi experiencia en desarrollo front-end, diseño de UI e integración de experiencia de usuario.</p>
-        <div style={{ width: '130px', height: '50px', borderRadius: '7px', background: 'rgba(255, 255, 255, 0.1)' }}></div>
+        <div style={{ width: '100px', height: '55px', borderRadius: '5px', background: 'rgba(255, 255, 255, 0.1)', cursor: 'pointer', overflow: 'hidden' }}>
+          <img src="/img/experience/genesis-pixel/hero.jpg" alt="Genesis Pixel" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        </div>
       </div>
-    </div>
+    </div>    
 
+    
     {/* Card 2 - INGENIATEC */}
     <div className="experience-item">
       <div className="experience-item-left">
         <h4 id="experience-bg">
           <span><BrushSvg /></span>
-          <span>INGENIATEC - Séptima muestra</span>
+          <span>Genesis Pixel</span>
         </h4>
       </div>
       <div className="experience-item-right">
         <h4>
-          <p>Noviembre 2023</p>
-          <p>Participante &amp; Desarrollador</p>
+          <p>Agosto del 2023 - actualidad</p>
+          <p>Fundador y desarrollador web creativo</p>
         </h4>
-        <p>Participé en la 7ª muestra de INGENIATEC debido al impacto de mi proyecto "Futuro Puertas", el cual destacó por su complejidad funcional y la aplicación práctica de mi formación técnica.</p>
-        <p>Presenté y expliqué la arquitectura del proyecto, las tecnologías utilizadas y su funcionalidad principal a instructores y asistentes, demostrando las habilidades adquiridas durante mi proceso de desarrollo.</p>
-        <p>Esta experiencia me permitió compartir mis conocimientos, recibir retroalimentación profesional y mostrar mi trabajo dentro de un entorno institucional y académico.</p>
-        <div style={{ width: '130px', height: '50px', borderRadius: '7px', background: 'rgba(255, 255, 255, 0.1)' }}></div>
+        <p>GenesisPixel es una plataforma en desarrollo enfocada en la enseñanza y exploración de tecnologías modernas para la creación de experiencias web interactivas.</p>
+        <p>Actualmente trabajo en la planificación, diseño y desarrollo de contenido educativo, ejemplos prácticos y demostraciones visuales para ayudar a desarrolladores a aprender tecnologías utilizadas en la web moderna. Entre los objetivos de la plataforma se encuentran:</p>
+        <ul style={{ marginTop: '10px', paddingLeft: '20px', fontSize: '14px', lineHeight: '1.7' }}>
+          <li>Crear rutas de aprendizaje completas sobre CSS Animations, GSAP, Three.js, WebGL y desarrollo frontend moderno.</li>
+          <li>Desarrollar ejemplos interactivos y proyectos prácticos para facilitar el aprendizaje.</li>
+          <li>Publicar documentación clara y estructurada para cada tecnología.</li>
+          <li>Construir experiencias visuales enfocadas en animaciones, gráficos 3D e interfaces modernas.</li>
+          <li>Investigar y compartir buenas prácticas de desarrollo web, rendimiento y experiencia de usuario.</li>
+          <li>Desarrollar una biblioteca de recursos y demostraciones para la comunidad de desarrolladores.</li>
+        </ul>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '15px' }}>
+          <div style={{ width: '100px', height: '55px', borderRadius: '5px', background: 'rgba(255, 255, 255, 0.1)', cursor: 'pointer', overflow: 'hidden' }}>
+            <img src="/img/experience/genesis-pixel/hero.jpg" alt="Hero" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          </div>
+          <div style={{ width: '100px', height: '55px', borderRadius: '5px', background: 'rgba(255, 255, 255, 0.1)', cursor: 'pointer', overflow: 'hidden' }}>
+            <img src="/img/experience/genesis-pixel/grid-1.jpg" alt="Grid 1" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          </div>
+          <div style={{ width: '100px', height: '55px', borderRadius: '5px', background: 'rgba(255, 255, 255, 0.1)', cursor: 'pointer', overflow: 'hidden' }}>
+            <img src="/img/experience/genesis-pixel/grid-2.jpg" alt="Grid 2" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          </div>
+          <div style={{ width: '100px', height: '55px', borderRadius: '5px', background: 'rgba(255, 255, 255, 0.1)', cursor: 'pointer', overflow: 'hidden' }}>
+            <img src="/img/experience/genesis-pixel/transitions.jpg" alt="Transitions" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          </div>
+          <div style={{ width: '100px', height: '55px', borderRadius: '5px', background: 'rgba(255, 255, 255, 0.1)', cursor: 'pointer', overflow: 'hidden' }}>
+            <img src="/img/experience/genesis-pixel/transform.jpg" alt="Transform" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          </div>
+          <div style={{ width: '100px', height: '55px', borderRadius: '5px', background: 'rgba(255, 255, 255, 0.1)', cursor: 'pointer', overflow: 'hidden' }}>
+            <img src="/img/experience/genesis-pixel/keyframes.jpg" alt="Keyframes" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          </div>
+          <div style={{ width: '100px', height: '55px', borderRadius: '5px', background: 'rgba(255, 255, 255, 0.1)', cursor: 'pointer', overflow: 'hidden' }}>
+            <img src="/img/experience/genesis-pixel/interacitions.jpg" alt="Interactions" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          </div>
+          <div style={{ width: '100px', height: '55px', borderRadius: '5px', background: 'rgba(255, 255, 255, 0.1)', cursor: 'pointer', overflow: 'hidden' }}>
+            <img src="/img/experience/genesis-pixel/three-js.jpg" alt="Three.js" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          </div>
+          <div style={{ width: '100px', height: '55px', borderRadius: '5px', background: 'rgba(255, 255, 255, 0.1)', cursor: 'pointer', overflow: 'hidden' }}>
+            <img src="/img/experience/genesis-pixel/shaders.jpg" alt="Shaders" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          </div>
+        </div>
       </div>
     </div>
 
@@ -94,7 +132,9 @@ const Experience = () => (
         <p>Participé en una sesión masiva de programación en Medellín que logró un Récord Guinness por la clase de software más grande del mundo. Esta iniciativa reunió a miles de participantes para promover la educación tecnológica y el interés por el desarrollo de software.</p>
         <p>Durante el evento, obtuve mis primeros conocimientos formales sobre programación, incluyendo conceptos de lógica básica, estructura de software y la importancia de la tecnología en el mundo moderno. Esta chispa inicial me motivó a seguir un aprendizaje autodidacta y a especializarme en el desarrollo web.</p>
         <p>Más allá del aprendizaje técnico, participar en un evento de tal magnitud me permitió comprender el impacto de la educación tecnológica e impulsó mi motivación para aplicar estas habilidades en proyectos personales y académicos.</p>
-        <div style={{ width: '130px', height: '50px', borderRadius: '7px', background: 'rgba(255, 255, 255, 0.1)' }}></div>
+        <div style={{ width: '100px', height: '55px', borderRadius: '5px', background: 'rgba(255, 255, 255, 0.1)', cursor: 'pointer', overflow: 'hidden' }}>
+          <img src="/img/experience/genesis-pixel/hero.jpg" alt="Genesis Pixel" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        </div>
       </div>
     </div>
   </section>
