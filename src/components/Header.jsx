@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
-import { WavySvg, DropdownSvg, SocialLinks } from './Icons'
+import { WavySvg, DropdownSvg, SocialLinks, ScrollTopSvg } from './Icons'
 import GradualBlur from './GradualBlur'
-import FloatingButtons from './FloatingButtons'
 
 const navItems = [
   { id: 'exp', href: '#experiencia', label: 'Experiencia' },
@@ -17,7 +16,7 @@ const Header = () => {
   const [wavyStates, setWavyStates] = useState(() =>
     Object.fromEntries(navItems.map(item => [item.id, { key: 0, anim: '' }]))
   )
-  const [activeCategory, setActiveCategory] = useState(null)
+
   const prevHovered = useRef(null)
 
   const handleWavyEnter = (id) => {
@@ -93,75 +92,14 @@ const Header = () => {
                 <WavySvg key={`${navItems[0].id}-${wavyStates[navItems[0].id]?.key || 0}`} animClass={wavyStates[navItems[0].id]?.anim || ''} />
               </a>
             </li>
-            <li className="header-nav-item" onMouseLeave={() => setActiveCategory(null)}>
-              <a href="#proyectos">
+            <li>
+              <a href="#proyectos"
+                onMouseEnter={() => handleWavyEnter('mitrabajo')}
+                onMouseLeave={handleWavyLeave}
+              >
                 Mi trabajo
-                <DropdownSvg />
+                <WavySvg key={`mitrabajo-${wavyStates['mitrabajo']?.key || 0}`} animClass={wavyStates['mitrabajo']?.anim || ''} />
               </a>
-              <ul className="header-dropdown">
-                <li onMouseEnter={() => setActiveCategory('propios')}>
-                  <a href="#proyectos" className="flex justify-between items-center w-full hover:bg-white/5 px-2 py-1 rounded">
-                    <span>Propios</span>
-                    <span className="transform -rotate-90 scale-75 opacity-70"><DropdownSvg /></span>
-                  </a>
-                </li>
-                <li onMouseEnter={() => setActiveCategory('clones')}>
-                  <a href="#proyectos" className="flex justify-between items-center w-full hover:bg-white/5 px-2 py-1 rounded">
-                    <span>Clones</span>
-                    <span className="transform -rotate-90 scale-75 opacity-70"><DropdownSvg /></span>
-                  </a>
-                </li>
-                <li onMouseEnter={() => setActiveCategory('uiux')}>
-                  <a href="#proyectos" className="flex justify-between items-center w-full hover:bg-white/5 px-2 py-1 rounded">
-                    <span>UI / UX</span>
-                    <span className="transform -rotate-90 scale-75 opacity-70"><DropdownSvg /></span>
-                  </a>
-                </li>
-                <li onMouseEnter={() => setActiveCategory('web3d')}>
-                  <a href="#proyectos" className="flex justify-between items-center w-full hover:bg-white/5 px-2 py-1 rounded">
-                    <span>Web 3D</span>
-                    <span className="transform -rotate-90 scale-75 opacity-70"><DropdownSvg /></span>
-                  </a>
-                </li>
-              </ul>
-
-              {/* Side modal rendered as a sibling to prevent nested transform backdrop-filter bugs */}
-              {activeCategory && (
-                <ul className="header-dropdown" style={{ left: '212px' }}>
-                  {activeCategory === 'propios' && (
-                    <>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://cosmos-museum.vercel.app/">Cosmos Museum</a></li>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://genesis-pixel.vercel.app/">Genesis Pixel</a></li>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://myke-towers.vercel.app/">Myke Towers</a></li>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://zenith-gpt.vercel.app/">Zenith GPT</a></li>
-                    </>
-                  )}
-                  {activeCategory === 'clones' && (
-                    <>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://alfoart-clone.vercel.app/">Alfoart Clone</a></li>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://ginebra.vercel.app/">Ginebra Clone</a></li>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://galletas-artesanales.vercel.app/">Artisan Crumb Clone</a></li>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://ford-mustang-blond.vercel.app/">Ford Mustang Clone</a></li>
-                    </>
-                  )}
-                  {activeCategory === 'uiux' && (
-                    <>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://image-tiles-menu.vercel.app/">Image Tiles Menu</a></li>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://full-screen-clip-effect.vercel.app/">Full Screen Clip Effect</a></li>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://webgl-slider-effects.vercel.app/">WebGL Slider Effects</a></li>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://parallax-depth-sigma.vercel.app/">Parallax Depth</a></li>
-                    </>
-                  )}
-                  {activeCategory === 'web3d' && (
-                    <>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://bunny-flight-three-js.vercel.app/">Bunny Flight</a></li>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://jellyfish-sage.vercel.app/">Jellyfish</a></li>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://space-balloon-three-js.vercel.app/">Space Balloon</a></li>
-                      <li><a target="_blank" rel="noopener noreferrer" href="https://drive-simulator-3d-thre-js.vercel.app/">Drive Simulator 3D</a></li>
-                    </>
-                  )}
-                </ul>
-              )}
             </li>
             {navItems.slice(1).map(item => (
               <li key={item.id}>
