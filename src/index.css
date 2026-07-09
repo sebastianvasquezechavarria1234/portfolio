@@ -330,20 +330,17 @@ body::-webkit-scrollbar-thumb:hover,
 
 .content-hidden {
     opacity: 0;
-    filter: blur(20px);
 }
 
 .content-enter {
-    animation: content-blur-in 1s ease-out forwards;
+    animation: content-fade-in 1s ease-out forwards;
 }
 
-@keyframes content-blur-in {
+@keyframes content-fade-in {
     0% {
-        filter: blur(20px);
         opacity: 0;
     }
     100% {
-        filter: blur(0px);
         opacity: 1;
     }
 }
@@ -355,8 +352,6 @@ header {
     top: 0%;
     width: 100%;
     z-index: 100;
-    animation: header 1s;
-    animation-delay: 2.5s;
 }
 
 @keyframes header {
@@ -897,8 +892,6 @@ header nav ul:nth-child(2) li a::before {
     max-width: 1200px;
     padding: 0px 20px;
     margin: 0 auto;
-    animation: fade-in-up .8s;
-    animation-delay: 2.4s;
 }
 
 @keyframes fade-in-up {
@@ -2357,7 +2350,6 @@ header nav ul:nth-child(2) li a::before {
     position: relative;
     width: 100%;
     margin-top: 90px;
-    animation: fade-in-up .8s;
 }
 
 .blog::before {

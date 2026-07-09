@@ -50,9 +50,7 @@ function App() {
       <section className={`nex ${!isLoading ? 'content-enter' : 'content-hidden'}`}></section>
 
       {/* Header + mobile menu + fixed button (all inside Header component) */}
-      <div className={!isLoading ? 'content-enter' : 'content-hidden'}>
-        <Header />
-      </div>
+      <Header />
 
       {/* Background gradient */}
       <section className="gradient-bg">
