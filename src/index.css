@@ -287,17 +287,18 @@ body::-webkit-scrollbar-thumb:hover,
 }
 
 .preloader-phase {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1rem;
-    opacity: 0.6;
+    font-family: 'Acorn', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    opacity: 1;
     color: white;
 }
 
 .preloader-line {
     width: 400px;
-    height: 4px;
+    height: 10px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 2px;
+    border-radius: 0;
     overflow: hidden;
 }
 
@@ -305,7 +306,7 @@ body::-webkit-scrollbar-thumb:hover,
     display: block;
     height: 100%;
     background-color: white;
-    border-radius: 2px;
+    border-radius: 0;
 }
 
 @media screen and (max-width: 500px) {

@@ -177,7 +177,10 @@ const LoadingScreen = ({ onComplete }) => {
       <div className="preloader-number">{progress}</div>
 
       <div className="preloader-content" style={{ opacity: 1 }}>
-        <p className="preloader-phase">{phase}</p>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '10px' }}>
+          <img src="/img/face.jpg" alt="Sebas" style={{ width: '40px', height: '40px', borderRadius: '50%' }} />
+          <p className="preloader-phase" style={{ margin: 0 }}>{phase}</p>
+        </div>
         <div className="preloader-line">
           <span style={{ width: `${progress}%`, transition: 'width 0.3s' }}></span>
         </div>
