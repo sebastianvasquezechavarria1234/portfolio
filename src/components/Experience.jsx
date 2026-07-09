@@ -110,7 +110,7 @@ const Experience = () => {
 
         <div className="experience-item-right">
           <h4>
-            <p>Agosto del 2023 - actualidad</p>
+            <p>Agosto del 2023 - Actualidad</p>
             <p>El que tuvo la idea, la construyó y sigue haciéndola crecer</p>
           </h4>
           <p>GenesisPixel es mi proyecto propio: una plataforma educativa que nació de las ganas de enseñar y compartir todo lo que he aprendido sobre el desarrollo web moderno. Aquí, la teoría se convierte en práctica con ejemplos visuales, animaciones reales y proyectos que puedes tocar y experimentar.</p>
@@ -165,7 +165,7 @@ const Experience = () => {
         </div>
         <div className="experience-item-right">
           <h4>
-            <p>Enero del 2023 - julio 2023</p>
+            <p>Enero del 2023 - Julio 2023</p>
             <p>Le di una nueva cara a Kaoticode — Frontend & UI/UX</p>
           </h4>
           <p>En Kaoticode tuve la oportunidad de llevar un rediseño completo de su plataforma web, transformando una interfaz existente en algo más moderno, limpio y fácil de usar. Un proyecto donde cada decisión de diseño tenía un propósito claro: mejorar la experiencia de quien navega.</p>
