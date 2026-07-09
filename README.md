@@ -316,6 +316,7 @@ The portfolio adapts from ultra-wide displays to mobile with **12 breakpoints**:
 
 <br />
 
+#
 
 <p align="center">
   <strong>© 2023 — 2026 Sebastián Vásquez Echavarría</strong><br />
