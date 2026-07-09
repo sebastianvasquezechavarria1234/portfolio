@@ -242,7 +242,6 @@ const Projects = () => {
           onClick={() => setActiveOption('uiux')}
         >
           UI / UX
-          <span className="tab-badge">Reciente</span>
         </p>
         <p
           id="controls4"
