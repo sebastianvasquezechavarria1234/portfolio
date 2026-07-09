@@ -13,6 +13,17 @@ import Footer from './components/Footer'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
+  const [contentState, setContentState] = useState('hidden')
+
+  useEffect(() => {
+    if (!isLoading && contentState === 'hidden') {
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          setContentState('enter')
+        })
+      })
+    }
+  }, [isLoading, contentState])
 
   useEffect(() => {
     const lenis = new Lenis({
@@ -61,7 +72,7 @@ function App() {
       <Hero />
 
       {/* Main content wrapper */}
-      <section className={`container container2 ${!isLoading ? 'content-enter' : 'content-hidden'}`}>
+      <section className={`container container2 ${contentState === 'enter' ? 'content-enter' : 'content-hidden'}`}>
 
 
         <Experience />

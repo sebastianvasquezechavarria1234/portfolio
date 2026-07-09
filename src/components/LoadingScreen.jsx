@@ -159,9 +159,9 @@ const LoadingScreen = ({ onComplete }) => {
       setPhase('¡Listo!')
       setTimeout(() => {
         setExiting(true)
+        onComplete?.()
         setTimeout(() => {
           setHidden(true)
-          onComplete?.()
         }, 800)
       }, 400)
     }
