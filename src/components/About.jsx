@@ -15,7 +15,7 @@ const references = [
   },
   {
     texts: [
-      'Conozco a Sebastián desde hace 10 meses; forma parte del equipo de desarrolladores para la aplicación Shapepap.',
+      'Conozco a Sebastián desde hace 10 meses; forma parte del equipo de desarrolladores.',
       'Sebastián ha demostrado tener una gran capacidad de entendimiento del negocio y su trabajo en la parte técnica es excelente. La proactividad y la motivación hacia la búsqueda de soluciones son características que lo definen como persona.',
     ],
     author: 'Johana García',

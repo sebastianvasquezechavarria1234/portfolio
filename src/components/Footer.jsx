@@ -5,7 +5,7 @@ const Gallery = () => (
     <div className="gallery-card">
       <img src="/img/piedra.jpg" alt="Colombia" />
       <div className="gallery-card-info">
-        <p>Medellín, Colombia</p>
+        <p>Guatapé, Colombia</p>
       </div>
     </div>
     <div className="gallery-card">
