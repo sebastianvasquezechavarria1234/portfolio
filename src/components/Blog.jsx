@@ -1,7 +1,7 @@
-import React from 'react'
+﻿import React from 'react'
 
 const ExternalLinkSvg = () => (
-  <svg className="h-[17px] w-[17px] shrink-0 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <svg className="h-[17px] w-[17px] shrink-0 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
   </svg>
 )
@@ -9,13 +9,13 @@ const ExternalLinkSvg = () => (
 const BLOG_LINK = 'https://platzi.com/blog/10-trucos-de-css-que-te-van-a-sorprender/#:~:text=10%20trucos%20de%20CSS%20que%20te%20van%20a,Dibujar%20con%20%3Abefore%20y%20%3Aafter%20...%20M%C3%A1s%20elementos'
 
 const topics = [
-  'Sintaxis de @keyframes: el inicio de la magia',
-  'Propiedades animables: qué elementos puedes cobrar vida',
-  'Múltiples keyframes: creando coreografías paso a paso',
-  'Animation-name & duration: ponle nombre y ritmo a tu obra',
-  'Animation-delay & direction: controla el tiempo y el sentido',
-  'Animation-timing-function: la clave para movimientos suaves',
-  'Llevando todo a la práctica: efectos visuales increíbles',
+  'El inicio de la magia',
+  '- Qué elementos puedes cobrar vida',
+  '- Creando coreografías paso a paso',
+  '- Ponle nombre y ritmo a tu obra',
+  '- Controla el tiempo y el sentido',
+  '- La clave para movimientos suaves',
+  '- Efectos visuales increíbles',
 ]
 
 const Blog = () => (
@@ -42,8 +42,8 @@ const Blog = () => (
         <a key={topic} target="_blank" rel="noopener noreferrer" href={BLOG_LINK}>{topic}</a>
       ))}
       <div className="blog-card-actions">
-        <a className="blogBtn1" target="_blank" rel="noopener noreferrer" href="https://genesis-pixel.vercel.app/">Ir a la plataforma</a>
-        <a className="blogBtn2 flex items-center gap-2" target="_blank" rel="noopener noreferrer" href="https://genesis-pixel.vercel.app/transitions/que-son">Empieza a aprender <span><ExternalLinkSvg /></span></a>
+        <a className="blogBtn1 hover:-translate-y-1 transition-transform" target="_blank" rel="noopener noreferrer" href="https://genesis-pixel.vercel.app/">Ir a la plataforma</a>
+        <a className="blogBtn2 hover:-translate-y-1 transition-transform" target="_blank" rel="noopener noreferrer" href="https://genesis-pixel.vercel.app/transitions/que-son">Empieza a aprender</a>
       </div>
     </div>
 
