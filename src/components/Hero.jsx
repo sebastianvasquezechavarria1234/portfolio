@@ -31,12 +31,10 @@ const Hero = () => (
 
         <a href="#proyectos">
           Mira lo que he hecho
-          <AwardSvg />
         </a>
 
         <a download href="/img/sebastian-vasquez-cv.pdf">
           Descarga mi CV
-          <DownloadSvg />
         </a>
 
         <div className="hero-social">
