@@ -14,7 +14,7 @@ const Lab = () => (
   <section id="taller" className="sec__circle">
     <div className="sec__circle__tt">
       <p id="underline">Guías de Genesis Pixel</p>
-      <h3>5 Capítulos diseñados para llevar tu nivel de desarrollo frontend al extremo.</h3>
+      <h3 style={{ maxWidth: '700px', margin: '0 auto' }}>5 Capítulos diseñados para llevar tu nivel de desarrollo frontend al extremo.</h3>
     </div>
 
     <div className="sec__circle__flex">
