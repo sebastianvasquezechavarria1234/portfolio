@@ -1,10 +1,10 @@
 <div align="center">
 
-  <img src="public/img/face.jpg" alt="Sebastián Vásquez" width="110" style="border-radius: 50%; border: 3px solid #0fa;" />
 
-  <h1> ✨💼Portafolio de Sebastián Vásquez</h1>
 
-  <p><em>Donde otros ven tecnología, yo veo posibilidades infinitas.</em></p>
+  <h1> ✨💼 Sebastián Vásquez's Portfolio</h1>
+
+  <p><em>Where others see technology, I see infinite possibilities.</em></p>
 
   <br />
 
@@ -17,7 +17,7 @@
 
   <br /><br />
 
-  <img src="public/img/preview.jpg" alt="Preview del portafolio" width="100%" />
+  <img src="public/img/preview.jpg" alt="Portfolio preview" width="100%" />
 
 </div>
 
@@ -25,208 +25,208 @@
 
 <br />
 
-## Índice
+## Index
 
-- [Sobre el proyecto](#-sobre-el-proyecto)
-- [Diseño y filosofía](#-diseño-y-filosofía)
-- [Características](#-características)
-- [Stack tecnológico](#-stack-tecnológico)
-- [Arquitectura del proyecto](#-arquitectura-del-proyecto)
-- [Flujo de la aplicación](#-flujo-de-la-aplicación)
-- [Componentes principales](#-componentes-principales)
+- [About the project](#-about-the-project)
+- [Design philosophy](#-design-philosophy)
+- [Features](#-features)
+- [Tech stack](#-tech-stack)
+- [Project architecture](#-project-architecture)
+- [Application flow](#-application-flow)
+- [Main components](#-main-components)
 - [Getting Started](#-getting-started)
-- [Scripts disponibles](#-scripts-disponibles)
-- [Rendimiento y optimizaciones](#-rendimiento-y-optimizaciones)
+- [Available scripts](#-available-scripts)
+- [Performance and optimizations](#-performance-and-optimizations)
 - [Responsive Design](#-responsive-design)
-- [Contacto](#-contacto)
-- [Licencia](#-licencia)
+- [Contact](#-contact)
+- [License](#-license)
 
 ---
 
 <br />
 
-## Sobre el proyecto
+## About the project
 
-Este portafolio es una aplicación de una sola página construida con **React 19**, **Vite 8** y **Tailwind CSS 4**. Nació de un sitio estático y fue migrado a una arquitectura moderna con un único objetivo: **transmitir calidad desde el primer pixel**.
+This portfolio is a single-page application built with **React 19**, **Vite 8**, and **Tailwind CSS 4**. It was born as a static site and migrated to a modern architecture with one clear goal: **convey quality from the very first pixel**.
 
-Cada sección está diseñada como una pieza editorial independiente. No es solo un sitio web con información — es una **experiencia visual** que acompaña al visitante desde el momento en que carga hasta que cierra la pestaña.
+Every section is designed as an independent editorial piece. It's not just a website with information — it's a **visual experience** that accompanies the visitor from the moment it loads until they close the tab.
 
-> El proyecto no utiliza backend. Es un SPA estático desplegado en **Vitoria**.
+> The project has no backend. It's a static SPA deployed on **Vercel**.
 
 ---
 
 <br />
 
-## Diseño y filosofía
+## Design philosophy
 
-La estética del portafolio sigue un estilo **editorial de alto nivel**. Cada decisión visual fue tomada con intención:
+The portfolio's aesthetic follows a **high-end editorial style**. Every visual decision was made with intention:
 
-| Principio | Implementación |
+| Principle | Implementation |
 |---|---|
-| **Tipografía de alto impacto** | Fuente personalizada *Acorn* para títulos, *Bricolage Grotesque* para subtítulos, *Google Sans Flex* para cuerpo |
-| **Espacios que respiran** | Layout limpio con jerarquía clara entre secciones |
-| **Efectos avanzados** | Gradual Blur Header estilo Apple, glassmorphism en tarjetas, cursor personalizado |
-| **Movimiento con propósito** | Animaciones en scroll, transiciones suaves, micro-interacciones en hover |
-| **Coherencia visual** | Paleta unificada (verde → azul → púrpura), gradientes consistentes, sombras cuidadas |
+| **High-impact typography** | Custom *Acorn* font for headings, *Bricolage Grotesque* for subheadings, *Google Sans Flex* for body |
+| **Breathing whitespace** | Clean layout with clear hierarchy between sections |
+| **Advanced effects** | Apple-style Gradual Blur Header, glassmorphism on cards, custom cursor |
+| **Movement with purpose** | Scroll animations, smooth transitions, hover micro-interactions |
+| **Visual coherence** | Unified palette (green → blue → purple), consistent gradients, refined shadows |
 
-> *La elegancia siempre debe estar por encima de la cantidad.*
+> *Elegance should always be above quantity.*
 
 ---
 
 <br />
 
-## Características
+## Features
 
-### Navegación fluida
-Impulsada por [Lenis Smooth Scroll](https://github.com/darkroomengineering/lenis), cada scroll se siente como una experiencia premium con una curva de easing personalizada.
+### Fluid navigation
+Powered by [Lenis Smooth Scroll](https://github.com/darkroomengineering/lenis), every scroll feels like a premium experience with a custom easing curve.
 
 ### Gradual Blur Header
-Un efecto de blur progresivo inspirado en Apple. El header se difumina gradualmente a medida que el usuario navega, añadiendo profundidad y elegancia sin distracciones.
+A progressive blur effect inspired by Apple. The header gradually blurs as the user scrolls, adding depth and elegance without distractions.
 
-### Pantalla de carga inteligente
-No es un fake timer. El preloader **carga assets reales** en 7 fases (fuentes → hero → experiencia → servicios → proyectos → blog → about → otros) y muestra el progreso real. Cuando termina, se desliza hacia arriba revelando el contenido.
+### Smart loading screen
+Not a fake timer. The preloader **loads real assets** in 7 phases (fonts → hero → experience → services → projects → blog → about → other) and displays actual progress. When finished, it slides up revealing the content.
 
-### Proyectos con slider animado
-Categorías de proyectos (*Propios*, *Clones*, *UI/UX*, *Web 3D*) con un slider animado usando **Framer Motion** con transiciones spring y efectos de blur entre paneles.
+### Projects with animated slider
+Project categories (*Originals*, *Clones*, *UI/UX*, *Web 3D*) with an animated slider using **Framer Motion** with spring transitions and blur effects between panels.
 
-### Bento Grid para servicios
-Layout tipo bento con tarjetas glassmorphic que incluyen blobs de color como fondo decorativo. Cada servicio tiene su propia paleta de gradientes.
+### Bento Grid for services
+Bento-style layout with glassmorphic cards that include color blobs as decorative backgrounds. Each service has its own gradient palette.
 
-### Cursor personalizado
-Un punto de 8px con un anillo seguidor de 40px, ambos con `mix-blend-mode: difference`. Se oculta automáticamente en dispositivos táctiles.
+### Custom cursor
+An 8px dot with a 40px follower ring, both using `mix-blend-mode: difference`. Automatically hidden on touch devices.
 
-### Contenido entry animation
-Todo el contenido aparece con una transición coordinada de `opacity` + `translateY`, sincronizada con la salida del preloader.
+### Content entry animation
+All content appears with a coordinated `opacity` + `translateY` transition, synchronized with the preloader exit.
 
 ---
 
 <br />
 
-## Stack tecnológico
+## Tech stack
 
-### Núcleo
+### Core
 
-| Tecnología | Versión | Uso |
+| Technology | Version | Purpose |
 |---|---|---|
-| **React** | 19.2.5 | Framework UI |
-| **Vite** | 8.0.10 | Build tool y dev server |
+| **React** | 19.2.5 | UI framework |
+| **Vite** | 8.0.10 | Build tool and dev server |
 | **Tailwind CSS** | 4.2.4 | Utility-first styling |
 
-### Animación y UX
+### Animation and UX
 
-| Librería | Versión | Uso |
+| Library | Version | Purpose |
 |---|---|---|
-| **Framer Motion** | 12.38.0 | Animaciones React (slider de proyectos) |
-| **GSAP** | 3.15.0 | Animaciones avanzadas de alto rendimiento |
+| **Framer Motion** | 12.38.0 | React animations (project slider) |
+| **GSAP** | 3.15.0 | High-performance advanced animations |
 | **Lenis** | 1.3.23 | Smooth scrolling |
-| **OverlayScrollbars** | 2.15.1 | Scrollbar personalizado |
+| **OverlayScrollbars** | 2.15.1 | Custom scrollbar |
 
-### Fuentes
+### Fonts
 
-| Fuente | Uso |
+| Font | Purpose |
 |---|---|
-| **Acorn** | Títulos de alto impacto (display font) |
-| **Bricolage Grotesque** | Subtítulos secundarios (300/600/800) |
-| **Google Sans Flex** | Texto de cuerpo (400-800) |
+| **Acorn** | High-impact headings (display font) |
+| **Bricolage Grotesque** | Secondary subheadings (300/600/800) |
+| **Google Sans Flex** | Body text (400-800) |
 
 ---
 
 <br />
 
-## Arquitectura del proyecto
+## Project architecture
 
 ```
 portfolio/
-├── index.html                 # Punto de entrada HTML (lang="es")
-├── package.json               # Dependencias y scripts
-├── vite.config.js             # Configuración de Vite
+├── index.html                 # HTML entry point (lang="es")
+├── package.json               # Dependencies and scripts
+├── vite.config.js             # Vite configuration
 │
 ├── src/
-│   ├── main.jsx               # Entry point de React
-│   ├── App.jsx                # Orquestador principal (loading, scroll, layout)
-│   ├── index.css              # Estilos globales (3040 líneas)
+│   ├── main.jsx               # React entry point
+│   ├── App.jsx                # Main orchestrator (loading, scroll, layout)
+│   ├── index.css              # Global styles (3040 lines)
 │   │
 │   └── components/
-│       ├── LoadingScreen.jsx  # Preloader con carga real de assets
-│       ├── Header.jsx         # Nav sticky con blur gradual + menú móvil
-│       ├── Hero.jsx           # Sección principal con retrato y CTAs
-│       ├── Experience.jsx     # Timeline de experiencia profesional
-│       ├── Services.jsx       # Bento grid de servicios
-│       ├── Projects.jsx       # Slider animado con 4 categorías
-│       ├── Blog.jsx           # Sección de aprendizaje
-│       ├── Lab.jsx            # Capítulos de Genesis Pixel
-│       ├── About.jsx          # Bio personal + testimonios
-│       ├── Footer.jsx         # Galería de fotos + redes sociales
-│       ├── Icons.jsx          # Biblioteca de iconos SVG
-│       └── GradualBlur.jsx    # Componente de blur progresivo (estilo Apple)
+│       ├── LoadingScreen.jsx  # Preloader with real asset loading
+│       ├── Header.jsx         # Sticky nav with gradual blur + mobile menu
+│       ├── Hero.jsx           # Main section with portrait and CTAs
+│       ├── Experience.jsx     # Professional experience timeline
+│       ├── Services.jsx       # Bento grid of services
+│       ├── Projects.jsx       # Animated slider with 4 categories
+│       ├── Blog.jsx           # Learning section
+│       ├── Lab.jsx            # Genesis Pixel chapters
+│       ├── About.jsx          # Personal bio + testimonials
+│       ├── Footer.jsx         # Photo gallery + social links
+│       ├── Icons.jsx          # SVG icon library
+│       └── GradualBlur.jsx    # Progressive blur component (Apple-style)
 │
 ├── css/
-│   └── estilos.css            # CSS legacy del sitio estático original
+│   └── estilos.css            # Legacy CSS from the original static site
 │
 └── public/
-    ├── fonts/                 # 8 archivos de fuentes
-    └── img/                   # 70+ imágenes (perfiles, proyectos, emojis, decoraciones)
+    ├── fonts/                 # 8 font files
+    └── img/                   # 70+ images (profiles, projects, emojis, decorations)
 ```
 
 ---
 
 <br />
 
-## Flujo de la aplicación
+## Application flow
 
 ```
-1. El HTML carga → React monta <App /> en StrictMode
+1. HTML loads → React mounts <App /> in StrictMode
           ↓
-2. LoadingScreen monta y comienza la precarga:
-   → Fuentes (2 URLs de Google Fonts)
-   → Imágenes por fases: hero, experiencia, servicios,
-     proyectos, blog, about, otros (~55 imágenes)
-   → Barra de progreso + porcentaje + texto de fase
+2. LoadingScreen mounts and starts preloading:
+   → Fonts (2 Google Fonts URLs)
+   → Images by phases: hero, experience, services,
+     projects, blog, about, other (~55 images)
+   → Progress bar + percentage + phase text
           ↓
-3. Todos los assets cargados:
-   → Preloader dispara animación de salida (slide-up)
+3. All assets loaded:
+   → Preloader triggers exit animation (slide-up)
    → onComplete → setIsLoading(false)
           ↓
-4. Revele del contenido:
-   → Doble requestAnimationFrame garantiza DOM listo
-   → contentState cambia a 'enter' → fade-in + translateY (0.8s)
-   → Después de 0.8s → headerReady = true → header aparece
+4. Content reveal:
+   → Double requestAnimationFrame ensures DOM is ready
+   → contentState changes to 'enter' → fade-in + translateY (0.8s)
+   → After 0.8s → headerReady = true → header appears
           ↓
-5. El usuario navega con Lenis smooth scroll activo
+5. User navigates with Lenis smooth scroll active
 ```
 
-> El hero tiene una entrada separada del resto del contenido. El header aparece después de que el contenido se ha revelado completamente.
+> The hero has a separate entry from the rest of the content. The header appears after the content has been fully revealed.
 
 ---
 
 <br />
 
-## Componentes principales
+## Main components
 
 ### `App.jsx`
-El orquestador. Controla el estado de carga, inicializa Lenis, gestiona la secuencia de revelado del contenido y renderiza todas las secciones en orden.
+The orchestrator. Controls loading state, initializes Lenis, manages the content reveal sequence, and renders all sections in order.
 
 ### `LoadingScreen.jsx`
-Preloader completo que carga assets reales en 7 fases. Muestra porcentaje de progreso, texto de fase y avatar del perfil. Se desliza hacia arriba con una transición CSS al completar.
+Complete preloader that loads real assets in 7 phases. Shows progress percentage, phase text, and profile avatar. Slides up with a CSS transition when finished.
 
 ### `Header.jsx`
-Nav sticky con blur gradual usando el componente `GradualBlur`. Incluye:
-- Navegación desktop con underline SVG animado en hover
-- Botón "Hablemos" que enlaza a WhatsApp
-- Menú móvil full-screen con animación `scaleY`
-- Botón scroll-to-top que aparece después de 400px
+Sticky nav with gradual blur using the `GradualBlur` component. Includes:
+- Desktop navigation with animated SVG underline on hover
+- "Let's Talk" button linking to WhatsApp
+- Full-screen mobile menu with `scaleY` animation
+- Scroll-to-top button that appears after 400px
 
 ### `Hero.jsx`
-La primera impresión. Retrato del perfil, heading principal, dos CTAs (*"Mira lo que he hecho"* y *"Descarga mi CV"*), redes sociales y un retrato con tarjeta glassmorphic y emojis flotantes animados.
+The first impression. Profile portrait, main heading, two CTAs (*"Check out what I've done"* and *"Download my CV"*), social links, and a portrait with a glassmorphic card and animated floating emojis.
 
 ### `Experience.jsx`
-Timeline vertical con 3 experiencias profesionales. Incluye screenshot grid interactivo con tooltips basados en portales de React.
+Vertical timeline with 3 professional experiences. Includes interactive screenshot grid with tooltips using React portals.
 
 ### `Projects.jsx`
-Slider animado con 4 categorías y 16 proyectos. Cada categoría tiene su propio fondo. Las transiciones usan spring physics de Framer Motion.
+Animated slider with 4 categories and 16 projects. Each category has its own background. Transitions use Framer Motion spring physics.
 
 ### `GradualBlur.jsx`
-Componente reutilizable de blur progresivo inspirado en Apple. Soporta presets, curvas, Intersection Observer y modo responsive.
+Reusable progressive blur component inspired by Apple. Supports presets, curves, Intersection Observer, and responsive mode.
 
 ---
 
@@ -234,53 +234,53 @@ Componente reutilizable de blur progresivo inspirado en Apple. Soporta presets, 
 
 ## Getting Started
 
-**1. Clonar el repositorio**
+**1. Clone the repository**
 
 ```bash
 git clone https://github.com/sebastianvasquezechavarria1234/portfolio.git
 cd portfolio
 ```
 
-**2. Instalar dependencias**
+**2. Install dependencies**
 
 ```bash
 npm install
 ```
 
-**3. Iniciar el servidor de desarrollo**
+**3. Start the development server**
 
 ```bash
 npm run dev
 ```
 
-> Se abrirá automáticamente en `http://localhost:5173`.
+> It will automatically open at `http://localhost:5173`.
 
 ---
 
 <br />
 
-## Scripts disponibles
+## Available scripts
 
-| Script | Comando | Descripción |
+| Script | Command | Description |
 |---|---|---|
-| **Desarrollo** | `npm run dev` | Inicia el dev server de Vite |
-| **Build** | `npm run build` | Genera el bundle de producción en `dist/` |
-| **Preview** | `npm run preview` | Previsualiza la versión de producción |
-| **Lint** | `npm run lint` | Ejecuta ESLint para detectar errores |
+| **Development** | `npm run dev` | Starts the Vite dev server |
+| **Build** | `npm run build` | Generates the production bundle in `dist/` |
+| **Preview** | `npm run preview` | Previews the production build |
+| **Lint** | `npm run lint` | Runs ESLint to detect errors |
 
 ---
 
 <br />
 
-## Rendimiento y optimizaciones
+## Performance and optimizations
 
-- **Precarga inteligente**: El preloader carga assets reales por fases, no usa timers falsos
-- **Smooth scrolling optimizado**: Lenis con `smoothTouch: false` en móvil para preservar rendimiento
-- **Imágenes en WebP**: La mayoría de assets usan formato WebP para menor peso
-- **CSS personalizado**: Variables CSS para colores, gradientes y sombras reutilizables
-- **Componentes memoizados**: `GradualBlur` usa `React.memo` para evitar re-renders innecesarios
-- **Bundle optimizado**: Vite genera un solo JS y un solo CSS para producción
-- **Scroll-to-top lazy**: El botón solo aparece después de 400px de scroll
+- **Smart preloading**: The preloader loads real assets by phases, no fake timers
+- **Optimized smooth scrolling**: Lenis with `smoothTouch: false` on mobile to preserve performance
+- **WebP images**: Most assets use WebP format for smaller file size
+- **Custom CSS**: CSS variables for reusable colors, gradients, and shadows
+- **Memoized components**: `GradualBlur` uses `React.memo` to prevent unnecessary re-renders
+- **Optimized bundle**: Vite generates a single JS and a single CSS for production
+- **Lazy scroll-to-top**: The button only appears after 400px of scrolling
 
 ---
 
@@ -288,23 +288,25 @@ npm run dev
 
 ## Responsive Design
 
-El portafolio se adapta desde ultra-wide hasta móviles con **12 breakpoints**:
+The portfolio adapts from ultra-wide displays to mobile with **12 breakpoints**:
 
-| Breakpoint | Comportamiento |
+| Breakpoint | Behavior |
 |---|---|
-| `1380px` | Ajustes de padding y layout |
+| `1380px` | Padding and layout adjustments |
 | `1280px` | Container overflow visible |
-| `1180px` | Grid de proyectos a 2 columnas |
-| `1065px` | Reducción de tamaños de fuente |
-| `975px` | Layout de servicios ajustado |
-| `900px` | About section cambia a `flex-col` |
-| `800px` | Menú móvil activado, hamburger visible |
-| `768px` | Navegación desktop oculta, menú overlay |
-| `600px` | Hero gradient a 100% width, 400px height |
-| `500px` | Tamaños de fuente reducidos |
-| `480px` | Ajustes finales para móviles pequeños |
+| `1180px` | Project grid switches to 2 columns |
+| `1065px` | Font size reduction |
+| `975px` | Services layout adjusted |
+| `900px` | About section switches to `flex-col` |
+| `800px` | Mobile menu activated, hamburger visible |
+| `768px` | Desktop nav hidden, overlay menu |
+| `600px` | Hero gradient to 100% width, 400px height |
+| `500px` | Reduced font sizes |
+| `480px` | Final adjustments for small mobile devices |
 
----
+
+
+
 
 <br />
 
@@ -312,16 +314,12 @@ El portafolio se adapta desde ultra-wide hasta móviles con **12 breakpoints**:
 
 
 
-
 <br />
 
-## Licencia
-
-Este proyecto es de uso personal. Casi todos los derechos reservados.
 
 <p align="center">
   <strong>© 2023 — 2026 Sebastián Vásquez Echavarría</strong><br />
-  <em>Diseñado y escrito en código con dedicación y precisión.</em>
+  <em>Designed and written in code with dedication and precision.</em>
   </br>
   Made with ❤️ by <a href="https://sebas-dev.vercel.app/" target="_blank" rel="noopener noreferrer">Sebastián V</a>
 
