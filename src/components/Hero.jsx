@@ -22,8 +22,8 @@ const Hero = () => (
   <section id="hero" className="hero">
     <section className="container">
       <div className="hero-content">
-        <a href="#sobre-mí" style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '30px', textDecoration: 'none', color: 'inherit' }}>
-          <img src="/img/face.jpg" alt="face" style={{ width: '40px', height: '40px', borderRadius: '50%' }} />
+        <a href="#sobre-mí" className="max-[768px]:justify-center" style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '30px', textDecoration: 'none', color: 'inherit' }}>
+          <img src="/img/face.jpg" alt="face" style={{ width: '40px', height: '40px', borderRadius: '50%', opacity: 1 }} />
           <span style={{ fontWeight: 300, fontStyle: 'italic', textDecoration: 'underline', opacity: .8 }}>Sebastian Vasquez E.</span>
         </a>
         <h1>Hola, soy Sebas. Tu desarrollador web.</h1>

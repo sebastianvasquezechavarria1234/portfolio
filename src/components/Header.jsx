@@ -141,7 +141,7 @@ const Header = () => {
 
           <ul>
             <li>
-              <a id="header-btn-right" className={isScrolled ? 'header-btn-active' : ''} href="#contacto">
+              <a id="header-btn-right" className={isScrolled ? 'header-btn-active' : ''} href="https://wa.me/573015857417" target="_blank" rel="noopener noreferrer">
                 Hablemos
               </a>
             </li>
@@ -179,7 +179,7 @@ const Header = () => {
           <li><a href="#blog" onClick={closeMobile}>Aprende conmigo</a></li>
           <li><a href="#taller" onClick={closeMobile}>Guías</a></li>
           <li><a href="#sobre-mí" onClick={closeMobile}>Conóceme</a></li>
-          <li><a id="mobile-menu-cta" href="#contacto" onClick={closeMobile}>Hablemos</a></li>
+          <li><a id="mobile-menu-cta" href="https://wa.me/573015857417" target="_blank" rel="noopener noreferrer" onClick={closeMobile}>Hablemos</a></li>
 
           <div className="hero-social">
             <ul>
