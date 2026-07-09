@@ -3198,10 +3198,7 @@ header nav ul:nth-child(2) li a::before {
     width: 100%;
 }
 
-.about-header h2,
-.about-header p {
-    max-width: 72%;
-}
+
 
 .about-header p span {
     font-style: italic;

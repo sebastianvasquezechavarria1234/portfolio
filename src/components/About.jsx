@@ -40,18 +40,18 @@ const About = () => (
 
       <div className="w-[30%]">
         <picture>
-          <img src="/img/face-about.jpg" alt="Sebastian Vasquez" width="300" height="300" />
+          <img src="/img/face-about.jpg" alt="Sebastian Vasquez" width="300" height="300" className="rounded-full" />
         </picture>
       </div>
-      <div className=" bg-red-600 w-[70%]">
+      <div className="w-[70%]">
         <p id="underline">Conóceme un poco más</p>
         <h2>Soy un desarrollador obsesionado con crear experiencias web que la gente realmente disfrute usar.</h2>
         <p>Hola, soy Sebastián. Desde que escribí mi primera línea de código, supe que quería dedicarme a construir cosas increíbles en internet. A lo largo del tiempo, he tenido la suerte de colaborar con equipos llenos de talento y darle vida a proyectos muy especiales.</p>
         <p>Más allá de programar, me considero un creador todoterreno. Disfruto diseñando interfaces web visualmente espectaculares y creando <a href="https://cosmos-museum.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ fontStyle: 'italic', textDecoration: 'underline' }}>experiencias en 3D</a>, pero también me apasiona la arquitectura profunda: construir el backend, gestionar bases de datos e integrar potentes <a href="https://zenith-gpt.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ fontStyle: 'italic', textDecoration: 'underline' }}>agentes de Inteligencia Artificial</a>. Me encanta dominar todo el proceso para que cada proyecto no solo se vea increíble, sino que sea inteligente y robusto "bajo el capó".</p>
       </div>
-      {/* <img src="/img/emoji-scale.webp" alt="emoji" />
+      <img src="/img/emoji-scale.webp" alt="emoji" />
       <img src="/img/emoji-star.webp" alt="emoji" />
-      <img src="/img/emoji-heart.png" alt="emoji" /> */}
+      <img src="/img/emoji-heart.png" alt="emoji" />
     </div>
 
     <div className="about-references">
