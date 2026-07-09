@@ -22,6 +22,10 @@ const Hero = () => (
   <section id="hero" className="hero">
     <section className="container">
       <div className="hero-content">
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '20px' }}>
+          <img src="/img/face.jpg" alt="face" style={{ width: '40px', height: '40px', borderRadius: '50%' }} />
+          <span style={{ fontWeight: 300, fontStyle: 'italic', textDecoration: 'underline' }}>Sebastian Vasquez E.</span>
+        </div>
         <h1>Hola, soy Sebas. Tu desarrollador web.</h1>
         <p>Donde otros ven tecnología, yo veo posibilidades infinitas. Combino diseño, código, inteligencia artificial y experiencias 3D para transformar ideas en universos digitales que cobran vida.</p>
 

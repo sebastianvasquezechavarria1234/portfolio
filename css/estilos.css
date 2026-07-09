@@ -1242,8 +1242,8 @@ header nav ul:nth-child(2) li a:hover {
     z-index: 10;
 }
 
-.hero-content a:nth-child(3),
-.hero-content a:nth-child(4) {
+.hero-content a:nth-child(4),
+.hero-content a:nth-child(5) {
     opacity: 1;
     background: var(--linear-gradient-green-blue-purple);
     border-radius: 8px;
@@ -1258,31 +1258,31 @@ header nav ul:nth-child(2) li a:hover {
 
 }
 
-.hero-content a:nth-child(3):hover,
-.hero-content a:nth-child(4):hover {
+.hero-content a:nth-child(4):hover,
+.hero-content a:nth-child(5):hover {
     transform: translateY(-5px);
     box-shadow: 4px 5px 20px #0a66c24d;
 }
 
-.hero-content a:nth-child(3) svg,
-.hero-content a:nth-child(4) svg {
+.hero-content a:nth-child(4) svg,
+.hero-content a:nth-child(5) svg {
     opacity: .8;
     width: 20px;
     height: 20px;
 }
 
-.hero-content a:nth-child(4) {
+.hero-content a:nth-child(5) {
     background: transparent;
     border: 1px solid #0a66c2bb;
     margin: 0 0 0 10px;
 }
 
-.hero-content a:nth-child(4) ul li span {
+.hero-content a:nth-child(5) ul li span {
     font-family: 'Quicksand', sans-serif;
 
 }
 
-.hero-content a:nth-child(4) svg {
+.hero-content a:nth-child(5) svg {
 
     transform: rotate(0deg);
     width: 20px;
@@ -1496,8 +1496,8 @@ header nav ul:nth-child(2) li a:hover {
 
 @media screen and (max-width: 600px) {
 
-    #hero .hero-content a:nth-child(3),
-    #hero .hero-content a:nth-child(4) {
+    #hero .hero-content a:nth-child(4),
+    #hero .hero-content a:nth-child(5) {
         width: calc(50% - 10px);
         overflow: hidden;
         text-wrap: nowrap;
