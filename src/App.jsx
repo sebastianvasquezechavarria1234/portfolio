@@ -11,9 +11,18 @@ import Lab from './components/Lab'
 import About from './components/About'
 import Footer from './components/Footer'
 
+// Siempre renderizar desde el top al cargar/recargar
+if (typeof window !== 'undefined') {
+  window.history.scrollRestoration = 'manual'
+}
+
 function App() {
   const [isLoading, setIsLoading] = useState(true)
   const [contentState, setContentState] = useState('hidden')
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   useEffect(() => {
     if (contentState === 'hidden') {

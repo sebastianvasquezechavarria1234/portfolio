@@ -340,13 +340,13 @@ body::-webkit-scrollbar-thumb:hover,
 .content-enter-hero {
     opacity: 1;
     transform: translateY(0px);
-    transition: opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1) 100ms, transform 0.8s cubic-bezier(0.77, 0, 0.175, 1) 100ms;
+    transition: opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1) 0ms, transform 0.8s cubic-bezier(0.77, 0, 0.175, 1) 0ms;
 }
 
 .content-enter-sections {
     opacity: 1;
     transform: translateY(0px);
-    transition: opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1) 220ms, transform 0.8s cubic-bezier(0.77, 0, 0.175, 1) 220ms;
+    transition: opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1) 0ms, transform 0.8s cubic-bezier(0.77, 0, 0.175, 1) 0ms;
 }
 
 /* header */
@@ -2777,7 +2777,7 @@ header nav ul:nth-child(2) li a::before {
 
 }
 
-/* sobre mÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­ */
+/* sobre mÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­ */
 
 .about-header {
     position: relative;
