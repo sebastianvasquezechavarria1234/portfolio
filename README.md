@@ -2,7 +2,7 @@
 
   <img src="public/img/face.jpg" alt="Sebastián Vásquez" width="110" style="border-radius: 50%; border: 3px solid #0fa;" />
 
-  <h1>Portafolio de Sebastián Vásquez</h1>
+  <h1> ✨💼Portafolio de Sebastián Vásquez</h1>
 
   <p><em>Donde otros ven tecnología, yo veo posibilidades infinitas.</em></p>
 
@@ -304,7 +304,25 @@ El portafolio se adapta desde ultra-wide hasta móviles con **12 breakpoints**:
 
 <br />
 
-## Contacto
+
+
+
+
+
+<br />
+
+## Licencia
+
+Este proyecto es de uso personal. Casi todos los derechos reservados.
+
+<p align="center">
+  <strong>© 2023 — 2026 Sebastián Vásquez Echavarría</strong><br />
+  <em>Diseñado y escrito en código con dedicación y precisión.</em>
+  Made with ❤️ by <a href="https://sebas-dev.vercel.app/" target="_blank" rel="noopener noreferrer">Sebastián V</a>
+
+</p>
+
+
 
 <div align="center">
 
@@ -325,16 +343,3 @@ El portafolio se adapta desde ultra-wide hasta móviles con **12 breakpoints**:
   </a>
 
 </div>
-
----
-
-<br />
-
-## Licencia
-
-Este proyecto es de uso personal. Casi todos los derechos reservados.
-
-<p align="center">
-  <strong>© 2023 — 2026 Sebastián Vásquez Echavarría</strong><br />
-  <em>Diseñado y escrito en código con dedicación y precisión.</em>
-</p>
