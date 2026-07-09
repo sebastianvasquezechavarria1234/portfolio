@@ -1173,18 +1173,23 @@ header nav ul:nth-child(2) li a::before {
     position: absolute;
     top: 20px;
     right: 20px;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     z-index: 10;
+    transition: transform 0.3s;
+}
+
+.mobile-menu-close:hover {
+    transform: rotate(180deg);
 }
 
 .mobile-menu-close svg {
-    width: 24px;
-    height: 24px;
+    width: 50px;
+    height: 50px;
     stroke: white;
 }
 
@@ -1193,6 +1198,22 @@ header nav ul:nth-child(2) li a::before {
     transform: translateY(50px);
     transition: all .3s;
     transition-delay: .2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.mobile-menu-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .mobile-menu-list.mobile-menu-list-active {
@@ -1235,6 +1256,16 @@ header nav ul:nth-child(2) li a::before {
     align-items: center;
     background: var(--linear-gradient-green-blue-purple);
     box-shadow: 4px 10px 20px #0a66c21a;
+    font-family: 'Acorn', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+#mobile-menu-cta:hover {
+    transform: translateX(5px);
 }
 
 

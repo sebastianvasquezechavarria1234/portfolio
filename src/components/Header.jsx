@@ -160,7 +160,7 @@ const Header = () => {
       {/* Mobile menu */}
       <section className={`mobile-menu${mobileOpen ? ' mobile-menu-active' : ''}`}>
         <div className="mobile-menu-close" onClick={closeMobile}>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
             <line x1="18" y1="6" x2="6" y2="18"></line>
             <line x1="6" y1="6" x2="18" y2="18"></line>
           </svg>
@@ -174,7 +174,7 @@ const Header = () => {
             <li><a href="#sobre-mí" onClick={closeMobile}>Conóceme</a></li>
           </ul>
           <div className="mobile-menu-bottom">
-            <a id="mobile-menu-cta" href="https://wa.me/573015857417" target="_blank" rel="noopener noreferrer" onClick={closeMobile}>Hablemos</a>
+            <li><a id="mobile-menu-cta" href="https://wa.me/573015857417" target="_blank" rel="noopener noreferrer" onClick={closeMobile}>Hablemos</a></li>
             <div className="hero-social">
               <ul>
                 <SocialLinks />
