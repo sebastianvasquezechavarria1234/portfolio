@@ -15,6 +15,10 @@
   <img src="https://img.shields.io/badge/GSAP-3-88CE02?style=flat-square&logo=greensock" alt="GSAP" />
   <img src="https://img.shields.io/badge/Lenis-1-FFFFFF?style=flat-square" alt="Lenis" />
 
+  <br /><br />
+
+  <img src="public/img/preview.jpg" alt="Preview del portafolio" width="100%" />
+
 </div>
 
 ---
@@ -318,6 +322,7 @@ Este proyecto es de uso personal. Casi todos los derechos reservados.
 <p align="center">
   <strong>© 2023 — 2026 Sebastián Vásquez Echavarría</strong><br />
   <em>Diseñado y escrito en código con dedicación y precisión.</em>
+  </br>
   Made with ❤️ by <a href="https://sebas-dev.vercel.app/" target="_blank" rel="noopener noreferrer">Sebastián V</a>
 
 </p>
