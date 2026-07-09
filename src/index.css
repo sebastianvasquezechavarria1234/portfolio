@@ -321,14 +321,6 @@ body::-webkit-scrollbar-thumb:hover,
         right: 20px;
     }
 
-    .preloader-line {
-        width: 100%;
-    }
-}
-
-.content-hidden {
-    opacity: 0;
-    transform: translateY(105%);
     transition: opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1), transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
@@ -848,7 +840,7 @@ header nav ul:nth-child(2) li a::before {
 
 .gradient-bg {
     position: absolute;
-    width: 50vw;
+    width: 40vh;
     height: 80vh;
     top: 0;
     left: 0;
