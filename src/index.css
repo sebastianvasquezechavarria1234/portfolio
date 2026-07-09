@@ -2813,7 +2813,7 @@ header nav ul:nth-child(2) li a::before {
 
 .blog img:nth-child(3) {
     position: absolute;
-    top: 31%;
+    top: calc(31% + 20px);
     left: 23%;
     width: 60px;
     z-index: 10;
