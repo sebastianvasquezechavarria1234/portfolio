@@ -2789,7 +2789,7 @@ header nav ul:nth-child(2) li a::before {
     height: 160px;
     border-radius: 50%;
     z-index: -1;
-    top: 28%;
+    top: calc(28% + 30px);
     left: 21%;
     background-image: linear-gradient(135deg, #0fa, #4579f5 53%, #9c42f5);
 }
