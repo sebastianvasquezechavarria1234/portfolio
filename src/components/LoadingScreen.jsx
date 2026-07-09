@@ -100,7 +100,7 @@ function loadFont(url) {
   })
 }
 
-const LoadingScreen = ({ onComplete }) => {
+const LoadingScreen = () => {
   const [progress, setProgress] = useState(0)
   const [phase, setPhase] = useState('Cargando tipografía...')
   const [exiting, setExiting] = useState(false)
@@ -161,13 +161,12 @@ const LoadingScreen = ({ onComplete }) => {
         setExiting(true)
         setTimeout(() => {
           setHidden(true)
-          onComplete?.()
         }, 800)
       }, 400)
     }
 
     run()
-  }, [onComplete])
+  }, [])
 
   if (hidden) return null
 

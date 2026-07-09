@@ -1,4 +1,4 @@
-﻿import { useState, useEffect } from 'react'
+﻿import { useEffect } from 'react'
 import Lenis from 'lenis'
 import LoadingScreen from './components/LoadingScreen'
 import Header from './components/Header'
@@ -12,8 +12,6 @@ import About from './components/About'
 import Footer from './components/Footer'
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true)
-
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
@@ -44,10 +42,10 @@ function App() {
   return (
     <>
       {/* Intro animation */}
-      <LoadingScreen onComplete={() => setIsLoading(false)} />
+      <LoadingScreen />
 
       {/* Empty spacer (original: section.nex) */}
-      <section className={`nex ${!isLoading ? 'content-enter' : 'content-hidden'}`}></section>
+      <section className="nex"></section>
 
       {/* Header + mobile menu + fixed button (all inside Header component) */}
       <Header />
@@ -57,34 +55,32 @@ function App() {
         <div className="gradient-overlay"></div>
       </section>
 
-      <div className={!isLoading ? 'content-enter' : 'content-hidden'}>
-        {/* Hero */}
-        <Hero />
+      {/* Hero */}
+      <Hero />
 
-        {/* Main content wrapper */}
-        <section className="container container2">
-
-
-          <Experience />
-          <Services />
-          <Projects />
+      {/* Main content wrapper */}
+      <section className="container container2">
 
 
-          <Blog />
+        <Experience />
+        <Services />
+        <Projects />
 
-          <Lab />
 
-          {/* Linear color separator */}
-          <div className="linear-color">
-            {Array.from({ length: 10 }).map((_, i) => <span key={i}></span>)}
-          </div>
+        <Blog />
 
-          <About />
+        <Lab />
 
-          <Footer />
+        {/* Linear color separator */}
+        <div className="linear-color">
+          {Array.from({ length: 10 }).map((_, i) => <span key={i}></span>)}
+        </div>
 
-        </section>
-      </div>
+        <About />
+
+        <Footer />
+
+      </section>
     </>
   )
 }
