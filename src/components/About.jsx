@@ -36,9 +36,9 @@ const RefCard = ({ text, texts, author }) => (
 
 const About = () => (
   <section id="sobre-mí" className="about">
-    <div className="about-header flex">
+    <div className="about-header flex max-[900px]:flex-col max-[900px]:items-center">
 
-      <div className="about-container-face w-[35%] relative">
+      <div className="about-container-face w-[35%] max-[900px]:w-full max-[900px]:flex max-[900px]:justify-center relative">
         <picture className='w-[300px] h-[300px] relative  overflow-hidden'>
           <img src="/img/face-about.jpg" alt="Sebastian Vasquez" width="100%" height="100%" style={{ borderRadius: '9999px 9999px 0 0' }} />
         <img src="/img/emoji-spark.webp" alt="emoji" className="absolute w-[80px] left-[-7%] bottom-[10%] animate-[emogi2_6s_infinite_reverse]" />
