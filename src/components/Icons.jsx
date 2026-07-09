@@ -99,7 +99,7 @@ export const QuoteSvg = () => (
 export const SocialLinks = ({ btnClass = 'btn-click' }) => (
   <>
     <li>
-      <a className={btnClass} target="_blank" rel="noopener noreferrer" id="social-btn" href="https://github.com/sebastianvasquezechavarria1234?tab=repositories">
+      <a className={btnClass} target="_blank" rel="noopener noreferrer" id="social-btn" href="https://github.com/sebastianvasquezechavarria1234">
         <GithubSvg />
       </a>
     </li>
