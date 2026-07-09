@@ -88,12 +88,12 @@ const Header = ({ isReady = false }) => {
 
   const headerStyle = {
     opacity: isReady ? 1 : 0,
-    transition: 'opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1) 0ms',
+    transition: 'opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1)',
   }
 
   const fixedBtnStyle = {
     opacity: isReady ? 1 : 0,
-    transition: 'opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1) 0ms',
+    transition: 'opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1)',
   }
 
   return (

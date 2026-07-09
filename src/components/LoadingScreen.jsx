@@ -1,4 +1,4 @@
-﻿import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 const fontUrls = [
   'https://fonts.googleapis.com/css2?family=Acorn:wght@300;400;500;900&display=swap',
@@ -173,8 +173,10 @@ const LoadingScreen = ({ onComplete }) => {
 
   return (
     <section className={`preloader ${exiting ? 'preloader-exit' : ''}`} style={{ top: 0 }}>
+      {/* Número en esquina inferior derecha */}
+      <div className="preloader-number">{progress}</div>
+
       <div className="preloader-content" style={{ opacity: 1 }}>
-        <div className="preloader-number">{progress}</div>
         <p className="preloader-phase">{phase}</p>
         <div className="preloader-line">
           <span style={{ width: `${progress}%`, transition: 'width 0.3s' }}></span>

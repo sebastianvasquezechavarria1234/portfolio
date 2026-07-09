@@ -275,10 +275,15 @@ body::-webkit-scrollbar-thumb:hover,
 }
 
 .preloader-number {
-    font-size: 8rem;
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    font-size: 3rem;
     font-family: 'Acorn', sans-serif;
     font-weight: 300;
+    font-style: italic;
     color: white;
+    opacity: 0.9;
 }
 
 .preloader-phase {
@@ -310,7 +315,9 @@ body::-webkit-scrollbar-thumb:hover,
     }
 
     .preloader-number {
-        font-size: 5rem;
+        font-size: 2rem;
+        bottom: 20px;
+        right: 20px;
     }
 
     .preloader-line {

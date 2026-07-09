@@ -19,6 +19,7 @@ if (typeof window !== 'undefined') {
 function App() {
   const [isLoading, setIsLoading] = useState(true)
   const [contentState, setContentState] = useState('hidden')
+  const [headerReady, setHeaderReady] = useState(false)
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -38,6 +39,8 @@ function App() {
       requestAnimationFrame(() => {
         requestAnimationFrame(() => {
           setContentState('enter')
+          // El header entra cuando termina la animación del contenido (0.8s)
+          setTimeout(() => setHeaderReady(true), 800)
         })
       })
     }
@@ -78,8 +81,8 @@ function App() {
       {/* Empty spacer (original: section.nex) */}
       <section className="nex"></section>
 
-      {/* Header: solo opacity, sin transform para no romper sticky/fixed */}
-      <Header isReady={contentState === 'enter'} />
+      {/* Header: entra desde arriba cuando termina la animación del contenido */}
+      <Header isReady={headerReady} />
 
       {/* Background gradient */}
       <section className="gradient-bg">
