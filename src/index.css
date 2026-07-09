@@ -2103,8 +2103,8 @@ header nav ul:nth-child(2) li a::before {
 
 .despliegues-card p {
     white-space: nowrap;
-    position: relative;
-    left: -85px;
+    margin-left: -40px;
+    font-style: italic;
 }
 
 .despliegues-flex {

@@ -40,7 +40,7 @@ const Services = () => (
           <ArrowSvg />
         </a>
       </div>
-      <p>Arquitectura sólida y escalable</p>
+      <p className="italic">Arquitectura sólida y escalable</p>
     </div>
 
     <div className="services-layout">
@@ -56,7 +56,7 @@ const Services = () => (
             <ArrowSvg />
           </a>
         </div>
-        <p>Magia en el navegador</p>
+        <p className="italic">Magia en el navegador</p>
       </div>
 
       {/* Cards 3, 4, 5 - right flexbox */}
@@ -72,7 +72,7 @@ const Services = () => (
               <ArrowSvg />
             </a>
           </div>
-          <p>Cada pixel cuenta</p>
+          <p className="italic">Cada pixel cuenta</p>
         </div>
 
         <div className="card-dark-grid service-card">
@@ -84,7 +84,7 @@ const Services = () => (
               <ArrowSvg />
             </a>
           </div>
-          <p>Infraestructura a prueba de todo</p>
+          <p className="italic">Infraestructura a prueba de todo</p>
         </div>
 
         <div className="card-dark-grid service-card">
@@ -96,7 +96,7 @@ const Services = () => (
               <ArrowSvg />
             </a>
           </div>
-          <p>El futuro, hoy</p>
+          <p className="italic">El futuro, hoy</p>
         </div>
       </div>
     </div>
