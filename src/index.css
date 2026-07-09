@@ -313,6 +313,41 @@ body::-webkit-scrollbar-thumb:hover,
     }
 }
 
+.preloader-exit {
+    animation: preloader-blur-out 0.8s ease-in-out forwards;
+}
+
+@keyframes preloader-blur-out {
+    0% {
+        filter: blur(0px);
+        opacity: 1;
+    }
+    100% {
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+.content-hidden {
+    opacity: 0;
+    filter: blur(20px);
+}
+
+.content-enter {
+    animation: content-blur-in 1s ease-out forwards;
+}
+
+@keyframes content-blur-in {
+    0% {
+        filter: blur(20px);
+        opacity: 0;
+    }
+    100% {
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
 /* header */
 
 header {

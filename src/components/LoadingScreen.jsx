@@ -103,6 +103,7 @@ function loadFont(url) {
 const LoadingScreen = ({ onComplete }) => {
   const [progress, setProgress] = useState(0)
   const [phase, setPhase] = useState('Cargando tipografía...')
+  const [exiting, setExiting] = useState(false)
   const [hidden, setHidden] = useState(false)
 
   useEffect(() => {
@@ -157,9 +158,12 @@ const LoadingScreen = ({ onComplete }) => {
 
       setPhase('¡Listo!')
       setTimeout(() => {
-        setHidden(true)
-        onComplete?.()
-      }, 500)
+        setExiting(true)
+        setTimeout(() => {
+          setHidden(true)
+          onComplete?.()
+        }, 800)
+      }, 400)
     }
 
     run()
@@ -168,7 +172,7 @@ const LoadingScreen = ({ onComplete }) => {
   if (hidden) return null
 
   return (
-    <section className="preloader" style={{ top: 0 }}>
+    <section className={`preloader ${exiting ? 'preloader-exit' : ''}`} style={{ top: 0 }}>
       <div className="preloader-content" style={{ opacity: 1 }}>
         <div className="preloader-number">{progress}</div>
         <p className="preloader-phase">{phase}</p>

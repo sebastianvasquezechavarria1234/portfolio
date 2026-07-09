@@ -47,42 +47,46 @@ function App() {
       <LoadingScreen onComplete={() => setIsLoading(false)} />
 
       {/* Empty spacer (original: section.nex) */}
-      <section className="nex"></section>
+      <section className={`nex ${!isLoading ? 'content-enter' : 'content-hidden'}`}></section>
 
       {/* Header + mobile menu + fixed button (all inside Header component) */}
-      <Header />
+      <div className={!isLoading ? 'content-enter' : 'content-hidden'}>
+        <Header />
+      </div>
 
       {/* Background gradient */}
       <section className="gradient-bg">
         <div className="gradient-overlay"></div>
       </section>
 
-      {/* Hero */}
-      <Hero />
+      <div className={!isLoading ? 'content-enter' : 'content-hidden'}>
+        {/* Hero */}
+        <Hero />
 
-      {/* Main content wrapper */}
-      <section className="container container2">
-
-
-        <Experience />
-        <Services />
-        <Projects />
+        {/* Main content wrapper */}
+        <section className="container container2">
 
 
-        <Blog />
+          <Experience />
+          <Services />
+          <Projects />
 
-        <Lab />
 
-        {/* Linear color separator */}
-        <div className="linear-color">
-          {Array.from({ length: 10 }).map((_, i) => <span key={i}></span>)}
-        </div>
+          <Blog />
 
-        <About />
+          <Lab />
 
-        <Footer />
+          {/* Linear color separator */}
+          <div className="linear-color">
+            {Array.from({ length: 10 }).map((_, i) => <span key={i}></span>)}
+          </div>
 
-      </section>
+          <About />
+
+          <Footer />
+
+        </section>
+      </div>
     </>
   )
 }
