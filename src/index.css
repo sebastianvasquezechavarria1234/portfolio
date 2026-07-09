@@ -328,6 +328,15 @@ body::-webkit-scrollbar-thumb:hover,
     }
 }
 
+.content-hidden {
+    opacity: 0;
+}
+
+.content-enter {
+    opacity: 1;
+    transition: opacity 0.8s ease-out;
+}
+
 /* header */
 
 header {

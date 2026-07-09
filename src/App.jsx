@@ -1,4 +1,4 @@
-﻿import { useEffect } from 'react'
+﻿import { useState, useEffect } from 'react'
 import Lenis from 'lenis'
 import LoadingScreen from './components/LoadingScreen'
 import Header from './components/Header'
@@ -12,6 +12,8 @@ import About from './components/About'
 import Footer from './components/Footer'
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true)
+
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
@@ -42,7 +44,7 @@ function App() {
   return (
     <>
       {/* Intro animation */}
-      <LoadingScreen />
+      <LoadingScreen onComplete={() => setIsLoading(false)} />
 
       {/* Empty spacer (original: section.nex) */}
       <section className="nex"></section>
@@ -59,7 +61,7 @@ function App() {
       <Hero />
 
       {/* Main content wrapper */}
-      <section className="container container2">
+      <section className={`container container2 ${!isLoading ? 'content-enter' : 'content-hidden'}`}>
 
 
         <Experience />
