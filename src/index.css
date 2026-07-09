@@ -3206,29 +3206,21 @@ header nav ul:nth-child(2) li a::before {
     font-weight: bold;
 }
 
-.about-header img:nth-child(5) {
-    position: absolute;
-    width: 230px;
-    right: -10%;
-    top: 4%;
-    animation: emogi1 6s infinite;
+.about-container-face {
+    padding-left: 60px;
+    padding-right: 40px;
+
 }
 
-.about-header img:nth-child(6) {
-    position: absolute;
-    width: 140px;
-    right: 18%;
-    bottom: -10%;
-    animation: emogi2 6s infinite;
+.about-container-face picture{
+    overflow: hidden;
+
+    width: 100%;
+    height: 300px;
+    display: block;
+    border-radius: 9999px 9999px 0 0;
 }
 
-.about-header img:nth-child(7) {
-    position: absolute;
-    width: 40px;
-    right: 34%;
-    top: 0%;
-    animation: emogi2 6s infinite alternate-reverse;
-}
 
 .about-references {
     position: relative;

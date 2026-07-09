@@ -38,13 +38,14 @@ const About = () => (
   <section id="sobre-mí" className="about">
     <div className="about-header flex">
 
-      <div className="w-[35%]" style={{ position: 'relative' }}>
-        <picture>
-          <img src="/img/face-about.jpg" alt="Sebastian Vasquez" width="300" height="300" style={{ borderRadius: '9999px 9999px 0 0' }} />
+      <div className="about-container-face w-[35%] relative">
+        <picture className='w-[300px] h-[300px] relative  overflow-hidden'>
+          <img src="/img/face-about.jpg" alt="Sebastian Vasquez" width="100%" height="100%" style={{ borderRadius: '9999px 9999px 0 0' }} />
+        <img src="/img/emoji-spark.webp" alt="emoji" className="absolute w-[80px] left-[-7%] bottom-[10%] animate-[emogi2_6s_infinite_reverse]" />
         </picture>
-        <img src="/img/emoji-scale.webp" alt="emoji" style={{ position: 'absolute', width: '230px', right: '-10%', top: '4%', animation: 'emogi1 6s infinite' }} />
-        <img src="/img/emoji-star.webp" alt="emoji" style={{ position: 'absolute', width: '140px', right: '18%', bottom: '-10%', animation: 'emogi2 6s infinite' }} />
-        <img src="/img/emoji-heart.png" alt="emoji" style={{ position: 'absolute', width: '40px', right: '34%', top: '0%', animation: 'emogi2 6s infinite alternate-reverse' }} />
+        <img src="/img/emoji-scale.webp" alt="emoji" className="absolute w-[130px] right-[-0%] top-[4%] animate-[emogi1_6s_infinite]" />
+        <img src="/img/emoji-star.webp" alt="emoji" className="absolute w-[100px] right-[18%] bottom-[15%] animate-[emogi2_6s_infinite]" />
+        <img src="/img/emoji-heart.png" alt="emoji" className="absolute w-[30px] left-[11%] top-[30%] animate-[emogi2_6s_infinite_reverse]" />
       </div>
       <div className="w-[65%]">
         <p id="underline">Conóceme un poco más</p>
