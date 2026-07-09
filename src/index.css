@@ -1188,8 +1188,8 @@ header nav ul:nth-child(2) li a::before {
 }
 
 .mobile-menu-close svg {
-    width: 50px;
-    height: 50px;
+    width: 50px !important;
+    height: 50px !important;
     stroke: white;
 }
 
