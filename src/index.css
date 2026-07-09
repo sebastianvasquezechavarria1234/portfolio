@@ -241,7 +241,7 @@ body::-webkit-scrollbar-thumb:hover,
 
 @media screen and (max-width: 1380px) {
     .fixed-button {
-        right: 20px;
+    right: 30px;
         bottom: 20px;
     }
 }
@@ -1159,7 +1159,7 @@ header nav ul:nth-child(2) li a::before {
     top: 0;
     left: 0;
     padding: 80px 20px 40px;
-    overflow-y: scroll;
+    overflow: hidden;
     opacity: 0;
     transition: all .3s;
 }
@@ -1172,7 +1172,7 @@ header nav ul:nth-child(2) li a::before {
 .mobile-menu-close {
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 0px;
     width: 60px;
     height: 60px;
     display: flex;
@@ -1188,8 +1188,8 @@ header nav ul:nth-child(2) li a::before {
 }
 
 .mobile-menu-close svg {
-    width: 50px !important;
-    height: 50px !important;
+    width: 24px !important;
+    height: 24px !important;
     stroke: white;
 }
 
