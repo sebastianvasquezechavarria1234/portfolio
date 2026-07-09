@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { createPortal } from 'react-dom'
 
 const NetworkSvg = () => (
   <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-topology-star-3" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -139,14 +140,15 @@ const Experience = () => {
               <img src="/img/experience/genesis-pixel/interacitions.jpg" alt="Interactions" />
             </a>
           </div>
-          {isTooltipVisibleGP && (
+          {isTooltipVisibleGP && createPortal(
             <div className={`genesis-pixel-tooltip ${showTooltipGP ? 'tooltip-show' : 'tooltip-hide'}`} style={{
               position: 'fixed',
               left: mousePos.x + 15,
               top: mousePos.y + 15,
             }}>
               Redireccionar a Genesis Pixel
-            </div>
+            </div>,
+            document.body
           )}
         </div>
       </div>
