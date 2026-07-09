@@ -165,31 +165,26 @@ const Header = () => {
             <line x1="6" y1="6" x2="18" y2="18"></line>
           </svg>
         </div>
-        <ul className={`mobile-menu-list${mobileOpen ? ' mobile-menu-list-active' : ''}`}>
-          <li><a href="#experiencia" onClick={closeMobile}>Experiencia</a></li>
-          <li>
-            <a href="#proyectos" onClick={closeMobile}>Mi trabajo</a>
-            <ul className="mobile-menu-info">
-              <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234/matter">Matter</a></li>
-              <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234/Ford-Mustang">Ford Mustang</a></li>
-              <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234/breef-version1.1">Breef</a></li>
-              <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/sebastianvasquezechavarria1234/ginebra">Ginebra</a></li>
-            </ul>
-          </li>
-          <li><a href="#blog" onClick={closeMobile}>Aprende conmigo</a></li>
-          <li><a href="#taller" onClick={closeMobile}>Guías</a></li>
-          <li><a href="#sobre-mí" onClick={closeMobile}>Conóceme</a></li>
-          <li><a id="mobile-menu-cta" href="https://wa.me/573015857417" target="_blank" rel="noopener noreferrer" onClick={closeMobile}>Hablemos</a></li>
-
-          <div className="hero-social">
-            <ul>
-              <SocialLinks />
-            </ul>
+        <div className={`mobile-menu-list${mobileOpen ? ' mobile-menu-list-active' : ''}`}>
+          <ul className="mobile-menu-links">
+            <li><a href="#experiencia" onClick={closeMobile}>Experiencia</a></li>
+            <li><a href="#proyectos" onClick={closeMobile}>Mi trabajo</a></li>
+            <li><a href="#blog" onClick={closeMobile}>Aprende conmigo</a></li>
+            <li><a href="#taller" onClick={closeMobile}>Guías</a></li>
+            <li><a href="#sobre-mí" onClick={closeMobile}>Conóceme</a></li>
+          </ul>
+          <div className="mobile-menu-bottom">
+            <a id="mobile-menu-cta" href="https://wa.me/573015857417" target="_blank" rel="noopener noreferrer" onClick={closeMobile}>Hablemos</a>
+            <div className="hero-social">
+              <ul>
+                <SocialLinks />
+              </ul>
+            </div>
+            <div className="copyright">
+              <p>Diseñado y escrito en código por Sebastián Vásquez Echavarría © 2023 - 2026.</p>
+            </div>
           </div>
-          <div className="copyright">
-            <p>Diseñado y escrito en código por Sebastián Vásquez Echavarría © 2023 - 2026.</p>
-          </div>
-        </ul>
+        </div>
       </section>
     </>
   )

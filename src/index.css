@@ -1603,6 +1603,10 @@ header nav ul:nth-child(2) li a::before {
 
 @media screen and (max-width: 600px) {
 
+    .gradient-bg {
+        width: 100%;
+    }
+
     #hero .hero-content a:nth-child(4),
     #hero .hero-content a:nth-child(5) {
         width: calc(50% - 10px);

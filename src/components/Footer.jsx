@@ -3,7 +3,7 @@
 const Gallery = () => (
   <section className="gallery">
     <div className="gallery-card">
-      <img src="/img/a.png" alt="Colombia" />
+      <img src="/img/piedra.jpg" alt="Colombia" />
       <div className="gallery-card-info">
         <p>Medellín, Colombia</p>
       </div>
