@@ -1155,7 +1155,7 @@ header nav ul:nth-child(2) li a::before {
     height: 100vh;
     background: var(--gray-dark);
     backdrop-filter: var(--blur-card);
-    z-index: 100;
+    z-index: 9999;
     top: 0;
     left: 0;
     padding: 80px 20px 40px;
@@ -2744,7 +2744,7 @@ header nav ul:nth-child(2) li a::before {
         border-radius: 10px;
         margin: 0 auto;
         background: #212429;
-        z-index: 100;
+    z-index: 9999;
     }
 
     .projects-controls p {

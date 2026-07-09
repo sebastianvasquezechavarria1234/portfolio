@@ -65,6 +65,15 @@ const Header = () => {
 
   const closeMobile = () => setMobileOpen(false)
 
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => { document.body.style.overflow = '' }
+  }, [mobileOpen])
+
   const scrollToTop = (e) => {
     if (e) e.preventDefault()
     if (window.lenis) {
