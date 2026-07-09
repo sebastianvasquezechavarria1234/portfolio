@@ -3218,9 +3218,16 @@ header nav ul:nth-child(2) li a::before {
     width: 100%;
     height: 300px;
     display: block;
+
+   
     border-radius: 9999px 9999px 0 0;
 }
 
+.about-container-face picture img:nth-child(1){
+    height:100%;
+    object-fit: cover;
+    object-position: top;
+}
 
 .about-references {
     position: relative;
