@@ -847,58 +847,6 @@ header nav ul:nth-child(2) li a::before {
 
 
 
-.gradient-bg {
-    position: absolute;
-    width: 40vh;
-    height: 80vh;
-    top: 0;
-    left: 0;
-    background-image: linear-gradient(135deg, #a0f36d, #d3dbab, #590a8198, #8a880fca, #5A4894, #ff94c3, #7cffee);
-    background-size: 500%;
-    z-index: -2;
-    animation: degra 35s infinite linear;
-}
-
-@keyframes degra {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-.gradient-bg::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background-image: linear-gradient(to right, #21242921, #21242938, #21242987, #212429);
-    backdrop-filter: blur(100);
-}
-
-.gradient-overlay {
-
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background-image: linear-gradient(to bottom, #212429e8, #212429c6, #212429f5, #212429);
-    backdrop-filter: blur(100);
-}
-
-
-
 /* sec max width */
 
 .container {
@@ -1193,11 +1141,6 @@ header nav ul:nth-child(2) li a::before {
 }
 
 @media screen and (max-width: 600px) {
-
-    .gradient-bg {
-        width: 100%;
-        height: 400px;
-    }
 
     #hero .hero-content a:nth-child(4),
     #hero .hero-content a:nth-child(5) {

@@ -84,11 +84,6 @@ function App() {
       {/* Header: entra desde arriba cuando termina la animación del contenido */}
       <Header isReady={headerReady} />
 
-      {/* Background gradient */}
-      <section className="gradient-bg">
-        <div className="gradient-overlay"></div>
-      </section>
-
       {/* Hero */}
       <div className={contentState === 'enter' ? 'content-enter content-enter-hero' : 'content-hidden'}>
         <Hero />
