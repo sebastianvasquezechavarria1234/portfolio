@@ -3319,6 +3319,19 @@ header nav ul:nth-child(2) li a::before {
 
 }
 
+@media screen and (max-width: 900px) {
+    .about-container-face {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-container-face picture {
+        width: 260px;
+        height: 260px;
+    }
+}
+
 /* sec galery */
 
 .gallery {

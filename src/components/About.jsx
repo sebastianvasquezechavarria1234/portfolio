@@ -36,16 +36,16 @@ const RefCard = ({ text, texts, author }) => (
 
 const About = () => (
   <section id="sobre-mí" className="about">
-    <div className="about-header flex max-[900px]:flex-col max-[900px]:items-center">
+    <div className="about-header flex max-[900px]:flex-col max-[900px]:items-center max-[900px]:gap-[30px]">
 
       <div className="about-container-face w-[35%] max-[900px]:w-[400px] max-[900px]:flex max-[900px]:justify-center relative">
-        <picture className='w-[300px] h-[300px] max-[900px]:w-[400px] max-[900px]:h-[400px] relative overflow-hidden'>
+        <picture className='w-[300px] h-[300px] max-[900px]:w-[200px] max-[900px]:h-[200px] relative overflow-hidden'>
           <img src="/img/face-about.jpg" alt="Sebastian Vasquez" width="100%" height="100%" style={{ borderRadius: '9999px 9999px 0 0' }} />
-        <img src="/img/emoji-spark.webp" alt="emoji" className="absolute w-[80px] left-[-7%] bottom-[10%] animate-[emogi2_6s_infinite_reverse]" />
+        <img src="/img/emoji-spark.webp" alt="emoji" className="absolute w-[80px] max-[900px]:w-[60px] left-[-7%] bottom-[10%] max-[900px]:bottom-[-30px] animate-[emogi2_6s_infinite_reverse]" />
         </picture>
-        <img src="/img/emoji-scale.webp" alt="emoji" className="absolute w-[130px] right-[-0%] top-[4%] animate-[emogi1_6s_infinite]" />
-        <img src="/img/emoji-star.webp" alt="emoji" className="absolute w-[100px] right-[18%] bottom-[15%] animate-[emogi2_6s_infinite]" />
-        <img src="/img/emoji-heart.png" alt="emoji" className="absolute w-[30px] left-[11%] top-[30%] animate-[emogi2_6s_infinite_reverse]" />
+        <img src="/img/emoji-scale.webp" alt="emoji" className="absolute w-[130px] max-[900px]:w-[90px] right-[-0%] top-[4%] max-[900px]:top-[14%] animate-[emogi1_6s_infinite]" />
+        <img src="/img/emoji-star.webp" alt="emoji" className="absolute w-[100px] max-[900px]:w-[70px] right-[18%] bottom-[15%] max-[900px]:bottom-[-15%] animate-[emogi2_6s_infinite]" />
+        <img src="/img/emoji-heart.png" alt="emoji" className="absolute w-[30px] max-[900px]:w-[20px] left-[11%] top-[30%] max-[900px]:top-[70%] animate-[emogi2_6s_infinite_reverse]" />
       </div>
       <div className="w-[65%] max-[900px]:w-full">
         <p id="underline">Conóceme un poco más</p>
