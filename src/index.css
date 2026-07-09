@@ -1,4 +1,4 @@
-﻿@import "tailwindcss";
+@import "tailwindcss";
 @source "../src/**/*.{js,jsx}";
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@8..144,100..1000&display=swap');
 
@@ -320,14 +320,33 @@ body::-webkit-scrollbar-thumb:hover,
 
 .content-hidden {
     opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+    transform: translateY(100vh);
+    transition: opacity 0.9s ease-out, transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .content-enter {
     opacity: 1;
     transform: translateY(0px);
-    transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: opacity 0.9s ease-out, transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Entrada escalonada: header, hero, secciones */
+.content-enter-header {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: opacity 0.9s ease-out 0ms, transform 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0ms;
+}
+
+.content-enter-hero {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: opacity 1s ease-out 100ms, transform 1s cubic-bezier(0.22, 1, 0.36, 1) 100ms;
+}
+
+.content-enter-sections {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: opacity 1s ease-out 220ms, transform 1s cubic-bezier(0.22, 1, 0.36, 1) 220ms;
 }
 
 /* header */
@@ -2758,7 +2777,7 @@ header nav ul:nth-child(2) li a::before {
 
 }
 
-/* sobre mÃ­ */
+/* sobre mÃƒÂ­ */
 
 .about-header {
     position: relative;

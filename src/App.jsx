@@ -1,4 +1,4 @@
-﻿import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import Lenis from 'lenis'
 import LoadingScreen from './components/LoadingScreen'
 import Header from './components/Header'
@@ -14,6 +14,15 @@ import Footer from './components/Footer'
 function App() {
   const [isLoading, setIsLoading] = useState(true)
   const [contentState, setContentState] = useState('hidden')
+
+  useEffect(() => {
+    if (contentState === 'hidden') {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => { document.body.style.overflow = '' }
+  }, [contentState])
 
   useEffect(() => {
     if (!isLoading && contentState === 'hidden') {
@@ -60,8 +69,8 @@ function App() {
       {/* Empty spacer (original: section.nex) */}
       <section className="nex"></section>
 
-      {/* Header + mobile menu + fixed button (all inside Header component) */}
-      <Header />
+      {/* Header: solo opacity, sin transform para no romper sticky/fixed */}
+      <Header isReady={contentState === 'enter'} />
 
       {/* Background gradient */}
       <section className="gradient-bg">
@@ -69,10 +78,12 @@ function App() {
       </section>
 
       {/* Hero */}
-      <Hero />
+      <div className={contentState === 'enter' ? 'content-enter content-enter-hero' : 'content-hidden'}>
+        <Hero />
+      </div>
 
       {/* Main content wrapper */}
-      <section className={`container container2 ${contentState === 'enter' ? 'content-enter' : 'content-hidden'}`}>
+      <section className={`container container2 ${contentState === 'enter' ? 'content-enter content-enter-sections' : 'content-hidden'}`}>
 
 
         <Experience />

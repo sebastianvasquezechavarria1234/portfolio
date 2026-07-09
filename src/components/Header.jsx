@@ -9,7 +9,7 @@ const navItems = [
   { id: 'sobre', href: '#sobre-mí', label: 'Conóceme' },
 ]
 
-const Header = () => {
+const Header = ({ isReady = false }) => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [showScrollBtn, setShowScrollBtn] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
@@ -86,10 +86,20 @@ const Header = () => {
     }
   }
 
+  const headerStyle = {
+    opacity: isReady ? 1 : 0,
+    transition: 'opacity 0.9s ease-out 0ms',
+  }
+
+  const fixedBtnStyle = {
+    opacity: isReady ? 1 : 0,
+    transition: 'opacity 0.9s ease-out 0ms',
+  }
+
   return (
     <>
       {/* Fixed back-to-top button */}
-      <div className="fixed-button">
+      <div className="fixed-button" style={fixedBtnStyle}>
         <ul>
           <li id="btnTop" onClick={scrollToTop} style={{ transform: showScrollBtn ? 'scale(1)' : 'scale(0)', cursor: 'pointer' }}>
             <a href="#" onClick={(e) => e.preventDefault()}>
@@ -99,7 +109,7 @@ const Header = () => {
         </ul>
       </div>
 
-      <header>
+      <header style={headerStyle}>
         <GradualBlur
           target="parent"
           position="top"
