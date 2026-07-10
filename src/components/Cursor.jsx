@@ -1,7 +1,8 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export default function Cursor() {
   const cursorRef = useRef(null)
+  const [isHovering, setIsHovering] = useState(false)
 
   useEffect(() => {
     const move = (e) => {
@@ -25,13 +26,25 @@ export default function Cursor() {
       }
     }
 
+    const addHoverListeners = () => {
+      const els = document.querySelectorAll('a, button, .hamburger, .mobile-menu-close, .genesis-pixel-img, .projects-controls p, .fixed-button ul li')
+      els.forEach((el) => {
+        el.addEventListener('mouseenter', () => setIsHovering(true))
+        el.addEventListener('mouseleave', () => setIsHovering(false))
+      })
+    }
+
     window.addEventListener('mousemove', move)
     document.addEventListener('mouseleave', hide)
     document.addEventListener('mouseenter', show)
+
+    const timeout = setTimeout(addHoverListeners, 1000)
+
     return () => {
       window.removeEventListener('mousemove', move)
       document.removeEventListener('mouseleave', hide)
       document.removeEventListener('mouseenter', show)
+      clearTimeout(timeout)
     }
   }, [])
 
@@ -50,7 +63,7 @@ export default function Cursor() {
       }}
     >
       <img
-        src="/img/cursor-3d.png"
+        src={isHovering ? '/img/cursor-hover.png' : '/img/cursor.png'}
         alt=""
         style={{
           width: '100%',
