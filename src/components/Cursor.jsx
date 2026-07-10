@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 export default function Cursor() {
   const cursorRef = useRef(null)
   const [isHovering, setIsHovering] = useState(false)
+  const [isClicking, setIsClicking] = useState(false)
 
   useEffect(() => {
     const move = (e) => {
@@ -34,7 +35,12 @@ export default function Cursor() {
       })
     }
 
+    const down = () => setIsClicking(true)
+    const up = () => setIsClicking(false)
+
     window.addEventListener('mousemove', move)
+    window.addEventListener('mousedown', down)
+    window.addEventListener('mouseup', up)
     document.addEventListener('mouseleave', hide)
     document.addEventListener('mouseenter', show)
 
@@ -42,6 +48,8 @@ export default function Cursor() {
 
     return () => {
       window.removeEventListener('mousemove', move)
+      window.removeEventListener('mousedown', down)
+      window.removeEventListener('mouseup', up)
       document.removeEventListener('mouseleave', hide)
       document.removeEventListener('mouseenter', show)
       clearTimeout(timeout)
@@ -63,7 +71,7 @@ export default function Cursor() {
       }}
     >
       <img
-        src={isHovering ? '/img/cursor-hover.png' : '/img/cursor.png'}
+        src={isClicking ? '/img/cursor.png' : (isHovering ? '/img/cursor-hover.png' : '/img/cursor.png')}
         alt=""
         style={{
           width: '100%',

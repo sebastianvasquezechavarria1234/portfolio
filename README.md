@@ -2,22 +2,13 @@
 
 
 
+  <img src="public/img/preview.jpg" alt="Portfolio preview" width="100%" />
   <h1> ✨💼 Sebastián Vásquez's Portfolio</h1>
 
   <p><em>Where others see technology, I see infinite possibilities.</em></p>
 
-  <br />
+ 
 
-  <img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" />
-  <img src="https://img.shields.io/badge/Vite-8-646CFF?style=flat-square&logo=vite" alt="Vite" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-4-38B2AC?style=flat-square&logo=tailwind-css" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/Framer_Motion-12-E8556D?style=flat-square&logo=framermotion&logoColor=white" alt="Framer Motion" />
-  <img src="https://img.shields.io/badge/GSAP-3-88CE02?style=flat-square&logo=greensock" alt="GSAP" />
-  <img src="https://img.shields.io/badge/Lenis-1-FFFFFF?style=flat-square" alt="Lenis" />
-
-  <br /><br />
-
-  <img src="public/img/preview.jpg" alt="Portfolio preview" width="100%" />
 
 </div>
 
