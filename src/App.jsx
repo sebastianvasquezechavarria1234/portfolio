@@ -10,6 +10,7 @@ import Blog from './components/Blog'
 import Lab from './components/Lab'
 import About from './components/About'
 import Footer from './components/Footer'
+import Cursor from './components/Cursor'
 
 // Siempre renderizar desde el top al cargar/recargar
 if (typeof window !== 'undefined') {
@@ -75,7 +76,7 @@ function App() {
 
   return (
     <>
-      {/* Intro animation */}
+      <Cursor />
       <LoadingScreen onComplete={() => setIsLoading(false)} />
 
       {/* Empty spacer (original: section.nex) */}
