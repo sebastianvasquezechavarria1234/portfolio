@@ -1,4 +1,4 @@
-<div align="center">
+<div >
 
 
 
@@ -7,12 +7,11 @@
 
   <p><em>Where others see technology, I see infinite possibilities.</em></p>
 
- 
 
 
 </div>
 
----
+
 
 <br />
 
