@@ -6,7 +6,7 @@ const myProjects = [
   {
     githubHref: 'https://github.com/sebastianvasquezechavarria1234/cosmos-museum',
     liveHref: 'https://cosmos-museum.vercel.app/',
-    img: '/img/projects/me/s.png',
+    img: '/img/projects/me/cosmos-museum.jpg',
     bg: '/img/projects/bg-project-matter.webp',
     num: '#001',
     title: 'Cosmos Museum',
